@@ -22,6 +22,7 @@
 
 .home-two {
   width: 100%;
+  padding: 2rem 0rem;
 }
 .home-two-in {
   width: 90%;
@@ -112,13 +113,74 @@
 
 
 
+.home-three {
+  width: 100%;
+  background-color: rgb(255,165,0, 0.2);
+}
+.home-three-in {
+  width: 90%;
+  margin: auto;
+  padding: 2rem 0rem;
+}
+.home-three-one {
+  width: 100%;
+}
+.home-three-one-in {
+  width: 100%;
+  display: flex;
+}
 
+.home-three-one-in-one {
+  width: 75%;
+}
+.home-three-one-in-one-in {
+  width: 100%;
+}
+.home-three-one-in-two {
+  width: 25%;
+}
+.home-three-one-in-two-in {
+  width: 100%;
+}
+.home-three-one-in-two-in-box {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 1rem;
+}
+.home-three-one-in-two-in-box-in {
+  padding: 1rem;
+}
+.htoitibi-header {
+  border: 2px solid green;
+  padding: 0.5rem;
+  background-color: orange;
+  border-radius: 1rem;
+}
+.htoitibi-header-in {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.htoitibi-header-in h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: black;
+  font-size: 1.3rem;
+}
 
-
-
-
-
-
+.htoitibi-boxes {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  padding: 1rem 0rem;
+}
+.htoitibi-box {
+  border-left: 0.5rem solid green;
+  padding: 0.3rem 0rem;
+  border-bottom: 1px solid lightgrey;
+  padding-left: 1rem;
+}
 
 
 

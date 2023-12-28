@@ -99,6 +99,66 @@ export default function Home() {
                 </div>
               </div>
             </div>
+
+
+
+            <div className="home-three">
+              <div className="home-three-in">
+                <div className="home-three-header">
+                  <div className="home-three-header-in">
+                    
+                  </div>
+                </div>
+                <div className="home-three-one">
+                  <div className="home-three-one-in">
+                    <div className="home-three-one-in-one">
+                      <div className="home-three-one-in-one-in">
+
+                      </div>
+                    </div>
+                    <div className="home-three-one-in-two">
+                      <div className="home-three-one-in-two-in">
+                          <div className="home-three-one-in-two-in-box">
+                            <div className="home-three-one-in-two-in-box-in">
+                              <div className="htoitibi-header">
+                                <div className="htoitibi-header-in">
+                                  <h2>What's on News</h2>
+                                </div>
+                              </div>
+                              <div className="htoitibi-boxes">
+                                <div className="htoitibi-box">
+                                  <div className="htoitibi-box-in">
+                                    <p>Activities finalized under Second year of AKAM celebrations-reg</p>
+                                    <p>21-12-2022</p>
+                                  </div>
+                                </div>
+                                <div className="htoitibi-box">
+                                  <div className="htoitibi-box-in">
+                                    <p>Activities finalized under Second year of AKAM celebrations-reg</p>
+                                    <p>21-12-2022</p>
+                                  </div>
+                                </div>
+                                <div className="htoitibi-box">
+                                  <div className="htoitibi-box-in">
+                                    <p>Second year of AKAM celebrations - request to draw up a calendar of the campaigns to be undertaken on the issues relating to Department- 02-11-2022</p>
+                                    <p>21-12-2022</p>
+                                  </div>
+                                </div>
+                                <div className="htoitibi-box">
+                                  <div className="htoitibi-box-in">
+                                    <p>Activities finalized under Second year of AKAM celebrations-reg</p>
+                                    <p>21-12-2022</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
       </div>
     )
