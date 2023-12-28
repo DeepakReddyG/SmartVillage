@@ -250,6 +250,67 @@
   color: black;
   width: 80%;
 }
+
+
+
+/* -------------------------------- home five -------------------------------- */
+.home-five {
+  width: 100%;
+  padding: 2rem 0rem;
+}
+.home-five-in {
+  width: 90%;
+  margin: auto;
+}
+.home-five-in-header {
+  width: 100%;
+  padding: 1rem 0rem;
+}
+.home-five-in-header h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: black;
+  font-size: 3rem;
+  color: green;
+}
+.home-five-one-in-boxes {
+  display: flex;
+  border: 1px solid green;
+  padding: 2rem 0rem;
+  border-top: 1rem solid orange;
+  border-bottom: 1rem solid orange;
+}
+.home-five-one-in-box {
+  margin: 0rem 0.5rem;
+  border-radius: 1rem;
+}
+
+
+
+
+
+.home-five-one-in-box-in-image {
+  width: 100%;
+}
+.home-five-one-in-box-in-image-image {
+  width: 100%;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: 2px solid green;
+}
+
+.home-five-one-in-box-in-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0.5rem;
+}
+
+
+
+
+
 /* --------------------------- Footer --------------------------- */
 
 .Footer {
