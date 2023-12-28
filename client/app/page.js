@@ -3,6 +3,7 @@ import Image from 'next/image';
 import './globals.css';
 
 import SVR_Image_1 from './Assets/SVR_Image_1.png';
+import President from './Assets/President.jpeg';
 
 export default function Home() {
   return (
@@ -156,6 +157,41 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="home-four message">
+              <div className="home-four-in">
+                <div className="home-four-header">
+                  <h1>Message from the Hon'ble President: KLEF</h1>
+                </div>
+                <div className="home-four-in-in">
+                <div className="home-four-one">
+                  <div className="home-four-one-in">
+                    <div className="home-four-one-in-one">
+                    
+                        <Image
+                          className='home-four-one-in-one-in-image'
+                          src={President}
+                          width={0}
+                          height={0}
+                          sizes="100vw"
+                          style={{ width: '100%', height: 'auto' }} // optional
+                        />
+
+                      <p>Shri Koneru Satyanarayana</p>
+                    </div>
+                    <div className="home-four-one-in-two">
+
+                    </div>
+                  </div>
+                </div>
+                <div className="home-four-two">
+                  <div className="home-four-two-in">
+                    <p>On Independence Day, I had made commitment to you on behalf of my colleagues in the Parliament. I laid out my dream of Adarsh Grams as the nucleus of health, cleanliness, greenery and cordiality within the community. The Guidelines that follow are based on these principles and present the complete blueprint of the Saansad Adarsh Gram Yojana for each Member of Parliament to make one village of his or her constituency a Model Village by 2016 and two more model villages by 2019.</p>
+                  </div>
+                </div>
                 </div>
               </div>
             </div>

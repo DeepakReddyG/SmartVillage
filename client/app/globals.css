@@ -184,7 +184,72 @@
 
 
 
+/* -------------------------- home-four  ------------------------- */
+.home-four {
+  width: 100%;
+  padding: 2rem 0rem;
+}
+.home-four-in {
+  width: 90%;
+  margin: auto;
+}
+.home-four-header {
+  width: 100%;
+  padding: 1rem 0rem;
+}
+.home-four-header h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: black;
+  font-size: 3rem;
+  color: green;
+}
+.home-four-in-in {
+  border: 2px solid orange;
+  border-left: 1rem solid green;
+  border-radius: 1rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
 
+.home-four-one {
+  width: 20%;
+}
+.home-four-one-in-one-in-image {
+  width: 100%;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: 2px solid green;
+}
+.home-four-one-in-one p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: black;
+  font-size: 1.3rem;
+  color: black;
+  padding: 1rem 0rem;
+}
+.home-four-two {
+  width: 78%;
+  background-color: rgb(0, 128, 0, 0.2);
+  border-radius: 1rem;
+}
+.home-four-two-in {
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home-four-two-in p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: black;
+  font-size: 1.3rem;
+  color: black;
+  width: 80%;
+}
 /* --------------------------- Footer --------------------------- */
 
 .Footer {

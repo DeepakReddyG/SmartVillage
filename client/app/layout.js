@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
         <div className="Footer-in">
           <div className="Footer-one">
             <div className="Footer-one-in">
-                <h1>The goal of Saansad Aadarsh Gram Yojana (SAGY) is to translate this comprehensive and organic vision of Mahatma Gandhi into reality, keeping in view the present context</h1>
+                <h1>The goal of Smart Village Revolution (SVR) is to translate this comprehensive and organic vision of Mahatma Gandhi into reality, keeping in view the present context</h1>
             </div>
           </div>
           <div className="Footer-two">
