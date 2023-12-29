@@ -2,18 +2,33 @@ import Image from 'next/image';
 import Marquee from "react-fast-marquee";
 import './globals.css';
 
+
+
 import SVR_Image_1 from './Assets/SVR_Image_1.png';
 import President from './Assets/President.jpeg';
-import Digital_India_Logo from './Assets/Digital_India_Logo.png';
-import G20_Logo from './Assets/G20_Logo.png';
-import My_Gov_Logo from './Assets/My_Gov_Logo.png';
-import SAYG from './Assets/SAYG.png';
-import Swachh_Bharath_Logo from './Assets/Swachh_Bharath_Logo.png';
+import SVR_Image from '../public/SVR_Image.jpeg';
 
 export default function Home() {
   return (
       <div className="home-component">
         <div className="home-container">
+
+
+            <div className="hero"
+              style={{
+                backgroundImage: `url(${SVR_Image.src})`,
+                backgroundPosition: "center",
+                backgroundSize: "cover",
+                backgroundRepeat: "no-repeat",
+              }}
+            >
+              <div className="hero-in">
+              <h1>Smart Village Revolution</h1>
+              <h3>An Initiative of K L Deemed to be University</h3>
+              </div>
+            </div>
+
+
             <div className="home-two">
               <div className="home-two-in">
                 <div className="home-two-in-header">
@@ -201,97 +216,17 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="home-five">
-              <div className="home-five-in">
-                <div className="home-five-in-header">
-                  <h1>SVR in Convergence with...</h1>
+
+            <div className="home-six">
+              <div className="home-six-in">
+                <div className="home-six-heading">
+                  <div className="home-six-heading-in">
+                    <h1>Our Team</h1>
+                  </div>
                 </div>
-                <div className="home-five-one">
-                  <div className="home-five-one-in">
-                    <div className="home-five-one-in-boxes">
-                    <Marquee>
-                      <div className="home-five-one-in-box">
-                        <div className="home-five-one-in-box-in">
-                          <div className="home-five-one-in-box-in-image">
-                            <Image
-                              className='home-five-one-in-box-in-image-image'
-                              src={Digital_India_Logo}
-                              alt="Picture of the author"
-                              width={400}
-                              height={300}
-                            />
-                          </div>
-                          <div className="home-five-one-in-box-in-text">
-                            <p>Digital India</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="home-five-one-in-box">
-                        <div className="home-five-one-in-box-in">
-                          <div className="home-five-one-in-box-in-image">
-                            <Image
-                              className='home-five-one-in-box-in-image-image'
-                              src={G20_Logo}
-                              alt="Picture of the author"
-                              width={400}
-                              height={300}
-                            />
-                          </div>
-                          <div className="home-five-one-in-box-in-text">
-                            <p>G20 - Intergovernamental Forum</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="home-five-one-in-box">
-                        <div className="home-five-one-in-box-in">
-                          <div className="home-five-one-in-box-in-image">
-                            <Image
-                              className='home-five-one-in-box-in-image-image'
-                              src={My_Gov_Logo}
-                              alt="Picture of the author"
-                              width={400}
-                              height={300}
-                            />
-                          </div>
-                          <div className="home-five-one-in-box-in-text">
-                            <p>Government of Republic of Bharat</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="home-five-one-in-box">
-                        <div className="home-five-one-in-box-in">
-                          <div className="home-five-one-in-box-in-image">
-                            <Image
-                              className='home-five-one-in-box-in-image-image'
-                              src={Swachh_Bharath_Logo}
-                              alt="Picture of the author"
-                              width={400}
-                              height={300}
-                            />
-                          </div>
-                          <div className="home-five-one-in-box-in-text">
-                            <p>Swachh Bharat Abhiyan</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="home-five-one-in-box">
-                        <div className="home-five-one-in-box-in">
-                          <div className="home-five-one-in-box-in-image">
-                            <Image
-                              className='home-five-one-in-box-in-image-image'
-                              src={SAYG}
-                              alt="Picture of the author"
-                              width={400}
-                              height={300}
-                            />
-                          </div>
-                          <div className="home-five-one-in-box-in-text">
-                            <p>Saansad Adarsh Gram Yojana</p>
-                          </div>
-                        </div>
-                      </div>
-                    </Marquee>
-                    </div>
+                <div className="home-six-one">
+                  <div className="home-six-one-in">
+
                   </div>
                 </div>
               </div>

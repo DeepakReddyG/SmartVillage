@@ -3,7 +3,6 @@ import Image from 'next/image'
 import './globals.css'
 
 import Tree from './Assets/Tree.png';
-
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -14,6 +13,17 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <div className="NavBar">
+        <div className="NavBar-in">
+          <div className="NavBar-in-one">
+            <div className="NavBar-in-one-options">
+              <div className="NavBar-in-one-options-in">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <body className={inter.className}>{children}</body>
       <div className="Footer">
         <div className="Footer-in">
