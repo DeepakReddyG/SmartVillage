@@ -1,11 +1,13 @@
 import Image from 'next/image';
 import Marquee from "react-fast-marquee";
+
 import './globals.css';
 
 
 
 import SVR_Image_1 from './Assets/SVR_Image_1.png';
 import President from './Assets/President.jpeg';
+
 import SVR_Image from '../public/SVR_Image.jpeg';
 import nutrition from '../public/SVR_Image.jpeg';
 
@@ -20,7 +22,7 @@ export default function Home() {
                 backgroundImage: `url(${SVR_Image.src})`,
                 backgroundPosition: "center",
                 backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
+                backgroundRepeat: "no-repeat"
               }}
             >
               <div className="hero-in">
@@ -249,6 +251,64 @@ export default function Home() {
               </div>
             </div>
 
+            {/* ---- home five ---- */}
+
+          <div className="home-five"
+          >
+            <div className="home-five-in">
+              <div className="home-five-one">
+                <div className="home-five-one-in">
+                    <h1>5+ YEARS OF</h1><span>Impact</span>
+                </div>
+              </div>
+              <div className="home-five-two">
+                <div className="home-five-two-in">
+                    <h1>Here's what we accomplished in 2024</h1>
+                </div>
+              </div>
+              <div className="home-five-three">
+                <div className="home-five-one-three">
+
+                  <div className="home-fo-one">
+                    <div className="home-fo-one-ct">
+                      <h1>100+</h1>
+                    </div>
+                    <div className="home-fo-one-pr">
+                      <p>Smart Villages</p>
+                    </div>
+                  </div>
+
+                  <div className="home-fo-one">
+                    <div className="home-fo-one-ct">
+                      <h1>100+</h1>
+                    </div>
+                    <div className="home-fo-one-pr">
+                      <p>Smart Villages</p>
+                    </div>
+                  </div>
+
+                  <div className="home-fo-one">
+                    <div className="home-fo-one-ct">
+                      <h1>100+</h1>
+                    </div>
+                    <div className="home-fo-one-pr">
+                      <p>Smart Villages</p>
+                    </div>
+                  </div>
+
+                  <div className="home-fo-one">
+                    <div className="home-fo-one-ct">
+                      <h1>100+</h1>
+                    </div>
+                    <div className="home-fo-one-pr">
+                      <p>Smart Villages</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
 
             <div className="home-six">
               <div className="home-six-in">

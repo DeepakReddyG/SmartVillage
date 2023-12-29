@@ -2,6 +2,7 @@ import { Inter } from 'next/font/google'
 import Image from 'next/image'
 import './globals.css'
 
+import FiveImg from './Assets/child.jpeg';
 import Tree from './Assets/Tree.png';
 const inter = Inter({ subsets: ['latin'] })
 
@@ -24,7 +25,16 @@ export default function RootLayout({ children }) {
           </div>
         </div>
       </div>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}
+      style={{
+        backgroundImage: `url(${FiveImg.src})`,
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundAttachment: "fixed",
+      }}
+
+      >{children}</body>
       <div className="Footer">
         <div className="Footer-in">
           <div className="Footer-one">
