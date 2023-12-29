@@ -32,7 +32,6 @@
   justify-content: center;
   padding-left: 2rem;
   background: linear-gradient(to right, rgba(0, 255, 0, 0.5) 0%, rgba(255, 255, 255, 0.3) 80%);
-  border: 2px solid green;
 }
 
 
@@ -137,7 +136,7 @@
 
 .home-two-in-one-in-boxes-in-box {
   border: 2px solid green;
-  background-color: orange;
+  background-color: white;
   border-radius: 1rem;
 }
 
@@ -295,6 +294,48 @@
 }
 
 
+
+
+
+
+/* -------------------------- home-seven  ------------------------- */
+.home-seven {
+  width: 100%;
+  padding: 2rem 0rem;
+}
+.home-seven-in {
+  width: 90%;
+  margin: auto;
+}
+.home-seven-in-header-in {
+  width: 100%;
+}
+.home-seven-in-header-in h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: black;
+  font-size: 3rem;
+  color: green;
+}
+
+.home-seven-in-one-in-boxes {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.home-seven-in-one-in-boxes-in {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.home-seven-in-one-in-box {
+  border-radius: 1rem;
+}
+.home-seven-in-one-in-box-in {
+  width: 25vh;
+  height: 30vh;
+}
 
 
 /* --------------------------- Footer --------------------------- */

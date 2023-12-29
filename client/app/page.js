@@ -7,6 +7,7 @@ import './globals.css';
 import SVR_Image_1 from './Assets/SVR_Image_1.png';
 import President from './Assets/President.jpeg';
 import SVR_Image from '../public/SVR_Image.jpeg';
+import nutrition from '../public/SVR_Image.jpeg';
 
 export default function Home() {
   return (
@@ -121,6 +122,38 @@ export default function Home() {
               </div>
             </div>
 
+
+          <div className="home-seven">
+            <div className="home-seven-in">
+              <div className="home-seven-in-header">
+                <div className="home-seven-in-header-in">
+                  <h1>Areas of Work</h1>
+                </div>
+              </div>
+              <div className="home-seven-in-one">
+                <div className="home-seven-in-one-in">
+                  <div className="home-seven-in-one-in-boxes">
+                    <div className="home-seven-in-one-in-boxes-in">
+                      <div className="home-seven-in-one-in-box">
+                        <div className="home-seven-in-one-in-box-in">
+                          <div className="home-seven-in-one-in-box-in-one">
+                            <div className="home-seven-in-one-in-box-in-one-one">
+
+                            </div>
+                            <div className="home-seven-in-one-in-box-in-one-two">
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
 
             <div className="home-three">
