@@ -8,6 +8,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 
@@ -32,7 +33,6 @@
   justify-content: center;
   padding-left: 2rem;
   background: linear-gradient(to right, rgba(0, 255, 0, 0.5) 0%, rgba(255, 255, 255, 0.3) 80%);
-  border: 2px solid green;
 }
 
 
@@ -142,7 +142,7 @@
 
 .home-two-in-one-in-boxes-in-box {
   border: 2px solid green;
-  background-color: orange;
+  background-color: white;
   border-radius: 1rem;
 }
 
@@ -252,11 +252,10 @@
   font-weight: 400;
   color: black;
   font-size: 3rem;
-  color: green;
+  color: orange;
 }
 .home-four-in-in {
-  border: 2px solid orange;
-  border-left: 1rem solid green;
+  /* border: 2px solid green; */
   border-radius: 1rem;
   padding: 1rem;
   display: flex;
@@ -279,6 +278,11 @@
   font-size: 1.3rem;
   color: black;
   padding: 1rem 0rem;
+  border: 2px solid green;
+  border-radius: 1rem;
+  margin-top: 10px;
+  text-align: center;
+  background-color: rgb(0, 128, 0, 0.2);
 }
 .home-four-two {
   width: 78%;
@@ -291,6 +295,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 2px solid green;
+  border-radius: 1rem;
 }
 .home-four-two-in p {
   font-family: 'Poppins', sans-serif;
@@ -305,23 +311,20 @@
 
 .home-five {
   width: 100%;
-  height: fit-content;
-  padding: 1rem 0rem;
+  padding: 3rem 0rem;
   background-color: rgb(0, 128, 0.3, 0.3);
   backdrop-filter: blur(5px);
 }
 
 .home-five-in {
   width: 100%;
-  height: 80vh;
   display: flex;
   flex-direction: column;
 }
 
 .home-five-one {
   width: 100%;
-  height: fit-content;
-  padding: 5rem 0rem 0rem 0rem;
+  padding: 1rem 0rem 0rem 0rem;
 }
 
 .home-five-one-in h1 {
@@ -335,7 +338,7 @@
 }
 
 .home-five-one-in {
-  padding: 1rem;
+  padding: 0rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -377,7 +380,7 @@
   padding: 2rem 0rem;
   width: 80%;
   margin: auto;
-  padding: 4rem 0rem;
+  padding: 2rem 0rem;
 }
 
 .home-fo-one h1{
@@ -395,6 +398,49 @@
 .home-six {
   background-color: white;
   padding: 2rem;
+}
+
+
+
+
+/* -------------------------- home-seven  ------------------------- */
+.home-seven {
+  width: 100%;
+  padding: 2rem 0rem;
+  background-color: white;
+}
+.home-seven-in {
+  width: 90%;
+  margin: auto;
+}
+.home-seven-in-header-in {
+  width: 100%;
+}
+.home-seven-in-header-in h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: black;
+  font-size: 3rem;
+  color: green;
+}
+
+.home-seven-in-one-in-boxes {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.home-seven-in-one-in-boxes-in {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.home-seven-in-one-in-box {
+  border-radius: 1rem;
+}
+.home-seven-in-one-in-box-in {
+  width: 25vh;
+  height: 30vh;
 }
 
 
