@@ -4,7 +4,7 @@ import Marquee from "react-fast-marquee";
 import './globals.css';
 
 
-
+import heroImg from '../public/SVR_Image.jpeg'
 import SVR_Image_1 from './Assets/SVR_Image_1.png';
 import President from './Assets/President.jpeg';
 
@@ -15,8 +15,6 @@ export default function Home() {
   return (
       <div className="home-component">
         <div className="home-container">
-
-
             <div className="hero"
               style={{
                 backgroundImage: `url(${SVR_Image.src})`,
@@ -28,6 +26,9 @@ export default function Home() {
               <div className="hero-in">
               <h1>Smart Village Revolution</h1>
               <h3>An Initiative of K L Deemed to be University</h3>
+                <div className="hero-img">
+                  <img src={heroImg.src} alt="" />
+                </div>
               </div>
             </div>
 
@@ -232,6 +233,7 @@ export default function Home() {
                           width={0}
                           height={0}
                           sizes="100vw"
+                          alt='Picture of the author'
                           style={{ width: '100%', height: 'auto' }} // optional
                         />
 

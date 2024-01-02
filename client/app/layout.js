@@ -7,6 +7,7 @@ const inter = Inter({ subsets: ['latin'] })
 // import start here 
 
 import Navbar from './components/navbar/Navbar';
+import ResNavbar from './components/navbar/ResNav';
 import Footer from './components/footer/Footer';
 
 export const metadata = {
@@ -16,23 +17,27 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <>
-      <div>
-        <Navbar />
-      </div>
-        <body className={inter.className}
-        style={{
-          backgroundImage: `url(${FiveImg.src})`,
-          backgroundPosition: "center",
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-          backgroundAttachment: "fixed",
-        }}
-
-      >{children}</body>
-      <div>
-        <Footer/>
-      </div>
-    </>
+      <html>
+          <body className={inter.className}
+          // style={{
+          //   backgroundImage: `url(${FiveImg.src})`,
+          //   backgroundPosition: "center",
+          //   backgroundSize: "cover",
+          //   backgroundRepeat: "no-repeat",
+          //   backgroundAttachment: "fixed"
+          // }}
+          >
+            <div className="Navbar">
+              <Navbar/>
+            </div>
+            <div className="Navbar-Res">
+              <ResNavbar/>
+            </div>
+        {children}
+            <div className="Footer">
+              <Footer/>
+            </div>
+        </body>
+    </html>
   )
 }
