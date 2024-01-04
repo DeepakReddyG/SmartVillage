@@ -254,13 +254,13 @@
 }
 .home-four-header {
   width: 100%;
-  padding: 1rem 0rem;
+  padding: 1rem 1.5rem;
 }
 .home-four-header h1 {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   color: black;
-  font-size: 3rem;
+  font-size: 2rem;
   color: orange;
 }
 .home-four-in-in {
@@ -613,7 +613,8 @@
     }
 
     .home-four-two {
-      width: 100%;
+      width: 90%;
+      margin: auto;
     }
 
     .home-four-two-in {
@@ -624,11 +625,17 @@
       font-size: 1rem;
     }
 
+    /* --------------- home five ------------------ */
+
+    .home-five {  
+      display: none;
+    }
+
     /* ----- Footer ------ */
 
    
 
-    .home-five, .home-six, .home-seven {
+    .home-six, .home-seven {
       display: none;
     }
 }

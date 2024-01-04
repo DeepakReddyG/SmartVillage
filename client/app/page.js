@@ -31,8 +31,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-
-
             <div className="home-two">
               <div className="home-two-in">
                 <div className="home-two-in-header">
@@ -255,8 +253,7 @@ export default function Home() {
 
             {/* ---- home five ---- */}
 
-          <div className="home-five"
-          >
+          <div className="home-five">
             <div className="home-five-in">
               <div className="home-five-one">
                 <div className="home-five-one-in">
