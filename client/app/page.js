@@ -9,11 +9,16 @@ import './globals.css';
 import heroImg from '../public/SVR_Image.jpeg'
 import SVR_Image_1 from './Assets/SVR_Image_1.png';
 import President from './Assets/President.jpeg';
+import FlipBook1 from './Assets/FlipBook1.png';
+import FlipBook2 from './Assets/FlipBook2.png';
+import FlipBook3 from './Assets/FlipBook3.png';
+import FlipBook4 from './Assets/FlipBook4.png';
 
 import SVR_Image from '../public/SVR_Image.jpeg';
 import nutrition from '../public/SVR_Image.jpeg';
 import Navbar from './components/navbar/Navbar';
 import Link from 'next/link';
+import HTMLFlipBook from 'react-pageflip';
 
 export default function Home() {
 
@@ -218,20 +223,89 @@ export default function Home() {
                 <div className="home-seven-in-one-in">
                   <div className="home-seven-in-one-in-boxes">
                     <div className="home-seven-in-one-in-boxes-in">
-                      <div className="home-seven-in-one-in-box">
+                    <div className="home-seven-in-one-in-box">
                         <div className="home-seven-in-one-in-box-in">
-                          <div className="home-seven-in-one-in-box-in-one">
-                            <div className="home-seven-in-one-in-box-in-one-one">
-
-                            </div>
-                            <div className="home-seven-in-one-in-box-in-one-two">
-
-                            </div>
-                          </div>
+                          <Image
+                            src={SVR_Image_1}
+                            alt="Picture of the author"
+                          ></Image>
+                          <p>Health & Hygiene</p>
+                        </div>
+                      </div><div className="home-seven-in-one-in-box">
+                        <div className="home-seven-in-one-in-box-in">
+                          <Image
+                            src={SVR_Image_1}
+                            alt="Picture of the author"
+                          ></Image>
+                          <p>Health & Hygiene</p>
+                        </div>
+                      </div><div className="home-seven-in-one-in-box">
+                        <div className="home-seven-in-one-in-box-in">
+                          <Image
+                            src={SVR_Image_1}
+                            alt="Picture of the author"
+                          ></Image>
+                          <p>Health & Hygiene</p>
+                        </div>
+                      </div><div className="home-seven-in-one-in-box">
+                        <div className="home-seven-in-one-in-box-in">
+                          <Image
+                            src={SVR_Image_1}
+                            alt="Picture of the author"
+                          ></Image>
+                          <p>Health & Hygiene</p>
+                        </div>
+                      </div><div className="home-seven-in-one-in-box">
+                        <div className="home-seven-in-one-in-box-in">
+                          <Image
+                            src={SVR_Image_1}
+                            alt="Picture of the author"
+                          ></Image>
+                          <p>Health & Hygiene</p>
+                        </div>
+                      </div><div className="home-seven-in-one-in-box">
+                        <div className="home-seven-in-one-in-box-in">
+                          <Image
+                            src={SVR_Image_1}
+                            alt="Picture of the author"
+                          ></Image>
+                          <p>Health & Hygiene</p>
+                        </div>
+                      </div><div className="home-seven-in-one-in-box">
+                        <div className="home-seven-in-one-in-box-in">
+                          <Image
+                            src={SVR_Image_1}
+                            alt="Picture of the author"
+                          ></Image>
+                          <p>Health & Hygiene</p>
+                        </div>
+                      </div><div className="home-seven-in-one-in-box">
+                        <div className="home-seven-in-one-in-box-in">
+                          <Image
+                            src={SVR_Image_1}
+                            alt="Picture of the author"
+                          ></Image>
+                          <p>Health & Hygiene</p>
+                        </div>
+                      </div><div className="home-seven-in-one-in-box">
+                        <div className="home-seven-in-one-in-box-in">
+                          <Image
+                            src={SVR_Image_1}
+                            alt="Picture of the author"
+                          ></Image>
+                          <p>Health & Hygiene</p>
+                        </div>
+                      </div><div className="home-seven-in-one-in-box">
+                        <div className="home-seven-in-one-in-box-in">
+                          <Image
+                            src={SVR_Image_1}
+                            alt="Picture of the author"
+                          ></Image>
+                          <p>Health & Hygiene</p>
                         </div>
                       </div>
-
                       
+
                     </div>
                   </div>
                 </div>
@@ -240,7 +314,49 @@ export default function Home() {
           </div>
 
 
-            
+            <div className="home-eight">
+              <div className="home-eight-in">
+                <div className="home-eight-one">
+                  <div className="home-eight-one-in">
+                    <div className="home-eight-one-in-book">
+                      <HTMLFlipBook className='home-eight-one-in-book-comp' size='stretch' width={500} height={700}>
+                          <div className="flipbook-page">
+                            <Image
+                              src={FlipBook1}
+                              alt="Picture of the author"
+                            ></Image>
+                          </div>
+                          <div className="flipbook-page">
+                            <Image
+                              src={FlipBook2}
+                              alt="Picture of the author"
+                            ></Image>
+                          </div>
+                          <div className="flipbook-page">
+                            <Image
+                              src={FlipBook3}
+                              alt="Picture of the author"
+                            ></Image>
+                          </div>
+                          <div className="flipbook-page">
+                            <Image
+                              src={FlipBook4}
+                              alt="Picture of the author"
+                            ></Image>
+                          </div>
+                      </HTMLFlipBook>
+                    </div>
+                  </div>
+                </div>
+                <div className="home-eight-two">
+                  <div className="home-eight-two-in">
+                    <h1>Annual Report 2022-23 Social Internship: Class of Y22 Students</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, temporibus sapiente labore aliquam perspiciatis adipisci harum veniam quibusdam amet dolorum!</p>
+                    <Link className='home-eight-two-in-link' href='/'>Download E-Book</Link>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             <div className="home-four message">
               <div className="home-four-in">

@@ -109,7 +109,7 @@ const Footer = () => {
 
             <div className="Footer-last">
                 <div className="Footer-last-in">
-                <p>This site is designed, developed and maintained by <a href="www.amazon.com">Deepak Reddy Gathpa</a> of ZeroOne Code Club, Department of Student Activity Center, K L Deemed to be University | Content owned by Smart Village Revolution Club</p>
+                <p>This site is designed, developed and maintained by <a href="www.amazon.com">Deepak Reddy Gathpa</a> & <a href="www.amazon.com">Sai Manikanta </a> of ZeroOne Code Club, Department of Student Activity Center, K L Deemed to be University | Content owned by Smart Village Revolution Club</p>
                 </div>
             </div>
             </div>
