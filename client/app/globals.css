@@ -385,7 +385,7 @@
 .se-cm-in {
     width: 90%;
     margin: auto;
-    padding: 1rem ;
+    padding: 1rem 0rem;
     border-bottom: 2px solid white;
     color: white;
 }
@@ -410,6 +410,7 @@
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
     border: 1px solid green;
+    border-left: none;
 }
 
 .home-ft-box-two-in {
