@@ -14,12 +14,16 @@ import FlipBook2 from './Assets/FlipBook2.png';
 import FlipBook3 from './Assets/FlipBook3.png';
 import FlipBook4 from './Assets/FlipBook4.png';
 import Modi from './Assets/Modi.jpeg';
+import Deepak from './Assets/Deepak.png';
+
 
 import SVR_Image from '../public/SVR_Image.jpeg';
 import nutrition from '../public/SVR_Image.jpeg';
 import Navbar from './components/navbar/Navbar';
 import Link from 'next/link';
 import HTMLFlipBook from 'react-pageflip';
+
+import { FaLinkedin } from "react-icons/fa6";
 
 export default function Home() {
 
@@ -326,7 +330,7 @@ export default function Home() {
                 <div className="home-eight-one">
                   <div className="home-eight-one-in">
                     <div className="home-eight-one-in-book">
-                      <HTMLFlipBook className='home-eight-one-in-book-comp' size='stretch' width={500} height={700}>
+                      <HTMLFlipBook className='home-eight-one-in-book-comp' getCurrentPageIndex={true} getPageCount size='stretch' width={500} height={700}>
                           <div className="flipbook-page">
                             <Image
                               src={FlipBook1}
@@ -503,6 +507,184 @@ export default function Home() {
                                     </div>
                                     <div className="home-bt-seven cm-bx-hide" id={num === 7 ? 'se-visible' : ''}>
                                         <h1>Read More 7</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="home-nine">
+                <div className="home-nine-in">
+                    <div className="home-nine-one">
+                        <div className="home-nine-one-in">
+                            <h1>Our Team</h1>
+                        </div>
+                    </div>
+                    <div className="home-nine-two">
+                        <div className="home-nine-two-in">
+                            <div className="home-team-card">
+                                <div className="home-team-card-in">
+                                    <div className="home-team-img">
+                                        <Image 
+                                            src={Deepak}
+                                            alt="Picture of the author"
+                                            style={{ width: '100%', height: 'auto', borderRadius: '1rem', border: '1px solid black'}}
+                                        />
+                                    </div>
+                                    <div className="home-team-about">
+                                       <div className="home-team-about-one">
+                                            <h1>Deepak</h1>
+                                            <p>CEO ZeroOne</p>
+                                       </div>
+                                       <div className="home-team-about-two">
+                                          <FaLinkedin className='linked-icon' />
+                                       </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="home-team-card">
+                                <div className="home-team-card-in">
+                                    <div className="home-team-img">
+                                        <Image 
+                                            src={Deepak}
+                                            alt="Picture of the author"
+                                            // border-radius: 50%, border: 1px solid green
+                                            style={{ width: '100%', height: 'auto', borderRadius: '1rem', border: '1px solid black'}}
+                                        />
+                                    </div>
+                                    <div className="home-team-about">
+                                       <div className="home-team-about-one">
+                                            <h1>Deepak</h1>
+                                            <p>CEO ZeroOne</p>
+                                       </div>
+                                       <div className="home-team-about-two">
+                                          <FaLinkedin className='linked-icon' />
+                                       </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="home-team-card">
+                                <div className="home-team-card-in">
+                                    <div className="home-team-img">
+                                        <Image 
+                                            src={Deepak}
+                                            alt="Picture of the author"
+                                            style={{ width: '100%', height: 'auto', borderRadius: '1rem', border: '1px solid black'}}
+                                        />
+                                    </div>
+                                    <div className="home-team-about">
+                                       <div className="home-team-about-one">
+                                            <h1>Deepak</h1>
+                                            <p>CEO ZeroOne</p>
+                                       </div>
+                                       <div className="home-team-about-two">
+                                          <FaLinkedin className='linked-icon' />
+                                       </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="home-team-card">
+                                <div className="home-team-card-in">
+                                    <div className="home-team-img">
+                                        <Image 
+                                            src={Deepak}
+                                            alt="Picture of the author"
+                                            style={{ width: '100%', height: 'auto', borderRadius: '1rem', border: '1px solid black'}}
+                                        />
+                                    </div>
+                                    <div className="home-team-about">
+                                       <div className="home-team-about-one">
+                                            <h1>Deepak</h1>
+                                            <p>CEO ZeroOne</p>
+                                       </div>
+                                       <div className="home-team-about-two">
+                                          <FaLinkedin className='linked-icon' />
+                                       </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="home-team-card">
+                                <div className="home-team-card-in">
+                                    <div className="home-team-img">
+                                        <Image 
+                                            src={Deepak}
+                                            alt="Picture of the author"
+                                            style={{ width: '100%', height: 'auto', borderRadius: '1rem', border: '1px solid black'}}
+                                        />
+                                    </div>
+                                    <div className="home-team-about">
+                                       <div className="home-team-about-one">
+                                            <h1>Deepak</h1>
+                                            <p>CEO ZeroOne</p>
+                                       </div>
+                                       <div className="home-team-about-two">
+                                          <FaLinkedin className='linked-icon' />
+                                       </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="home-team-card">
+                                <div className="home-team-card-in">
+                                    <div className="home-team-img">
+                                        <Image 
+                                            src={Deepak}
+                                            alt="Picture of the author"
+                                            // border-radius: 50%, border: 1px solid green
+                                            style={{ width: '100%', height: 'auto', borderRadius: '1rem', border: '1px solid black'}}
+                                        />
+                                    </div>
+                                    <div className="home-team-about">
+                                       <div className="home-team-about-one">
+                                            <h1>Deepak</h1>
+                                            <p>CEO ZeroOne</p>
+                                       </div>
+                                       <div className="home-team-about-two">
+                                          <FaLinkedin className='linked-icon' />
+                                       </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="home-team-card">
+                                <div className="home-team-card-in">
+                                    <div className="home-team-img">
+                                        <Image 
+                                            src={Deepak}
+                                            alt="Picture of the author"
+                                            // border-radius: 50%, border: 1px solid green
+                                            style={{ width: '100%', height: 'auto', borderRadius: '1rem', border: '1px solid black'}}
+                                        />
+                                    </div>
+                                    <div className="home-team-about">
+                                       <div className="home-team-about-one">
+                                            <h1>Deepak</h1>
+                                            <p>CEO ZeroOne</p>
+                                       </div>
+                                       <div className="home-team-about-two">
+                                          <FaLinkedin className='linked-icon' />
+                                       </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="home-team-card">
+                                <div className="home-team-card-in">
+                                    <div className="home-team-img">
+                                        <Image 
+                                            src={Deepak}
+                                            alt="Picture of the author"
+                                            // border-radius: 50%, border: 1px solid green
+                                            style={{ width: '100%', height: 'auto', borderRadius: '1rem', border: '1px solid black'}}
+                                        />
+                                    </div>
+                                    <div className="home-team-about">
+                                       <div className="home-team-about-one">
+                                            <h1>Deepak</h1>
+                                            <p>CEO ZeroOne</p>
+                                       </div>
+                                       <div className="home-team-about-two">
+                                          <FaLinkedin className='linked-icon' />
+                                       </div>
                                     </div>
                                 </div>
                             </div>
