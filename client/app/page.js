@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Marquee from "react-fast-marquee";
 import { useEffect, useState } from 'react';
 
+
 import './globals.css';
 
 import heroImg from '../public/SVR_Image.jpeg'
@@ -12,6 +13,7 @@ import President from './Assets/President.jpeg';
 import SVR_Image from '../public/SVR_Image.jpeg';
 import nutrition from '../public/SVR_Image.jpeg';
 import Navbar from './components/navbar/Navbar';
+import Link from 'next/link';
 
 export default function Home() {
 
@@ -56,6 +58,63 @@ export default function Home() {
                 </div>
               </div>
             </div>
+
+
+            <div className="home-three">
+              <div className="home-three-in">
+                <div className="home-three-one">
+                  <div className="home-three-one-in">
+                    <h1>We provide independent, impartial medical humanitarian assistance to the people who need it most.</h1>
+                    <p>Doctors Without Borders/Médecins Sans Frontières (MSF) cares for people affected by conflict, disease outbreaks, natural and human-made disasters, and exclusion from health care in more than 70 countries.Doctors Without Borders/Médecins Sans Frontières (MSF) cares for people affected by conflict, disease outbreaks, natural and human-made disasters, and exclusion from health care in more than 70 countries.</p>
+
+                    <Link className='home-three-one-in-link' href='/'>Learn More About What We Do</Link>
+                  </div>
+                </div>
+                <div className="home-three-two">
+                  <div className="home-three-two-in">
+                    <div className="home-three-two-in-one">
+                      <p>Some Numbers that Matter</p>
+                    </div>
+                    <div className="home-three-two-in-two">
+                      <div className="home-three-two-in-two-boxes">
+                        <div className="home-three-two-in-two-box">
+                          <div className="home-three-two-in-two-box-in">
+                            <div className="home-three-two-in-two-box-in-one">
+                              <h1>72+</h1>
+                            </div>
+                            <div className="home-three-two-in-two-box-in-two">
+                              <p><span>Countries and territories</span> are home to our medical humanitarian projects</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="home-three-two-in-two-box">
+                          <div className="home-three-two-in-two-box-in">
+                            <div className="home-three-two-in-two-box-in-one">
+                              <h1>1,351+</h1>
+                            </div>
+                            <div className="home-three-two-in-two-box-in-two">
+                              <p><span>Countries and territories</span> are home to our medical humanitarian projects</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="home-three-two-in-two-box">
+                          <div className="home-three-two-in-two-box-in">
+                            <div className="home-three-two-in-two-box-in-one">
+                              <h1>500+</h1>
+                            </div>
+                            <div className="home-three-two-in-two-box-in-two">
+                              <p><span>Countries and territories</span> are home to our medical humanitarian projects</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
             <div className="home-two">
               <div className="home-two-in">
                 <div className="home-two-in-header">
@@ -147,8 +206,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-
-
+            
           <div className="home-seven">
             <div className="home-seven-in">
               <div className="home-seven-in-header">
