@@ -328,8 +328,119 @@
   width: 80%;
 }
 
+/* ---------------------------- home five ---------------------------- */
 
 
+.home-five {
+  width: 100%;
+}
+
+.home-five-in {
+  width: 90%;
+  margin: auto;
+}
+
+.home-five-one {
+  width: 100%;
+  padding: 2rem 0rem;
+  text-align: center;
+}
+
+.home-five-one h1 {
+  font-size: 2rem;
+}
+
+.home-five-two {
+    width: 100%;
+}
+
+.home-five-two-in {
+    display: flex;
+    padding: 4rem 0rem;
+}
+
+.home-five-box-one {
+    width: 25%;
+}
+
+.home-ft-box-in {
+    width: 100%;
+    padding: 1rem 0rem; 
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    gap: .3rem;
+}
+
+.se-cm {
+    width: 90%;
+    text-align: left;
+    padding: .5rem 0rem;
+}
+
+.se-cm-in {
+    width: 90%;
+    margin: auto;
+    padding: 1rem ;
+    border-bottom: 2px solid white;
+    color: white;
+}
+
+.se-cm:hover {
+    background-color: white;
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+}
+
+.se-cm-in:hover {
+    color: green;
+}
+
+.home-se-five:hover {
+    border-bottom-left-radius: 0rem;
+}
+
+.home-five-box-two {
+    width: 75%;
+    background-color: white;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border: 1px solid green;
+}
+
+.home-ft-box-two-in {
+    padding: 4rem 4rem;
+}
+
+.home-ft-box-two-in h1 {
+    font-size: 2rem;
+    color: green;
+}
+
+
+#se-active {
+    background-color: white;
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+}
+
+#se-active p {
+    color: green;
+}
+
+
+
+.cm-bx-hide {
+    display: none;
+}
+
+#se-visible {
+    display: block;
+}
 
 /* -------------------------- home-seven  ------------------------- */
 .home-seven {

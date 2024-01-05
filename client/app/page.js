@@ -23,6 +23,7 @@ import HTMLFlipBook from 'react-pageflip';
 export default function Home() {
 
     const [showNavbar, setShowNavbar] = useState(false);
+    const [num, setNum] = useState(1);
     let scroll = 0;
 
     // if the scroll is greater than 100px make showNavbar true
@@ -42,6 +43,11 @@ export default function Home() {
         }
         );
     }, []);
+
+
+    const handleClick = (Num) => {
+        setNum(Num);
+    }
     
   return (
       <div className="home-component">
@@ -394,8 +400,82 @@ export default function Home() {
               </div>
             </div>
 
-           
-
+            <div className="home-five">
+                <div className="home-five-in">
+                    <div className="home-five-one">
+                        <h1>Working Groups</h1>
+                    </div>
+                    <div className="home-five-two">
+                        <div className="home-five-two-in">
+                            <div className="home-five-box-one">
+                                <div className="home-ft-box-in">
+                                    <div className="home-se-one se-cm" onClick={()=>handleClick(1)} id={num === 1 ? 'se-active' : ''}>
+                                        <div className="home-se-one-in se-cm-in">
+                                            <p>Agriculture</p>
+                                        </div>
+                                    </div>
+                                    <div className="home-se-two se-cm" onClick={()=>handleClick(2)} id={num === 2 ? 'se-active' : ''}>
+                                        <div className="home-se-two-in se-cm-in">
+                                            <p>Smart Village Revolution</p>
+                                        </div>
+                                    </div>
+                                    <div className="home-se-three se-cm" onClick={()=>handleClick(3)} id={num === 3 ? 'se-active' : ''}>
+                                        <div className="home-se-three-in se-cm-in">
+                                            <p>Read More 3</p>
+                                        </div>
+                                    </div>
+                                    <div className="home-se-four se-cm" onClick={()=>handleClick(4)} id={num === 4 ? 'se-active' : ''}>
+                                        <div className="home-se-four-in se-cm-in">
+                                            <p>Read More 4</p>
+                                        </div>
+                                    </div>
+                                    <div className="home-se-five se-cm" onClick={()=>handleClick(5)} id={num === 5 ? 'se-active' : ''}>
+                                        <div className="home-se-five-in se-cm-in">
+                                            <p>Read More </p>
+                                        </div>
+                                    </div>
+                                    <div className="home-se-six se-cm" onClick={()=>handleClick(6)} id={num === 6 ? 'se-active' : ''}>
+                                        <div className="home-se-six-in se-cm-in">
+                                            <p>Read More 6</p>
+                                        </div>
+                                    </div>
+                                    <div className="home-se-seven se-cm" onClick={()=>handleClick(7)} id={num === 7 ? 'se-active' : ''}>
+                                        <div className="home-se-seven-in se-cm-in">
+                                            <p>Read More 7</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="home-five-box-two">
+                                <div className="home-ft-box-two-in">
+                                    <div className="home-bt-one cm-bx-hide" id={num === 1 ? 'se-visible' : ''}>
+                                        <h1>Agriculture</h1>
+                                    </div>
+                                    <div className="home-bt-two cm-bx-hide" id={num === 2 ? 'se-visible' : ''}>
+                                        <h1>Smart Village Revolution</h1>
+                                    </div>
+                                    <div className="home-bt-three cm-bx-hide" id={num === 3 ? 'se-visible' : ''}>
+                                        <h1>Read More 3</h1>
+                                    </div>
+                                    <div className="home-bt-four cm-bx-hide" id={num === 4 ? 'se-visible' : ''}>
+                                        <h1>Read More 4</h1>
+                                    </div>
+                                    <div className="home-bt-five cm-bx-hide" id={num === 5 ? 'se-visible' : ''}>
+                                        <h1>Read More 5</h1>
+                                    </div>
+                                    <div className="home-bt-six cm-bx-hide" id={num === 6 ? 'se-visible' : ''}>
+                                        <h1>Read More 6</h1>
+                                    </div>
+                                    <div className="home-bt-seven cm-bx-hide" id={num === 7 ? 'se-visible' : ''}>
+                                        <h1>Read More 7</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
         </div>
       </div>
     )

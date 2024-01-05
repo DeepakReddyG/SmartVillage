@@ -1,0 +1,78 @@
+.GalleryComponent {
+    width: 100%;
+}
+
+.GalleryComponent {
+    width: 100%;
+}
+
+.Gallery-one {
+    width: 100%;
+}
+
+.Gallery-one-in {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2rem 4rem;    
+    background-color: green;
+    color: white;
+}
+
+.Gallery-one-in h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 0rem 1rem;
+}
+
+.Gallery-one-img img {
+    width: 100%;
+    height: 50px;
+    object-fit: cover;
+}
+
+.Gallery-two {
+    width: 100%;
+}
+
+.Gallery-two-in {
+    width: 90%;
+    margin: auto;
+    padding: 4rem 0rem;
+}
+
+.gm-cm-one-in {
+    width: 100%;
+    display: flex;
+}
+
+.gm-cm-in-one {
+    width: 50%;
+    height: 50vh;
+}
+
+.g-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.g-txt {
+    padding: 4rem;
+}
+
+.gm-cm-in-two {
+    width: 50%;
+    height: 50vh;
+}
+
+.g-txt h1 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.g-txt p {
+    font-size: 1rem;
+    padding: 1rem 0rem;
+}

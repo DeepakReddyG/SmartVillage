@@ -14,7 +14,7 @@ const Navbar = () => {
                 <div className="NavBar-in-two">
                     <div className="NavBar-in-two-in">
                         <Link href='/'>Home</Link>
-                        <Link href='/'>Home</Link>
+                        <Link href='/gallery'>Gallery</Link>
                         <Link href='/'>Home</Link>
                         <Link href='/'>Home</Link>
                     </div>
