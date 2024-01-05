@@ -157,63 +157,7 @@ export default function Home() {
           </div>
 
 
-            <div className="home-three">
-              <div className="home-three-in">
-                <div className="home-three-header">
-                  <div className="home-three-header-in">
-                    
-                  </div>
-                </div>
-                <div className="home-three-one">
-                  <div className="home-three-one-in">
-                    <div className="home-three-one-in-one">
-                      <div className="home-three-one-in-one-in">
-
-                      </div>
-                    </div>
-                    <div className="home-three-one-in-two">
-                      <div className="home-three-one-in-two-in">
-                          <div className="home-three-one-in-two-in-box">
-                            <div className="home-three-one-in-two-in-box-in">
-                              <div className="htoitibi-header">
-                                <div className="htoitibi-header-in">
-                                  <h2>What's on News</h2>
-                                </div>
-                              </div>
-                              <div className="htoitibi-boxes">
-                                <div className="htoitibi-box">
-                                  <div className="htoitibi-box-in">
-                                    <p>Activities finalized under Second year of AKAM celebrations-reg</p>
-                                    <p>21-12-2022</p>
-                                  </div>
-                                </div>
-                                <div className="htoitibi-box">
-                                  <div className="htoitibi-box-in">
-                                    <p>Activities finalized under Second year of AKAM celebrations-reg</p>
-                                    <p>21-12-2022</p>
-                                  </div>
-                                </div>
-                                <div className="htoitibi-box">
-                                  <div className="htoitibi-box-in">
-                                    <p>Second year of AKAM celebrations - request to draw up a calendar of the campaigns to be undertaken on the issues relating to Department- 02-11-2022</p>
-                                    <p>21-12-2022</p>
-                                  </div>
-                                </div>
-                                <div className="htoitibi-box">
-                                  <div className="htoitibi-box-in">
-                                    <p>Activities finalized under Second year of AKAM celebrations-reg</p>
-                                    <p>21-12-2022</p>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            
 
             <div className="home-four message">
               <div className="home-four-in">
@@ -251,78 +195,8 @@ export default function Home() {
               </div>
             </div>
 
-            {/* ---- home five ---- */}
+           
 
-          <div className="home-five">
-            <div className="home-five-in">
-              <div className="home-five-one">
-                <div className="home-five-one-in">
-                    <h1>5+ YEARS OF</h1><span>Impact</span>
-                </div>
-              </div>
-              <div className="home-five-two">
-                <div className="home-five-two-in">
-                    <h1>Here's what we accomplished in 2024</h1>
-                </div>
-              </div>
-              <div className="home-five-three">
-                <div className="home-five-one-three">
-
-                  <div className="home-fo-one">
-                    <div className="home-fo-one-ct">
-                      <h1>100+</h1>
-                    </div>
-                    <div className="home-fo-one-pr">
-                      <p>Smart Villages</p>
-                    </div>
-                  </div>
-
-                  <div className="home-fo-one">
-                    <div className="home-fo-one-ct">
-                      <h1>100+</h1>
-                    </div>
-                    <div className="home-fo-one-pr">
-                      <p>Smart Villages</p>
-                    </div>
-                  </div>
-
-                  <div className="home-fo-one">
-                    <div className="home-fo-one-ct">
-                      <h1>100+</h1>
-                    </div>
-                    <div className="home-fo-one-pr">
-                      <p>Smart Villages</p>
-                    </div>
-                  </div>
-
-                  <div className="home-fo-one">
-                    <div className="home-fo-one-ct">
-                      <h1>100+</h1>
-                    </div>
-                    <div className="home-fo-one-pr">
-                      <p>Smart Villages</p>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-          </div>
-
-            <div className="home-six">
-              <div className="home-six-in">
-                <div className="home-six-heading">
-                  <div className="home-six-heading-in">
-                    <h1>Our Team</h1>
-                  </div>
-                </div>
-                <div className="home-six-one">
-                  <div className="home-six-one-in">
-
-                  </div>
-                </div>
-              </div>
-            </div>
         </div>
       </div>
     )
