@@ -5,7 +5,6 @@ import FiveImg from './Assets/child.jpeg';
 const inter = Inter({ subsets: ['latin'] })
 
 // import start here 
-
 import Navbar from './components/navbar/Navbar';
 import ResNavbar from './components/navbar/ResNav';
 import Footer from './components/footer/Footer';
@@ -16,6 +15,8 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
+
+
   return (
       <html>
           <body className={inter.className}
@@ -27,9 +28,7 @@ export default function RootLayout({ children }) {
           //   backgroundAttachment: "fixed"
           // }}
           >
-            <div className="Navbar">
-              <Navbar/>
-            </div>
+             
             <div className="Navbar-Res">
               <ResNavbar/>
             </div>

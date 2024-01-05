@@ -8,7 +8,7 @@ const Navbar = () => {
             <div className="NavBar-in">
                 <div className="NavBar-in-one">
                     <div className="NavBar-in-one-in">
-                        <h1>Smart Village Revolution</h1>
+                        <h1>Smart Village <span>Revolution</span> </h1>
                     </div>
                 </div>
                 <div className="NavBar-in-two">

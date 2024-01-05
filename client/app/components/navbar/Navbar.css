@@ -1,15 +1,46 @@
 .NavBar {
     width: 100%;
+    position: fixed;
+    padding: 2rem 0rem 0rem 0rem;
+    z-index: 99;
   }
   
   .NavBar-in {
-    width: 100%;
+    width: 90%;
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
+    padding: .5rem 1rem;
+    background-color: rgb(245, 239, 239);
+    border: 2px solid green;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 2rem;
+    animation: scrolling .2s linear;
   }
-  
+
+  @keyframes scrolling {
+    0% {
+      transform: translateY(-40%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+
+  .NavBar-in-one-in h1 {
+    color: green;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .NavBar-in-one-in span {
+    color: orange;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+
   .NavBar-in-one {
     width: 50%;
   }

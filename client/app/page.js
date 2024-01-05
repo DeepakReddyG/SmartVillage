@@ -1,8 +1,9 @@
+"use client"
 import Image from 'next/image';
 import Marquee from "react-fast-marquee";
+import { useEffect, useState } from 'react';
 
 import './globals.css';
-
 
 import heroImg from '../public/SVR_Image.jpeg'
 import SVR_Image_1 from './Assets/SVR_Image_1.png';
@@ -10,11 +11,35 @@ import President from './Assets/President.jpeg';
 
 import SVR_Image from '../public/SVR_Image.jpeg';
 import nutrition from '../public/SVR_Image.jpeg';
+import Navbar from './components/navbar/Navbar';
 
 export default function Home() {
+
+    const [showNavbar, setShowNavbar] = useState(false);
+    let scroll = 0;
+
+    // if the scroll is greater than 100px make showNavbar true
+
+    useEffect(() => {
+
+        window.addEventListener("scroll", () => {
+
+            scroll = window.scrollY;
+            console.log(scroll);
+
+            if(window.scrollY > 100) {
+                setShowNavbar(true);
+            } else {
+                setShowNavbar(false);
+            }
+        }
+        );
+    }, []);
+    
   return (
       <div className="home-component">
         <div className="home-container">
+          { showNavbar ? <Navbar/> : null}
             <div className="hero"
               style={{
                 backgroundImage: `url(${SVR_Image.src})`,
