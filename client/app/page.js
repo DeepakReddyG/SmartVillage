@@ -13,6 +13,7 @@ import FlipBook1 from './Assets/FlipBook1.png';
 import FlipBook2 from './Assets/FlipBook2.png';
 import FlipBook3 from './Assets/FlipBook3.png';
 import FlipBook4 from './Assets/FlipBook4.png';
+import Modi from './Assets/Modi.jpeg';
 
 import SVR_Image from '../public/SVR_Image.jpeg';
 import nutrition from '../public/SVR_Image.jpeg';
@@ -396,6 +397,40 @@ export default function Home() {
                     <p>On Independence Day, I had made commitment to you on behalf of my colleagues in the Parliament. I laid out my dream of Adarsh Grams as the nucleus of health, cleanliness, greenery and cordiality within the community. The Guidelines that follow are based on these principles and present the complete blueprint of the Saansad Adarsh Gram Yojana for each Member of Parliament to make one village of his or her constituency a Model Village by 2016 and two more model villages by 2019.</p>
                   </div>
                 </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="home-ten">
+              <div className="home-ten-in">
+                <div className="home-ten-header">
+                  <div className="home-ten-header-in">
+                    <h1>K L's Smart Village Revolution: In the Line of Sansad Adarsh Gram Yojana</h1>
+                  </div>
+                </div>
+                <div className="home-ten-one">
+                  <div className="home-ten-one-in">
+                    <div className="home-ten-one-in-one">
+                      <div className="home-ten-one-in-one-in">
+                        <h2>K L's Smart Village Revolution: In the Line of Sansad Adarsh Gram Yojana</h2>
+                        <p>On Independence Day, I had made commitment to you on behalf of my colleagues in the Parliament. I laid out my dream of Adarsh Grams as the nucleus of health, cleanliness, greenery and cordiality within the community. The Guidelines that follow are based on these principles and present the complete blueprint of the Saansad Adarsh Gram Yojana for each Member of Parliament to make one village of his or her constituency a Model Village by 2016 and two more model villages by 2019.</p>
+
+                        <Link className='home-ten-one-in-one-in-link' href='/'>Sansad Adarsh Gram Yojana</Link>
+                      </div>
+                    </div>
+                    <div className="home-ten-one-in-two">
+                      <div className="home-ten-one-in-two-in">
+                        <Image
+                          className='home-ten-one-in-two-in-image'
+                          src={Modi}
+                          width={0}
+                          height={0}
+                          alt='Picture of the author'
+                          style={{ width: '100%', height: 'auto' }}
+                        />
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

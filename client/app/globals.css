@@ -589,6 +589,85 @@
 
 
 
+/*  -------------------- home-ten ------------------------ */
+.home-ten {
+  width: 100%;
+  padding: 4rem 0rem 2rem 0rem;
+  background-color: rgb(0, 128, 0, 0.1);
+}
+.home-ten-in {
+  width: 90%;
+  margin: auto;
+}
+.home-ten-header {
+  width: 100%;
+}
+.home-ten-header-in {
+  width: 100%;
+}
+.home-ten-header-in h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: black;
+  font-size: 3rem;
+  color: orange;
+  font-weight: 600;
+  width: 90%;
+}
+.home-ten-one {
+  width: 100%;
+}
+.home-ten-one-in {
+  display: flex;
+  width: 100%;
+  padding: 2rem 0rem;
+}
+.home-ten-one-in-one {
+  width: 50%;
+  padding: 1rem;
+}
+.home-ten-one-in-one-in {
+  width: 90%;
+}
+.home-ten-one-in-one-in h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: black;
+  font-size: 2rem;
+  color: green;
+  width: 90%;
+}
+.home-ten-one-in-one-in p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: black;
+  font-size: 1.3rem;
+  color: black;
+  line-height: 2rem;
+  padding: 1rem 0rem;
+  color: rgb(35, 35, 35);
+  margin-bottom: 1rem;
+
+}
+.home-ten-one-in-one-in-link {
+  border: 2px solid green;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  background-color: white;
+}
+.home-ten-one-in-two {
+  width: 50%;
+}
+.home-ten-one-in-two-in {
+  padding: 1rem;
+}
+.home-ten-one-in-two-in-image {
+  width: 100%;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: 2px solid black;
+}
+
 /* -------------------- Media Queries -------------------- */
 
 @media screen and (max-width: 600px) {
