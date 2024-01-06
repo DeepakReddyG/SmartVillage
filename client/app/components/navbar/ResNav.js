@@ -2,6 +2,7 @@
 
 import React from 'react'
 import './ResNav.css'
+import { Link as Scroll } from "react-scroll";
 import Link from 'next/link'
 
 import { FaBars } from "react-icons/fa6";
@@ -15,16 +16,6 @@ const ResNavbar = () => {
         setClick(!click)
     }
 
-    const handleScroll = (path) => {
-
-        const scroll = document.querySelector(path)
-
-        if (scroll) {
-            scroll.scrollIntoView({ behavior: 'smooth' });
-        }
-
-        setClick(!click)
-    }
 
   return (
         <div className="ResNavbar-Component">
@@ -39,16 +30,55 @@ const ResNavbar = () => {
             <div className={click ? 'Res-navigation' : 'nav-hide'}>
                 <div className="Res-navigation-in">
                     <div className="Res-navigation-one">
-                        <Link href='/' onClick={()=>handleScroll('.home-component')}>Home</Link>
+                        <Scroll
+                            to="home-two"
+                            spy={true}
+                            smooth={true}
+                            offset={-70} 
+                            duration={500}
+                            onClick={handleClick}
+                        >
+                        About
+                        </Scroll>
                     </div>
                     <div className="Res-navigation-two">
-                        <Link href='/' onClick={()=>handleScroll('.home-component')}>Home</Link>
+                        <Scroll
+                            to="home-seven"
+                            spy={true}
+                            smooth={true}
+                            offset={-70} 
+                            duration={500}
+                            onClick={handleClick}
+                        >
+                        Our Work
+                        </Scroll>
                     </div>
                     <div className="Res-navigation-three">
-                        <Link href='/' onClick={()=>handleScroll('.home-component')}>Home</Link>
+                        <Scroll
+                            to="home-eight"
+                            spy={true}
+                            smooth={true}
+                            offset={-70} 
+                            duration={500}
+                            onClick={handleClick}
+                        >
+                        Annual Report
+                        </Scroll>
                     </div>
                     <div className="Res-navigation-four">
-                        <Link href='/' onClick={()=>handleScroll('.home-component')}>Home</Link>
+                        <Scroll
+                            to="home-nine"
+                            spy={true}
+                            smooth={true}
+                            offset={-70} 
+                            duration={500}
+                            onClick={handleClick}
+                        >
+                        Team
+                        </Scroll>
+                    </div>
+                    <div className="Res-navigation-five">
+                        <Link href='https://sac.kluniversity.in' passHref={true} target='_blank'>KL SAC</Link>
                     </div>
                 </div>
             </div>

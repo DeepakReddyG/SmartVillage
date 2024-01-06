@@ -1,8 +1,11 @@
 import React from 'react'
 import './Navbar.css'
+import { Link as Scroll } from "react-scroll";
 import Link from 'next/link'
 
+
 const Navbar = () => {
+
   return (
         <div className="NavBar">
             <div className="NavBar-in">
@@ -13,10 +16,43 @@ const Navbar = () => {
                 </div>
                 <div className="NavBar-in-two">
                     <div className="NavBar-in-two-in">
-                        <Link href='/'>Home</Link>
-                        <Link href='/gallery'>Gallery</Link>
-                        <Link href='/'>Home</Link>
-                        <Link href='/'>Home</Link>
+                        <Scroll
+                            to="home-two"
+                            spy={true}
+                            smooth={true}
+                            offset={-70} 
+                            duration={500}
+                        >
+                        About
+                        </Scroll>
+                        <Scroll
+                            to="home-seven"
+                            spy={true}
+                            smooth={true}
+                            offset={-70} 
+                            duration={500}
+                        >
+                        Our Work
+                        </Scroll>
+                        <Scroll
+                            to="home-eight"
+                            spy={true}
+                            smooth={true}
+                            offset={-70} 
+                            duration={500}
+                        >
+                        Annual Report
+                        </Scroll>
+                        <Scroll
+                            to="home-nine"
+                            spy={true}
+                            smooth={true}
+                            offset={-70} 
+                            duration={500}
+                        >
+                        Team
+                        </Scroll>
+                        <Link href='https://sac.kluniversity.in' passHref={true} target='_blank'>KL SAC</Link>
                     </div>
                 </div>
             </div>

@@ -1,6 +1,7 @@
 import React from 'react'
 import './HomeNavbar.css'
 import Link from 'next/link'
+import { Link as Scroll } from "react-scroll";
 
 const HomeNavbar = () => {
   return (
@@ -13,10 +14,43 @@ const HomeNavbar = () => {
                 </div>
                 <div className="HomeNavBar-in-two">
                     <div className="HomeNavBar-in-two-in">
-                        <Link href='/'>Home</Link>
-                        <Link href='/gallery'>Gallery</Link>
-                        <Link href='/'>Home</Link>
-                        <Link href='/'>Home</Link>
+                        <Scroll
+                            to="home-two"
+                            spy={true}
+                            smooth={true}
+                            offset={-70} 
+                            duration={500}
+                        >
+                        About
+                        </Scroll>
+                        <Scroll
+                            to="home-seven"
+                            spy={true}
+                            smooth={true}
+                            offset={-70} 
+                            duration={500}
+                        >
+                        Our Work
+                        </Scroll>
+                        <Scroll
+                            to="home-eight"
+                            spy={true}
+                            smooth={true}
+                            offset={-70} 
+                            duration={500}
+                        >
+                        Annual Report
+                        </Scroll>
+                        <Scroll
+                            to="home-nine"
+                            spy={true}
+                            smooth={true}
+                            offset={-70} 
+                            duration={500}
+                        >
+                        Team
+                        </Scroll>
+                        <Link href='https://sac.kluniversity.in' passHref={true} target='_blank'>KL SAC</Link>
                     </div>
                 </div>
             </div>
