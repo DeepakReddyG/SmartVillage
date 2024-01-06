@@ -14,8 +14,8 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    padding: 2rem 4rem;    
+    justify-content: space-between;
+    padding: 2rem;    
     background-color: green;
     color: white;
 }
@@ -23,12 +23,27 @@
 .Gallery-one-in h1 {
     font-size: 2rem;
     font-weight: 600;
-    padding: 0rem 1rem;
+    padding: 0rem;
+}
+
+.Gallery-one-in span {
+    color: orange;
+}
+
+.Gallery-one-in a:hover {
+    color: black;
+}
+
+.Gallery-one-img {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .Gallery-one-img img {
-    width: 100%;
-    height: 50px;
+    width: 50%;
+    height: 50%;
     object-fit: cover;
 }
 

@@ -1,5 +1,6 @@
 import React from 'react'
 import './page.css'
+import Link from 'next/link'
 
 
 // import images here 
@@ -14,10 +15,8 @@ const page = () => {
             <div className="GalleryComponent-in">
                 <div className="Gallery-one">
                     <div className="Gallery-one-in">
-                        <div className="Gallery-one-img">
-                            <img src={G20_Image.src} alt="" />
-                        </div>
-                        <h1>Smart Village Revolution</h1>
+                        <h1>Smart Village <span>Revolution</span> </h1>
+                        <Link href='/'>Back to Home</Link>
                     </div>
                 </div>
                 <div className="Gallery-two">

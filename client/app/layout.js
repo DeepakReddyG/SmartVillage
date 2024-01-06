@@ -1,12 +1,9 @@
 import { Inter } from 'next/font/google'
 import './globals.css'
 
-import FiveImg from './Assets/child.jpeg';
 const inter = Inter({ subsets: ['latin'] })
 
 // import start here 
-import Navbar from './components/navbar/Navbar';
-import ResNavbar from './components/navbar/ResNav';
 import Footer from './components/footer/Footer';
 
 export const metadata = {
