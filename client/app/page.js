@@ -16,10 +16,10 @@ import FlipBook3 from './Assets/FlipBook3.png';
 import FlipBook4 from './Assets/FlipBook4.png';
 import Modi from './Assets/Modi.jpeg';
 import Deepak from './Assets/Deepak.png';
+import PlantGif from '../public/Plantgif.gif';
 
 
 import SVR_Image from '../public/SVR_Image.jpeg';
-import nutrition from '../public/SVR_Image.jpeg';
 import Navbar from './components/navbar/Navbar';
 import Link from 'next/link';
 import HTMLFlipBook from 'react-pageflip';
@@ -27,6 +27,7 @@ import HTMLFlipBook from 'react-pageflip';
 import { FaLinkedin } from "react-icons/fa6";
 import HomeNavbar from './components/navbar/HomeNavbar';
 import ResNavbar from './components/navbar/ResNav';
+import Footer from './components/footer/Footer';
 
 export default function Home() {
 
@@ -56,8 +57,25 @@ export default function Home() {
     const handleClick = (Num) => {
         setNum(Num);
     }
+
+// ---------- Boot Animation ------------
+
+  const [showAnimation, setShowAnimation] = useState(true);
+
+  useEffect(() => {
+
+    const timer = setTimeout(() => setShowAnimation(false), 3500);
+    return () => clearTimeout(timer);
+  }, []);
     
+// ---------- Boot Animation END ------------
+
   return (
+    showAnimation ? (
+      <div className="plant">
+        <Image src={PlantGif} alt="my gif" height={200} width={200} />
+      </div>
+    ) :
       <div className="home-component">
         <div className="home-container">
             <div className="Navbar">
@@ -716,7 +734,9 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-        
+            <div className="Footer">
+              <Footer/>
+            </div>
         </div>
       </div>
     )
