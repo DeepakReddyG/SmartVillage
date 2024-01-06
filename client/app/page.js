@@ -16,7 +16,6 @@ import FlipBook3 from './Assets/FlipBook3.png';
 import FlipBook4 from './Assets/FlipBook4.png';
 import Modi from './Assets/Modi.jpeg';
 import Deepak from './Assets/Deepak.png';
-import PlantGif from '../public/Plantgif.gif';
 
 
 import SVR_Image from '../public/SVR_Image.jpeg';
@@ -28,6 +27,7 @@ import { FaLinkedin } from "react-icons/fa6";
 import HomeNavbar from './components/navbar/HomeNavbar';
 import ResNavbar from './components/navbar/ResNav';
 import Footer from './components/footer/Footer';
+import Plant from './components/animation/Plant';
 
 export default function Home() {
 
@@ -64,16 +64,18 @@ export default function Home() {
 
   useEffect(() => {
 
-    const timer = setTimeout(() => setShowAnimation(false), 3500);
+    const timer = setTimeout(() => setShowAnimation(false), 6800);
     return () => clearTimeout(timer);
   }, []);
+
+  console.log(showAnimation);
     
 // ---------- Boot Animation END ------------
 
   return (
     showAnimation ? (
       <div className="plant">
-        <Image src={PlantGif} alt="my gif" height={200} width={200} />
+        <Plant />
       </div>
     ) :
       <div className="home-component">
