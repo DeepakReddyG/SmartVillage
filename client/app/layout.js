@@ -19,24 +19,12 @@ export default function RootLayout({ children }) {
 
   return (
       <html>
-          <body className={inter.className}
-          // style={{
-          //   backgroundImage: `url(${FiveImg.src})`,
-          //   backgroundPosition: "center",
-          //   backgroundSize: "cover",
-          //   backgroundRepeat: "no-repeat",
-          //   backgroundAttachment: "fixed"
-          // }}
-          >
-             
-            <div className="Navbar-Res">
-              <ResNavbar/>
-            </div>
-        {children}
+          <body className={inter.className}>
+             {children}
             <div className="Footer">
               <Footer/>
             </div>
-        </body>
+          </body>
     </html>
   )
 }
