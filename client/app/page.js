@@ -483,6 +483,16 @@ export default function Home() {
                                             <p>Read More 7</p>
                                         </div>
                                     </div>
+                                    <div className="home-se-eight se-cm" onClick={()=>handleClick(8)} id={num === 8 ? 'se-active' : ''}>
+                                        <div className="home-se-eight-in se-cm-in">
+                                            <p>Read More 8</p>
+                                        </div>
+                                    </div>
+                                    <div className="home-se-nine se-cm" onClick={()=>handleClick(9)} id={num === 9 ? 'se-active' : ''}>
+                                        <div className="home-se-nine-in se-cm-in">
+                                            <p>Read More 9</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div className="home-five-box-two">
@@ -507,6 +517,12 @@ export default function Home() {
                                     </div>
                                     <div className="home-bt-seven cm-bx-hide" id={num === 7 ? 'se-visible' : ''}>
                                         <h1>Read More 7</h1>
+                                    </div>
+                                    <div className="home-bt-eight cm-bx-hide" id={num === 8 ? 'se-visible' : ''}>
+                                        <h1>Read More 8</h1>
+                                    </div>
+                                    <div className="home-bt-nine cm-bx-hide" id={num === 9 ? 'se-visible' : ''}>
+                                        <h1>Read More 9</h1>
                                     </div>
                                 </div>
                             </div>
