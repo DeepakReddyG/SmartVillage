@@ -96,9 +96,9 @@ export default function Home() {
                 </div>
                 <div className="home-three-two">
                   <div className="home-three-two-in">
-                    <div className="home-three-two-in-one">
+                    {/* <div className="home-three-two-in-one">
                       <p>Some Numbers that Matter</p>
-                    </div>
+                    </div> */}
                     <div className="home-three-two-in-two">
                       <div className="home-three-two-in-two-boxes">
                         <div className="home-three-two-in-two-box">
