@@ -737,7 +737,6 @@
   padding: 1rem 0rem;
   color: rgb(35, 35, 35);
   margin-bottom: 1rem;
-
 }
 .home-ten-one-in-one-in-link {
   border: 2px solid green;
@@ -959,7 +958,9 @@
     }
 
     .home-eight-two-in {
-      width: 95%;
+      width: 90%;
+      margin: auto;
+      padding: 0rem;
       padding-top: 1rem;
     }
 
@@ -999,4 +1000,29 @@
       margin: auto;
       font-size: 2rem;
     }
+
+    .home-ten-one-in {
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .home-ten-one-in-one {
+      width: 95%;
+      margin: auto;
+    }
+
+    .home-ten-one-in-two {
+      width: 95%;
+      margin: auto;
+    }
+
+    .home-ten-one-in-one-in {
+      width: 100%;
+    }
+
+    .home-ten-one-in-one-in p {
+      width: 100%;
+    }
+
+
 }
