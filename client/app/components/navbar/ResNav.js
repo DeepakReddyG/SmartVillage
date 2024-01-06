@@ -30,7 +30,7 @@ const ResNavbar = () => {
         <div className="ResNavbar-Component">
             <div className="ResNav-in">
                 <div className="ResNav-one">
-                    <h1>Smart Village Resolution</h1>
+                    <h1>Smart Village <span>Resolution</span> </h1>
                 </div>
                 <div className="ResNav-two">
                     {click ? <IoClose onClick={handleClick} /> : <FaBars onClick={handleClick} />}

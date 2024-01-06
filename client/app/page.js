@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import Marquee from "react-fast-marquee";
 import { useEffect, useState } from 'react';
+import CountUp from 'react-countup';
 
 
 import './globals.css';
@@ -24,6 +25,8 @@ import Link from 'next/link';
 import HTMLFlipBook from 'react-pageflip';
 
 import { FaLinkedin } from "react-icons/fa6";
+import HomeNavbar from './components/navbar/HomeNavbar';
+import ResNavbar from './components/navbar/ResNav';
 
 export default function Home() {
 
@@ -40,7 +43,7 @@ export default function Home() {
             scroll = window.scrollY;
             console.log(scroll);
 
-            if(window.scrollY > 100) {
+            if(window.scrollY > 300) {
                 setShowNavbar(true);
             } else {
                 setShowNavbar(false);
@@ -57,7 +60,12 @@ export default function Home() {
   return (
       <div className="home-component">
         <div className="home-container">
-          { showNavbar ? <Navbar/> : null}
+            <div className="Navbar">
+                { showNavbar ? <Navbar/> : <HomeNavbar/>}
+            </div>
+            <div className="Navbar-Res">
+              <ResNavbar/>
+            </div>
             <div className="hero"
               style={{
                 backgroundImage: `url(${SVR_Image.src})`,
@@ -96,7 +104,7 @@ export default function Home() {
                         <div className="home-three-two-in-two-box">
                           <div className="home-three-two-in-two-box-in">
                             <div className="home-three-two-in-two-box-in-one">
-                              <h1>72+</h1>
+                              <h1><CountUp end={72} />+</h1>
                             </div>
                             <div className="home-three-two-in-two-box-in-two">
                               <p><span>Countries and territories</span> are home to our medical humanitarian projects</p>
@@ -106,7 +114,7 @@ export default function Home() {
                         <div className="home-three-two-in-two-box">
                           <div className="home-three-two-in-two-box-in">
                             <div className="home-three-two-in-two-box-in-one">
-                              <h1>1,351+</h1>
+                              <h1><CountUp end={1351} />+</h1>
                             </div>
                             <div className="home-three-two-in-two-box-in-two">
                               <p><span>Countries and territories</span> are home to our medical humanitarian projects</p>
@@ -116,7 +124,7 @@ export default function Home() {
                         <div className="home-three-two-in-two-box">
                           <div className="home-three-two-in-two-box-in">
                             <div className="home-three-two-in-two-box-in-one">
-                              <h1>500+</h1>
+                              <h1><CountUp end={500} />+</h1>
                             </div>
                             <div className="home-three-two-in-two-box-in-two">
                               <p><span>Countries and territories</span> are home to our medical humanitarian projects</p>

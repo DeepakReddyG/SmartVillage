@@ -14,16 +14,22 @@
 }
 
 .ResNav-one {
-    width: 50%;
+    width: 70%;
 }
 
 .ResNav-one h1 {
-    font-size: .8rem;
+    font-size: 1rem;
     color: white;
 }
 
+.ResNav-one span {
+    font-size: 1rem;
+    font-weight: 600;
+    color: orange;
+}
+
 .ResNav-two {
-    width: 50%;
+    width: 30%;
     display: flex;
     align-items: center;
     justify-content: flex-end;

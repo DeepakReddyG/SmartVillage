@@ -12,11 +12,14 @@
     align-items: center;
     justify-content: space-between;
     padding: .5rem 1rem;
-    background-color: rgb(245, 239, 239);
+    /* background-color: rgb(245, 239, 239);
+    border: 2px solid green; */
+    background-color: rgb(0, 128, 0, 0.2);
     border: 2px solid green;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 2rem;
     animation: scrolling .2s linear;
+    backdrop-filter: blur(6px);
   }
 
   @keyframes scrolling {
