@@ -1,5 +1,7 @@
 "use client"
 import React from 'react';
+import Image from 'next/image'
+import plantImg from '../../../public/svr.png'
 
 const Plant = () => {
   const multiplier = 1;
@@ -12,7 +14,9 @@ const Plant = () => {
   return (
     <>
     <div id="oneplus"> 
-      {/* <h1>SVR</h1> */}
+
+      <Image src={plantImg} alt="plant" width={500} height={500} />
+
     </div>
     <style jsx>{`
         html,
@@ -24,12 +28,11 @@ const Plant = () => {
 
         #oneplus {
           position: absolute;
-          left: 45%;
-          top: 40%;
+          left: 44%;
+          top: 35%;
           transform: translate(-50%, -50%);
-          width: ${sunsize * 1}rem;
-          height: ${sunsize * 1}rem;
-          background-color: white;
+          width: ${sunsize * 2}rem;
+          height: ${sunsize * 2}rem;
           // display: flex;
           // align-items: center;
           // justify-content: center;
@@ -48,9 +51,9 @@ const Plant = () => {
             border-radius: ${Plant * 1}rem;
             background-color: white;
             margin-left: 1rem;
-            top: -8rem;
-            left: -1px;
-            transform-origin: 48% 12rem;
+            top: -6rem;
+            left: 3rem;
+            transform-origin: 45% 11rem;
             animation: spinAndMove ${speed * 3}s cubic-bezier(0.86, 0, 0.07, 1) forwards;
           }
         }
