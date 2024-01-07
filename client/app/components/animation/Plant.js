@@ -29,7 +29,7 @@ const Plant = () => {
         #oneplus {
           position: absolute;
           left: 44%;
-          top: 35%;
+          top: 40%;
           transform: translate(-50%, -50%);
           width: ${sunsize * 2}rem;
           height: ${sunsize * 2}rem;

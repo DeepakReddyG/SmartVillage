@@ -1,6 +1,5 @@
 "use client"
 import Image from 'next/image';
-import Marquee from "react-fast-marquee";
 import { useEffect, useState } from 'react';
 import CountUp from 'react-countup';
 
@@ -36,7 +35,6 @@ export default function Home() {
     const [num, setNum] = useState(1);
     let scroll = 0;
 
-    // if the scroll is greater than 100px make showNavbar true
 
     useEffect(() => {
 

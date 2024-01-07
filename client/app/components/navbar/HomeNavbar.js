@@ -15,6 +15,7 @@ const HomeNavbar = () => {
                 <div className="HomeNavBar-in-two">
                     <div className="HomeNavBar-in-two-in">
                         <Scroll
+                            className="HomeNavBar-in-two-in-scroll"
                             to="home-two"
                             spy={true}
                             smooth={true}
@@ -24,6 +25,7 @@ const HomeNavbar = () => {
                         About
                         </Scroll>
                         <Scroll
+                            className="HomeNavBar-in-two-in-scroll"
                             to="home-seven"
                             spy={true}
                             smooth={true}
@@ -33,6 +35,7 @@ const HomeNavbar = () => {
                         Our Work
                         </Scroll>
                         <Scroll
+                            className="HomeNavBar-in-two-in-scroll"
                             to="home-eight"
                             spy={true}
                             smooth={true}
@@ -42,6 +45,7 @@ const HomeNavbar = () => {
                         Annual Report
                         </Scroll>
                         <Scroll
+                            className="HomeNavBar-in-two-in-scroll"
                             to="home-nine"
                             spy={true}
                             smooth={true}
@@ -50,7 +54,9 @@ const HomeNavbar = () => {
                         >
                         Team
                         </Scroll>
-                        <Link href='https://sac.kluniversity.in' passHref={true} target='_blank'>KL SAC</Link>
+                        <Link 
+                        className="HomeNavBar-in-two-in-scroll"
+                        href='https://sac.kluniversity.in' passHref={true} target='_blank'>KL SAC</Link>
                     </div>
                 </div>
             </div>
