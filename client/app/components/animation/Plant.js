@@ -12,7 +12,7 @@ const Plant = () => {
   return (
     <>
     <div id="oneplus"> 
-      <h1>SVR</h1>
+      {/* <h1>SVR</h1> */}
     </div>
     <style jsx>{`
         html,
@@ -29,11 +29,11 @@ const Plant = () => {
           transform: translate(-50%, -50%);
           width: ${sunsize * 1}rem;
           height: ${sunsize * 1}rem;
-          background-color: green;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          color: white;
+          background-color: white;
+          // display: flex;
+          // align-items: center;
+          // justify-content: center;
+          // color: white;
           font-size: 2rem;
           font-weight: bold;
           border-radius: ${sunsize * 1}rem;
