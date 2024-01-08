@@ -469,7 +469,7 @@ export default function Home() {
             <div className="home-five">
                 <div className="home-five-in">
                     <div className="home-five-one">
-                        <h1>Working Groups</h1>
+                        <h1>Focus - 9 Way Principle</h1>
                     </div>
                     <div className="home-five-two">
                         <div className="home-five-two-in">
@@ -482,42 +482,42 @@ export default function Home() {
                                     </div>
                                     <div className="home-se-two se-cm" onClick={()=>handleClick(2)} id={num === 2 ? 'se-active' : ''}>
                                         <div className="home-se-two-in se-cm-in">
-                                            <p>Smart Village Revolution</p>
+                                            <p>Quality Education</p>
                                         </div>
                                     </div>
                                     <div className="home-se-three se-cm" onClick={()=>handleClick(3)} id={num === 3 ? 'se-active' : ''}>
                                         <div className="home-se-three-in se-cm-in">
-                                            <p>Read More 3</p>
+                                            <p>Rural Infrastructure</p>
                                         </div>
                                     </div>
                                     <div className="home-se-four se-cm" onClick={()=>handleClick(4)} id={num === 4 ? 'se-active' : ''}>
                                         <div className="home-se-four-in se-cm-in">
-                                            <p>Read More 4</p>
+                                            <p>Culture and Community</p>
                                         </div>
                                     </div>
                                     <div className="home-se-five se-cm" onClick={()=>handleClick(5)} id={num === 5 ? 'se-active' : ''}>
                                         <div className="home-se-five-in se-cm-in">
-                                            <p>Read More </p>
+                                            <p>Health and Hygiene</p>
                                         </div>
                                     </div>
                                     <div className="home-se-six se-cm" onClick={()=>handleClick(6)} id={num === 6 ? 'se-active' : ''}>
                                         <div className="home-se-six-in se-cm-in">
-                                            <p>Read More 6</p>
+                                            <p>Sustainable Development</p>
                                         </div>
                                     </div>
                                     <div className="home-se-seven se-cm" onClick={()=>handleClick(7)} id={num === 7 ? 'se-active' : ''}>
                                         <div className="home-se-seven-in se-cm-in">
-                                            <p>Read More 7</p>
+                                            <p>Transportation</p>
                                         </div>
                                     </div>
                                     <div className="home-se-eight se-cm" onClick={()=>handleClick(8)} id={num === 8 ? 'se-active' : ''}>
                                         <div className="home-se-eight-in se-cm-in">
-                                            <p>Read More 8</p>
+                                            <p>Livelyhood</p>
                                         </div>
                                     </div>
                                     <div className="home-se-nine se-cm" onClick={()=>handleClick(9)} id={num === 9 ? 'se-active' : ''}>
                                         <div className="home-se-nine-in se-cm-in">
-                                            <p>Read More 9</p>
+                                            <p>Women Empowerment</p>
                                         </div>
                                     </div>
                                 </div>
@@ -525,31 +525,247 @@ export default function Home() {
                             <div className="home-five-box-two">
                                 <div className="home-ft-box-two-in">
                                     <div className="home-bt-one cm-bx-hide" id={num === 1 ? 'se-visible' : ''}>
-                                        <h1>Agriculture</h1>
+                                      <div className="home-bt-one-in">
+                                        <div className="home-bt-one-in-header">
+                                          <div className="home-bt-one-in-header-in">
+                                            <h1>Agriculture</h1>
+                                          </div>
+                                        </div>
+                                        <div className="home-bt-one-in-one">
+                                          <div className="home-bt-one-in-one-in">
+                                            <div className="home-bt-one-in-one-in-one">
+                                              <div className="home-bt-one-in-one-in-one-in">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, fugiat! Voluptatibus reprehenderit at mollitia iure ipsam culpa, soluta dicta! Commodi sed aliquam, cum sit magni velit non dolore minus, dignissimos, similique quidem temporibus mollitia ea possimus? Obcaecati dicta, laborum eaque, enim, qui deleniti consequuntur quo eveniet atque minima eius recusandae ducimus assumenda debitis corporis ipsa magnam mollitia itaque asperiores velit quisquam iure. Ipsam aliquid velit atque nam molestiae totam alias sequi minus consequatur, obcaecati libero nobis id quos vitae unde magni adipisci soluta cupiditate impedit fuga, optio est harum magnam fugiat. </p>
+                                              </div>
+                                            </div>
+                                            <div className="home-bt-one-in-one-in-two">
+                                              <div className="home-bt-one-in-one-in-two-in">
+                                                <Image
+                                                  className='home-bt-one-in-one-in-two-in-image'
+                                                  src={SVR_Image_1}
+                                                  alt="Picture of the author"
+                                                ></Image>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
                                     </div>
                                     <div className="home-bt-two cm-bx-hide" id={num === 2 ? 'se-visible' : ''}>
-                                        <h1>Smart Village Revolution</h1>
+                                    <div className="home-bt-one-in">
+                                        <div className="home-bt-one-in-header">
+                                          <div className="home-bt-one-in-header-in">
+                                            <h1>Quality Education</h1>
+                                          </div>
+                                        </div>
+                                        <div className="home-bt-one-in-one">
+                                          <div className="home-bt-one-in-one-in">
+                                            <div className="home-bt-one-in-one-in-one">
+                                              <div className="home-bt-one-in-one-in-one-in">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, fugiat! Voluptatibus reprehenderit at mollitia iure ipsam culpa, soluta dicta! Commodi sed aliquam, cum sit magni velit non dolore minus, dignissimos, similique quidem temporibus mollitia ea possimus? Obcaecati dicta, laborum eaque, enim, qui deleniti consequuntur quo eveniet atque minima eius recusandae ducimus assumenda debitis corporis ipsa magnam mollitia itaque asperiores velit quisquam iure. Ipsam aliquid velit atque nam molestiae totam alias sequi minus consequatur, obcaecati libero nobis id quos vitae unde magni adipisci soluta cupiditate impedit fuga, optio est harum magnam fugiat. </p>
+                                              </div>
+                                            </div>
+                                            <div className="home-bt-one-in-one-in-two">
+                                              <div className="home-bt-one-in-one-in-two-in">
+                                                <Image
+                                                  className='home-bt-one-in-one-in-two-in-image'
+                                                  src={SVR_Image_1}
+                                                  alt="Picture of the author"
+                                                ></Image>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
                                     </div>
                                     <div className="home-bt-three cm-bx-hide" id={num === 3 ? 'se-visible' : ''}>
-                                        <h1>Read More 3</h1>
+                                    <div className="home-bt-one-in">
+                                        <div className="home-bt-one-in-header">
+                                          <div className="home-bt-one-in-header-in">
+                                            <h1>Rural Infrastructure</h1>
+                                          </div>
+                                        </div>
+                                        <div className="home-bt-one-in-one">
+                                          <div className="home-bt-one-in-one-in">
+                                            <div className="home-bt-one-in-one-in-one">
+                                              <div className="home-bt-one-in-one-in-one-in">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, fugiat! Voluptatibus reprehenderit at mollitia iure ipsam culpa, soluta dicta! Commodi sed aliquam, cum sit magni velit non dolore minus, dignissimos, similique quidem temporibus mollitia ea possimus? Obcaecati dicta, laborum eaque, enim, qui deleniti consequuntur quo eveniet atque minima eius recusandae ducimus assumenda debitis corporis ipsa magnam mollitia itaque asperiores velit quisquam iure. Ipsam aliquid velit atque nam molestiae totam alias sequi minus consequatur, obcaecati libero nobis id quos vitae unde magni adipisci soluta cupiditate impedit fuga, optio est harum magnam fugiat. </p>
+                                              </div>
+                                            </div>
+                                            <div className="home-bt-one-in-one-in-two">
+                                              <div className="home-bt-one-in-one-in-two-in">
+                                                <Image
+                                                  className='home-bt-one-in-one-in-two-in-image'
+                                                  src={SVR_Image_1}
+                                                  alt="Picture of the author"
+                                                ></Image>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
                                     </div>
                                     <div className="home-bt-four cm-bx-hide" id={num === 4 ? 'se-visible' : ''}>
-                                        <h1>Read More 4</h1>
+                                    <div className="home-bt-one-in">
+                                        <div className="home-bt-one-in-header">
+                                          <div className="home-bt-one-in-header-in">
+                                            <h1>Culture and Community</h1>
+                                          </div>
+                                        </div>
+                                        <div className="home-bt-one-in-one">
+                                          <div className="home-bt-one-in-one-in">
+                                            <div className="home-bt-one-in-one-in-one">
+                                              <div className="home-bt-one-in-one-in-one-in">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, fugiat! Voluptatibus reprehenderit at mollitia iure ipsam culpa, soluta dicta! Commodi sed aliquam, cum sit magni velit non dolore minus, dignissimos, similique quidem temporibus mollitia ea possimus? Obcaecati dicta, laborum eaque, enim, qui deleniti consequuntur quo eveniet atque minima eius recusandae ducimus assumenda debitis corporis ipsa magnam mollitia itaque asperiores velit quisquam iure. Ipsam aliquid velit atque nam molestiae totam alias sequi minus consequatur, obcaecati libero nobis id quos vitae unde magni adipisci soluta cupiditate impedit fuga, optio est harum magnam fugiat. </p>
+                                              </div>
+                                            </div>
+                                            <div className="home-bt-one-in-one-in-two">
+                                              <div className="home-bt-one-in-one-in-two-in">
+                                                <Image
+                                                  className='home-bt-one-in-one-in-two-in-image'
+                                                  src={SVR_Image_1}
+                                                  alt="Picture of the author"
+                                                ></Image>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
                                     </div>
                                     <div className="home-bt-five cm-bx-hide" id={num === 5 ? 'se-visible' : ''}>
-                                        <h1>Read More 5</h1>
+                                    <div className="home-bt-one-in">
+                                        <div className="home-bt-one-in-header">
+                                          <div className="home-bt-one-in-header-in">
+                                            <h1>Health and Hygiene</h1>
+                                          </div>
+                                        </div>
+                                        <div className="home-bt-one-in-one">
+                                          <div className="home-bt-one-in-one-in">
+                                            <div className="home-bt-one-in-one-in-one">
+                                              <div className="home-bt-one-in-one-in-one-in">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, fugiat! Voluptatibus reprehenderit at mollitia iure ipsam culpa, soluta dicta! Commodi sed aliquam, cum sit magni velit non dolore minus, dignissimos, similique quidem temporibus mollitia ea possimus? Obcaecati dicta, laborum eaque, enim, qui deleniti consequuntur quo eveniet atque minima eius recusandae ducimus assumenda debitis corporis ipsa magnam mollitia itaque asperiores velit quisquam iure. Ipsam aliquid velit atque nam molestiae totam alias sequi minus consequatur, obcaecati libero nobis id quos vitae unde magni adipisci soluta cupiditate impedit fuga, optio est harum magnam fugiat. </p>
+                                              </div>
+                                            </div>
+                                            <div className="home-bt-one-in-one-in-two">
+                                              <div className="home-bt-one-in-one-in-two-in">
+                                                <Image
+                                                  className='home-bt-one-in-one-in-two-in-image'
+                                                  src={SVR_Image_1}
+                                                  alt="Picture of the author"
+                                                ></Image>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
                                     </div>
                                     <div className="home-bt-six cm-bx-hide" id={num === 6 ? 'se-visible' : ''}>
-                                        <h1>Read More 6</h1>
+                                    <div className="home-bt-one-in">
+                                        <div className="home-bt-one-in-header">
+                                          <div className="home-bt-one-in-header-in">
+                                            <h1>Sustainable Development</h1>
+                                          </div>
+                                        </div>
+                                        <div className="home-bt-one-in-one">
+                                          <div className="home-bt-one-in-one-in">
+                                            <div className="home-bt-one-in-one-in-one">
+                                              <div className="home-bt-one-in-one-in-one-in">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, fugiat! Voluptatibus reprehenderit at mollitia iure ipsam culpa, soluta dicta! Commodi sed aliquam, cum sit magni velit non dolore minus, dignissimos, similique quidem temporibus mollitia ea possimus? Obcaecati dicta, laborum eaque, enim, qui deleniti consequuntur quo eveniet atque minima eius recusandae ducimus assumenda debitis corporis ipsa magnam mollitia itaque asperiores velit quisquam iure. Ipsam aliquid velit atque nam molestiae totam alias sequi minus consequatur, obcaecati libero nobis id quos vitae unde magni adipisci soluta cupiditate impedit fuga, optio est harum magnam fugiat. </p>
+                                              </div>
+                                            </div>
+                                            <div className="home-bt-one-in-one-in-two">
+                                              <div className="home-bt-one-in-one-in-two-in">
+                                                <Image
+                                                  className='home-bt-one-in-one-in-two-in-image'
+                                                  src={SVR_Image_1}
+                                                  alt="Picture of the author"
+                                                ></Image>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
                                     </div>
                                     <div className="home-bt-seven cm-bx-hide" id={num === 7 ? 'se-visible' : ''}>
-                                        <h1>Read More 7</h1>
+                                    <div className="home-bt-one-in">
+                                        <div className="home-bt-one-in-header">
+                                          <div className="home-bt-one-in-header-in">
+                                            <h1>Transportation</h1>
+                                          </div>
+                                        </div>
+                                        <div className="home-bt-one-in-one">
+                                          <div className="home-bt-one-in-one-in">
+                                            <div className="home-bt-one-in-one-in-one">
+                                              <div className="home-bt-one-in-one-in-one-in">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, fugiat! Voluptatibus reprehenderit at mollitia iure ipsam culpa, soluta dicta! Commodi sed aliquam, cum sit magni velit non dolore minus, dignissimos, similique quidem temporibus mollitia ea possimus? Obcaecati dicta, laborum eaque, enim, qui deleniti consequuntur quo eveniet atque minima eius recusandae ducimus assumenda debitis corporis ipsa magnam mollitia itaque asperiores velit quisquam iure. Ipsam aliquid velit atque nam molestiae totam alias sequi minus consequatur, obcaecati libero nobis id quos vitae unde magni adipisci soluta cupiditate impedit fuga, optio est harum magnam fugiat. </p>
+                                              </div>
+                                            </div>
+                                            <div className="home-bt-one-in-one-in-two">
+                                              <div className="home-bt-one-in-one-in-two-in">
+                                                <Image
+                                                  className='home-bt-one-in-one-in-two-in-image'
+                                                  src={SVR_Image_1}
+                                                  alt="Picture of the author"
+                                                ></Image>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
                                     </div>
                                     <div className="home-bt-eight cm-bx-hide" id={num === 8 ? 'se-visible' : ''}>
-                                        <h1>Read More 8</h1>
+                                    <div className="home-bt-one-in">
+                                        <div className="home-bt-one-in-header">
+                                          <div className="home-bt-one-in-header-in">
+                                            <h1>Livelyhood</h1>
+                                          </div>
+                                        </div>
+                                        <div className="home-bt-one-in-one">
+                                          <div className="home-bt-one-in-one-in">
+                                            <div className="home-bt-one-in-one-in-one">
+                                              <div className="home-bt-one-in-one-in-one-in">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, fugiat! Voluptatibus reprehenderit at mollitia iure ipsam culpa, soluta dicta! Commodi sed aliquam, cum sit magni velit non dolore minus, dignissimos, similique quidem temporibus mollitia ea possimus? Obcaecati dicta, laborum eaque, enim, qui deleniti consequuntur quo eveniet atque minima eius recusandae ducimus assumenda debitis corporis ipsa magnam mollitia itaque asperiores velit quisquam iure. Ipsam aliquid velit atque nam molestiae totam alias sequi minus consequatur, obcaecati libero nobis id quos vitae unde magni adipisci soluta cupiditate impedit fuga, optio est harum magnam fugiat. </p>
+                                              </div>
+                                            </div>
+                                            <div className="home-bt-one-in-one-in-two">
+                                              <div className="home-bt-one-in-one-in-two-in">
+                                                <Image
+                                                  className='home-bt-one-in-one-in-two-in-image'
+                                                  src={SVR_Image_1}
+                                                  alt="Picture of the author"
+                                                ></Image>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
                                     </div>
                                     <div className="home-bt-nine cm-bx-hide" id={num === 9 ? 'se-visible' : ''}>
-                                        <h1>Read More 9</h1>
+                                    <div className="home-bt-one-in">
+                                        <div className="home-bt-one-in-header">
+                                          <div className="home-bt-one-in-header-in">
+                                            <h1>Women Empowerment</h1>
+                                          </div>
+                                        </div>
+                                        <div className="home-bt-one-in-one">
+                                          <div className="home-bt-one-in-one-in">
+                                            <div className="home-bt-one-in-one-in-one">
+                                              <div className="home-bt-one-in-one-in-one-in">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, fugiat! Voluptatibus reprehenderit at mollitia iure ipsam culpa, soluta dicta! Commodi sed aliquam, cum sit magni velit non dolore minus, dignissimos, similique quidem temporibus mollitia ea possimus? Obcaecati dicta, laborum eaque, enim, qui deleniti consequuntur quo eveniet atque minima eius recusandae ducimus assumenda debitis corporis ipsa magnam mollitia itaque asperiores velit quisquam iure. Ipsam aliquid velit atque nam molestiae totam alias sequi minus consequatur, obcaecati libero nobis id quos vitae unde magni adipisci soluta cupiditate impedit fuga, optio est harum magnam fugiat. </p>
+                                              </div>
+                                            </div>
+                                            <div className="home-bt-one-in-one-in-two">
+                                              <div className="home-bt-one-in-one-in-two-in">
+                                                <Image
+                                                  className='home-bt-one-in-one-in-two-in-image'
+                                                  src={SVR_Image_1}
+                                                  alt="Picture of the author"
+                                                ></Image>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
                                     </div>
                                 </div>
                             </div>

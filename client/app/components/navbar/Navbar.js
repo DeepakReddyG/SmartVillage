@@ -44,6 +44,16 @@ const Navbar = () => {
                         Annual Report
                         </Scroll>
                         <Scroll
+                            className="HomeNavBar-in-two-in-scroll"
+                            to="home-five"
+                            spy={true}
+                            smooth={true}
+                            offset={-70} 
+                            duration={500}
+                        >
+                        Parameters
+                        </Scroll>
+                        <Scroll
                             to="home-nine"
                             spy={true}
                             smooth={true}
