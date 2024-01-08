@@ -136,7 +136,7 @@ export default function Home() {
                           <div className="home-three-two-in-two-box-in">
                             <div className="home-three-two-in-two-box-in-one">
                               {/* <h1><CountUp end={1351} />+</h1> */}
-                              <h1><CountUp end ={10000} />+</h1>
+                              <h1><CountUp end ={13510} />+</h1>
                             </div>
                             <div className="home-three-two-in-two-box-in-two">
                               {/* <p><span>Countries and territories</span> are home to our medical humanitarian projects</p> */}
