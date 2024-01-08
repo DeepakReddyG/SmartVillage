@@ -422,25 +422,70 @@
     border-bottom-left-radius: 0rem;
 }
 
+
+.home-bt-one-in-header {
+  border: 2px solid green;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.home-bt-one-in-header h1 {
+  font-size: 1.5rem;
+  color: green;
+  font-weight: 600;
+}
+
 .home-five-box-two {
     width: 75%;
     background-color: white;
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
-    border: 2px solid green;
     border-left: none;
+    background-color: rgb(0, 128, 0, 0.1);
 }
 
 .home-ft-box-two-in {
-    padding: 4rem 4rem;
+    padding: 1rem 3rem;
     height: 100%;
 }
 
-.home-ft-box-two-in h1 {
-    font-size: 2rem;
-    color: green;
+.home-bt-one-in-one {
+  width: 100%;
+  padding: 1rem 0rem;
 }
 
+.home-bt-one-in-one-in {
+  display: flex;
+}
+.home-bt-one-in-one-in-one {
+  width: 50%;
+}
+.home-bt-one-in-one-in-one-in {
+  width: 95%;
+  border: 2px solid green;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: rgb(0, 128, 0, 0.2);
+  height: 100%;
+}
+.home-bt-one-in-one-in-one-in p {
+  font-size: 1.1rem;
+  color: black;
+  color: rgb(35, 35, 35);
+  margin-bottom: 1rem;
+}
+.home-bt-one-in-one-in-two {
+  width: 50%;
+}
+.home-bt-one-in-one-in-two-in {
+  width: 100%;
+  margin: auto;
+}
+.home-bt-one-in-one-in-two-in-image {
+  width: 100%;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: 2px solid green;
+}
 
 #se-active {
     background-color: white;
@@ -1125,6 +1170,12 @@
     color: black;
     line-height: 2rem;
     padding: 1rem 0rem;
+    color: rgb(35, 35, 35);
+    margin-bottom: 1rem;
+  }
+  .home-bt-one-in-one-in-one-in p {
+    font-size: 1.3rem;
+    line-height: 2rem;
     color: rgb(35, 35, 35);
     margin-bottom: 1rem;
   }

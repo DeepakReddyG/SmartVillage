@@ -46,6 +46,16 @@ const HomeNavbar = () => {
                         </Scroll>
                         <Scroll
                             className="HomeNavBar-in-two-in-scroll"
+                            to="home-eight"
+                            spy={true}
+                            smooth={true}
+                            offset={-70} 
+                            duration={500}
+                        >
+                        Parameters
+                        </Scroll>
+                        <Scroll
+                            className="HomeNavBar-in-two-in-scroll"
                             to="home-nine"
                             spy={true}
                             smooth={true}
