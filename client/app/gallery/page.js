@@ -29,7 +29,7 @@ const page = () => {
                                 </div>
                                 <div className="Gi-one-two-in gm-cm-in-two g-txt">
                                     <h1>Smart Village Revolution</h1>
-                                    <p>India is a mosaic of multicultural experiences. With a rich heritage and myriad attractions, the country is among the finest destinations for a holistic vacation.</p>
+                                    <p>India is an mosaic of multicultural experiences. With a rich heritage and myriad attractions, the country is among the finest destinations for a holistic vacation.</p>
                                 </div>
                             </div>
                         </div>
