@@ -14,6 +14,7 @@ import FlipBook3 from './Assets/FlipBook3.png';
 import FlipBook4 from './Assets/FlipBook4.png';
 import Modi from './Assets/Modi.jpeg';
 import Deepak from './Assets/Deepak.png';
+import vijaysir from './Assets/vijaysir.png';
 
 
 import SVR_Image from '../public/SVR_Image.jpeg';
@@ -802,7 +803,7 @@ export default function Home() {
                                 <div className="home-team-card-in">
                                     <div className="home-team-img">
                                         <Image 
-                                            src={Deepak}
+                                            src={vijaysir}
                                             alt="Picture of the author"
                                             // border-radius: 50%, border: 1px solid green
                                             style={{ width: '100%', height: 'auto', border: '2px solid green', borderTopLeftRadius: '1rem', borderTopRightRadius: '1rem'}}
@@ -810,8 +811,8 @@ export default function Home() {
                                     </div>
                                     <div className="home-team-about">
                                        <div className="home-team-about-one">
-                                            <h1>Deepak</h1>
-                                            <p>CEO ZeroOne</p>
+                                            <h1>SaiVijay</h1>
+                                            <p>Director Sac</p>
                                        </div>
                                        <div className="home-team-about-two">
                                           <SiMicrosoftoutlook className='outlook-icon' />
