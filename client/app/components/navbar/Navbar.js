@@ -52,7 +52,9 @@ const Navbar = () => {
                         >
                         Team
                         </Scroll>
+                        
                         <Link href='https://sac.kluniversity.in' passHref={true} target='_blank'>KL SAC</Link>
+                       
                     </div>
                 </div>
             </div>
