@@ -1,95 +1,99 @@
-"use client"
-import React from 'react';
-import Image from 'next/image'
-import plantImg from '../../../public/svr.png'
+import React, { useEffect } from 'react';
 
-const Plant = () => {
-  const multiplier = 1;
-  const sunsize = 5 * multiplier;
-  const Plant = 10 * multiplier;
-  const orbitdistance = 40 * multiplier;
-  const speed = 2.4;
+const SvgAnimation = () => {
 
+    const drawMainStem = () => {
+        const paths = document.querySelectorAll('.main-stem');
+        paths.forEach(path => {
+            const length = path.getTotalLength();
+            path.style.transition = path.style.WebkitTransition = 'none';
+            path.style.strokeDasharray = `${length} ${length}`;
+            path.style.strokeDashoffset = length;
+            path.getBoundingClientRect(); // Trigger a reflow
+            path.style.transition = path.style.WebkitTransition = 'stroke-dashoffset 4s 0s ease-in-out';
+            path.style.strokeDashoffset = '0';
+        });
+    };
 
-  return (
-    <>
-    <div id="oneplus"> 
+    const drawStems = () => {
+        const paths = document.querySelectorAll('.outer-stems');
+        paths.forEach(path => {
+            const length = path.getTotalLength();
+            path.style.transition = path.style.WebkitTransition = 'none';
+            path.style.strokeDasharray = `${length} ${length}`;
+            path.style.strokeDashoffset = length;
+            path.getBoundingClientRect(); // Trigger a reflow
+            path.style.transition = path.style.WebkitTransition = 'stroke-dashoffset 3s 1s ease-in-out';
+            path.style.strokeDashoffset = '0';
+        });
+    };
 
-      <Image src={plantImg} alt="plant" width={500} height={500} />
+    const drawLeaves = () => {
+        const paths = document.querySelectorAll('.leaves path');
+        paths.forEach(path => {
+            const length = path.getTotalLength();
+            path.style.transition = path.style.WebkitTransition = 'none';
+            path.style.strokeDasharray = `${length} ${length}`;
+            path.style.strokeDashoffset = length;
+            path.getBoundingClientRect(); // Trigger a reflow
+            path.style.transition = path.style.WebkitTransition = 'stroke-dashoffset 4s 2.5s ease-in-out';
+            path.style.strokeDashoffset = '0';
+        });
+    };
 
-    </div>
-    <style jsx>{`
-        html,
-        body {
-          font-size: 0.25vw;
-          overflow: hidden;
-          height: 100%;
-        }
+    // Handle click event
+    const handleClick = () => {
+        drawMainStem();
+        drawStems();
+        drawLeaves();
+    };
 
-        #oneplus {
-          position: absolute;
-          left: 44%;
-          top: 40%;
-          transform: translate(-50%, -50%);
-          width: ${sunsize * 2}rem;
-          height: ${sunsize * 2}rem;
-          // display: flex;
-          // align-items: center;
-          // justify-content: center;
-          // color: white;
-          font-size: 2rem;
-          font-weight: bold;
-          border-radius: ${sunsize * 1}rem;
-          animation: scaleAndFade ${speed * 3}s cubic-bezier(0.86, 0, 0.07, 1) forwards;
+    // Animate SVG on component mount
+    useEffect(() => {
+        drawMainStem();
+        drawStems();
+        drawLeaves();
+    }, []);
 
-          &::after,
-          &::before {
-            content: '';
-            position: absolute;
-            width: ${Plant * .2}rem;
-            height: ${Plant * .2}rem;
-            border-radius: ${Plant * 1}rem;
-            background-color: white;
-            margin-left: 1rem;
-            top: -6rem;
-            left: 3rem;
-            transform-origin: 45% 11rem;
-            animation: spinAndMove ${speed * 3}s cubic-bezier(0.86, 0, 0.07, 1) forwards;
-          }
-        }
+    // JSX for the component
+    return (
+        <div onClick={handleClick} style={{
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            alignItems: 'center',
+            height: '100vh',
+            backgroundColor: 'white',
+        }}>
+             <svg width="237px" height="255px" viewBox="15 0 237 255" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <g stroke="none" strokeWidth={1} fill="none" fillRule="evenodd" strokeLinecap="round" strokeLinejoin="round">
+                    <g transform="translate(-589.000000, -2185.000000)" stroke="green" strokeWidth={4}>
+                        <g transform="translate(591.000000, 2187.000000)">
+                            <g className="stems">
+                                <path className="main-stem" d="M133.4414,160.118 L133.4414,31.451" id="Stroke-7"></path>
+                                <path className="outer-stems" style={{ WebkitTransitionDelay: '1s', transitionDelay: '1s' }} d="M133.4416,146.522 L72.3706,85.451" id="Stroke-15"></path>
+                                <path className="outer-stems" d="M133.8455,146.522 194.9165,85.451" id="Stroke-13"></path>
+                            </g>
+                            <g className="leaves">
+                                <path d="M133.4414,98.0008 C133.4414,98.0008 185.4414,78.0008 133.4414,0.0008 C81.4414,78.0008 133.4414,98.0008 133.4414,98.0008" id="Stroke-1"></path>
+                                <path d="M159.3208,121.0467 C159.3208,121.0467 200.5998,139.3927 215.5058,64.8617 C140.9748,79.7687 159.3208,121.0467 159.3208,121.0467" id="Stroke-3"></path>
+                                <path d="M107.9663,121.0467 C107.9663,121.0467 66.6873,139.3927 51.7813,64.8617 C126.3123,79.7687 107.9663,121.0467 107.9663,121.0467" id="Stroke-5"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+            <div style={{ textAlign: 'center'}}>
+              <h1 style={{ fontSize: '2rem', color: 'green' }}>Smart Village Revolution</h1>
+              <p>Powered by</p>
+              <h2>K L Deemed to be University</h2>
+            </div>
+            <div style={{ textAlign: 'center', backgroundColor: 'white', width: '100%', position: 'absolute', bottom: 0, color: 'black', padding: '10px', fontSize: '.8rem'}}>
+              <p>Designed & Developed by ZeroOne Code Club</p>
+            </div>
 
-        @keyframes spinAndMove {
-          0%, 25% {
-            transform: rotate(0deg);
-            opacity: 1;
-          }
-          50% {
-            transform: rotate(360deg);
-            opacity: 1;
-          }
-          75% {
-            transform: rotate(720deg) translateY(0);
-            opacity: 1;
-          }
-          100% {
-            transform: rotate(720deg) translateY(${sunsize}rem);
-            opacity: 0;
-          }
-        }
-
-        @keyframes scaleAndFade {
-          0%, 94% {
-            transform: scale(1);
-            opacity: 1;
-          }
-          100% {
-            transform: scale(100);
-            opacity: 0;
-          }
-        }
-      `}</style>    
-    </>
-  );
+        </div>
+    );
 };
 
-export default Plant;
+export default SvgAnimation;

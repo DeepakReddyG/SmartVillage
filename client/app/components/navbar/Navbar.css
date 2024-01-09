@@ -51,11 +51,6 @@
   
   .NavBar-in-two {
     width: 50%;
-
-  }
-  .NavBar-in-two a.active{
-    font-size: 17px;
-
   }
   
   .NavBar-in-two-in {
@@ -63,11 +58,8 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    &:hover{
-      cursor: pointer;
-    }
-
   }
+  
   .NavBar-in-two-in a.active {
    
     color: black;

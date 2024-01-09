@@ -90,9 +90,9 @@ export default function Home() {
 
   return (
     showAnimation ? (
-      <div className="plant">
+     
         <Plant />
-      </div>
+      
     ) :
       <div className="home-component">
         <div className="home-container">
