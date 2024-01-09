@@ -6,7 +6,11 @@ import CountUp from 'react-countup';
 
 import './globals.css';
 import heroImg from '../public/SVR_Image.jpeg';
-import SVR_Image_1 from './Assets/SVR_Image_1.png';
+import SVR_Image_1 from './Assets/IMG_8078.JPG';
+import SVR_Image_2 from './Assets/Adarsh_Gram.JPG';
+import Education from './Assets/Education.JPG';
+import SkillDevelop from './Assets/SkillDevelop.JPG';
+import HealthandHygeine from './Assets/HealthandHygeine.JPG';
 import President from './Assets/President.jpeg';
 import FlipBook1 from './Assets/FlipBook1.png';
 import FlipBook2 from './Assets/FlipBook2.png';
@@ -254,7 +258,7 @@ export default function Home() {
                       <div className="home-two-in-one-in-two-in">
                        <Image
                        className='home-two-in-one-in-two-in-image'
-                      src={SVR_Image_1}
+                      src={SVR_Image_2}
                         alt="Picture of the author"
                         width={400}
                         height={300}
@@ -280,7 +284,15 @@ export default function Home() {
                     <div className="home-seven-in-one-in-box">
                         <div className="home-seven-in-one-in-box-in">
                           <Image
-                            src={SVR_Image_1}
+                            src={Education}
+                            alt="Picture of the author"
+                          ></Image>
+                          <p>Education for all</p>
+                        </div>
+                      </div><div className="home-seven-in-one-in-box">
+                        <div className="home-seven-in-one-in-box-in">
+                          <Image
+                            src={HealthandHygeine}
                             alt="Picture of the author"
                           ></Image>
                           <p>Health & Hygiene</p>
@@ -288,74 +300,66 @@ export default function Home() {
                       </div><div className="home-seven-in-one-in-box">
                         <div className="home-seven-in-one-in-box-in">
                           <Image
-                            src={SVR_Image_1}
+                            src={SkillDevelop}
                             alt="Picture of the author"
                           ></Image>
-                          <p>Health & Hygiene</p>
+                          <p>Skill Development</p>
                         </div>
                       </div><div className="home-seven-in-one-in-box">
                         <div className="home-seven-in-one-in-box-in">
                           <Image
-                            src={SVR_Image_1}
+                            src={Education}
                             alt="Picture of the author"
                           ></Image>
-                          <p>Health & Hygiene</p>
+                          <p>Enviromental Development</p>
                         </div>
                       </div><div className="home-seven-in-one-in-box">
                         <div className="home-seven-in-one-in-box-in">
                           <Image
-                            src={SVR_Image_1}
+                            src={Education}
                             alt="Picture of the author"
                           ></Image>
-                          <p>Health & Hygiene</p>
+                          <p>Social Security</p>
                         </div>
                       </div><div className="home-seven-in-one-in-box">
                         <div className="home-seven-in-one-in-box-in">
                           <Image
-                            src={SVR_Image_1}
+                            src={Education}
                             alt="Picture of the author"
                           ></Image>
-                          <p>Health & Hygiene</p>
+                          <p>Good Governance</p>
                         </div>
                       </div><div className="home-seven-in-one-in-box">
                         <div className="home-seven-in-one-in-box-in">
                           <Image
-                            src={SVR_Image_1}
+                            src={Education}
                             alt="Picture of the author"
                           ></Image>
-                          <p>Health & Hygiene</p>
+                          <p>Rural Industrialization</p>
                         </div>
                       </div><div className="home-seven-in-one-in-box">
                         <div className="home-seven-in-one-in-box-in">
                           <Image
-                            src={SVR_Image_1}
+                            src={Education}
                             alt="Picture of the author"
                           ></Image>
-                          <p>Health & Hygiene</p>
+                          <p>Personal Development</p>
                         </div>
                       </div><div className="home-seven-in-one-in-box">
                         <div className="home-seven-in-one-in-box-in">
                           <Image
-                            src={SVR_Image_1}
+                            src={Education}
                             alt="Picture of the author"
                           ></Image>
-                          <p>Health & Hygiene</p>
+                          <p>Economic Development</p>
                         </div>
                       </div><div className="home-seven-in-one-in-box">
                         <div className="home-seven-in-one-in-box-in">
                           <Image
-                            src={SVR_Image_1}
+                             src={Education}
                             alt="Picture of the author"
                           ></Image>
-                          <p>Health & Hygiene</p>
-                        </div>
-                      </div><div className="home-seven-in-one-in-box">
-                        <div className="home-seven-in-one-in-box-in">
-                          <Image
-                             src={SVR_Image_1}
-                            alt="Picture of the author"
-                          ></Image>
-                          <p>Health & Hygiene</p>
+                          <p>Women Empowerment</p>
                         </div>
                       </div>
                       
@@ -405,7 +409,7 @@ export default function Home() {
                 <div className="home-eight-two">
                   <div className="home-eight-two-in">
                     <h1>Annual Report 2022-23 Social Internship: Class of Y22 Students</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, temporibus sapiente labore aliquam perspiciatis adipisci harum veniam quibusdam amet dolorum!</p>
+                    <p>Empowering Futures: A Journey of Impact and Growth – Annual Report 2022-23 for Social Internship by the Y22 Students</p>
                     <Link className='home-eight-two-in-link' href='/'>Download E-Book</Link>
                   </div>
                 </div>
@@ -551,7 +555,7 @@ export default function Home() {
                                           <div className="home-bt-one-in-one-in">
                                             <div className="home-bt-one-in-one-in-one">
                                               <div className="home-bt-one-in-one-in-one-in">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, fugiat! Voluptatibus reprehenderit at mollitia iure ipsam culpa, soluta dicta! Commodi sed aliquam, cum sit magni velit non dolore minus, dignissimos, similique quidem temporibus mollitia ea possimus? Obcaecati dicta, laborum eaque, enim, qui deleniti consequuntur quo eveniet atque minima eius recusandae ducimus assumenda debitis corporis ipsa magnam mollitia itaque asperiores velit quisquam iure. Ipsam aliquid velit atque nam molestiae totam alias sequi minus consequatur, obcaecati libero nobis id quos vitae unde magni adipisci soluta cupiditate impedit fuga, optio est harum magnam fugiat. </p>
+                                                <p>Agriculture in Smart Villages thrives through the adoption of precision farming techniques. Leveraging technology, farmers make data-driven decisions for irrigation, fertilization, and pest control. Sustainable practices like organic farming and renewable energy integration ensure long-term environmental health.Providing access to modern agricultural practices and tools for continuous improvement. </p>
                                               </div>
                                             </div>
                                             <div className="home-bt-one-in-one-in-two">
@@ -578,7 +582,7 @@ export default function Home() {
                                           <div className="home-bt-one-in-one-in">
                                             <div className="home-bt-one-in-one-in-one">
                                               <div className="home-bt-one-in-one-in-one-in">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, fugiat! Voluptatibus reprehenderit at mollitia iure ipsam culpa, soluta dicta! Commodi sed aliquam, cum sit magni velit non dolore minus, dignissimos, similique quidem temporibus mollitia ea possimus? Obcaecati dicta, laborum eaque, enim, qui deleniti consequuntur quo eveniet atque minima eius recusandae ducimus assumenda debitis corporis ipsa magnam mollitia itaque asperiores velit quisquam iure. Ipsam aliquid velit atque nam molestiae totam alias sequi minus consequatur, obcaecati libero nobis id quos vitae unde magni adipisci soluta cupiditate impedit fuga, optio est harum magnam fugiat. </p>
+                                                <p>Access to quality education is pivotal. Smart Villages utilize digital learning tools, offer training for teachers, and establish schools with modern resources. This empowers the youth, fostering innovation and preparing them for diverse career opportunities. Continuous training programs for educators to align teaching methods with modern pedagogies. Offering vocational training and specialized courses to prepare students for diverse careers. </p>
                                               </div>
                                             </div>
                                             <div className="home-bt-one-in-one-in-two">
@@ -605,7 +609,7 @@ export default function Home() {
                                           <div className="home-bt-one-in-one-in">
                                             <div className="home-bt-one-in-one-in-one">
                                               <div className="home-bt-one-in-one-in-one-in">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, fugiat! Voluptatibus reprehenderit at mollitia iure ipsam culpa, soluta dicta! Commodi sed aliquam, cum sit magni velit non dolore minus, dignissimos, similique quidem temporibus mollitia ea possimus? Obcaecati dicta, laborum eaque, enim, qui deleniti consequuntur quo eveniet atque minima eius recusandae ducimus assumenda debitis corporis ipsa magnam mollitia itaque asperiores velit quisquam iure. Ipsam aliquid velit atque nam molestiae totam alias sequi minus consequatur, obcaecati libero nobis id quos vitae unde magni adipisci soluta cupiditate impedit fuga, optio est harum magnam fugiat. </p>
+                                                <p>Developing robust infrastructure like roads, electricity, and internet connectivity for enhanced accessibility and economic opportunities. Building and maintaining reliable transportation networks to connect villages with markets and essential services. Investing in sustainable energy sources to ensure consistent and clean power supply for villages. Installing internet connectivity and digital infrastructure to bridge the digital divide and facilitate access to information and services. Constructing community centers and public spaces for social interaction, events, and communal activities. Implementing waste management systems to ensure a clean and sustainable environment. Creating resilient infrastructure that can withstand natural disasters and adverse weather conditions. Providing housing facilities and urban planning to ensure safe and comfortable living conditions for villagers. </p>
                                               </div>
                                             </div>
                                             <div className="home-bt-one-in-one-in-two">
@@ -632,7 +636,7 @@ export default function Home() {
                                           <div className="home-bt-one-in-one-in">
                                             <div className="home-bt-one-in-one-in-one">
                                               <div className="home-bt-one-in-one-in-one-in">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, fugiat! Voluptatibus reprehenderit at mollitia iure ipsam culpa, soluta dicta! Commodi sed aliquam, cum sit magni velit non dolore minus, dignissimos, similique quidem temporibus mollitia ea possimus? Obcaecati dicta, laborum eaque, enim, qui deleniti consequuntur quo eveniet atque minima eius recusandae ducimus assumenda debitis corporis ipsa magnam mollitia itaque asperiores velit quisquam iure. Ipsam aliquid velit atque nam molestiae totam alias sequi minus consequatur, obcaecati libero nobis id quos vitae unde magni adipisci soluta cupiditate impedit fuga, optio est harum magnam fugiat. </p>
+                                                <p>Preserving local traditions, customs, and cultural heritage while embracing progressive values and innovations. Encouraging community participation in cultural events, festivals, and celebrations to strengthen social bonds. Supporting local artisans and craftsmen to promote cultural craftsmanship and heritage. Fostering a sense of belonging and pride by celebrating diverse cultural identities within the community. Creating platforms for cultural exchange and dialogue to promote understanding and tolerance. Engaging youth in cultural activities and events to ensure the continuity of traditions. Establishing community centers as hubs for cultural education and exchange of ideas.  </p>
                                               </div>
                                             </div>
                                             <div className="home-bt-one-in-one-in-two">
@@ -659,7 +663,7 @@ export default function Home() {
                                           <div className="home-bt-one-in-one-in">
                                             <div className="home-bt-one-in-one-in-one">
                                               <div className="home-bt-one-in-one-in-one-in">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, fugiat! Voluptatibus reprehenderit at mollitia iure ipsam culpa, soluta dicta! Commodi sed aliquam, cum sit magni velit non dolore minus, dignissimos, similique quidem temporibus mollitia ea possimus? Obcaecati dicta, laborum eaque, enim, qui deleniti consequuntur quo eveniet atque minima eius recusandae ducimus assumenda debitis corporis ipsa magnam mollitia itaque asperiores velit quisquam iure. Ipsam aliquid velit atque nam molestiae totam alias sequi minus consequatur, obcaecati libero nobis id quos vitae unde magni adipisci soluta cupiditate impedit fuga, optio est harum magnam fugiat. </p>
+                                                <p>Establishing healthcare facilities and clinics equipped with essential medical services and trained healthcare professionals. Conducting health awareness campaigns and educational programs on hygiene, nutrition, and disease prevention. Providing access to clean and safe drinking water through water purification systems and community wells. Implementing sanitation facilities such as community toilets and waste management systems for improved hygiene. Ensuring availability of essential medications and vaccines for common diseases and emergencies. Encouraging regular health check-ups and screenings to detect health issues at early stages. Promoting healthy lifestyle practices through fitness programs and recreational activities. Collaborating with local health workers and volunteers for community health initiatives and outreach programs</p>
                                               </div>
                                             </div>
                                             <div className="home-bt-one-in-one-in-two">
@@ -686,7 +690,7 @@ export default function Home() {
                                           <div className="home-bt-one-in-one-in">
                                             <div className="home-bt-one-in-one-in-one">
                                               <div className="home-bt-one-in-one-in-one-in">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, fugiat! Voluptatibus reprehenderit at mollitia iure ipsam culpa, soluta dicta! Commodi sed aliquam, cum sit magni velit non dolore minus, dignissimos, similique quidem temporibus mollitia ea possimus? Obcaecati dicta, laborum eaque, enim, qui deleniti consequuntur quo eveniet atque minima eius recusandae ducimus assumenda debitis corporis ipsa magnam mollitia itaque asperiores velit quisquam iure. Ipsam aliquid velit atque nam molestiae totam alias sequi minus consequatur, obcaecati libero nobis id quos vitae unde magni adipisci soluta cupiditate impedit fuga, optio est harum magnam fugiat. </p>
+                                                <p>Promoting sustainable agricultural practices to minimize environmental impact and ensure long-term food security. Encouraging the use of renewable energy sources like solar power and biogas for clean and sustainable energy. Implementing eco-friendly waste management systems to reduce pollution and promote recycling. Adopting sustainable water management practices to conserve water resources and prevent scarcity. Supporting reforestation and conservation efforts to preserve biodiversity and natural habitats. Encouraging eco-tourism and responsible tourism practices to promote sustainable economic growth. Educating and raising awareness about the importance of environmental conservation and sustainable living. Collaborating with local communities and stakeholders for sustainable development projects and initiatives. </p>
                                               </div>
                                             </div>
                                             <div className="home-bt-one-in-one-in-two">
@@ -713,7 +717,7 @@ export default function Home() {
                                           <div className="home-bt-one-in-one-in">
                                             <div className="home-bt-one-in-one-in-one">
                                               <div className="home-bt-one-in-one-in-one-in">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, fugiat! Voluptatibus reprehenderit at mollitia iure ipsam culpa, soluta dicta! Commodi sed aliquam, cum sit magni velit non dolore minus, dignissimos, similique quidem temporibus mollitia ea possimus? Obcaecati dicta, laborum eaque, enim, qui deleniti consequuntur quo eveniet atque minima eius recusandae ducimus assumenda debitis corporis ipsa magnam mollitia itaque asperiores velit quisquam iure. Ipsam aliquid velit atque nam molestiae totam alias sequi minus consequatur, obcaecati libero nobis id quos vitae unde magni adipisci soluta cupiditate impedit fuga, optio est harum magnam fugiat. </p>
+                                                <p>Improving transportation networks with well-constructed roads and bridges for easier access to markets and services. Introducing affordable and efficient public transportation options for villagers. Establishing reliable and safe transportation systems for commuting and trade. Embracing technological advancements for smart transportation solutions like ride-sharing platforms. Encouraging the use of eco-friendly modes of transportation to reduce environmental impact. Ensuring regular maintenance and upkeep of transportation infrastructure for safety and reliability. Connecting remote areas with transportation hubs to facilitate movement and trade. Creating transport systems that cater to the unique needs of the community.  </p>
                                               </div>
                                             </div>
                                             <div className="home-bt-one-in-one-in-two">
@@ -740,7 +744,7 @@ export default function Home() {
                                           <div className="home-bt-one-in-one-in">
                                             <div className="home-bt-one-in-one-in-one">
                                               <div className="home-bt-one-in-one-in-one-in">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, fugiat! Voluptatibus reprehenderit at mollitia iure ipsam culpa, soluta dicta! Commodi sed aliquam, cum sit magni velit non dolore minus, dignissimos, similique quidem temporibus mollitia ea possimus? Obcaecati dicta, laborum eaque, enim, qui deleniti consequuntur quo eveniet atque minima eius recusandae ducimus assumenda debitis corporis ipsa magnam mollitia itaque asperiores velit quisquam iure. Ipsam aliquid velit atque nam molestiae totam alias sequi minus consequatur, obcaecati libero nobis id quos vitae unde magni adipisci soluta cupiditate impedit fuga, optio est harum magnam fugiat. </p>
+                                                <p>Creating skill development programs tailored to the needs of the community and market demands. Encouraging entrepreneurship through training, mentorship, and access to resources. Establishing micro-enterprises and cooperatives to support local industries and economic growth. Offering financial literacy programs and access to microfinance for aspiring entrepreneurs. Developing sustainable farming practices and alternative livelihood opportunities to diversify income sources. Providing market linkages and access to markets for locally produced goods. Encouraging vocational training and apprenticeships for acquiring specialized skills. Fostering innovation and creativity through initiatives that support small businesses and startups. </p>
                                               </div>
                                             </div>
                                             <div className="home-bt-one-in-one-in-two">
@@ -767,7 +771,7 @@ export default function Home() {
                                           <div className="home-bt-one-in-one-in">
                                             <div className="home-bt-one-in-one-in-one">
                                               <div className="home-bt-one-in-one-in-one-in">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, fugiat! Voluptatibus reprehenderit at mollitia iure ipsam culpa, soluta dicta! Commodi sed aliquam, cum sit magni velit non dolore minus, dignissimos, similique quidem temporibus mollitia ea possimus? Obcaecati dicta, laborum eaque, enim, qui deleniti consequuntur quo eveniet atque minima eius recusandae ducimus assumenda debitis corporis ipsa magnam mollitia itaque asperiores velit quisquam iure. Ipsam aliquid velit atque nam molestiae totam alias sequi minus consequatur, obcaecati libero nobis id quos vitae unde magni adipisci soluta cupiditate impedit fuga, optio est harum magnam fugiat. </p>
+                                                <p>Providing education and skill development programs specifically tailored for women's needs and aspirations. Creating opportunities for women to engage in decision-making processes within the community. Offering mentorship and leadership training programs to empower women leaders. Ensuring access to healthcare and reproductive rights for women in rural areas. Establishing support networks and forums for women to share experiences and knowledge. Encouraging financial independence through entrepreneurship and vocational training for women. Addressing cultural barriers and biases through awareness campaigns and advocacy programs. Providing access to legal support and counseling services for women facing challenges.  </p>
                                               </div>
                                             </div>
                                             <div className="home-bt-one-in-one-in-two">
@@ -811,8 +815,8 @@ export default function Home() {
                                     </div>
                                     <div className="home-team-about">
                                        <div className="home-team-about-one">
-                                            <h1>SaiVijay</h1>
-                                            <p>Director Sac</p>
+                                            <h1>Er.P.Sai Vijay</h1>
+                                            <p>Director-SAC</p>
                                        </div>
                                        <div className="home-team-about-two">
                                           <SiMicrosoftoutlook className='outlook-icon' />
@@ -832,8 +836,8 @@ export default function Home() {
                                     </div>
                                     <div className="home-team-about">
                                        <div className="home-team-about-one">
-                                            <h1>Deepak</h1>
-                                            <p>CEO ZeroOne</p>
+                                            <h1>Mr.B.V. Satyanarayana</h1>
+                                            <p>SVR-Incharge</p>
                                        </div>
                                        <div className="home-team-about-two">
                                           <SiMicrosoftoutlook className='outlook-icon' />
@@ -853,8 +857,8 @@ export default function Home() {
                                     </div>
                                     <div className="home-team-about">
                                        <div className="home-team-about-one">
-                                            <h1>Deepak</h1>
-                                            <p>CEO ZeroOne</p>
+                                            <h1>Mr.B.Rambabu</h1>
+                                            <p>SVR-Mentor</p>
                                        </div>
                                        <div className="home-team-about-two">
                                           <SiMicrosoftoutlook className='outlook-icon' />
@@ -874,92 +878,8 @@ export default function Home() {
                                     </div>
                                     <div className="home-team-about">
                                        <div className="home-team-about-one">
-                                            <h1>Deepak</h1>
-                                            <p>CEO ZeroOne</p>
-                                       </div>
-                                       <div className="home-team-about-two">
-                                          <SiMicrosoftoutlook className='outlook-icon' />
-                                          <FaLinkedin className='linked-icon' />
-                                       </div>
-                                    </div>
-                                </div>
-                            </div><div className="home-team-card">
-                                <div className="home-team-card-in">
-                                    <div className="home-team-img">
-                                        <Image 
-                                            src={Deepak}
-                                            alt="Picture of the author"
-                                            // border-radius: 50%, border: 1px solid green
-                                            style={{ width: '100%', height: 'auto', border: '2px solid green', borderTopLeftRadius: '1rem', borderTopRightRadius: '1rem'}}
-                                        />
-                                    </div>
-                                    <div className="home-team-about">
-                                       <div className="home-team-about-one">
-                                            <h1>Deepak</h1>
-                                            <p>CEO ZeroOne</p>
-                                       </div>
-                                       <div className="home-team-about-two">
-                                          <SiMicrosoftoutlook className='outlook-icon' />
-                                          <FaLinkedin className='linked-icon' />
-                                       </div>
-                                    </div>
-                                </div>
-                            </div><div className="home-team-card">
-                                <div className="home-team-card-in">
-                                    <div className="home-team-img">
-                                        <Image 
-                                            src={Deepak}
-                                            alt="Picture of the author"
-                                            // border-radius: 50%, border: 1px solid green
-                                            style={{ width: '100%', height: 'auto', border: '2px solid green', borderTopLeftRadius: '1rem', borderTopRightRadius: '1rem'}}
-                                        />
-                                    </div>
-                                    <div className="home-team-about">
-                                       <div className="home-team-about-one">
-                                            <h1>Deepak</h1>
-                                            <p>CEO ZeroOne</p>
-                                       </div>
-                                       <div className="home-team-about-two">
-                                          <SiMicrosoftoutlook className='outlook-icon' />
-                                          <FaLinkedin className='linked-icon' />
-                                       </div>
-                                    </div>
-                                </div>
-                            </div><div className="home-team-card">
-                                <div className="home-team-card-in">
-                                    <div className="home-team-img">
-                                        <Image 
-                                            src={Deepak}
-                                            alt="Picture of the author"
-                                            // border-radius: 50%, border: 1px solid green
-                                            style={{ width: '100%', height: 'auto', border: '2px solid green', borderTopLeftRadius: '1rem', borderTopRightRadius: '1rem'}}
-                                        />
-                                    </div>
-                                    <div className="home-team-about">
-                                       <div className="home-team-about-one">
-                                            <h1>Deepak</h1>
-                                            <p>CEO ZeroOne</p>
-                                       </div>
-                                       <div className="home-team-about-two">
-                                          <SiMicrosoftoutlook className='outlook-icon' />
-                                          <FaLinkedin className='linked-icon' />
-                                       </div>
-                                    </div>
-                                </div>
-                            </div><div className="home-team-card">
-                                <div className="home-team-card-in">
-                                    <div className="home-team-img">
-                                        <Image 
-                                            src={Deepak}
-                                            alt="Picture of the author"
-                                            // border-top-left-radius='1rem'
-                                            style={{ width: '100%', height: 'auto', border: '2px solid green', borderTopLeftRadius: '1rem', borderTopRightRadius: '1rem'}}
-                                        />
-                                    </div>
-                                    <div className="home-team-about">
-                                       <div className="home-team-about-one">
-                                            <h1>Deepak</h1>
-                                            <p>CEO ZeroOne</p>
+                                            <h1>Mr.Siva</h1>
+                                            <p>SVR-Mentor</p>
                                        </div>
                                        <div className="home-team-about-two">
                                           <SiMicrosoftoutlook className='outlook-icon' />
