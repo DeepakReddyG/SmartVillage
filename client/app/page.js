@@ -26,6 +26,19 @@ import Navbar from './components/navbar/Navbar';
 import Link from 'next/link';
 import HTMLFlipBook from 'react-pageflip';
 
+
+// areas of work images
+import AreasOfWork_Image_1 from './Assets/AreasOfWork_Image_1.png';
+import AreasOfWork_Image_2 from './Assets/AreasOfWork_Image_2.png';
+import AreasOfWork_Image_3 from './Assets/AreasOfWork_Image_3.png';
+import AreasOfWork_Image_4 from './Assets/AreasOfWork_Image_4.png';
+import AreasOfWork_Image_5 from './Assets/AreasOfWork_Image_5.png';
+import AreasOfWork_Image_6 from './Assets/AreasOfWork_Image_6.png';
+import AreasOfWork_Image_7 from './Assets/AreasOfWork_Image_7.png';
+import AreasOfWork_Image_8 from './Assets/AreasOfWork_Image_8.png';
+import AreasOfWork_Image_9 from './Assets/AreasOfWork_Image_9.png';
+import AreasOfWork_Image_10 from './Assets/AreasOfWork_Image_10.png';
+
 import { FaLinkedin } from "react-icons/fa6";
 import { SiMicrosoftoutlook } from "react-icons/si";
 import HomeNavbar from './components/navbar/HomeNavbar';
@@ -284,15 +297,15 @@ export default function Home() {
                     <div className="home-seven-in-one-in-box">
                         <div className="home-seven-in-one-in-box-in">
                           <Image
-                            src={Education}
+                            src={AreasOfWork_Image_1}
                             alt="Picture of the author"
                           ></Image>
-                          <p>Education for all</p>
+                          <p>Education</p>
                         </div>
                       </div><div className="home-seven-in-one-in-box">
                         <div className="home-seven-in-one-in-box-in">
                           <Image
-                            src={HealthandHygeine}
+                            src={AreasOfWork_Image_2}
                             alt="Picture of the author"
                           ></Image>
                           <p>Health & Hygiene</p>
@@ -300,7 +313,7 @@ export default function Home() {
                       </div><div className="home-seven-in-one-in-box">
                         <div className="home-seven-in-one-in-box-in">
                           <Image
-                            src={SkillDevelop}
+                            src={AreasOfWork_Image_3}
                             alt="Picture of the author"
                           ></Image>
                           <p>Skill Development</p>
@@ -308,7 +321,7 @@ export default function Home() {
                       </div><div className="home-seven-in-one-in-box">
                         <div className="home-seven-in-one-in-box-in">
                           <Image
-                            src={Education}
+                            src={AreasOfWork_Image_4}
                             alt="Picture of the author"
                           ></Image>
                           <p>Enviromental Development</p>
@@ -316,7 +329,7 @@ export default function Home() {
                       </div><div className="home-seven-in-one-in-box">
                         <div className="home-seven-in-one-in-box-in">
                           <Image
-                            src={Education}
+                            src={AreasOfWork_Image_5}
                             alt="Picture of the author"
                           ></Image>
                           <p>Social Security</p>
@@ -324,7 +337,7 @@ export default function Home() {
                       </div><div className="home-seven-in-one-in-box">
                         <div className="home-seven-in-one-in-box-in">
                           <Image
-                            src={Education}
+                            src={AreasOfWork_Image_6}
                             alt="Picture of the author"
                           ></Image>
                           <p>Good Governance</p>
@@ -332,7 +345,7 @@ export default function Home() {
                       </div><div className="home-seven-in-one-in-box">
                         <div className="home-seven-in-one-in-box-in">
                           <Image
-                            src={Education}
+                            src={AreasOfWork_Image_7}
                             alt="Picture of the author"
                           ></Image>
                           <p>Rural Industrialization</p>
@@ -340,7 +353,7 @@ export default function Home() {
                       </div><div className="home-seven-in-one-in-box">
                         <div className="home-seven-in-one-in-box-in">
                           <Image
-                            src={Education}
+                            src={AreasOfWork_Image_8}
                             alt="Picture of the author"
                           ></Image>
                           <p>Personal Development</p>
@@ -348,7 +361,7 @@ export default function Home() {
                       </div><div className="home-seven-in-one-in-box">
                         <div className="home-seven-in-one-in-box-in">
                           <Image
-                            src={Education}
+                            src={AreasOfWork_Image_9}
                             alt="Picture of the author"
                           ></Image>
                           <p>Economic Development</p>
@@ -356,7 +369,7 @@ export default function Home() {
                       </div><div className="home-seven-in-one-in-box">
                         <div className="home-seven-in-one-in-box-in">
                           <Image
-                             src={Education}
+                             src={AreasOfWork_Image_10}
                             alt="Picture of the author"
                           ></Image>
                           <p>Women Empowerment</p>
