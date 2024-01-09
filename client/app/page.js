@@ -125,7 +125,8 @@ export default function Home() {
                 <div className="home-three-one">
                   <div className="home-three-one-in">
                     {/* <h1>We provide independent, impartial medical humanitarian assistance to the people who need it most.</h1> */}
-                    <h1>The Smart Village Revolution blends innovation, connectivity, tradition for sustainable communities.</h1>
+                    {/* <h1>The Smart Village Revolution blends innovation, connectivity, tradition for sustainable communities.</h1> */}
+                    <h1>K L University's Smart Village Revolution - Empowering Communities with Innovation and Sustainability.</h1>
                     {/* <p>Doctors Without Borders/Médecins Sans Frontières (MSF) cares for people affected by conflict, disease outbreaks, natural and human-made disasters, and exclusion from health care in more than 70 countries.Doctors Without Borders/Médecins Sans Frontières (MSF) cares for people affected by conflict, disease outbreaks, natural and human-made disasters, and exclusion from health care in more than 70 countries.</p> */}
                     <p>In the smart village revolution, traditional wisdom and cutting-edge concepts coexist harmoniously. Solar-powered schools, quick access to medical assistance, and cellphone-enabled soil monitoring empower communities. Progress flows effortlessly and sustainably, nourishing villages like water touched by the sun. Tradition endures as innovation fortifies it, fostering common aspirations and promising tomorrows.</p>
                     <Link className='home-three-one-in-link' href='/'>Learn More About What We Do</Link>
@@ -146,7 +147,7 @@ export default function Home() {
                             </div>
                             <div className="home-three-two-in-two-box-in-two">
                               {/* <p><span>Countries and territories </span>are home to our medical humanitarian projects</p> */}
-                              <p><span>Villages Adopted by </span>kLUniversity Under Smart Village Revolution</p>
+                              <p><span>Villages Adopted</span> by K L University Under Smart Village Revolution Project</p>
                             </div>
                           </div>
                         </div>
