@@ -1046,7 +1046,7 @@
     }
 
     .home-team-card {
-      width: 48%;
+      width: 95%;
     }
 
     .home-team-about h1 {
@@ -1087,6 +1087,11 @@
 
     .home-ten-one-in-one-in p {
       width: 100%;
+    }
+
+    .home-team-about-two {
+      display: flex;
+      flex-direction: column;
     }
 
 

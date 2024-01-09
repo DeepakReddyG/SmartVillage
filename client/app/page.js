@@ -838,11 +838,12 @@ export default function Home() {
                                        </div>
                                     </div>
                                 </div>
-                            </div><div className="home-team-card">
+                            </div>
+                            <div className="home-team-card">
                                 <div className="home-team-card-in">
                                     <div className="home-team-img">
                                         <Image 
-                                            src={Deepak}
+                                            src={vijaysir}
                                             alt="Picture of the author"
                                             // border-radius: 50%, border: 1px solid green
                                             style={{ width: '100%', height: 'auto', border: '2px solid green', borderTopLeftRadius: '1rem', borderTopRightRadius: '1rem'}}
@@ -850,8 +851,8 @@ export default function Home() {
                                     </div>
                                     <div className="home-team-about">
                                        <div className="home-team-about-one">
-                                            <h1>Mr.B.V. Satyanarayana</h1>
-                                            <p>SVR-Incharge</p>
+                                            <h1>Mr. B.V Satyanarayana</h1>
+                                            <p>Incharge SVR</p>
                                        </div>
                                        <div className="home-team-about-two">
                                           <SiMicrosoftoutlook className='outlook-icon' />
@@ -859,11 +860,12 @@ export default function Home() {
                                        </div>
                                     </div>
                                 </div>
-                            </div><div className="home-team-card">
+                            </div>
+                            <div className="home-team-card">
                                 <div className="home-team-card-in">
                                     <div className="home-team-img">
                                         <Image 
-                                            src={Deepak}
+                                            src={vijaysir}
                                             alt="Picture of the author"
                                             // border-radius: 50%, border: 1px solid green
                                             style={{ width: '100%', height: 'auto', border: '2px solid green', borderTopLeftRadius: '1rem', borderTopRightRadius: '1rem'}}
@@ -871,8 +873,8 @@ export default function Home() {
                                     </div>
                                     <div className="home-team-about">
                                        <div className="home-team-about-one">
-                                            <h1>Mr.B.Rambabu</h1>
-                                            <p>SVR-Mentor</p>
+                                            <h1>Mr. B Rambabu</h1>
+                                            <p>Incharge SVR</p>
                                        </div>
                                        <div className="home-team-about-two">
                                           <SiMicrosoftoutlook className='outlook-icon' />
@@ -880,11 +882,12 @@ export default function Home() {
                                        </div>
                                     </div>
                                 </div>
-                            </div><div className="home-team-card">
+                            </div>
+                            <div className="home-team-card">
                                 <div className="home-team-card-in">
                                     <div className="home-team-img">
                                         <Image 
-                                            src={Deepak}
+                                            src={vijaysir}
                                             alt="Picture of the author"
                                             // border-radius: 50%, border: 1px solid green
                                             style={{ width: '100%', height: 'auto', border: '2px solid green', borderTopLeftRadius: '1rem', borderTopRightRadius: '1rem'}}
@@ -892,8 +895,8 @@ export default function Home() {
                                     </div>
                                     <div className="home-team-about">
                                        <div className="home-team-about-one">
-                                            <h1>Mr.Siva</h1>
-                                            <p>SVR-Mentor</p>
+                                            <h1>Mr Shiva</h1>
+                                            <p>Incharge SVR</p>
                                        </div>
                                        <div className="home-team-about-two">
                                           <SiMicrosoftoutlook className='outlook-icon' />
