@@ -58,8 +58,6 @@ export default function Home() {
         window.addEventListener("scroll", () => {
 
             scroll = window.scrollY;
-            console.log(scroll);
-
             if(window.scrollY > 300) {
                 setShowNavbar(true);
             } else {
@@ -84,7 +82,6 @@ export default function Home() {
     return () => clearTimeout(timer);
   }, []);
 
-  console.log(showAnimation);
     
 // ---------- Boot Animation END ------------
 
