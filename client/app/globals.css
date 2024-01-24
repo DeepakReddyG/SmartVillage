@@ -235,12 +235,14 @@
 }
 .home-two-in-one-in-two-in {
   display: flex;
-  justify-content: flex-end
+  justify-content: flex-end;
+  width: 100%;
 }
 
 .home-two-in-one-in-two-in-image {
   border-radius: 1rem;
   border: 1px solid black;
+  width: 100%;
 }
 
 .home-two-in-one-in-boxes {
@@ -325,6 +327,9 @@
   text-align: center;
   background-color: rgb(0, 128, 0, 0.2);
 }
+.home-four-one-in-one span {
+  font-size: 0.7rem;
+}
 .home-four-two {
   width: 78%;
   background-color: rgb(0, 128, 0, 0.2);
@@ -345,7 +350,7 @@
   color: black;
   font-size: 1.3rem;
   color: black;
-  width: 80%;
+  width: 90%;
 }
 
 

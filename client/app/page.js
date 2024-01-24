@@ -19,6 +19,12 @@ import FlipBook4 from './Assets/FlipBook4.png';
 import Modi from './Assets/Modi.jpeg';
 import Deepak from './Assets/Deepak.png';
 import vijaysir from './Assets/vijaysir.png';
+import rambabu from './Assets/rambabu.jpg';
+import satyanarayana from './Assets/satyanarayana.jpeg';
+
+import sec_one_one_image from './Assets/section_one_1.jpg';
+import communityInfrastructure from './Assets/communityInfrastructure.png';
+import culturalExchange from './Assets/culturalExchange.png';
 
 
 import SVR_Image from '../public/SVR_Image.jpeg';
@@ -101,7 +107,7 @@ export default function Home() {
             </div>
             <div className="hero"
               style={{
-                backgroundImage: `url(${SVR_Image.src})`,
+                backgroundImage: `url(${sec_one_one_image.src})`,
                 backgroundPosition: "center",
                 backgroundSize: "cover",
                 backgroundRepeat: "no-repeat"
@@ -126,6 +132,7 @@ export default function Home() {
                     <h1>K L University's Smart Village Revolution - Empowering Communities with Innovation and Sustainability.</h1>
                     {/* <p>Doctors Without Borders/Médecins Sans Frontières (MSF) cares for people affected by conflict, disease outbreaks, natural and human-made disasters, and exclusion from health care in more than 70 countries.Doctors Without Borders/Médecins Sans Frontières (MSF) cares for people affected by conflict, disease outbreaks, natural and human-made disasters, and exclusion from health care in more than 70 countries.</p> */}
                     <p>In the smart village revolution, traditional wisdom and cutting-edge concepts coexist harmoniously. Solar-powered schools, quick access to medical assistance, and cellphone-enabled soil monitoring empower communities. Progress flows effortlessly and sustainably, nourishing villages like water touched by the sun. Tradition endures as innovation fortifies it, fostering common aspirations and promising tomorrows.</p>
+                    {/* navigate it to areas work */}
                     <Link className='home-three-one-in-link' href='/'>Learn More About What We Do</Link>
                   </div>
                 </div>
@@ -140,7 +147,7 @@ export default function Home() {
                           <div className="home-three-two-in-two-box-in">
                             <div className="home-three-two-in-two-box-in-one">
                               {/* <h1><CountUp end={100} />+</h1> */}
-                              <h1><CountUp end={95} />+</h1>
+                              <h1><CountUp end={108} />+</h1>
                             </div>
                             <div className="home-three-two-in-two-box-in-two">
                               {/* <p><span>Countries and territories </span>are home to our medical humanitarian projects</p> */}
@@ -152,7 +159,7 @@ export default function Home() {
                           <div className="home-three-two-in-two-box-in">
                             <div className="home-three-two-in-two-box-in-one">
                               {/* <h1><CountUp end={1351} />+</h1> */}
-                              <h1><CountUp end ={13510} />+</h1>
+                              <h1><CountUp end ={18500} />+</h1>
                             </div>
                             <div className="home-three-two-in-two-box-in-two">
                               {/* <p><span>Countries and territories</span> are home to our medical humanitarian projects</p> */}
@@ -164,11 +171,11 @@ export default function Home() {
                           <div className="home-three-two-in-two-box-in">
                             <div className="home-three-two-in-two-box-in-one">
                               {/* <h1><CountUp end={500} />+</h1> */}
-                              <h1><CountUp end = {30000} />+</h1>
+                              <h1><CountUp end = {32400} />+</h1>
                             </div>
                             <div className="home-three-two-in-two-box-in-two">
                               {/* <p><span>Countries and territories</span> are home to our medical humanitarian projects</p> */}
-                              <p><span>The villages demonstrated proactive </span> and engaged involvement.</p>
+                              <p><span>The villagers demonstrated proactive </span> and engaged involvement.</p>
                             </div>
                           </div>
                         </div>
@@ -196,71 +203,64 @@ export default function Home() {
                           <div className="home-two-in-one-in-boxes-in">
                             <div className="home-two-in-one-in-boxes-in-box">
                               <div className="home-two-in-one-in-boxes-in-box-in">
-                                {/* <p>Smart Villare</p> */}
-                                <p>Education</p>
+                                <p>Health</p>
                               </div>
                             </div>
 
                             <div className="home-two-in-one-in-boxes-in-box">
                               <div className="home-two-in-one-in-boxes-in-box-in">
                                 {/* <p>Sustainable Village</p> */}
-                                <p>Health and Hygiene</p>
+                                <p>Education</p>
                               </div>
                             </div>
 
                             <div className="home-two-in-one-in-boxes-in-box">
                               <div className="home-two-in-one-in-boxes-in-box-in">
-                                {/* <p>Women Empowerment</p> */}
-                                <p>Women Empowerment</p>
-                              </div>
-                            </div>
-
-                            <div className="home-two-in-one-in-boxes-in-box">
-                              <div className="home-two-in-one-in-boxes-in-box-in">
-                                {/* <p>Social Impact</p> */}
                                 <p>Agriculture</p>
                               </div>
                             </div>
 
                             <div className="home-two-in-one-in-boxes-in-box">
                               <div className="home-two-in-one-in-boxes-in-box-in">
-                                {/* <p>Community</p> */}
-                                <p>Sustainability</p>
+                                <p>Community Infrastructure</p>
                               </div>
                             </div>
 
                             <div className="home-two-in-one-in-boxes-in-box">
                               <div className="home-two-in-one-in-boxes-in-box-in">
-                                {/* <p>Social Mobilization</p> */}
-                                <p>Infrastructure</p>
+                                <p>Environmental Development</p>
                               </div>
                             </div>
 
                             <div className="home-two-in-one-in-boxes-in-box">
                               <div className="home-two-in-one-in-boxes-in-box-in">
-                                {/* <p>Cultural Development</p> */}
-                                <p>CulturalDevelopment</p>
+                                <p>Women Empowerment</p>
                               </div>
                             </div>
 
                             <div className="home-two-in-one-in-boxes-in-box">
                               <div className="home-two-in-one-in-boxes-in-box-in">
-                                {/* <p>Women Empowerment</p> */}
-                                <p>Social Impact</p>
+                                <p>Livelihood Enhancement</p>
                               </div>
                             </div>
 
-                            {/* <div className="home-two-in-one-in-boxes-in-box">
+                            <div className="home-two-in-one-in-boxes-in-box">
                               <div className="home-two-in-one-in-boxes-in-box-in">
-                                <p>Social Impact</p>
+                                <p>Digital Literacy</p>
                               </div>
-                            </div> */}
+                            </div>
 
-                            {/* <div className="home-two-in-one-in-boxes-in-box">
+                            <div className="home-two-in-one-in-boxes-in-box">
                               <div className="home-two-in-one-in-boxes-in-box-in">
-                                <p>Community</p>
+                                <p>Entrepreneurship Development</p>
                               </div>
-                            </div> */}
+                            </div>
+
+                            <div className="home-two-in-one-in-boxes-in-box">
+                              <div className="home-two-in-one-in-boxes-in-box-in">
+                                <p>Cultural Exchange</p>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -271,8 +271,8 @@ export default function Home() {
                        className='home-two-in-one-in-two-in-image'
                       src={SVR_Image_2}
                         alt="Picture of the author"
-                        width={400}
-                        height={300}
+                        width={500}
+                        height={400}
                        />
                       </div>
                     </div>
@@ -295,76 +295,54 @@ export default function Home() {
                     <div className="home-seven-in-one-in-box">
                         <div className="home-seven-in-one-in-box-in">
                           <Image
-                            src={AreasOfWork_Image_1}
-                            alt="Picture of the author"
-                          ></Image>
-                          <p>Education</p>
-                        </div>
-                      </div><div className="home-seven-in-one-in-box">
-                        <div className="home-seven-in-one-in-box-in">
-                          <Image
                             src={AreasOfWork_Image_2}
                             alt="Picture of the author"
                           ></Image>
                           <p>Health & Hygiene</p>
                         </div>
-                      </div><div className="home-seven-in-one-in-box">
+                      </div>
+
+                    <div className="home-seven-in-one-in-box">
                         <div className="home-seven-in-one-in-box-in">
                           <Image
-                            src={AreasOfWork_Image_3}
+                            src={AreasOfWork_Image_1}
                             alt="Picture of the author"
                           ></Image>
-                          <p>Skill Development</p>
+                          <p>Education</p>
                         </div>
-                      </div><div className="home-seven-in-one-in-box">
-                        <div className="home-seven-in-one-in-box-in">
-                          <Image
-                            src={AreasOfWork_Image_4}
-                            alt="Picture of the author"
-                          ></Image>
-                          <p>Enviromental Development</p>
-                        </div>
-                      </div><div className="home-seven-in-one-in-box">
-                        <div className="home-seven-in-one-in-box-in">
-                          <Image
-                            src={AreasOfWork_Image_5}
-                            alt="Picture of the author"
-                          ></Image>
-                          <p>Social Security</p>
-                        </div>
-                      </div><div className="home-seven-in-one-in-box">
-                        <div className="home-seven-in-one-in-box-in">
-                          <Image
-                            src={AreasOfWork_Image_6}
-                            alt="Picture of the author"
-                          ></Image>
-                          <p>Good Governance</p>
-                        </div>
-                      </div><div className="home-seven-in-one-in-box">
-                        <div className="home-seven-in-one-in-box-in">
-                          <Image
-                            src={AreasOfWork_Image_7}
-                            alt="Picture of the author"
-                          ></Image>
-                          <p>Rural Industrialization</p>
-                        </div>
-                      </div><div className="home-seven-in-one-in-box">
-                        <div className="home-seven-in-one-in-box-in">
-                          <Image
-                            src={AreasOfWork_Image_8}
-                            alt="Picture of the author"
-                          ></Image>
-                          <p>Personal Development</p>
-                        </div>
-                      </div><div className="home-seven-in-one-in-box">
+                      </div>
+
+                      <div className="home-seven-in-one-in-box">
                         <div className="home-seven-in-one-in-box-in">
                           <Image
                             src={AreasOfWork_Image_9}
                             alt="Picture of the author"
                           ></Image>
-                          <p>Economic Development</p>
+                          <p>Agriculture</p>
                         </div>
-                      </div><div className="home-seven-in-one-in-box">
+                      </div>
+
+                      <div className="home-seven-in-one-in-box">
+                        <div className="home-seven-in-one-in-box-in">
+                          <Image
+                            src={communityInfrastructure}
+                            alt="Picture of the author"
+                          ></Image>
+                          <p>community Infrastructure</p>
+                        </div>
+                      </div>
+
+                      <div className="home-seven-in-one-in-box">
+                        <div className="home-seven-in-one-in-box-in">
+                          <Image
+                            src={AreasOfWork_Image_4}
+                            alt="Picture of the author"
+                          ></Image>
+                          <p>Environmental Development</p>
+                        </div>
+                      </div>
+
+                      <div className="home-seven-in-one-in-box">
                         <div className="home-seven-in-one-in-box-in">
                           <Image
                              src={AreasOfWork_Image_10}
@@ -373,6 +351,53 @@ export default function Home() {
                           <p>Women Empowerment</p>
                         </div>
                       </div>
+
+                      <div className="home-seven-in-one-in-box">
+                        <div className="home-seven-in-one-in-box-in">
+                          <Image
+                            src={AreasOfWork_Image_8}
+                            alt="Picture of the author"
+                          ></Image>
+                          <p>Livilihood Enhancement</p>
+                        </div>
+                      </div>
+
+                      
+                      
+                      <div className="home-seven-in-one-in-box">
+                        <div className="home-seven-in-one-in-box-in">
+                          <Image
+                            src={AreasOfWork_Image_5}
+                            alt="Picture of the author"
+                          ></Image>
+                          <p>Digital Literacy</p>
+                        </div>
+                      </div>
+                      
+                      <div className="home-seven-in-one-in-box">
+                        <div className="home-seven-in-one-in-box-in">
+                          <Image
+                            src={AreasOfWork_Image_6}
+                            alt="Picture of the author"
+                          ></Image>
+                          <p>Entrepreneurship</p>
+                        </div>
+                      </div>
+                      
+                      <div className="home-seven-in-one-in-box">
+                        <div className="home-seven-in-one-in-box-in">
+                          <Image
+                            src={culturalExchange}
+                            alt="Picture of the author"
+                          ></Image>
+                          <p>Cultural Exchange</p>
+                        </div>
+                      </div>
+                      
+                      
+                      
+                      
+
                       
 
                     </div>
@@ -401,7 +426,7 @@ export default function Home() {
                               alt="Picture of the author"
                             ></Image>
                           </div>
-                          <div className="flipbook-page">
+                          {/* <div className="flipbook-page">
                             <Image
                               src={FlipBook3}
                               alt="Picture of the author"
@@ -412,7 +437,7 @@ export default function Home() {
                               src={FlipBook4}
                               alt="Picture of the author"
                             ></Image>
-                          </div>
+                          </div> */}
                       </HTMLFlipBook>
                     </div>
                   </div>
@@ -447,7 +472,10 @@ export default function Home() {
                           style={{ width: '100%', height: 'auto' }} // optional
                         />
 
-                      <p>Shri Koneru Satyanarayana</p>
+                      <p>Er.Koneru Satyanarayana <br />
+                        <span>Chancellor - KLEF</span>
+                      </p>
+
                     </div>
                     <div className="home-four-one-in-two">
 
@@ -456,7 +484,7 @@ export default function Home() {
                 </div>
                 <div className="home-four-two">
                   <div className="home-four-two-in">
-                    <p>On Independence Day, I had made commitment to you on behalf of my colleagues in the Parliament. I laid out my dream of Adarsh Grams as the nucleus of health, cleanliness, greenery and cordiality within the community. The Guidelines that follow are based on these principles and present the complete blueprint of the Saansad Adarsh Gram Yojana for each Member of Parliament to make one village of his or her constituency a Model Village by 2016 and two more model villages by 2019.</p>
+                    <p>The Smart Village Revolution (SVR) is a KLEF initiative dedicated to leveraging technology acquired in classrooms for the benefit of rural communities. This community-driven effort mobilizes the collective strengths of faculty, students, and various professionals, integrating them with technology to serve rural areas. Inspired by Gandhian principles, SVR focuses on providing technical solutions to local needs. Encouraging the construction of green buildings, the initiative enhances economic and environmental performance. KLEF envisions a mass movement, empowering communities with knowledge and skills to face technological challenges. This project aligns with the university's commitment to sustainable rural development, extending its impact beyond academia, fostering social development.</p>
                   </div>
                 </div>
                 </div>
@@ -840,7 +868,7 @@ export default function Home() {
                                 <div className="home-team-card-in">
                                     <div className="home-team-img">
                                         <Image 
-                                            src={vijaysir}
+                                            src={rambabu}
                                             alt="Picture of the author"
                                             // border-radius: 50%, border: 1px solid green
                                             style={{ width: '100%', height: 'auto', border: '2px solid green', borderTopLeftRadius: '1rem', borderTopRightRadius: '1rem'}}
