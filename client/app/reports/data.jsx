@@ -1,3 +1,4 @@
+"use client"
 // data.jsx
 const eventData = [
     { sno: 1, date: '11.07.22', eventName: 'Awareness Propgrammes & Rallies on Usage of Plastic', domain: 'Environmental projects', participants: 82 },

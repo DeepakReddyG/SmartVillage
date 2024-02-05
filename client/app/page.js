@@ -82,11 +82,13 @@ export default function Home() {
 
   const [showAnimation, setShowAnimation] = useState(true);
 
+  // make this animation only once
+
   useEffect(() => {
 
     const timer = setTimeout(() => setShowAnimation(false), 6800);
     return () => clearTimeout(timer);
-  }, []);
+  }, [1]);
 
     
 // ---------- Boot Animation END ------------
@@ -280,6 +282,8 @@ export default function Home() {
                 </div>
               </div>
             </div>
+
+            
             
           <div className="home-seven">
             <div className="home-seven-in">
@@ -490,6 +494,48 @@ export default function Home() {
                 </div>
               </div>
             </div>
+
+            {/* Sai vijay's Message */}
+
+            <div className="home-six message">
+              <div className="home-six-in">
+                <div className="home-six-header">
+                  <h1>Message from the Hon'ble SAC Director: KLEF</h1>
+                </div>
+                <div className="home-six-in-in">
+                <div className="home-six-one">
+                  <div className="home-six-one-in">
+                    <div className="home-six-one-in-one">
+                    
+                        <Image
+                          className='home-six-one-in-one-in-image'
+                          src={vijaysir}
+                          width={0}
+                          height={0}
+                          sizes="100vw"
+                          alt='Picture of the author'
+                          style={{ width: '100%', height: 'auto' }} // optional
+                        />
+
+                      <p>P. Sai Vijay <br />
+                        <span>Director SAC</span>
+                      </p>
+
+                    </div>
+                    <div className="home-six-one-in-two">
+
+                    </div>
+                  </div>
+                </div>
+                <div className="home-six-two">
+                  <div className="home-six-two-in">
+                    <p>The Smart Village Revolution (SVR) is a KLEF initiative dedicated to leveraging technology acquired in classrooms for the benefit of rural communities. This community-driven effort mobilizes the collective strengths of faculty, students, and various professionals, integrating them with technology to serve rural areas. Inspired by Gandhian principles, SVR focuses on providing technical solutions to local needs. Encouraging the construction of green buildings, the initiative enhances economic and environmental performance. KLEF envisions a mass movement, empowering communities with knowledge and skills to face technological challenges. This project aligns with the university's commitment to sustainable rural development, extending its impact beyond academia, fostering social development.</p>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+
 
             <div className="home-ten">
               <div className="home-ten-in">
@@ -833,107 +879,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="home-nine">
-                <div className="home-nine-in">
-                    <div className="home-nine-one">
-                        <div className="home-nine-one-in">
-                            <h1>Our Team</h1>
-                        </div>
-                    </div>
-                    <div className="home-nine-two">
-                        <div className="home-nine-two-in">
-                        <div className="home-team-card">
-                                <div className="home-team-card-in">
-                                    <div className="home-team-img">
-                                        <Image 
-                                            src={vijaysir}
-                                            alt="Picture of the author"
-                                            // border-radius: 50%, border: 1px solid green
-                                            style={{ width: '100%', height: 'auto', border: '2px solid green', borderTopLeftRadius: '1rem', borderTopRightRadius: '1rem'}}
-                                        />
-                                    </div>
-                                    <div className="home-team-about">
-                                       <div className="home-team-about-one">
-                                            <h1>Er.P.Sai Vijay</h1>
-                                            <p>Director-SAC</p>
-                                       </div>
-                                       <div className="home-team-about-two">
-                                          <SiMicrosoftoutlook className='outlook-icon' />
-                                          <FaLinkedin className='linked-icon' />
-                                       </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="home-team-card">
-                                <div className="home-team-card-in">
-                                    <div className="home-team-img">
-                                        <Image 
-                                            src={rambabu}
-                                            alt="Picture of the author"
-                                            // border-radius: 50%, border: 1px solid green
-                                            style={{ width: '100%', height: 'auto', border: '2px solid green', borderTopLeftRadius: '1rem', borderTopRightRadius: '1rem'}}
-                                        />
-                                    </div>
-                                    <div className="home-team-about">
-                                       <div className="home-team-about-one">
-                                            <h1>Mr. B.V Satyanarayana</h1>
-                                            <p>Incharge SVR</p>
-                                       </div>
-                                       <div className="home-team-about-two">
-                                          <SiMicrosoftoutlook className='outlook-icon' />
-                                          <FaLinkedin className='linked-icon' />
-                                       </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="home-team-card">
-                                <div className="home-team-card-in">
-                                    <div className="home-team-img">
-                                        <Image 
-                                            src={vijaysir}
-                                            alt="Picture of the author"
-                                            // border-radius: 50%, border: 1px solid green
-                                            style={{ width: '100%', height: 'auto', border: '2px solid green', borderTopLeftRadius: '1rem', borderTopRightRadius: '1rem'}}
-                                        />
-                                    </div>
-                                    <div className="home-team-about">
-                                       <div className="home-team-about-one">
-                                            <h1>Mr. B Rambabu</h1>
-                                            <p>Incharge SVR</p>
-                                       </div>
-                                       <div className="home-team-about-two">
-                                          <SiMicrosoftoutlook className='outlook-icon' />
-                                          <FaLinkedin className='linked-icon' />
-                                       </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="home-team-card">
-                                <div className="home-team-card-in">
-                                    <div className="home-team-img">
-                                        <Image 
-                                            src={vijaysir}
-                                            alt="Picture of the author"
-                                            // border-radius: 50%, border: 1px solid green
-                                            style={{ width: '100%', height: 'auto', border: '2px solid green', borderTopLeftRadius: '1rem', borderTopRightRadius: '1rem'}}
-                                        />
-                                    </div>
-                                    <div className="home-team-about">
-                                       <div className="home-team-about-one">
-                                            <h1>Mr Shiva</h1>
-                                            <p>Incharge SVR</p>
-                                       </div>
-                                       <div className="home-team-about-two">
-                                          <SiMicrosoftoutlook className='outlook-icon' />
-                                          <FaLinkedin className='linked-icon' />
-                                       </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
             <div className="Footer">
               <Footer/>
             </div>
