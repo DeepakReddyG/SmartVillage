@@ -8,6 +8,20 @@ import './globals.css';
 import heroImg from '../public/SVR_Image.jpeg';
 import SVR_Image_1 from './Assets/IMG_8078.JPG';
 import SVR_Image_2 from './Assets/Adarsh_Gram.JPG';
+import SVR_UpdateImage_1 from './Assets/Updated Images/Agriculture.png'
+import SVR_UpdateImage_2 from './Assets/Updated Images/Education.png'
+import SVR_UpdateImage_3 from './Assets/Updated Images/Health .png'
+import SVR_UpdateImage_4 from './Assets/Updated Images/Health and Hyg.png'
+import SVR_UpdateImage_5 from './Assets/Updated Images/Infrastruture.png'
+import SVR_UpdateImage_6 from './Assets/Updated Images/Infrastruture_2.png'
+import SVR_UpdateImage_7 from './Assets/Updated Images/Infrastruture3.png'
+import SVR_UpdateImage_8 from './Assets/Updated Images/Infrastruture4.png'
+import SVR_UpdateImage_9 from './Assets/Updated Images/Infrastruture_After.png'
+import SVR_UpdateImage_10 from './Assets/Updated Images/Sanitation.png'
+import SVR_UpdateImage_11 from './Assets/Updated Images/RenewableEnergy.png'
+import SVR_UpdateImage_12 from './Assets/Updated Images/WomenEmpowerMent.png'
+import SVR_UpdateImage_13 from './Assets/Updated Images/WomenEmpowerMent2.png'
+// import SVR_UpdateImage_1 from './Assets/Updated Images/'
 import Education from './Assets/Education.JPG';
 import SkillDevelop from './Assets/SkillDevelop.JPG';
 import HealthandHygeine from './Assets/HealthandHygeine.JPG';
@@ -647,7 +661,7 @@ export default function Home() {
                                               <div className="home-bt-one-in-one-in-two-in">
                                                 <Image
                                                   className='home-bt-one-in-one-in-two-in-image'
-                                                  src={SVR_Image_1}
+                                                  src={SVR_UpdateImage_1}
                                                   alt="Picture of the author"
                                                 ></Image>
                                               </div>
@@ -674,7 +688,7 @@ export default function Home() {
                                               <div className="home-bt-one-in-one-in-two-in">
                                                 <Image
                                                   className='home-bt-one-in-one-in-two-in-image'
-                                                  src={SVR_Image_1}
+                                                  src={SVR_UpdateImage_2}
                                                   alt="Picture of the author"
                                                 ></Image>
                                               </div>
@@ -701,7 +715,7 @@ export default function Home() {
                                               <div className="home-bt-one-in-one-in-two-in">
                                                 <Image
                                                   className='home-bt-one-in-one-in-two-in-image'
-                                                  src={SVR_Image_1}
+                                                  src={SVR_UpdateImage_5}
                                                   alt="Picture of the author"
                                                 ></Image>
                                               </div>
@@ -755,7 +769,7 @@ export default function Home() {
                                               <div className="home-bt-one-in-one-in-two-in">
                                                 <Image
                                                   className='home-bt-one-in-one-in-two-in-image'
-                                                  src={SVR_Image_1}
+                                                  src={SVR_UpdateImage_3}
                                                   alt="Picture of the author"
                                                 ></Image>
                                               </div>
@@ -782,7 +796,7 @@ export default function Home() {
                                               <div className="home-bt-one-in-one-in-two-in">
                                                 <Image
                                                   className='home-bt-one-in-one-in-two-in-image'
-                                                  src={SVR_Image_1}
+                                                  src={SVR_UpdateImage_11}
                                                   alt="Picture of the author"
                                                 ></Image>
                                               </div>
@@ -856,14 +870,14 @@ export default function Home() {
                                           <div className="home-bt-one-in-one-in">
                                             <div className="home-bt-one-in-one-in-one">
                                               <div className="home-bt-one-in-one-in-one-in">
-                                                <p>Providing education and skill development programs specifically tailored for women's needs and aspirations. Creating opportunities for women to engage in decision-making processes within the community. Offering mentorship and leadership training programs to empower women leaders. Ensuring access to healthcare and reproductive rights for women in rural areas. Establishing support networks and forums for women to share experiences and knowledge. Encouraging financial independence through entrepreneurship and vocational training for women. Addressing cultural barriers and biases through awareness campaigns and advocacy programs. Providing access to legal support and counseling services for women facing challenges.  </p>
+                                                <p>Providing education and skill development programs specifically tailored for women's needs and aspirations. Creating opportunities for women to engage in decision-making processes within the community. Offering mentorship and leadership training programs to empower women leaders. Ensuring access to healthcare and reproductive rights for women in rural areas. Establishing support networks and forums for women to share experiences and knowledge. Encouraging financial independence through entrepreneurship and vocational training for women. Addressing cultural barriers and biases through awareness campaigns and advocacy programs. Providing access to legal support and counseling services for women facing challenges.  </p>            
                                               </div>
                                             </div>
                                             <div className="home-bt-one-in-one-in-two">
                                               <div className="home-bt-one-in-one-in-two-in">
                                                 <Image
                                                   className='home-bt-one-in-one-in-two-in-image'
-                                                  src={SVR_Image_1}
+                                                  src={SVR_UpdateImage_12}
                                                   alt="Picture of the author"
                                                 ></Image>
                                               </div>
