@@ -199,7 +199,8 @@ export default function Home() {
                     {/* <p>Doctors Without Borders/Médecins Sans Frontières (MSF) cares for people affected by conflict, disease outbreaks, natural and human-made disasters, and exclusion from health care in more than 70 countries.Doctors Without Borders/Médecins Sans Frontières (MSF) cares for people affected by conflict, disease outbreaks, natural and human-made disasters, and exclusion from health care in more than 70 countries.</p> */}
                     <p>In the smart village revolution, traditional wisdom and cutting-edge concepts coexist harmoniously. Solar-powered schools, quick access to medical assistance, and cellphone-enabled soil monitoring empower communities. Progress flows effortlessly and sustainably, nourishing villages like water touched by the sun. Tradition endures as innovation fortifies it, fostering common aspirations and promising tomorrows.</p>
                     {/* navigate it to areas work */}
-                    <Link className='home-three-one-in-link' href='/'>Learn More About What We Do</Link>
+
+                    <a className='home-three-one-in-link' href="https://www.kluniversity.in/pdfs/Smart%20Village%20Revolution_5.pdf">Learn More About What We Do</a>
                   </div>
                 </div>
                 <div className="home-three-two">
@@ -586,7 +587,7 @@ export default function Home() {
                 </div>
                 <div className="home-six-two">
                   <div className="home-six-two-in">
-                    <p>The Smart Village Revolution (SVR) is a KLEF initiative dedicated to leveraging technology acquired in classrooms for the benefit of rural communities. This community-driven effort mobilizes the collective strengths of faculty, students, and various professionals, integrating them with technology to serve rural areas. Inspired by Gandhian principles, SVR focuses on providing technical solutions to local needs. Encouraging the construction of green buildings, the initiative enhances economic and environmental performance. KLEF envisions a mass movement, empowering communities with knowledge and skills to face technological challenges. This project aligns with the university's commitment to sustainable rural development, extending its impact beyond academia, fostering social development.</p>
+                    <p>Welcome to the Smart Village Revolution (SVR) project, where students spearhead research, innovate solutions, and drive rural development. With a focus on sustainable change, our student-led initiatives tackle pressing issues through innovative projects. From water conservation to healthcare accessibility, we empower rural communities with tailored solutions. Through hands-on research and project implementation, students contribute to transformative change, making a lasting impact on society. Join us as we revolutionize rural development, one project at a time.</p>
                   </div>
                 </div>
                 </div>
