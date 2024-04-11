@@ -21,6 +21,7 @@ import SVR_UpdateImage_10 from './Assets/Updated Images/Sanitation.png'
 import SVR_UpdateImage_11 from './Assets/Updated Images/RenewableEnergy.png'
 import SVR_UpdateImage_12 from './Assets/Updated Images/WomenEmpowerMent.png'
 import SVR_UpdateImage_13 from './Assets/Updated Images/WomenEmpowerMent2.png'
+
 // import SVR_UpdateImage_1 from './Assets/Updated Images/'
 import Education from './Assets/Education.JPG';
 import SkillDevelop from './Assets/SkillDevelop.JPG';
@@ -363,7 +364,7 @@ export default function Home() {
                       <div className="home-seven-in-one-in-box">
                         <div className="home-seven-in-one-in-box-in">
                           <Image
-                             src={AreasOfWork_Image_10}
+                             src={SVR_UpdateImage_13}
                             alt="Picture of the author"
                           ></Image>
                           <p>Women Empowerment</p>

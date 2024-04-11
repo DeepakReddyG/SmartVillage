@@ -64,3 +64,8 @@
    
     color: black;
   }
+
+  .navbar-options:hover {
+    cursor: pointer;
+    color: green;
+  }

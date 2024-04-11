@@ -17,6 +17,7 @@ const Navbar = () => {
                 <div className="NavBar-in-two">
                     <div className="NavBar-in-two-in">
                         <Scroll
+                            className='navbar-options'
                             to="home-two"
                             spy={true}
                             smooth={true}
@@ -26,6 +27,7 @@ const Navbar = () => {
                         About
                         </Scroll>
                         <Scroll
+                        className='navbar-options'
                             to="home-seven"
                             spy={true}
                             smooth={true}
@@ -35,6 +37,7 @@ const Navbar = () => {
                         Our Work
                         </Scroll>
                         <Scroll
+                        className='navbar-options'
                             to="home-eight"
                             spy={true}
                             smooth={true}
@@ -44,7 +47,7 @@ const Navbar = () => {
                         Annual Report
                         </Scroll>
                         <Scroll
-                            className="HomeNavBar-in-two-in-scroll"
+                            className="HomeNavBar-in-two-in-scroll navbar-options"
                             to="home-five"
                             spy={true}
                             smooth={true}
@@ -53,7 +56,7 @@ const Navbar = () => {
                         >
                         Parameters
                         </Scroll>
-                        <Scroll
+                        {/* <Scroll
                             to="home-nine"
                             spy={true}
                             smooth={true}
@@ -61,9 +64,9 @@ const Navbar = () => {
                             duration={500}
                         >
                         Team
-                        </Scroll>
+                        </Scroll> */}
                         
-                        <Link href='https://sac.kluniversity.in' passHref={true} target='_blank'>KL SAC</Link>
+                        <Link className='navbar-options' href='https://sac.kluniversity.in' passHref={true} target='_blank'>KL SAC</Link>
                        
                     </div>
                 </div>

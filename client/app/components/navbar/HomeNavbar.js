@@ -54,7 +54,7 @@ const HomeNavbar = () => {
                         >
                         Parameters
                         </Scroll>
-                        <Scroll
+                        {/* <Scroll
                             className="HomeNavBar-in-two-in-scroll"
                             to="home-nine"
                             spy={true}
@@ -63,7 +63,7 @@ const HomeNavbar = () => {
                             duration={500}
                         >
                         Team
-                        </Scroll>
+                        </Scroll> */}
                         <Link 
                         className="HomeNavBar-in-two-in-scroll"
                         href='https://sac.kluniversity.in' passHref={true} target='_blank'>KL SAC</Link>
