@@ -51,7 +51,7 @@ import sec_one_one_image from './Assets/section_one_1.jpg';
 import communityInfrastructure from './Assets/communityInfrastructure.png';
 import culturalExchange from './Assets/culturalExchange.png';
 
-import kllogo from '../../client/app/Assets/kllogo.svg';
+import kllogo from '../../client/app/Assets/kllogo.png';
 
 
 import SVR_Image from '../public/SVR_Image.jpeg';
