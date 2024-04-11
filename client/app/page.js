@@ -3,26 +3,29 @@ import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import CountUp from 'react-countup';
 
+import { useRef } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+
+
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+
 
 import './globals.css';
-import heroImg from '../public/SVR_Image.jpeg';
 import SVR_Image_1 from './Assets/IMG_8078.JPG';
 import SVR_Image_2 from './Assets/Adarsh_Gram.JPG';
 import SVR_UpdateImage_1 from './Assets/Updated Images/Agriculture.png'
 import SVR_UpdateImage_2 from './Assets/Updated Images/Education.png'
 import SVR_UpdateImage_3 from './Assets/Updated Images/Health .png'
-import SVR_UpdateImage_4 from './Assets/Updated Images/Health and Hyg.png'
 import SVR_UpdateImage_5 from './Assets/Updated Images/Infrastruture.png'
-import SVR_UpdateImage_6 from './Assets/Updated Images/Infrastruture_2.png'
-import SVR_UpdateImage_7 from './Assets/Updated Images/Infrastruture3.png'
-import SVR_UpdateImage_8 from './Assets/Updated Images/Infrastruture4.png'
-import SVR_UpdateImage_9 from './Assets/Updated Images/Infrastruture_After.png'
-import SVR_UpdateImage_10 from './Assets/Updated Images/Sanitation.png'
 import SVR_UpdateImage_11 from './Assets/Updated Images/RenewableEnergy.png'
 import SVR_UpdateImage_12 from './Assets/Updated Images/WomenEmpowerMent.png'
 import SVR_UpdateImage_13 from './Assets/Updated Images/WomenEmpowerMent2.png'
 
-// import SVR_UpdateImage_1 from './Assets/Updated Images/'
 import Education from './Assets/Education.JPG';
 import SkillDevelop from './Assets/SkillDevelop.JPG';
 import HealthandHygeine from './Assets/HealthandHygeine.JPG';
@@ -40,6 +43,8 @@ import satyanarayana from './Assets/satyanarayana.jpeg';
 import sec_one_one_image from './Assets/section_one_1.jpg';
 import communityInfrastructure from './Assets/communityInfrastructure.png';
 import culturalExchange from './Assets/culturalExchange.png';
+
+import kllogo from '../../client/app/Assets/kllogo.svg';
 
 
 import SVR_Image from '../public/SVR_Image.jpeg';
@@ -122,20 +127,57 @@ export default function Home() {
             <div className="Navbar-Res">
               <ResNavbar/>
             </div>
-            <div className="hero"
-              style={{
-                backgroundImage: `url(${sec_one_one_image.src})`,
-                backgroundPosition: "center",
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat"
-              }}
-            >
+            <div className="hero">
               <div className="hero-in">
-              <h1>Smart Village Revolution</h1>
-              <h3>An Initiative of K L Deemed to be University</h3>
-                <div className="hero-img">
-                  <img src={heroImg.src} alt="" />
-                </div>
+                <Swiper
+                    spaceBetween={30}
+                    centeredSlides={true}
+                    autoplay={{delay: 2500, disableOnInteraction: false,}}
+                    pagination={{
+                      clickable: true,
+                    }}
+                    navigation={false}
+                    modules={[Autoplay, Pagination, Navigation]}
+                    className="mySwiper" 
+                >
+                    <SwiperSlide>
+                      <div className="hero-in-slider">
+                        <Image
+                          className="full-width-height"
+                          src={SVR_Image}
+                          alt="Picture of the author"
+                        />
+
+                        <div className="swiper-description">
+                          <p>Educating Rural Minds</p>
+                        </div>
+                        <div className="swiper-logo">
+                          <Image
+                          className='swiper-logo-img'
+                            src={kllogo}
+                            alt="Picture of the author"
+                          ></Image>
+                        </div>
+                      </div>
+                    </SwiperSlide>
+
+
+                    <SwiperSlide>
+                      <div className="hero-in-slider">
+                        <Image  className="full-width-height" src={sec_one_one_image}alt="Picture of the author"></Image>
+                      </div>
+                      <div className="swiper-description">
+                          <p>Hon'ble President KLEF with Villagers / Contributing to Development</p>
+                        </div>
+                        <div className="swiper-logo">
+                          <Image
+                            className='swiper-logo-img'
+                            src={kllogo}
+                            alt="Picture of the author"
+                          ></Image>
+                        </div>
+                    </SwiperSlide>
+                </Swiper>
               </div>
             </div>
 
