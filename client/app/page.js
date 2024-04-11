@@ -21,6 +21,13 @@ import SVR_UpdateImage_10 from './Assets/Updated Images/Sanitation.png'
 import SVR_UpdateImage_11 from './Assets/Updated Images/RenewableEnergy.png'
 import SVR_UpdateImage_12 from './Assets/Updated Images/WomenEmpowerMent.png'
 import SVR_UpdateImage_13 from './Assets/Updated Images/WomenEmpowerMent2.png'
+import SVR_UpdateImage_14 from './Assets/Updated Images/Education Liracry Updated.png'
+import SVR_UpdateImage_15 from './Assets/Updated Images/Updated CultureAndCommunity.png'
+import SVR_UpdateImage_16 from './Assets/Updated Images/Health(Area of work).png'
+import SVR_UpdateImage_17 from './Assets/Updated Images/Culture.png'
+import SVR_UpdateImage_18 from './Assets/Updated Images/Transportation.png'
+import VijaySirUpdated from './Assets/Updated Images/SAC_Director_Updated.png'
+
 
 // import SVR_UpdateImage_1 from './Assets/Updated Images/'
 import Education from './Assets/Education.JPG';
@@ -286,7 +293,7 @@ export default function Home() {
                       <div className="home-two-in-one-in-two-in">
                        <Image
                        className='home-two-in-one-in-two-in-image'
-                      src={SVR_Image_2}
+                      src={SVR_Image_1}
                         alt="Picture of the author"
                         width={500}
                         height={400}
@@ -314,7 +321,7 @@ export default function Home() {
                     <div className="home-seven-in-one-in-box">
                         <div className="home-seven-in-one-in-box-in">
                           <Image
-                            src={AreasOfWork_Image_2}
+                            src={SVR_UpdateImage_16}
                             alt="Picture of the author"
                           ></Image>
                           <p>Health & Hygiene</p>
@@ -386,7 +393,7 @@ export default function Home() {
                       <div className="home-seven-in-one-in-box">
                         <div className="home-seven-in-one-in-box-in">
                           <Image
-                            src={AreasOfWork_Image_5}
+                            src={SVR_UpdateImage_14}
                             alt="Picture of the author"
                           ></Image>
                           <p>Digital Literacy</p>
@@ -412,13 +419,6 @@ export default function Home() {
                           <p>Cultural Exchange</p>
                         </div>
                       </div>
-                      
-                      
-                      
-                      
-
-                      
-
                     </div>
                   </div>
                 </div>
@@ -524,7 +524,7 @@ export default function Home() {
                     
                         <Image
                           className='home-six-one-in-one-in-image'
-                          src={vijaysir}
+                          src={VijaySirUpdated}
                           width={0}
                           height={0}
                           sizes="100vw"
@@ -709,7 +709,7 @@ export default function Home() {
                                           <div className="home-bt-one-in-one-in">
                                             <div className="home-bt-one-in-one-in-one">
                                               <div className="home-bt-one-in-one-in-one-in">
-                                                <p>Developing robust infrastructure like roads, electricity, and internet connectivity for enhanced accessibility and economic opportunities. Building and maintaining reliable transportation networks to connect villages with markets and essential services. Investing in sustainable energy sources to ensure consistent and clean power supply for villages. Installing internet connectivity and digital infrastructure to bridge the digital divide and facilitate access to information and services. Constructing community centers and public spaces for social interaction, events, and communal activities. Implementing waste management systems to ensure a clean and sustainable environment. Creating resilient infrastructure that can withstand natural disasters and adverse weather conditions. Providing housing facilities and urban planning to ensure safe and comfortable living conditions for villagers. </p>
+                                                <p>Developing robust infrastructure is vital for enhancing accessibility and fostering economic growth in rural areas. This includes reliable transportation networks linking villages to markets and services, sustainable energy sources for consistent power, and internet connectivity to bridge the digital divide. Community centers and waste management systems promote social interaction and environmental sustainability. Resilient infrastructure withstands natural disasters, while housing and urban planning ensure safe and comfortable living conditions. These efforts collectively empower rural communities and drive sustainable development. </p>
                                               </div>
                                             </div>
                                             <div className="home-bt-one-in-one-in-two">
@@ -736,14 +736,14 @@ export default function Home() {
                                           <div className="home-bt-one-in-one-in">
                                             <div className="home-bt-one-in-one-in-one">
                                               <div className="home-bt-one-in-one-in-one-in">
-                                                <p>Preserving local traditions, customs, and cultural heritage while embracing progressive values and innovations. Encouraging community participation in cultural events, festivals, and celebrations to strengthen social bonds. Supporting local artisans and craftsmen to promote cultural craftsmanship and heritage. Fostering a sense of belonging and pride by celebrating diverse cultural identities within the community. Creating platforms for cultural exchange and dialogue to promote understanding and tolerance. Engaging youth in cultural activities and events to ensure the continuity of traditions. Establishing community centers as hubs for cultural education and exchange of ideas.  </p>
+                                                <p>Preserving local traditions while embracing progressiveness is pivotal. Community engagement in cultural events strengthens social cohesion. Supporting local artisans promotes heritage. Celebrating diverse identities fosters belonging. Cultural exchange platforms foster understanding. Engaging youth ensures tradition continuity. Community centers serve as hubs for education and dialogue. This holistic approach nurtures heritage, innovation, and inclusivity, fostering a vibrant and cohesive community deeply rooted in its cultural identity while embracing the dynamics of modernity. </p>
                                               </div>
                                             </div>
                                             <div className="home-bt-one-in-one-in-two">
                                               <div className="home-bt-one-in-one-in-two-in">
                                                 <Image
                                                   className='home-bt-one-in-one-in-two-in-image'
-                                                  src={SVR_Image_1}
+                                                  src={SVR_UpdateImage_17}
                                                   alt="Picture of the author"
                                                 ></Image>
                                               </div>
@@ -763,7 +763,7 @@ export default function Home() {
                                           <div className="home-bt-one-in-one-in">
                                             <div className="home-bt-one-in-one-in-one">
                                               <div className="home-bt-one-in-one-in-one-in">
-                                                <p>Establishing healthcare facilities and clinics equipped with essential medical services and trained healthcare professionals. Conducting health awareness campaigns and educational programs on hygiene, nutrition, and disease prevention. Providing access to clean and safe drinking water through water purification systems and community wells. Implementing sanitation facilities such as community toilets and waste management systems for improved hygiene. Ensuring availability of essential medications and vaccines for common diseases and emergencies. Encouraging regular health check-ups and screenings to detect health issues at early stages. Promoting healthy lifestyle practices through fitness programs and recreational activities. Collaborating with local health workers and volunteers for community health initiatives and outreach programs</p>
+                                                <p>Establishing healthcare facilities with essential services and trained professionals, along with health education on hygiene and disease prevention, ensures community wellness. Access to clean water via purification systems and sanitation facilities improves hygiene. Essential medications and vaccines are available, promoting early detection through regular screenings. Fitness programs and collaborations with local health workers foster healthy lifestyles. These initiatives, including outreach programs, form a comprehensive approach to community health in just 75 words.</p>
                                               </div>
                                             </div>
                                             <div className="home-bt-one-in-one-in-two">
@@ -790,7 +790,7 @@ export default function Home() {
                                           <div className="home-bt-one-in-one-in">
                                             <div className="home-bt-one-in-one-in-one">
                                               <div className="home-bt-one-in-one-in-one-in">
-                                                <p>Promoting sustainable agricultural practices to minimize environmental impact and ensure long-term food security. Encouraging the use of renewable energy sources like solar power and biogas for clean and sustainable energy. Implementing eco-friendly waste management systems to reduce pollution and promote recycling. Adopting sustainable water management practices to conserve water resources and prevent scarcity. Supporting reforestation and conservation efforts to preserve biodiversity and natural habitats. Encouraging eco-tourism and responsible tourism practices to promote sustainable economic growth. Educating and raising awareness about the importance of environmental conservation and sustainable living. Collaborating with local communities and stakeholders for sustainable development projects and initiatives. </p>
+                                                <p>Promoting sustainable agriculture ensures food security while minimizing environmental impact. Renewable energy adoption, like solar power and biogas, fosters clean energy solutions. Eco-friendly waste management reduces pollution and promotes recycling. Sustainable water management conserves resources and prevents scarcity. Reforestation and conservation efforts preserve biodiversity. Education and awareness campaigns encourage sustainable living. Collaborative efforts with local communities drive sustainable development projects, fostering a resilient and environmentally conscious society. </p>
                                               </div>
                                             </div>
                                             <div className="home-bt-one-in-one-in-two">
@@ -817,14 +817,14 @@ export default function Home() {
                                           <div className="home-bt-one-in-one-in">
                                             <div className="home-bt-one-in-one-in-one">
                                               <div className="home-bt-one-in-one-in-one-in">
-                                                <p>Improving transportation networks with well-constructed roads and bridges for easier access to markets and services. Introducing affordable and efficient public transportation options for villagers. Establishing reliable and safe transportation systems for commuting and trade. Embracing technological advancements for smart transportation solutions like ride-sharing platforms. Encouraging the use of eco-friendly modes of transportation to reduce environmental impact. Ensuring regular maintenance and upkeep of transportation infrastructure for safety and reliability. Connecting remote areas with transportation hubs to facilitate movement and trade. Creating transport systems that cater to the unique needs of the community.  </p>
+                                                <p>Enhancing transportation networks with quality roads and bridges facilitates market access. Affordable public transit options improve villagers' mobility. Reliable systems ensure safe commuting and trade. Embracing technology enables smart solutions like ride-sharing. Eco-friendly transport reduces environmental impact. Regular maintenance ensures safety and reliability. Connecting remote areas to hubs facilitates movement and trade. Tailored transport systems meet community needs, fostering inclusivity and economic growth while prioritizing safety, efficiency, and environmental sustainability.</p>
                                               </div>
                                             </div>
                                             <div className="home-bt-one-in-one-in-two">
                                               <div className="home-bt-one-in-one-in-two-in">
                                                 <Image
                                                   className='home-bt-one-in-one-in-two-in-image'
-                                                  src={SVR_Image_1}
+                                                  src={SVR_UpdateImage_18}
                                                   alt="Picture of the author"
                                                 ></Image>
                                               </div>
@@ -844,7 +844,7 @@ export default function Home() {
                                           <div className="home-bt-one-in-one-in">
                                             <div className="home-bt-one-in-one-in-one">
                                               <div className="home-bt-one-in-one-in-one-in">
-                                                <p>Creating skill development programs tailored to the needs of the community and market demands. Encouraging entrepreneurship through training, mentorship, and access to resources. Establishing micro-enterprises and cooperatives to support local industries and economic growth. Offering financial literacy programs and access to microfinance for aspiring entrepreneurs. Developing sustainable farming practices and alternative livelihood opportunities to diversify income sources. Providing market linkages and access to markets for locally produced goods. Encouraging vocational training and apprenticeships for acquiring specialized skills. Fostering innovation and creativity through initiatives that support small businesses and startups. </p>
+                                                <p>Tailored skill programs address community and market needs, fostering entrepreneurship through training, mentorship, and resource access. Micro-enterprises and cooperatives strengthen local industries. Financial literacy and microfinance support aspiring entrepreneurs. Sustainable farming and alternative livelihoods diversify incomes. Market linkages boost local goods. Vocational training and apprenticeships refine specialized skills. Innovation initiatives aid small businesses and startups. These efforts drive economic growth, empower individuals, and cultivate resilient communities poised for sustainable development.</p>
                                               </div>
                                             </div>
                                             <div className="home-bt-one-in-one-in-two">
@@ -871,7 +871,7 @@ export default function Home() {
                                           <div className="home-bt-one-in-one-in">
                                             <div className="home-bt-one-in-one-in-one">
                                               <div className="home-bt-one-in-one-in-one-in">
-                                                <p>Providing education and skill development programs specifically tailored for women's needs and aspirations. Creating opportunities for women to engage in decision-making processes within the community. Offering mentorship and leadership training programs to empower women leaders. Ensuring access to healthcare and reproductive rights for women in rural areas. Establishing support networks and forums for women to share experiences and knowledge. Encouraging financial independence through entrepreneurship and vocational training for women. Addressing cultural barriers and biases through awareness campaigns and advocacy programs. Providing access to legal support and counseling services for women facing challenges.  </p>            
+                                                <p>Tailored education, leadership training, and mentorship empower women, fostering community engagement and decision-making. Access to healthcare, support networks, and legal services address their needs comprehensively. Entrepreneurship and vocational training ensure financial independence. Cultural bias is challenged through awareness campaigns. These initiatives collectively advance gender equality, enabling women to thrive and contribute meaningfully. By providing holistic support, we empower women to break barriers, shape their futures, and become agents of positive change in their communities and beyond. </p>            
                                               </div>
                                             </div>
                                             <div className="home-bt-one-in-one-in-two">
