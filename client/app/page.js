@@ -214,7 +214,7 @@ export default function Home() {
                           <div className="home-three-two-in-two-box-in">
                             <div className="home-three-two-in-two-box-in-one">
                               {/* <h1><CountUp end={100} />+</h1> */}
-                              <h1><CountUp end={108} />+</h1>
+                              <h1><CountUp end={175} />+</h1>
                             </div>
                             <div className="home-three-two-in-two-box-in-two">
                               {/* <p><span>Countries and territories </span>are home to our medical humanitarian projects</p> */}
@@ -226,7 +226,7 @@ export default function Home() {
                           <div className="home-three-two-in-two-box-in">
                             <div className="home-three-two-in-two-box-in-one">
                               {/* <h1><CountUp end={1351} />+</h1> */}
-                              <h1><CountUp end ={18500} />+</h1>
+                              <h1><CountUp end ={16000} />+</h1>
                             </div>
                             <div className="home-three-two-in-two-box-in-two">
                               {/* <p><span>Countries and territories</span> are home to our medical humanitarian projects</p> */}
@@ -238,7 +238,7 @@ export default function Home() {
                           <div className="home-three-two-in-two-box-in">
                             <div className="home-three-two-in-two-box-in-one">
                               {/* <h1><CountUp end={500} />+</h1> */}
-                              <h1><CountUp end = {32400} />+</h1>
+                              <h1><CountUp end = {150500} />+</h1>
                             </div>
                             <div className="home-three-two-in-two-box-in-two">
                               {/* <p><span>Countries and territories</span> are home to our medical humanitarian projects</p> */}
