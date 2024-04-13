@@ -33,11 +33,13 @@
     display: flex;
     justify-content: start;
     align-items: center;
-    border: 1px solid green;
-    padding: 0.4rem;
     /* margin-bottom: 1rem; */
     width: 13%;
 }
+.activities_table_in_search_in input{
+    border: 1px solid green;
+    padding: 0.4rem;
+}   
 .activities_table_in_HeaderTwo{
     width: 100%;
     /* background-color: red; */
