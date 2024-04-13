@@ -732,7 +732,12 @@
   border-radius: 1rem;
   padding: 0.5rem;
 }
-
+.home-eight-two-in-activitie-link{
+  border: 2px solid green;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  margin-left: 0.3rem;
+}
 
 
 /* ----------------------- home-nine --------------------------- */

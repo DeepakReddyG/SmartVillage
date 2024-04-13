@@ -22,8 +22,35 @@
     margin: 0;
     padding: 0;
 }
-.activities_table_in_one {
+.activities_table_in_BackHome_in{
     width: 100%;
+    padding: 0.5rem;
+    background-color: green;
+    color: white;
+    
+}
+.activities_table_in_search{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border: 1px solid green;
+    padding: 0.4rem;
+    /* margin-bottom: 1rem; */
+    width: 13%;
+}
+.activities_table_in_HeaderTwo{
+    width: 100%;
+    /* background-color: red; */
+    margin-bottom: 0.5rem;
+}
+
+.activities_table_in_HeaderTwo_in{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0rem;
 }
 .activities_table_in_one_in {
     width: 100%;
