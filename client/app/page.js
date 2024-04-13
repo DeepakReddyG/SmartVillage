@@ -30,8 +30,9 @@ import SVR_UpdateImage_15 from './Assets/Updated Images/Updated CultureAndCommun
 import SVR_UpdateImage_16 from './Assets/Updated Images/Health(Area of work).png'
 import SVR_UpdateImage_17 from './Assets/Updated Images/Culture.png'
 import SVR_UpdateImage_18 from './Assets/Updated Images/Transportation.png'
-import SVR_UpdateImage_19 from './Assets/Updated Images/CultureAndCommunity2.png'
-import SVR_UpdateImage_20 from './Assets/Updated Images/UpdatedCultureAndCommunity2.png'
+import SVR_UpdateImage_19 from './Assets/Updated Images/LatestCultureAndCommunity.png'
+// import SVR_UpdateImage_19 from './Assets/Updated Images/CultureAndCommunity2.png'
+// import SVR_UpdateImage_20 from './Assets/Updated Images/UpdatedCultureAndCommunity2.png'
 
 
 import VijaySirUpdated from './Assets/Updated Images/SAC_Director_Updated.png'
@@ -790,7 +791,7 @@ export default function Home() {
                                               <div className="home-bt-one-in-one-in-two-in">
                                                 <Image
                                                   className='home-bt-one-in-one-in-two-in-image'
-                                                  src={SVR_UpdateImage_20}
+                                                  src={SVR_UpdateImage_19}
                                                   alt="Picture of the author"
                                                 ></Image>
                                               </div>
