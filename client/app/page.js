@@ -513,7 +513,7 @@ export default function Home() {
                   <div className="home-eight-two-in">
                     <h1>Annual Report 2022-23 Social Internship: Class of Y22 Students</h1>
                     <p>Empowering Futures: A Journey of Impact and Growth – Annual Report 2022-23 for Social Internship by the Y22 Students</p>
-                    <Link className='home-eight-two-in-link' href='/reports'>View Reports</Link>
+                    {/* <Link className='home-eight-two-in-link' href='/reports'>View Reports</Link> */}
                     <Link className='home-eight-two-in-activitie-link'href='/activities' >View Activities</Link>
                   </div>
                 </div>
