@@ -14,7 +14,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1rem 0rem;
+    padding: 0.5rem 0rem;
 }
 .activities_table_in_header_in h1 {
     font-size: 2rem;
@@ -43,7 +43,7 @@
 .activities_table_in_HeaderTwo{
     width: 100%;
     /* background-color: red; */
-    margin-bottom: 0.5rem;
+    /* margin-bottom: 0.5rem; */
 }
 
 .activities_table_in_HeaderTwo_in{
@@ -53,6 +53,12 @@
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem 0rem;
+}
+.activities_table_in_Heading{
+    font-size: 2.0rem;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
 }
 .activities_table_in_one_in {
     width: 100%;
@@ -95,9 +101,54 @@
     text-align: center;
     font-size: 1rem;
     font-weight: 400;
-    padding: 0.2rem;
+    padding: 0.3rem;
 }
+.village-column{
+    width: 20%;
+}
+.event-column{
+    width: 75%;
+    /* background-color: red; */
+}
+.domain-column{
+    width: 20%;
+}
+.students-participated{
+    width: 10%; 
+    /* background-color: red; */
+}
+.DateOption{
+    /* width: 20%; */
+    border: 1px solid white;
+    background-color: green;
+}
+select {
+    border: none; /* Remove default border */
+    outline: none; /* Remove default focus outline */
+  }
+  
 .activities_table_in_one_in table td:nth-child(4) {
     width: 50%;
     text-align: left;
 }
+.pagination {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1rem 0rem;
+}
+.pagination button {
+    background-color: green;
+    color: white;
+    border: 1px solid black;
+    padding: 0.2rem 0.8rem;
+    margin: 0.1rem;
+}
+
+.pagination span {
+    background-color: green;
+    color: white;
+    border: 1px solid black;
+    padding: 0.2rem 0.8rem;
+}
+
