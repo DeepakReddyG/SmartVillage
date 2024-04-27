@@ -31,9 +31,8 @@
 }
 .activities_table_in_search{
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
-    /* margin-bottom: 1rem; */
     width: 13%;
 }
 .activities_table_in_search_in input{

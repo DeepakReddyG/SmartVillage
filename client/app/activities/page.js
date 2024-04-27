@@ -144,7 +144,6 @@ function Page() {
                 ))}
               </tbody>
             </table>
-            {/* Pagination */}
             <div className="pagination">
               <button onClick={() => paginate(currentPage - 1)} disabled={currentPage === 1}>Prev</button>
               <span>Page {currentPage} of {Math.ceil(filteredData.length / eventsPerPage)}</span>
