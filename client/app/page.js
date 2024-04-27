@@ -600,7 +600,7 @@ export default function Home() {
               </div>
             </div>
 
-
+{/* 
             <div className="home-ten">
               <div className="home-ten-in">
                 <div className="home-ten-header">
@@ -633,7 +633,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
 
             <div className="home-five">
                 <div className="home-five-in">
