@@ -115,16 +115,16 @@ function Page() {
                   <th>Report</th>
                 </tr>
               </thead>
-              <tbody>
+                <tbody> 
                 {currentEvents.map(event => (
                   <tr key={event["S.No"]}>
                     <td>{event["Date of the activity \nDD-MM-YYYY"]}</td>
                     {/* <td className="village-column">{event["Village Name"] || "N/A"}</td> */}
-                    <td classname="activity">{event["Name of the activity"]}</td>
+                    <td className="activity">{event["Name of the activity"]}</td>
                     <td className="students-participated">{event["Number of students participated in such activities"]}</td>
                     <td>
                       {event["Web Links"] ? (
-                        <a href={event["Web Links"]} download>
+                       <a href={event["Web Links"]} target="_blank" rel="noopener noreferrer">
                           <button>Download</button>
                         </a>
                       ) : (

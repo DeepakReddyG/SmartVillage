@@ -80,9 +80,12 @@
     width: 100%;
     border-collapse: collapse;
     border: 2px solid green;
-    /* table-layout: fixed; */
+    table-layout: fixed;
     /* display: flex; */
+    /* background-color: red; */
     /* flex-direction: column; */
+    /* display: table; */
+    height: 84vh;
 }
 
 .activities_table_in_one_in table th {
