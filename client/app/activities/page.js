@@ -127,7 +127,7 @@ function Page() {
                   <th>Village Name</th>
                   <th>Name of the Event</th>
                   <th>Domain</th>
-                  <th>Number of Students Participated</th>
+                  <th>Students Participated</th>
                   <th>Report</th>
                 </tr>
               </thead>

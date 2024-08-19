@@ -85,6 +85,7 @@
     width: 100%;
     border-collapse: collapse;
     border: 2px solid green;
+    table-layout: fixed;
 }
 
 .activities_table_in_one_in table th {
@@ -105,7 +106,7 @@
 }
 
 .activities_table_in_one_in table th:nth-child(3) {
-    width: 30%; /* Adjusted for Name of the Event column header */
+    width: 40%; /* Adjusted for Name of the Event column header */
 }
 
 .activities_table_in_one_in table th:nth-child(4) {
@@ -113,11 +114,11 @@
 }
 
 .activities_table_in_one_in table th:nth-child(5) {
-    width: 10%; /* Adjusted for Number of Students Participated column header */
+    width: 8%; /* Adjusted for Number of Students Participated column header */
 }
 
 .activities_table_in_one_in table th:nth-child(6) {
-    width: 18%; /* Adjusted for Report column header */
+    width: 10%; /* Adjusted for Report column header */
 }
 
 .activities_table_in_one_in table td {
