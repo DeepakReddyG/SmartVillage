@@ -7,7 +7,7 @@ function Page() {
   const [searchQuery, setSearchQuery] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
   const [selectedYear, setSelectedYear] = useState('');
-  const eventsPerPage = 18;
+  const eventsPerPage = 15;
   const [sortBy, setSortBy] = useState("DATE");
   const [sortOrder, setSortOrder] = useState('desc');
 
