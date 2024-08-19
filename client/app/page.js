@@ -516,8 +516,10 @@ export default function Home() {
                     {/* <Link className='home-eight-two-in-link' href='/reports'>View Reports</Link> */}
                       <div className="home-eight-two-in-buttons">
                         <div className="home-eight-two-in-button-in">
-                        <a href="/ReportPDFS/Final_Report.pdf" download="Annual_Report_2023-24.pdf">
-                        <button download="../">
+                        {/* <a href="/ReportPDFS/Final_Report.pdf" download="Annual_Report_2023-24.pdf"> */}
+                        {/* <a to="https://kluniversityin-my.sharepoint.com/:b:/g/personal/2300030350_kluniversity_in/EdHbklDhm0tKucyC2CZmrdABdPYDkCyTyh0BglwwLyPrqw?e=NiRGw1" /> */}
+                        <a href="https://kluniversityin-my.sharepoint.com/:b:/g/personal/2300030350_kluniversity_in/EdHbklDhm0tKucyC2CZmrdABdPYDkCyTyh0BglwwLyPrqw?e=NiRGw1">
+                        <button>
                               Download Report
                         </button>
                         </a>

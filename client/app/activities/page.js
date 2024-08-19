@@ -1,13 +1,13 @@
 "use client"
 import React, { useState } from 'react';
-import data from './activities_array';
+import data from './Updates_Array';
 import './page.css';
 
 function Page() {
   const [searchQuery, setSearchQuery] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
   const [selectedYear, setSelectedYear] = useState('');
-  const eventsPerPage = 15;
+  const eventsPerPage = 18;
   const [sortBy, setSortBy] = useState("DATE");
   const [sortOrder, setSortOrder] = useState('desc');
 
@@ -32,18 +32,18 @@ function Page() {
   if (sortBy) {
     sortedData = sortedData.sort((a, b) => {
       if (sortBy === 'DATE') {
-        const dateA = formatDateForSorting(a[sortBy]);
-        const dateB = formatDateForSorting(b[sortBy]);
+        const dateA = formatDateForSorting(a["Date of the activity \nDD-MM-YYYY"]);
+        const dateB = formatDateForSorting(b["Date of the activity \nDD-MM-YYYY"]);
         return sortOrder === 'asc' ? dateA.localeCompare(dateB) : dateB.localeCompare(dateA);
       } else {
-        return sortOrder === 'asc' ? String(a[sortBy]).localeCompare(b[sortBy]) : String(b[sortBy]).localeCompare(a[sortBy]);
+        return sortOrder === 'asc' ? String(a[sortBy]).localeCompare(String(b[sortBy])) : String(b[sortBy]).localeCompare(String(a[sortBy]));
       }
     });
   }
 
   // Filtered data based on search query and selected year
   const filteredData = sortedData.filter(event =>
-    (selectedYear === '' || event['DATE'].includes(selectedYear)) &&
+    (selectedYear === '' || event['Year'].includes(selectedYear)) &&
     Object.values(event).some(value =>
       String(value).toLowerCase().includes(searchQuery.toLowerCase())
     )
@@ -58,7 +58,7 @@ function Page() {
   const paginate = pageNumber => setCurrentPage(pageNumber);
 
   // Extract unique years from the data for the dropdown options
-  const years = Array.from(new Set(data.map(event => event['DATE'].split('.')[2])));
+  const years = Array.from(new Set(data.map(event => event['Year'])));
 
   return (
     <div className='activities_table'>
@@ -85,21 +85,6 @@ function Page() {
                 <h1>Activities List</h1>
               </div>
             </div>
-            {/* <div className="activities_table_in_dropdown">
-              <div className="activities_table_in_dropdown_in">
-                <label htmlFor="year">Select Year:</label>
-                <select
-                  id="year"
-                  value={selectedYear}
-                  onChange={e => setSelectedYear(e.target.value)}
-                >
-                  <option value="">All</option>
-                  {years.map(year => (
-                    <option key={year} value={year}>{year}</option>
-                  ))}
-                </select>
-              </div>
-            </div> */}
             <div className="activities_table_in_BackHome">
               <div className="activities_table_in_BackHome_in">
                 <a href="/">Back to Home</a>
@@ -124,24 +109,22 @@ function Page() {
                       ))}
                     </select>
                   </th>
-                  <th>Village Name</th>
-                  <th>Name of the Event</th>
-                  <th>Domain</th>
-                  <th>Students Participated</th>
+                  {/* <th>Village Name</th> */}
+                  <th>Name of the Activity</th>
+                  <th>Number of Students Participated</th>
                   <th>Report</th>
                 </tr>
               </thead>
               <tbody>
                 {currentEvents.map(event => (
-                  <tr key={event["DATE"] + event["NAME OF THE EVENT"]}>
-                    <td>{event["DATE"]}</td>
-                    <td className="village-column">{event["VILLAGE NAME"]}</td>
-                    <td>{event["NAME OF THE EVENT"].length > 70 ? event["NAME OF THE EVENT"].substring(0, 60) + '...' : event["NAME OF THE EVENT"]}</td>
-                    <td className="domain-column">{event["DOMAIN"]}</td>
-                    <td className="students-participated">{event["NUMBER OF STUDENTS PARTICIPATED"]}</td>
+                  <tr key={event["S.No"]}>
+                    <td>{event["Date of the activity \nDD-MM-YYYY"]}</td>
+                    {/* <td className="village-column">{event["Village Name"] || "N/A"}</td> */}
+                    <td classname="activity">{event["Name of the activity"]}</td>
+                    <td className="students-participated">{event["Number of students participated in such activities"]}</td>
                     <td>
-                      {event["REPORT_URL"] ? (
-                        <a href={event["REPORT_URL"]} download>
+                      {event["Web Links"] ? (
+                        <a href={event["Web Links"]} download>
                           <button>Download</button>
                         </a>
                       ) : (
@@ -160,7 +143,7 @@ function Page() {
                 <button className="event-count-button">
                   Events Count: {filteredData.length}
                 </button>
-            </div>
+              </div>
             </div>
           </div>
         </div>
