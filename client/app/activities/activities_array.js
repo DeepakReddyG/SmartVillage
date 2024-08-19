@@ -6,7 +6,7 @@ const newData = [
     "NAME OF THE EVENT": "Awareness On Solid Waste Management Center",
     "DOMAIN": "Environmental projects",
     "NUMBER OF STUDENTS PARTICIPATED": 44,
-    "REPORT_URL":"https://www.kluniversity.in/iqac-files/SSR-2023/c3/3.6.2/SVR/2022-2023/Awareness%20Programmes%20&%20Rallies%20on%20Usage%20of%20Plastic.pdf"
+    "REPORT_URL":""
   },
   {
     "S NO": 2,
@@ -167,7 +167,8 @@ const newData = [
     "VILLAGE NAME": "Poratnagar",
     "NAME OF THE EVENT": "Awareness Propgrammes & Rallies on Usage of Plastic",
     "DOMAIN": "Environmental projects",
-    "NUMBER OF STUDENTS PARTICIPATED": 82
+    "NUMBER OF STUDENTS PARTICIPATED": 82,
+    "REPORT_URL":"https://www.kluniversity.in/iqac-files/SSR-2023/c3/3.6.2/SVR/2022-2023/Awareness%20Programmes%20&%20Rallies%20on%20Usage%20of%20Plastic.pdf"
   },
   {
     "S NO": 22,
@@ -1250,5 +1251,7 @@ const newData = [
     "NUMBER OF STUDENTS PARTICIPATED": 85
   }
 ];
+
+
 
 export default newData;

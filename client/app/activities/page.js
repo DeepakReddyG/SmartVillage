@@ -112,7 +112,6 @@ function Page() {
             <table>
               <thead>
                 <tr>
-                  <th>S No</th>
                   <th>Date
                     <select className='DateOption'
                       id="year"
@@ -125,39 +124,43 @@ function Page() {
                       ))}
                     </select>
                   </th>
-                  <th >Village Name</th>
-                  <th >Name of the Event</th>
+                  <th>Village Name</th>
+                  <th>Name of the Event</th>
                   <th>Domain</th>
                   <th>Number of Students Participated</th>
                   <th>Report</th>
                 </tr>
               </thead>
               <tbody>
-                  {currentEvents.map(event => (
-                    <tr key={event["S NO"]}>
-                      <td>{event["S NO"]}</td>
-                      <td>{event["DATE"]}</td>
-                      <td className="village-column">{event["VILLAGE NAME"]}</td>
-                      <td>{event["NAME OF THE EVENT"].length > 70 ? event["NAME OF THE EVENT"].substring(0, 60) + '...' : event["NAME OF THE EVENT"]}</td>
-                      <td className="domain-column">{event["DOMAIN"]}</td>
-                      <td className="students-participated">{event["NUMBER OF STUDENTS PARTICIPATED"]}</td>
-                      <td>
-                        {event["REPORT_URL"] ? (
-                          <a href={event["REPORT_URL"]} download>
-                            <button>Download</button>
-                          </a>
-                        ) : (
-                          'Unavailable'
-                        )}
-                      </td>
-                    </tr>
-                  ))}
-            </tbody>
+                {currentEvents.map(event => (
+                  <tr key={event["DATE"] + event["NAME OF THE EVENT"]}>
+                    <td>{event["DATE"]}</td>
+                    <td className="village-column">{event["VILLAGE NAME"]}</td>
+                    <td>{event["NAME OF THE EVENT"].length > 70 ? event["NAME OF THE EVENT"].substring(0, 60) + '...' : event["NAME OF THE EVENT"]}</td>
+                    <td className="domain-column">{event["DOMAIN"]}</td>
+                    <td className="students-participated">{event["NUMBER OF STUDENTS PARTICIPATED"]}</td>
+                    <td>
+                      {event["REPORT_URL"] ? (
+                        <a href={event["REPORT_URL"]} download>
+                          <button>Download</button>
+                        </a>
+                      ) : (
+                        'Unavailable'
+                      )}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
             </table>
             <div className="pagination">
               <button onClick={() => paginate(currentPage - 1)} disabled={currentPage === 1}>Prev</button>
               <span>Page {currentPage} of {Math.ceil(filteredData.length / eventsPerPage)}</span>
               <button onClick={() => paginate(currentPage + 1)} disabled={currentPage === Math.ceil(filteredData.length / eventsPerPage)}>Next</button>
+              <div className="activities_table_in_count">
+                <button className="event-count-button">
+                  Events Count: {filteredData.length}
+                </button>
+            </div>
             </div>
           </div>
         </div>
