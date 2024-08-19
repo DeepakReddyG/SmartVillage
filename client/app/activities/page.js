@@ -8,16 +8,16 @@ function Page() {
   const [currentPage, setCurrentPage] = useState(1);
   const [selectedYear, setSelectedYear] = useState('');
   const eventsPerPage = 15;
-  const [sortBy, setSortBy] = useState(null);
-  const [sortOrder, setSortOrder] = useState('asc');
+  const [sortBy, setSortBy] = useState("DATE");
+  const [sortOrder, setSortOrder] = useState('desc');
 
   // Function to handle sorting
   const handleSort = (column) => {
     if (sortBy === column) {
-      setSortOrder(sortOrder === 'asc' ? 'desc' : 'asc');
+      setSortOrder(sortOrder === 'desc' ? 'asc' : 'desc');
     } else {
       setSortBy(column);
-      setSortOrder('asc');
+      setSortOrder('desc');
     }
   };
 
@@ -112,8 +112,8 @@ function Page() {
             <table>
               <thead>
                 <tr>
-                  <th onClick={() => handleSort("S NO")}>S No</th>
-                  <th onClick={() => handleSort("DATE")}>Date
+                  <th>S No</th>
+                  <th>Date
                     <select className='DateOption'
                       id="year"
                       value={selectedYear}
@@ -125,10 +125,10 @@ function Page() {
                       ))}
                     </select>
                   </th>
-                  <th onClick={() => handleSort("VILLAGE NAME")}>Village Name</th>
-                  <th onClick={() => handleSort("NAME OF THE EVENT")}>Name of the Event</th>
-                  <th onClick={() => handleSort("DOMAIN")}>Domain</th>
-                  <th onClick={() => handleSort("NUMBER OF STUDENTS PARTICIPATED")}>Number of Students Participated</th>
+                  <th >Village Name</th>
+                  <th >Name of the Event</th>
+                  <th>Domain</th>
+                  <th>Number of Students Participated</th>
                 </tr>
               </thead>
               <tbody>
