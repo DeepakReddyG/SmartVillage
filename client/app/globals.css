@@ -739,23 +739,27 @@
   margin-left: 0.3rem;
 }
 .home-eight-two-in-buttons{
-  padding: 0.5rem;
-  width:53%;
+  /* padding: 0.5rem; */
+  width:70%;
+
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content:flex-start;
+  align-items: flex-start;
   /* border: 2px solid red; */
 }
 .home-eight-two-in-button{
   border: 2px solid green;
   border-radius: 1rem;
-  padding: 0.5rem;
+  padding: 0.8rem;
+  /* background-color: red; */
   /* margin-left: 0.3rem; */
 }
 .home-eight-two-in-button-in{
   border: 2px solid green;
   border-radius: 1rem;
+  /* background-color: red; */
   padding: 0.5rem;
+  /* width: 100%; */
 }
 /* ----------------------- home-nine --------------------------- */
 
