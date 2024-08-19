@@ -125,7 +125,7 @@ function Page() {
                     <td>
                       {event["Web Links"] ? (
                        <a href={event["Web Links"]} target="_blank" rel="noopener noreferrer">
-                          <button>Download</button>
+                          <button>View</button>
                         </a>
                       ) : (
                         'Unavailable'
