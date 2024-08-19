@@ -74,6 +74,7 @@
     font-weight: 600;
     background-color: green;
     color: white;
+    background-color: red;
 }
 
 .activities_table_in_one_in table th:first-child {
@@ -86,7 +87,7 @@
     width: 15%;
 }
 .activities_table_in_one_in table th:nth-child(4) {
-    width: 50%;
+    width: 40%;
 }
 .activities_table_in_one_in table th:nth-child(5) {
     width: 15%;

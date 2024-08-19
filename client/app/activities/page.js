@@ -129,20 +129,30 @@ function Page() {
                   <th >Name of the Event</th>
                   <th>Domain</th>
                   <th>Number of Students Participated</th>
+                  <th>Report</th>
                 </tr>
               </thead>
               <tbody>
-                {currentEvents.map(event => (
-                  <tr key={event["S NO"]}>
-                    <td>{event["S NO"]}</td>
-                    <td>{event["DATE"]}</td>
-                    <td className="village-column">{event["VILLAGE NAME"]}</td>
-                    <td>{event["NAME OF THE EVENT"].length > 70 ? event["NAME OF THE EVENT"].substring(0, 60) + '...' : event["NAME OF THE EVENT"]}</td>
-                    <td className="domain-column">{event["DOMAIN"]}</td>
-                    <td className="students-participated">{event["NUMBER OF STUDENTS PARTICIPATED"]}</td>
-                  </tr>
-                ))}
-              </tbody>
+                  {currentEvents.map(event => (
+                    <tr key={event["S NO"]}>
+                      <td>{event["S NO"]}</td>
+                      <td>{event["DATE"]}</td>
+                      <td className="village-column">{event["VILLAGE NAME"]}</td>
+                      <td>{event["NAME OF THE EVENT"].length > 70 ? event["NAME OF THE EVENT"].substring(0, 60) + '...' : event["NAME OF THE EVENT"]}</td>
+                      <td className="domain-column">{event["DOMAIN"]}</td>
+                      <td className="students-participated">{event["NUMBER OF STUDENTS PARTICIPATED"]}</td>
+                      <td>
+                        {event["REPORT_URL"] ? (
+                          <a href={event["REPORT_URL"]} download>
+                            <button>Download</button>
+                          </a>
+                        ) : (
+                          'Unavailable'
+                        )}
+                      </td>
+                    </tr>
+                  ))}
+            </tbody>
             </table>
             <div className="pagination">
               <button onClick={() => paginate(currentPage - 1)} disabled={currentPage === 1}>Prev</button>

@@ -5,7 +5,8 @@ const newData = [
     "VILLAGE NAME": "Chirravuru",
     "NAME OF THE EVENT": "Awareness On Solid Waste Management Center",
     "DOMAIN": "Environmental projects",
-    "NUMBER OF STUDENTS PARTICIPATED": 44
+    "NUMBER OF STUDENTS PARTICIPATED": 44,
+    "REPORT_URL":"https://www.kluniversity.in/iqac-files/SSR-2023/c3/3.6.2/SVR/2022-2023/Awareness%20Programmes%20&%20Rallies%20on%20Usage%20of%20Plastic.pdf"
   },
   {
     "S NO": 2,
