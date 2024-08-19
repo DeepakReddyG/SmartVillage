@@ -511,10 +511,19 @@ export default function Home() {
                 </div>
                 <div className="home-eight-two">
                   <div className="home-eight-two-in">
-                    <h1>Annual Report 2022-23 Social Internship: Class of Y22 Students</h1>
-                    <p>Empowering Futures: A Journey of Impact and Growth – Annual Report 2022-23 for Social Internship by the Y22 Students</p>
+                    <h1>Annual Report 2023-24 Social Internship: Class of Y23 Students</h1>
+                    <p>Empowering Futures: A Journey of Impact and Growth – Annual Report 2023-24 for Social Internship by the Y23 Students</p>
                     {/* <Link className='home-eight-two-in-link' href='/reports'>View Reports</Link> */}
-                    <Link className='home-eight-two-in-activitie-link'href='/activities' >View Activities</Link>
+                      <div className="home-eight-two-in-buttons">
+                        <div className="home-eight-two-in-button-in">
+                        <a href="/ReportPDFS/Final_Report.pdf" download="Annual_Report_2023-24.pdf">
+                        <button download="../">
+                              Download Report
+                        </button>
+                        </a>
+                      </div>
+                      <Link className='home-eight-two-in-activitie-link'href='/activities' >View Activities</Link>
+                      </div>
                   </div>
                 </div>
               </div>
