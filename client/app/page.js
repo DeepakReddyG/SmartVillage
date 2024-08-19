@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import CountUp from 'react-countup';
+import Model from './components/modal/modal';
 
 import { useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -89,6 +90,16 @@ export default function Home() {
     const [showNavbar, setShowNavbar] = useState(false);
     const [num, setNum] = useState(1);
     let scroll = 0;
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const handleOpenModal = () => {
+      setIsModalOpen(true);
+    };
+
+    const handleCloseModal = () => {
+      setIsModalOpen(false);
+    };
 
 
     useEffect(() => {
@@ -204,8 +215,12 @@ export default function Home() {
                     {/* <p>Doctors Without Borders/Médecins Sans Frontières (MSF) cares for people affected by conflict, disease outbreaks, natural and human-made disasters, and exclusion from health care in more than 70 countries.Doctors Without Borders/Médecins Sans Frontières (MSF) cares for people affected by conflict, disease outbreaks, natural and human-made disasters, and exclusion from health care in more than 70 countries.</p> */}
                     <p>In the smart village revolution, traditional wisdom and cutting-edge concepts coexist harmoniously. Solar-powered schools, quick access to medical assistance, and cellphone-enabled soil monitoring empower communities. Progress flows effortlessly and sustainably, nourishing villages like water touched by the sun. Tradition endures as innovation fortifies it, fostering common aspirations and promising tomorrows.</p>
                     {/* navigate it to areas work */}
-
-                    <a className='home-three-one-in-link' href="https://www.kluniversity.in/pdfs/Smart%20Village%20Revolution_5.pdf">Learn More About What We Do</a>
+                    {/* <button onClick={handleOpenModal}> */}
+                    <a className='home-three-one-in-link' href="https://www.kluniversity.in/pdfs/Smart%20Village%20Revolution_5.pdf"
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    >Learn More About What We Do</a>
+                    {/* </bu÷\tton> */}
                   </div>
                 </div>
                 <div className="home-three-two">
@@ -255,6 +270,11 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
+                {/* <Model 
+                          isOpen={isModalOpen} 
+                          onClose={handleCloseModal} 
+                          pdfUrl="/ReportPDFS/Final_Report.pdf" 
+                        /> */}
               </div>
             </div>
 
@@ -518,13 +538,21 @@ export default function Home() {
                         <div className="home-eight-two-in-button-in">
                         {/* <a href="/ReportPDFS/Final_Report.pdf" download="Annual_Report_2023-24.pdf"> */}
                         {/* <a to="https://kluniversityin-my.sharepoint.com/:b:/g/personal/2300030350_kluniversity_in/EdHbklDhm0tKucyC2CZmrdABdPYDkCyTyh0BglwwLyPrqw?e=NiRGw1" /> */}
-                        <a href="https://kluniversityin-my.sharepoint.com/:b:/g/personal/2300030350_kluniversity_in/EdHbklDhm0tKucyC2CZmrdABdPYDkCyTyh0BglwwLyPrqw?e=NiRGw1">
-                        <button>
-                              Download Report
+                        {/* <a href="https://kluniversityin-my.sharepoint.com/:b:/g/personal/2300030350_kluniversity_in/EdHbklDhm0tKucyC2CZmrdABdPYDkCyTyh0BglwwLyPrqw?e=NiRGw1"
+                         target="_blank" 
+                          rel="noopener noreferrer"
+                        > */}
+                         <button onClick={handleOpenModal}>
+                              View Report
                         </button>
-                        </a>
+                        {/* </a> */}
                       </div>
                       <Link className='home-eight-two-in-activitie-link'href='/activities' >View Activities</Link>
+                      <Model 
+                          isOpen={isModalOpen} 
+                          onClose={handleCloseModal} 
+                          pdfUrl="/ReportPDFS/Final_Report.pdf" 
+                        />
                       </div>
                   </div>
                 </div>
@@ -611,7 +639,7 @@ export default function Home() {
               </div>
             </div>
 
-{/* 
+
             <div className="home-ten">
               <div className="home-ten-in">
                 <div className="home-ten-header">
@@ -644,7 +672,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </div> */}
+            </div>
 
             <div className="home-five">
                 <div className="home-five-in">
