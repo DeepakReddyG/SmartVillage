@@ -1,9 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
 import Tree from '../../Assets/Tree.png';
-// import './Footer.css';
+import { Link as ScrollLink } from 'react-scroll';
 import './Footer.css';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
 
@@ -44,7 +43,7 @@ const Footer = () => {
                             <li>Who we are</li>
                             <li>Why GRAAM</li>
                             <li>What We Offer</li>
-                            <li>Annual Reports</li>
+                            <li> <ScrollLink to="home-eight" offset={-70}  smooth={true} duration={600}>Annual Reports</ScrollLink></li>
                             <li><a href="https://sac.kluniversity.in/">KL SAC</a></li>
                             <li><a href="https://panchatantra.vercel.app/">Panchatantra</a></li>
                         </ul>
@@ -66,9 +65,9 @@ const Footer = () => {
                         <div className="Footer-two-in-two-in-boxes-in">
                         <h3>Quick Links</h3>
                         <ul>
-                            <li>About</li>
-                            <li>Our Work</li>
-                            <li>Annual Reports</li>
+                            <li> <ScrollLink to="home-two" offset={-70}  smooth={true} duration={600}>About</ScrollLink></li>
+                            <li> <ScrollLink to="home-seven" offset={-70}  smooth={true} duration={600}>Our Work</ScrollLink></li>
+                            <li> <ScrollLink to="home-five" offset={-70}  smooth={true} duration={600}>Parameters</ScrollLink></li>
                             <li><a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.kluniversity.in/AQAR1819/SV.pdf&ved=2ahUKEwiazc3rrIGIAxUXklYBHfDTB-cQFnoECBUQAQ&usg=AOvVaw2FAQC3fzLhntiGTqlCW4vx">Past Year Reports</a></li>
                         </ul>
                         </div>
