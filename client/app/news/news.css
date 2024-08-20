@@ -1,0 +1,103 @@
+.newsContainer {
+    width: 100%;
+}
+.newsContainer-in{
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+/* Header section for the news page */
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Grid layout for news articles */
+.articlesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Card style for individual articles */
+.articleCard {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+
+/* Hover effect for article cards */
+.articleCard:hover {
+    transform: translateY(-5px);
+}
+
+/* Style for article images */
+.articleImage {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Title styling for articles */
+.articleTitle {
+    font-size: 1.25rem;
+    margin: 16px;
+}
+
+/* Meta information styling for articles */
+.articleMeta {
+    font-size: 0.875rem;
+    color: #555;
+    margin: 0 16px;
+}
+
+/* Excerpt styling for articles */
+.articleExcerpt {
+    font-size: 1rem;
+    margin: 16px;
+}
+
+/* Read more link styling */
+.readMore {
+    display: block;
+    text-align: center;
+    background: #0070f3;
+    color: white;
+    padding: 10px;
+    margin: 16px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+/* Pagination styling */
+.pagination {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.pagination button {
+    background-color: green;
+    color: white;
+    border: 1px solid black;
+    padding: 0.2rem 0.8rem;
+    margin: 0.1rem;
+}
+
+.pagination span {
+    background-color: green;
+    color: white;
+    border: 1px solid black;
+    padding: 0.2rem 0.8rem;
+}

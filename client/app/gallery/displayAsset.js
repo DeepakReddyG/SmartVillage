@@ -1,7 +1,8 @@
 "use client"
 
 import React, { useEffect, useState } from "react";
-import { ref, getDownloadURL } from "firebase/storage";
+// import { ref, getDownloadURL } from "firebase/storage";
+import {ref, getDownloadURL} from "firebase/storage";
 import { storage } from "../../firebase";
 
 import LoaderGif from '../../public/loader.gif';

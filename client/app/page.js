@@ -202,7 +202,7 @@ export default function Home() {
                           ></Image>
                         </div>
                     </SwiperSlide>
-                    <SwiperSlide>
+                    {/* <SwiperSlide>
                       <div className="hero-in-slider">
                         <Image
                           className="full-width-height"
@@ -241,7 +241,7 @@ export default function Home() {
                           ></Image>
                         </div>
                       </div>
-                    </SwiperSlide>
+                    </SwiperSlide> */}
                 </Swiper>
               </div>
             </div>
@@ -263,7 +263,9 @@ export default function Home() {
                     rel="noopener noreferrer"
                     >Learn More About What We Do</a>
                     <Link className='home-three-one-in-link' href='/gallery'>View Gallery</Link>
-                    
+                    <Link className="home-three-one-in-link" href="/news">
+  View News Articles
+</Link>
                   </div>
                 </div>
                 <div className="home-three-two">
