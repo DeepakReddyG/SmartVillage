@@ -1,93 +1,45 @@
-import React from 'react'
-import './page.css'
-import Link from 'next/link'
+import React from "react";
+import HeroImage from "./hero";
+import MultiImageDisplay from "./displayAsset";
 
+import Footer from '../components/footer/Footer';
 
-// import images here 
+import './page.css';
 
-import SVR_Image from '../Assets/SVR_Image.jpeg'
-import G20_Image from '../Assets/G20_Logo.png'
-import ElectionImage from '../Assets/Election.png'
+const App = () => {
+    const heroImagePath = "gallery/plantation2.jpg"; 
 
-const page = () => {
+  const imagePaths = [
+    "gs://svrwebsite-1e892.appspot.com/gallery/plantation.jpeg",
+    "gs://svrwebsite-1e892.appspot.com/gallery/Screenshot 2024-08-17 at 8.52.04 AM.png",
+    "gs://svrwebsite-1e892.appspot.com/gallery/svr_modifications.jpeg",
+    "gs://svrwebsite-1e892.appspot.com/gallery/plantation2.jpg",
+    "gs://svrwebsite-1e892.appspot.com/gallery/coding_contest_updated.png"
+  ];
+
   return (
-        <div className="GalleryComponent">
-            <div className="GalleryComponent-in">
-                <div className="Gallery-one">
-                    <div className="Gallery-one-in">
-                        <h1>Smart Village <span>Revolution</span> </h1>
-                        <Link href='/'>Back to Home</Link>
-                    </div>
-                </div>
-                <div className="Gallery-two">
-                    <div className="Gallery-two-in">
-
-                        <div className="Gallery-img-one gm-cm-one">
-                            <div className="Gallery-img-one-in gm-cm-one-in">
-                                <div className="Gi-one-one-in gm-cm-in-one g-img">
-                                    <img src={SVR_Image.src} alt="" />
-                                </div>
-                                <div className="Gi-one-two-in gm-cm-in-two g-txt">
-                                    <h1>Smart Village Revolution</h1>
-                                    <p>India is an mosaic of multicultural experiences. With a rich heritage and myriad attractions, the country is among the finest destinations for a holistic vacation.</p>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div className="Gallery-img-two gm-cm-one">
-                            <div className="Gallery-img-two-in gm-cm-one-in">
-                                <div className="Gi-two-one-in gm-cm-in-one g-txt">
-                                    <h1>Smart Village Revolution</h1>
-                                    <p>India is a mosaic of multicultural experiences. With a rich heritage and myriad attractions, the country is among the finest destinations for a holistic vacation.</p>
-                                </div>
-                                <div className="Gi-two-two-in gm-cm-in-two g-img">
-                                    <img src={ElectionImage.src} alt="" />
-                                </div>
-                            </div>
-                        </div>
-                         
-                        <div className="Gallery-img-three gm-cm-one">
-                            <div className="Gallery-img-three-in gm-cm-one-in">
-                                <div className="Gi-three-one-in gm-cm-in-one g-img">
-                                    <img src={SVR_Image.src} alt="" />
-                                </div>
-                                <div className="Gi-three-two-in gm-cm-in-two g-txt">
-                                    <h1>Smart Village Revolution</h1>
-                                    <p>India is a mosaic of multicultural experiences. With a rich heritage and myriad attractions, the country is among the finest destinations for a holistic vacation.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="Gallery-img-four gm-cm-one">
-                            <div className="Gallery-img-four-in gm-cm-one-in">
-                                <div className="Gi-four-one-in gm-cm-in-one g-txt">
-                                    <h1>Smart Village Revolution</h1>
-                                    <p>India is a mosaic of multicultural experiences. With a rich heritage and myriad attractions, the country is among the finest destinations for a holistic vacation.</p>
-                                </div>
-                                <div className="Gi-four-two-in gm-cm-in-two g-img">
-                                    <img src={ElectionImage.src} alt="" />
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="Gallery-img-five gm-cm-one">
-                            <div className="Gallery-img-five-in gm-cm-one-in">
-                                <div className="Gi-five-one-in gm-cm-in-one g-img">
-                                    <img src={SVR_Image.src} alt="" />  
-                                </div>
-                                <div className="Gi-five-two-in gm-cm-in-two g-txt">
-                                    <h1>Smart Village Revolution</h1>
-                                    <p>India is a mosaic of multicultural experiences. With a rich heritage and myriad attractions, the country is among the finest destinations for a holistic vacation.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
+    <div className="gallery">
+        <div className="gallery-main">
+            <div className="hero-image">
+                <HeroImage imagePath={heroImagePath} />
+            </div>
+            <div className="g-one">
+                <div className="g-one-in">
+                    <h1>Capturing the Spirit: Moments of SVR Through the Years</h1>
+                    <p>Our gallery is a tribute to the countless memories we've created together. Each image reflects the joy, achievements, and shared experiences that make our community special. <u>We hope these captured moments resonate with youb</u>, reminding you of the vibrant spirit of SVR. Enjoy reliving these memories as much as we do.</p>
                 </div>
             </div>
+            <div className="gallery-three">
+                <MultiImageDisplay imagePaths={imagePaths} />       
+            </div>
         </div>
-  )
-}
 
-export default page
+
+        <div className="Footer">
+              <Footer/>
+        </div>
+    </div>
+  );
+};
+
+export default App;
