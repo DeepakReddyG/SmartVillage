@@ -4,6 +4,8 @@ import React, { useEffect, useState } from "react";
 import { ref, getDownloadURL } from "firebase/storage";
 import { storage } from "../../firebase";
 
+import LoaderGif from '../../public/loader.gif';
+
 const MultiImageDisplay = ({ imagePaths }) => {
   const [imageUrls, setImageUrls] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -29,15 +31,18 @@ const MultiImageDisplay = ({ imagePaths }) => {
   }, [imagePaths]);
 
   return (
-    <div>
+    <div className="gallery-three-prime">
       {loading ? (
-        <p>Something went wrong, plse wait.</p>
+        <img src={LoaderGif} alt="Loading" className="loader" />
       ) : (
-        <div class="gallery-three-prime">
-          {imageUrls.map((url, index) => (
-            <img key={index} src={url} alt={`Firebase Image ${index}`} style={{ maxWidth: '50%', height: 'auto', margin: '10px', border: '2px solid black' }} />
-          ))}
-        </div>
+        imageUrls.map((url, index) => (
+          <img
+            key={index}
+            src={url}
+            alt={`Firebase Image ${index}`}
+            className="gallery-image"
+          />
+        ))
       )}
     </div>
   );

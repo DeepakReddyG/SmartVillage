@@ -220,7 +220,8 @@ export default function Home() {
                     target="_blank" 
                     rel="noopener noreferrer"
                     >Learn More About What We Do</a>
-                    {/* </bu÷\tton> */}
+                    <Link className='home-three-one-in-link' href='/gallery'>View Gallery</Link>
+                    
                   </div>
                 </div>
                 <div className="home-three-two">
