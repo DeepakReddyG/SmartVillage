@@ -81,6 +81,10 @@
     cursor: pointer;
   }
 
+  .Footer-two-in-two-in-boxes-in ul li:hover{
+    color: rgba(59, 41, 6, 0.8);
+  }
+
   .Footer-two-in-two-in-boxes-in ul li a{
     display: flex;
     gap: 1rem;
