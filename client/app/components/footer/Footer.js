@@ -1,8 +1,10 @@
 import React from 'react'
 import Image from 'next/image'
 import Tree from '../../Assets/Tree.png';
+// import './Footer.css';
 import './Footer.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
 
 
