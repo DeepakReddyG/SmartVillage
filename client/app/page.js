@@ -32,6 +32,8 @@ import SVR_UpdateImage_16 from './Assets/Updated Images/Health(Area of work).png
 import SVR_UpdateImage_17 from './Assets/Updated Images/Culture.png'
 import SVR_UpdateImage_18 from './Assets/Updated Images/Transportation.png'
 import SVR_UpdateImage_19 from './Assets/Updated Images/LatestCultureAndCommunity.png'
+import HeroImage from './Assets/SIP_2.jpeg'
+import HeroImage2 from './Assets/Hero3.jpeg'
 // import SVR_UpdateImage_19 from './Assets/Updated Images/CultureAndCommunity2.png'
 // import SVR_UpdateImage_20 from './Assets/Updated Images/UpdatedCultureAndCommunity2.png'
 
@@ -199,6 +201,46 @@ export default function Home() {
                             alt="Picture of the author"
                           ></Image>
                         </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <div className="hero-in-slider">
+                        <Image
+                          className="full-width-height"
+                          src={HeroImage}
+                          alt="Picture of the author"
+                        />
+
+                        <div className="swiper-description">
+                          <p>Library Development Program</p>
+                        </div>
+                        <div className="swiper-logo">
+                          <Image
+                          className='swiper-logo-img'
+                            src={kllogo}
+                            alt="Picture of the author"
+                          ></Image>
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <div className="hero-in-slider">
+                        <Image
+                          className="full-width-height"
+                          src={HeroImage2}
+                          alt="Picture of the author"
+                        />
+
+                        <div className="swiper-description">
+                          <p>Vacination Drive in Konduru</p>
+                        </div>
+                        <div className="swiper-logo">
+                          <Image
+                          className='swiper-logo-img'
+                            src={kllogo}
+                            alt="Picture of the author"
+                          ></Image>
+                        </div>
+                      </div>
                     </SwiperSlide>
                 </Swiper>
               </div>
