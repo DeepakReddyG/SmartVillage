@@ -8,7 +8,9 @@
     background-color: rgb(184, 233, 184);
     color: green; 
 }
-
+img{
+  pointer-events: none;
+}
 .plant {
   background-color: green;
   color: white;
@@ -268,6 +270,7 @@
   border: 2px solid green;
   background-color: white;
   border-radius: 1rem;
+  cursor: pointer;
 }
 
 .home-two-in-one-in-boxes-in-box-in {
@@ -280,8 +283,10 @@
   color: green;
   font-size: 1rem;
 }
-
-
+/* .home-two-in-one-in-boxes-in-box:hover{
+  color: white;
+  background-color: lightgreen;
+} */
 /* -------------------------- home-four  ------------------------- */
 .home-four {
   width: 100%;
@@ -369,6 +374,7 @@
 
 .home-five-in {
   width: 90%;
+  cursor: pointer;
   margin: auto;
 }
 
