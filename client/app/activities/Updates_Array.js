@@ -1082,7 +1082,7 @@ const newData = [
             "Name of the activity": "Water Management Workshop",
             "Date of the activity \nDD-MM-YYYY": "31.07.2024",
             "Number of students participated in such activities": "42",
-            "Web Links": "https://kluniversityin-my.sharepoint.com/:b:/g/personal/2300040028_kluniversity_in/Ec9XmyFe9bdDhKBdEiYzuDkBK3I69T-ebRgkpUfopy3JBg?e=0gm9Qe"
+            "Web Links": "https://klunive:n-my.sharepoint.com/:b:/g/personal/2300040028_kluniversity_in/Ec9XmyFe9bdDhKBdEiYzuDkBK3I69T-ebRgkpUfopy3JBg?e=0gm9Qe"
         },
         {
             "Year": "2023-2024",
