@@ -654,7 +654,10 @@ export default function Home() {
                         <h2>K L's Smart Village Revolution: In the Line of Sansad Adarsh Gram Yojana</h2>
                         <p>On Independence Day, I had made commitment to you on behalf of my colleagues in the Parliament. I laid out my dream of Adarsh Grams as the nucleus of health, cleanliness, greenery and cordiality within the community. The Guidelines that follow are based on these principles and present the complete blueprint of the Saansad Adarsh Gram Yojana for each Member of Parliament to make one village of his or her constituency a Model Village by 2016 and two more model villages by 2019.</p>
 
-                        <Link className='home-ten-one-in-one-in-link' href='/'>Sansad Adarsh Gram Yojana</Link>
+                        <Link className='home-ten-one-in-one-in-link' href='https://saanjhi.gov.in'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                        >Sansad Adarsh Gram Yojana</Link>
                       </div>
                     </div>
                     <div className="home-ten-one-in-two">
