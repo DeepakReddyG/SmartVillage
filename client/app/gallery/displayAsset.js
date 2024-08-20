@@ -38,7 +38,7 @@ const MultiImageDisplay = ({ imagePaths }) => {
         i === index ? { ...img, loading: false } : img
       )
     );
-    setIsAnyImageLoaded(true);
+    setIsAnyImageLoaded(true); 
   };
 
   return (
