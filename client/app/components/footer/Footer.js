@@ -1,7 +1,11 @@
 import React from 'react'
 import Image from 'next/image'
 import Tree from '../../Assets/Tree.png';
-import './Footer.css'
+// import './Footer.css';
+import './Footer.css';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebook, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
 
 
 const Footer = () => {
@@ -20,13 +24,13 @@ const Footer = () => {
                     <div className="Footer-two-in-one-in-one">
                         <Image src={Tree}
                         alt="Picture of the author"
-                        width={300}
-                        height={300}
+                        width={200}
+                        height={200}
                         />
                     </div>
                     <div className="Footer-two-in-one-in-two">
                         <div className="Footer-two-in-one-in-two">
-                        <p>Grassroots Research and Advocacy Movement (GRAAM) is a public policy research and advocacy initiative in India. GRAAM’s extensive expertise spans over policy research, program evaluation, community consultation, policy engagement, strategic consultation and academic programs.</p>
+                        <p>Grassroots Research and Advocacy Movement (GRAAM) is an Indian public policy initiative specializing in research, evaluation, community consultation, policy engagement, strategic consultation, and academic programs.</p>
                         </div>
                     </div>
                     </div>
@@ -41,65 +45,32 @@ const Footer = () => {
                             <li>Why GRAAM</li>
                             <li>What We Offer</li>
                             <li>Annual Reports</li>
+                            <li><a href="https://sac.kluniversity.in/">KL SAC</a></li>
+                            <li><a href="https://panchatantra.vercel.app/">Panchatantra</a></li>
                         </ul>
                         </div>
                     </div>
 
                     <div className="Footer-two-in-two-in-boxes">
                         <div className="Footer-two-in-two-in-boxes-in">
-                            <h3>Thematic Focus</h3>
+                            <h3>Contact Us</h3>
                             <ul>
-                            <li>Governance and Democratization</li>
-                            <li>Learning and Skill Development</li>
-                            <li>Public Health</li>
-                            <li>Indigenous Community Development</li>
+                            <li><a href="#"><FontAwesomeIcon icon={faFacebook} />Facebook</a></li>
+                            <li><a href="#"><FontAwesomeIcon icon={faInstagram} />Instagram</a></li>
+                            <li><a href="#"><FontAwesomeIcon icon={faLinkedin} />LinkedIn</a></li>
+                            <li><a href="#"><FontAwesomeIcon icon={faTwitter} />Twitter</a></li>
                             </ul>
                         </div>
                     </div>
                     <div className="Footer-two-in-two-in-boxes">
                         <div className="Footer-two-in-two-in-boxes-in">
-                        <h3>About Us</h3>
+                        <h3>Quick Links</h3>
                         <ul>
-                            <li>Who we are</li>
-                            <li>Why GRAAM</li>
-                            <li>What We Offer</li>
+                            <li>About</li>
+                            <li>Our Work</li>
                             <li>Annual Reports</li>
+                            <li><a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.kluniversity.in/AQAR1819/SV.pdf&ved=2ahUKEwiazc3rrIGIAxUXklYBHfDTB-cQFnoECBUQAQ&usg=AOvVaw2FAQC3fzLhntiGTqlCW4vx">Past Year Reports</a></li>
                         </ul>
-                        </div>
-                    </div>
-
-                    <div className="Footer-two-in-two-in-boxes">
-                        <div className="Footer-two-in-two-in-boxes-in">
-                            <h3>Thematic Focus</h3>
-                            <ul>
-                            <li>Governance and Democratization</li>
-                            <li>Learning and Skill Development</li>
-                            <li>Public Health</li>
-                            <li>Indigenous Community Development</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="Footer-two-in-two-in-boxes">
-                        <div className="Footer-two-in-two-in-boxes-in">
-                        <h3>About Us</h3>
-                        <ul>
-                            <li>Who we are</li>
-                            <li>Why GRAAM</li>
-                            <li>What We Offer</li>
-                            <li>Annual Reports</li>
-                        </ul>
-                        </div>
-                    </div>
-
-                    <div className="Footer-two-in-two-in-boxes">
-                        <div className="Footer-two-in-two-in-boxes-in">
-                            <h3>Thematic Focus</h3>
-                            <ul>
-                            <li>Governance and Democratization</li>
-                            <li>Learning and Skill Development</li>
-                            <li>Public Health</li>
-                            <li>Indigenous Community Development</li>
-                            </ul>
                         </div>
                     </div>
                     </div>
@@ -109,7 +80,7 @@ const Footer = () => {
 
             <div className="Footer-last">
                 <div className="Footer-last-in">
-                <p>This site is designed, developed and maintained by <a href="www.amazon.com">Deepak Reddy Gathpa</a> & <a href="www.amazon.com">Sai Manikanta </a> of ZeroOne Code Club, Department of Student Activity Center, K L Deemed to be University | Content owned by Smart Village Revolution Club</p>
+                <p>This site is designed, developed and maintained by <a href="">ZeroOne Code Club </a> Department of Student Activity Center, K L Deemed to be University | Content owned by Smart Village Revolution Club</p>
                 </div>
             </div>
             </div>

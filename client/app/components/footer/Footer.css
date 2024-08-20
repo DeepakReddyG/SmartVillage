@@ -51,11 +51,14 @@
   .Footer-two-in-two-in {
     padding: 3rem 0rem;
     display: flex;
-    row-gap: 10px;
-    column-gap: 10px;
+    justify-content: space-around;
+    align-items: start;
+    /* row-gap: 10px;
+    column-gap: 10px; */
     flex-wrap: wrap;
     height: 100%;
     width: 90%;
+
   }
   
   .Footer-two-in-two-in-boxes {
@@ -66,14 +69,23 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     color: orange;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
   .Footer-two-in-two-in-boxes-in ul li {
     list-style: none;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     color: white;
-    font-size: 1.1rem;
+    width: 90%;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .Footer-two-in-two-in-boxes-in ul li a{
+    display: flex;
+    gap: 1rem;
+    display: flex;
+    align-items: center;
   }
   
   
