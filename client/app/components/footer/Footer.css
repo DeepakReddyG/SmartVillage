@@ -46,8 +46,13 @@
     padding: 3rem 0rem;
     display: flex;
     flex-direction: column;
+    /* background-color: red; */
   }
-
+  .Footer-two-in-one-in-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .Footer-two-in-two-in {
     padding: 3rem 0rem;
     display: flex;
@@ -58,10 +63,11 @@
     flex-wrap: wrap;
     height: 100%;
     width: 90%;
-
+    /* text-align: center; */
   }
   
   .Footer-two-in-two-in-boxes {
+    /* background-color: red; */
     width: 32%;
   }
   
@@ -117,6 +123,7 @@
     color: orange;
   }
   .Footer-two-in-one-in-two p {
+    text-align: center;
     color: orange;
   }
 
