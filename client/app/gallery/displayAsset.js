@@ -33,7 +33,7 @@ const MultiImageDisplay = ({ imagePaths }) => {
       {loading ? (
         <p>Something went wrong, plse wait.</p>
       ) : (
-        <div>
+        <div class="gallery-three-prime">
           {imageUrls.map((url, index) => (
             <img key={index} src={url} alt={`Firebase Image ${index}`} style={{ maxWidth: '50%', height: 'auto', margin: '10px', border: '2px solid black' }} />
           ))}

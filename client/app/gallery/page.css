@@ -1,0 +1,22 @@
+.gallery {
+    width: 98%;
+    margin: auto;
+}
+.gallery-two {
+    padding: 0.5rem;
+}
+.gallery-two h1 {
+    font-size: 3rem;
+    color: green;
+    font-weight: bold;
+    width: 80%;
+}
+
+.gallery-three {
+    display: flex;
+}
+
+.gallery-three-prime {
+    display: flex;
+    flex-wrap: wrap;
+}
