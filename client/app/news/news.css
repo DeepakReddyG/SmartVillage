@@ -1,103 +1,144 @@
 .newsContainer {
     width: 100%;
 }
-.newsContainer-in{
+.newsContainer-in {
     padding: 0.5rem;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
-header{
+.newsContainer-in-header {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.header {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1rem;
+    padding: 1rem;
 }
 
-/* Header section for the news page */
-.header {
+.header-in-one {
+    width: 20%;
+    border: none;
+}
+
+.header-in-two {
+    width: 50%;
     text-align: center;
-    margin-bottom: 40px;
 }
-
-/* Grid layout for news articles */
+.header-in-two h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.header-in-three {
+    width: 10%;
+    text-align: center;
+    padding: 0.5rem;
+    background-color: green;
+}
+.header-in-three a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.header-in-one input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 2px solid green;
+}
+.newsContainer-in-main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .articlesGrid {
+    width: 80%;
+    /* border: 2px solid red; */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    gap: 15px;
 }
 
-/* Card style for individual articles */
 .articleCard {
+    /* border: 2px solid red; */
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: center;
+    cursor: pointer;
+    /* width: 40%; */
 }
 
-/* Hover effect for article cards */
 .articleCard:hover {
     transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Style for article images */
 .articleImage {
     width: 100%;
     height: 200px;
     object-fit: cover;
 }
-
-/* Title styling for articles */
 .articleTitle {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     margin: 16px;
+    color: #333;
 }
-
-/* Meta information styling for articles */
 .articleMeta {
     font-size: 0.875rem;
-    color: #555;
+    color: #777;
     margin: 0 16px;
 }
-
-/* Excerpt styling for articles */
 .articleExcerpt {
     font-size: 1rem;
     margin: 16px;
+    color: #444;
 }
-
-/* Read more link styling */
 .readMore {
     display: block;
-    text-align: center;
     background: #0070f3;
     color: white;
     padding: 10px;
     margin: 16px;
     border-radius: 4px;
     text-decoration: none;
+    font-weight: bold;
 }
 
-/* Pagination styling */
+.readMore:hover {
+    background: #005bb5;
+}
+
 .pagination {
     margin-top: 40px;
     text-align: center;
 }
 
 .pagination button {
-    background-color: green;
+    background-color: #0070f3;
     color: white;
-    border: 1px solid black;
-    padding: 0.2rem 0.8rem;
-    margin: 0.1rem;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0.2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
 }
 
 .pagination span {
-    background-color: green;
-    color: white;
-    border: 1px solid black;
-    padding: 0.2rem 0.8rem;
+    margin: 0 1rem;
+    font-size: 1rem;
+    color: #333;
 }
