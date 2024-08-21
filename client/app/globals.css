@@ -61,7 +61,24 @@ img{
 
 .hero-in-slider {
   position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
 }
+
+.home-hero-images {
+  margin: auto;
+  width: 95%;
+  height: 90vh;
+  margin: auto;
+  border: 2px solid green;
+  border-radius: 1rem;
+}
+
+
 .swiper-description {
   position: absolute;
   bottom: 3rem;

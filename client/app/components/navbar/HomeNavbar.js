@@ -3,13 +3,25 @@ import './HomeNavbar.css'
 import Link from 'next/link'
 import { Link as Scroll } from "react-scroll";
 
+import KLLogo from '../../Assets/kllogo.png';
+import Image from 'next/image';
+
 const HomeNavbar = () => {
   return (
         <div className="HomeNavBar">
             <div className="HomeNavBar-in">
                 <div className="HomeNavBar-in-one">
                     <div className="HomeNavBar-in-one-in">
-                        <h1>Smart Village <span>Revolution</span> </h1>
+
+                        <div className="HomeNavBar-in-one-in-one">
+                            <h1>Smart Village <span>Revolution</span> </h1>
+                        </div>
+                        <div className="HomeNavBar-in-one-in-two">
+                            <Image 
+                                className='HomeNavBar-in-one-in-logo'
+                                src={KLLogo} 
+                                alt="KL Logo" />
+                        </div>
                     </div>
                 </div>
                 <div className="HomeNavBar-in-two">

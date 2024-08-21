@@ -4,21 +4,15 @@ import { useEffect, useState } from 'react';
 import CountUp from 'react-countup';
 import Model from './components/modal/modal';
 
-import { useRef } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-
-
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import HeroSection from './components/homeHero/page';
 
 
 import './globals.css';
 import SVR_Image_1 from './Assets/IMG_8078.JPG';
-import SVR_Image_2 from './Assets/Adarsh_Gram.JPG';
 import SVR_UpdateImage_1 from './Assets/Updated Images/Agriculture.png'
 import SVR_UpdateImage_2 from './Assets/Updated Images/Education.png'
 import SVR_UpdateImage_3 from './Assets/Updated Images/Health .png'
@@ -27,15 +21,10 @@ import SVR_UpdateImage_11 from './Assets/Updated Images/RenewableEnergy.png'
 import SVR_UpdateImage_12 from './Assets/Updated Images/WomenEmpowerMent.png'
 import SVR_UpdateImage_13 from './Assets/Updated Images/WomenEmpowerMent2.png'
 import SVR_UpdateImage_14 from './Assets/Updated Images/Education Liracry Updated.png'
-import SVR_UpdateImage_15 from './Assets/Updated Images/Updated CultureAndCommunity.png'
 import SVR_UpdateImage_16 from './Assets/Updated Images/Health(Area of work).png'
 import SVR_UpdateImage_17 from './Assets/Updated Images/Culture.png'
 import SVR_UpdateImage_18 from './Assets/Updated Images/Transportation.png'
 import SVR_UpdateImage_19 from './Assets/Updated Images/LatestCultureAndCommunity.png'
-import HeroImage from './Assets/SIP_2.jpeg'
-import HeroImage2 from './Assets/Hero3.jpeg'
-// import SVR_UpdateImage_19 from './Assets/Updated Images/CultureAndCommunity2.png'
-// import SVR_UpdateImage_20 from './Assets/Updated Images/UpdatedCultureAndCommunity2.png'
 
 
 import VijaySirUpdated from './Assets/Updated Images/SAC_Director_Updated.png'
@@ -45,15 +34,7 @@ import Education from './Assets/Education.JPG';
 import SkillDevelop from './Assets/SkillDevelop.JPG';
 import HealthandHygeine from './Assets/HealthandHygeine.JPG';
 import President from './Assets/President.jpeg';
-import FlipBook1 from './Assets/FlipBook1.png';
-import FlipBook2 from './Assets/FlipBook2.png';
-import FlipBook3 from './Assets/FlipBook3.png';
-import FlipBook4 from './Assets/FlipBook4.png';
 import Modi from './Assets/Modi.jpeg';
-import Deepak from './Assets/Deepak.png';
-import vijaysir from './Assets/vijaysir.png';
-import rambabu from './Assets/rambabu.jpg';
-import satyanarayana from './Assets/satyanarayana.jpeg';
 
 import sec_one_one_image from './Assets/section_one_1.jpg';
 import communityInfrastructure from './Assets/communityInfrastructure.png';
@@ -152,112 +133,18 @@ export default function Home() {
             <div className="Navbar-Res">
               <ResNavbar/>
             </div>
-            <div className="hero">
-              <div className="hero-in">
-                <Swiper
-                    spaceBetween={30}
-                    centeredSlides={true}
-                    autoplay={{delay: 2500, disableOnInteraction: false,}}
-                    pagination={{
-                      clickable: true,
-                    }}
-                    navigation={false}
-                    modules={[Autoplay, Pagination, Navigation]}
-                    className="mySwiper" 
-                >
-                    <SwiperSlide>
-                      <div className="hero-in-slider">
-                        <Image
-                          className="full-width-height"
-                          src={SVR_Image}
-                          alt="Picture of the author"
-                        />
+            
 
-                        <div className="swiper-description">
-                          <p>Educating Rural Minds</p>
-                        </div>
-                        <div className="swiper-logo">
-                          <Image
-                          className='swiper-logo-img'
-                            src={kllogo}
-                            alt="Picture of the author"
-                          ></Image>
-                        </div>
-                      </div>
-                    </SwiperSlide>
-
-
-                    <SwiperSlide>
-                      <div className="hero-in-slider">
-                        <Image  className="full-width-height" src={sec_one_one_image}alt="Picture of the author"></Image>
-                      </div>
-                      <div className="swiper-description">
-                          <p>Hon'ble President KLEF with Villagers / Contributing to Development</p>
-                        </div>
-                        <div className="swiper-logo">
-                          <Image
-                            className='swiper-logo-img'
-                            src={kllogo}
-                            alt="Picture of the author"
-                          ></Image>
-                        </div>
-                    </SwiperSlide>
-                    {/* <SwiperSlide>
-                      <div className="hero-in-slider">
-                        <Image
-                          className="full-width-height"
-                          src={HeroImage}
-                          alt="Picture of the author"
-                        />
-
-                        <div className="swiper-description">
-                          <p>Library Development Program</p>
-                        </div>
-                        <div className="swiper-logo">
-                          <Image
-                          className='swiper-logo-img'
-                            src={kllogo}
-                            alt="Picture of the author"
-                          ></Image>
-                        </div>
-                      </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <div className="hero-in-slider">
-                        <Image
-                          className="full-width-height"
-                          src={HeroImage2}
-                          alt="Picture of the author"
-                        />
-
-                        <div className="swiper-description">
-                          <p>Vacination Drive in Konduru</p>
-                        </div>
-                        <div className="swiper-logo">
-                          <Image
-                          className='swiper-logo-img'
-                            src={kllogo}
-                            alt="Picture of the author"
-                          ></Image>
-                        </div>
-                      </div>
-                    </SwiperSlide> */}
-                </Swiper>
-              </div>
-            </div>
+            <HeroSection />
 
 
             <div className="home-three">
               <div className="home-three-in">
                 <div className="home-three-one">
                   <div className="home-three-one-in">
-                    {/* <h1>We provide independent, impartial medical humanitarian assistance to the people who need it most.</h1> */}
-                    {/* <h1>The Smart Village Revolution blends innovation, connectivity, tradition for sustainable communities.</h1> */}
                     <h1>K L University's Smart Village Revolution - Empowering Communities with Innovation and Sustainability.</h1>
-                    {/* <p>Doctors Without Borders/Médecins Sans Frontières (MSF) cares for people affected by conflict, disease outbreaks, natural and human-made disasters, and exclusion from health care in more than 70 countries.Doctors Without Borders/Médecins Sans Frontières (MSF) cares for people affected by conflict, disease outbreaks, natural and human-made disasters, and exclusion from health care in more than 70 countries.</p> */}
                     <p>In the smart village revolution, traditional wisdom and cutting-edge concepts coexist harmoniously. Solar-powered schools, quick access to medical assistance, and cellphone-enabled soil monitoring empower communities. Progress flows effortlessly and sustainably, nourishing villages like water touched by the sun. Tradition endures as innovation fortifies it, fostering common aspirations and promising tomorrows.</p>
-                    {/* navigate it to areas work */}
-                    {/* <button onClick={handleOpenModal}> */}
+
                     <div className="home-three-on-in-link">
                       <a className='home-three-one-in-link' href="https://www.kluniversity.in/pdfs/Smart%20Village%20Revolution_5.pdf"
                       target="_blank" 
