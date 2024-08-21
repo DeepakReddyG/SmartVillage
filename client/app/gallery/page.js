@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 import HeroImage from "./hero";
 import MultiImageDisplay from "./displayAsset";
-import Footer from "../components/footer/Footer";
+import Footer from "../components/SmallFooter/footer";
 import { storage } from "../../firebase";
 import { ref, listAll, getDownloadURL } from "firebase/storage";
 import "./page.css";
