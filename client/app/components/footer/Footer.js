@@ -4,7 +4,7 @@ import Tree from '../../Assets/Tree.png';
 import { Link as ScrollLink } from 'react-scroll';
 import './Footer.css';
 import Link from 'next/link';   
-import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter,FaTelegram } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -57,16 +57,19 @@ const Footer = () => {
                     <h3>Contact Us</h3>
                     <ul>
                       <li>
-                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebook /> Facebook</a>
+                        <a href="https://sac.kluniversity.in/" target="_blank" rel="noopener noreferrer"><FaFacebook /> Facebook</a>
                       </li>
                       <li>
-                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><FaInstagram /> Instagram</a>
+                        <a href="https://www.instagram.com/klusac_svr?igsh=eDVmZWNpeHR5N2h5" target="_blank" rel="noopener noreferrer"><FaInstagram /> Instagram</a>
                       </li>
                       <li>
-                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><FaLinkedin /> LinkedIn</a>
+                        <a href="https://sac.kluniversity.in/" target="_blank" rel="noopener noreferrer"><FaLinkedin /> LinkedIn</a>
                       </li>
-                      <li>
+                      {/* <li>
                         <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><FaTwitter /> Twitter</a>
+                      </li> */}
+                      <li>
+                        <a href="https://t.me/y23_svr_sac" target="_blank" rel="noopener noreferrer"><FaTelegram /> Telegram</a>
                       </li>
                     </ul>
                   </div>
