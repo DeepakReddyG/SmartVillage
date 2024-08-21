@@ -131,7 +131,7 @@ export default function Home() {
 
   useEffect(() => {
 
-    const timer = setTimeout(() => setShowAnimation(false), 10);
+    const timer = setTimeout(() => setShowAnimation(false), 6800);
     return () => clearTimeout(timer);
   }, [1]);
 
