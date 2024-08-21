@@ -6,9 +6,15 @@ import { storage } from "../../firebase";
 import LoaderGif from '../../public/loader.gif';
 import Image from 'next/image';
 import './page.css';
+import { useNavigate } from "react-router-dom";
+import image from "https://firebasestorage.googleapis.com/v0/b/svrwebsite-1e892.appspot.com/o/gallery%2FAdarsh_Gram.JPG?alt=media&token=8fe9e0ef-a6cf-4630-bfb9-ac6e7f87492e"
 
 const HeroImage = ({ imagePath }) => {
   const [imageUrl, setImageUrl] = useState("");
+
+  const navigateToHome = () => {
+    window.location.href = '/';
+  };
 
   useEffect(() => {
     const fetchImageUrl = async () => {
@@ -21,19 +27,22 @@ const HeroImage = ({ imagePath }) => {
       }
     };
 
+
     fetchImageUrl();
   }, [imagePath]);
 
   return (
-    <div className="hero-image-prime">
-      {imageUrl ? (
-        <img src={imageUrl} alt="Hero" style={{ width: "100%", height: "700px", objectFit: "cover", objectPosition: "center", margin: "0px", border: "2px solid green", borderRadius: "10px" }} />
-      ) : (
-        <div className="loader">
-          <Image src={LoaderGif} alt="Loading" className="loader" style={{ width: "6%", height: "auto", objectFit: "cover", objectPosition: "center", margin: "0px" }} />
-        </div>
-      )}
-    </div>
+    <><div className="home-button pb-5">
+      <button
+        onClick={navigateToHome}
+      >
+        Back to Home
+      </button>
+    </div><div>
+        <img src={image}></img>
+      </div></>
+     
+
   );
 };
 

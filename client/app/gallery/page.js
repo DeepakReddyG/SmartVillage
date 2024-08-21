@@ -26,7 +26,7 @@ const App = () => {
             <div className="g-one">
                 <div className="g-one-in">
                     <h1>Capturing the Spirit: Moments of SVR Through the Years</h1>
-                    <p>Our gallery is a tribute to the countless memories we've created together. Each image reflects the joy, achievements, and shared experiences that make our community special. <u>We hope these captured moments resonate with youb</u>, reminding you of the vibrant spirit of SVR. Enjoy reliving these memories as much as we do.</p>
+                    <p>Our gallery is a tribute to the countless memories we've created together. This section displays a collection of images that document the activities, events, and milestones of our club. Each photo highlights significant moments in our ongoing efforts to promote collaboration, excellence, and community engagement. The gallery is regularly updated with our most recent events and initiatives. We invite you to explore these images to gain insight into the work and achievements that represent our club. This collection serves as a visual record of our dedication to our mission and values. <u>We hope these captured moments resonate with you</u>, reminding you of the vibrant spirit of SVR. Enjoy reliving these memories as much as we do.</p>
                 </div>
             </div>
             <div className="gallery-three">
