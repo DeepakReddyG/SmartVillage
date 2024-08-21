@@ -4,7 +4,9 @@ import { storage } from "../../../firebase";
 export const fetchImages = async () => {
   const paths = [
     "gs://svrwebsite-1e892.appspot.com/home/plantation2.jpg",
-    "gs://svrwebsite-1e892.appspot.com/home/plantation2.jpg",
+    "gs://svrwebsite-1e892.appspot.com/home/swachhataseva.jpg",
+    "gs://svrwebsite-1e892.appspot.com/home/heropage_heroimg.jpg",
+    "gs://svrwebsite-1e892.appspot.com/home/wastemanagement2.jpg",
   ]; 
   
   try {
