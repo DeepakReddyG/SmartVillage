@@ -1,61 +1,14 @@
-'use client'; 
-import React, { useState} from 'react';
-import newsArticles from './news_array';
+'use client';
+import React, { useState } from 'react';
 import './news.css';
-
+import newsArticles from './news_array'; 
 export default function NewsPage() {
   const [searchQuery, setSearchQuery] = useState('');
-  const [currentPage, setCurrentPage] = useState(1);
-  const articlesPerPage = 10;
-  const [sortBy, setSortBy] = useState('DATE');
-  const [sortOrder, setSortOrder] = useState('desc');
 
-  // Function to handle sorting
-  const handleSort = (column) => {
-    if (sortBy === column) {
-      setSortOrder(sortOrder === 'desc' ? 'asc' : 'desc');
-    } else {
-      setSortBy(column);
-      setSortOrder('desc');
-    }
-  };
-
-  // Utility functions
-  const convertToISO = (date) => {
-    const [day, month, year] = date.split('-').map(Number);
-    return new Date(year, month - 1, day).toISOString().split('T')[0];
-  };
-
-  const formatDateForDisplay = (date) => {
-    const [year, month, day] = date.split('-');
-    return `${day}-${month}-${year}`;
-  };
-
-  // Sort and filter the news articles
-  let sortedArticles = [...newsArticles];
-  if (sortBy) {
-    sortedArticles = sortedArticles.sort((a, b) => {
-      if (sortBy === 'DATE') {
-        const dateA = convertToISO(a.date);
-        const dateB = convertToISO(b.date);
-        return sortOrder === 'asc' ? dateA.localeCompare(dateB) : dateB.localeCompare(dateA);
-      } else {
-        return sortOrder === 'asc' ? a[sortBy].localeCompare(b[sortBy]) : b[sortBy].localeCompare(a[sortBy]);
-      }
-    });
-  }
-
-  const filteredArticles = sortedArticles.filter(article =>
-    Object.values(article).some(value =>
-      String(value).toLowerCase().includes(searchQuery.toLowerCase())
-    )
+  // Filter articles based on the search query
+  const filteredArticles = newsArticles.filter(article =>
+    article.title.toLowerCase().includes(searchQuery.toLowerCase())
   );
-
-  const indexOfLastArticle = currentPage * articlesPerPage;
-  const indexOfFirstArticle = indexOfLastArticle - articlesPerPage;
-  const currentArticles = filteredArticles.slice(indexOfFirstArticle, indexOfLastArticle);
-
-  const paginate = pageNumber => setCurrentPage(pageNumber);
 
   return (
     <div className='newsContainer'>
@@ -63,43 +16,53 @@ export default function NewsPage() {
         <div className="newsContainer-in-header">
           <div className="newsContainer-in-header-in">
             <header className="header">
-                <div className="header-in-one">
-                  <input
-                    type="text"
-                    placeholder="Search..."
-                    value={searchQuery}
-                    onChange={e => setSearchQuery(e.target.value)}
-                  />
-                </div>
-                <div className="header-in-two">
-                  <h1>Our Achievements in News Articles</h1>
-                </div>
-                <div className="header-in-three">
-                  <a href="/">Back to Home</a>
-                </div>
+              <div className="header-in-one">
+                <input
+                  type="text"
+                  placeholder="Search..."
+                  value={searchQuery}
+                  onChange={e => setSearchQuery(e.target.value)}
+                />
+              </div>
+              <div className="header-in-two">
+                <h1>Our Achievements in News Articles</h1>
+              </div>
+              <div className="header-in-three">
+                <a href="/">Back to Home</a>
+              </div>
             </header>
           </div>
         </div>
         <div className="newsContainer-in-main">
-            <section className="articlesGrid">
-              {currentArticles.map(article => (
-                <div key={article.id} className="articleCard">
-                  <img src={article.imageUrl} alt={article.title} className="articleImage" />
-                  <h2 className="articleTitle">{article.title}</h2>
-                  <p className="articleMeta">
-                    {article.publication} - {formatDateForDisplay(article.date)}
-                  </p>
-                  <p className="articleExcerpt">{article.excerpt}</p>
-                  {/* <a href={article.url} className="readMore">Read More</a> */}
+          <div className="newsContainer-in-main-in">
+            <div className="main-in-box-group">
+              {filteredArticles.map(article => (
+                <div key={article.id} className="main-in-box-group-in">
+                  <div className="box">
+                    <div className="box-in">
+                      <div className="box-in-img">
+                        <img src={article.imageUrl} alt={article.title} />
+                      </div>
+                      <div className="box-in-info">
+                        <div className="box-in-info-in">
+                          <h1>{article.title}</h1>
+                          <p>{article.excerpt}</p>
+                          <p>{article.date}</p>
+                          <a href={article.url} target="_blank" rel="noopener noreferrer">
+                            Read more
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               ))}
-            </section>
+            </div>
+          </div>
         </div>
-        <div className="pagination">
-          <button onClick={() => paginate(currentPage - 1)} disabled={currentPage === 1}>Prev</button>
-          <span>Page {currentPage} of {Math.ceil(filteredArticles.length / articlesPerPage)}</span>
-          <button onClick={() => paginate(currentPage + 1)} disabled={currentPage === Math.ceil(filteredArticles.length / articlesPerPage)}>Next</button>
-        </div>
+        {/* <div className="newsContainer-in-footer">
+          <Footer/>
+        </div> */}
       </div>
     </div>
   );
