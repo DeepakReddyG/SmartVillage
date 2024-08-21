@@ -27,7 +27,7 @@ const HeroImage = ({ imagePath }) => {
   return (
     <div className="hero-image-prime">
       {imageUrl ? (
-        <img src={imageUrl} alt="Hero" style={{ width: "100%", height: "700px", objectFit: "cover", objectPosition: "center", margin: "0px", border: "2px solid green", borderRadius: "10px" }} />
+        <img src={imageUrl} alt="Hero" style={{ width: "100%", objectFit: "cover", objectPosition: "center", margin: "0px", border: "2px solid green", borderRadius: "10px" }} />
       ) : (
         <div className="loader">
           <Image src={LoaderGif} alt="Loading" className="loader" style={{ width: "6%", height: "auto", objectFit: "cover", objectPosition: "center", margin: "0px" }} />
