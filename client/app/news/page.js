@@ -48,9 +48,9 @@ export default function NewsPage() {
                           <h1>{article.title}</h1>
                           <p>{article.excerpt}</p>
                           <p>{article.date}</p>
-                          <a href={article.url} target="_blank" rel="noopener noreferrer">
+                          {/* <a href={article.url} target="_blank" rel="noopener noreferrer">
                             Read more
-                          </a>
+                          </a> */}
                         </div>
                       </div>
                     </div>
