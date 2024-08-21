@@ -102,7 +102,7 @@ const Footer = () => {
         </div>
         <div className="Footer-last">
           <div className="Footer-last-in">
-            <p>This site is designed, developed, and maintained by <a href="https://klzeroone.vercel.app">ZeroOne Code Club</a>, Department of Student Activity Center, K L Deemed to be University | Content owned by Smart Village Revolution Club.</p>
+            <p>This site is designed, developed, and maintained by <a href="https://www.linkedin.com/company/zeroonecodeclub/mycompany/">ZeroOne Code Club</a>, Department of Student Activity Center, K L Deemed to be University | Content owned by Smart Village Revolution Club.</p>
           </div>
         </div>
       </div>
