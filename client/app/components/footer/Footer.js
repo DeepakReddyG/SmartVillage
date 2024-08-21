@@ -1,120 +1,113 @@
-import React from 'react'
-import Image from 'next/image'
+import React from 'react';
+import Image from 'next/image';
 import Tree from '../../Assets/Tree.png';
-import './Footer.css'
-
+import { Link as ScrollLink } from 'react-scroll';
+import './Footer.css';
+import Link from 'next/link';   
+import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter,FaTelegram } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-        <div className="Footer">
-            <div className="Footer-in">
-            <div className="Footer-one">
-                <div className="Footer-one-in">
-                    <h1>The goal of Smart Village Revolution (SVR) is to translate this comprehensive and organic vision of Mahatma Gandhi into reality, keeping in view the present context</h1>
-                </div>
-            </div>
-            <div className="Footer-two">
-                <div className="Footer-two-in">
-                <div className="Footer-two-in-one">
-                    <div className="Footer-two-in-one-in">
-                    <div className="Footer-two-in-one-in-one">
-                        <Image src={Tree}
-                        alt="Picture of the author"
-                        width={300}
-                        height={300}
-                        />
-                    </div>
-                    <div className="Footer-two-in-one-in-two">
-                        <div className="Footer-two-in-one-in-two">
-                        <p>Grassroots Research and Advocacy Movement (GRAAM) is a public policy research and advocacy initiative in India. GRAAM’s extensive expertise spans over policy research, program evaluation, community consultation, policy engagement, strategic consultation and academic programs.</p>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                <div className="Footer-two-in-two">
-                    <div className="Footer-two-in-two-in">
-                    <div className="Footer-two-in-two-in-boxes">
-                        <div className="Footer-two-in-two-in-boxes-in">
-                        <h3>About Us</h3>
-                        <ul>
-                            <li>Who we are</li>
-                            <li>Why GRAAM</li>
-                            <li>What We Offer</li>
-                            <li>Annual Reports</li>
-                        </ul>
-                        </div>
-                    </div>
-
-                    <div className="Footer-two-in-two-in-boxes">
-                        <div className="Footer-two-in-two-in-boxes-in">
-                            <h3>Thematic Focus</h3>
-                            <ul>
-                            <li>Governance and Democratization</li>
-                            <li>Learning and Skill Development</li>
-                            <li>Public Health</li>
-                            <li>Indigenous Community Development</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="Footer-two-in-two-in-boxes">
-                        <div className="Footer-two-in-two-in-boxes-in">
-                        <h3>About Us</h3>
-                        <ul>
-                            <li>Who we are</li>
-                            <li>Why GRAAM</li>
-                            <li>What We Offer</li>
-                            <li>Annual Reports</li>
-                        </ul>
-                        </div>
-                    </div>
-
-                    <div className="Footer-two-in-two-in-boxes">
-                        <div className="Footer-two-in-two-in-boxes-in">
-                            <h3>Thematic Focus</h3>
-                            <ul>
-                            <li>Governance and Democratization</li>
-                            <li>Learning and Skill Development</li>
-                            <li>Public Health</li>
-                            <li>Indigenous Community Development</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="Footer-two-in-two-in-boxes">
-                        <div className="Footer-two-in-two-in-boxes-in">
-                        <h3>About Us</h3>
-                        <ul>
-                            <li>Who we are</li>
-                            <li>Why GRAAM</li>
-                            <li>What We Offer</li>
-                            <li>Annual Reports</li>
-                        </ul>
-                        </div>
-                    </div>
-
-                    <div className="Footer-two-in-two-in-boxes">
-                        <div className="Footer-two-in-two-in-boxes-in">
-                            <h3>Thematic Focus</h3>
-                            <ul>
-                            <li>Governance and Democratization</li>
-                            <li>Learning and Skill Development</li>
-                            <li>Public Health</li>
-                            <li>Indigenous Community Development</li>
-                            </ul>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                </div>
-            </div>
-
-            <div className="Footer-last">
-                <div className="Footer-last-in">
-                <p>This site is designed, developed and maintained by <a href="www.amazon.com">Deepak Reddy Gathpa</a> & <a href="www.amazon.com">Sai Manikanta </a> of ZeroOne Code Club, Department of Student Activity Center, K L Deemed to be University | Content owned by Smart Village Revolution Club</p>
-                </div>
-            </div>
-            </div>
+    <div className="Footer">
+      <div className="Footer-in">
+        <div className="Footer-one">
+          <div className="Footer-one-in">
+            <h1>The goal of Smart Village Revolution (SVR) is to translate this comprehensive and organic vision of Mahatma Gandhi into reality, keeping in view the present context.</h1>
+          </div>
         </div>
-  )
-}
+        <div className="Footer-two">
+          <div className="Footer-two-in">
+            <div className="Footer-two-in-one">
+              <div className="Footer-two-in-one-in">
+                <div className="Footer-two-in-one-in-one">
+                  <Image src={Tree} alt="Tree" width={200} height={200} />
+                </div>
+                <div className="Footer-two-in-one-in-two">
+                  <p>Grassroots Research and Advocacy Movement (GRAAM) is an Indian public policy initiative specializing in research, evaluation, community consultation, policy engagement, strategic consultation, and academic programs.</p>
+                </div>
+              </div>
+            </div>
+            <div className="Footer-two-in-two">
+              <div className="Footer-two-in-two-in">
+                <div className="Footer-two-in-two-in-boxes">
+                  <div className="Footer-two-in-two-in-boxes-in">
+                    <h3>Our Connections with Programs</h3>
+                    <ul>
+                      <li>
+                        <Link href="https://saanjhi.gov.in" legacyBehavior>
+                          <a target="_blank" rel="noopener noreferrer">Sansad Adarsh Gram Yojana</a>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="http://graam.org.in" legacyBehavior>
+                          <a target="_blank" rel="noopener noreferrer">GRAAM</a>
+                        </Link>
+                      </li>
+                      <li>
+                        <a href="https://sac.kluniversity.in/" target="_blank" rel="noopener noreferrer">KL SAC</a>
+                      </li>
+                      <li>
+                        <a href="https://panchatantra.vercel.app/" target="_blank" rel="noopener noreferrer">Panchatantra</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="Footer-two-in-two-in-boxes">
+                  <div className="Footer-two-in-two-in-boxes-in">
+                    <h3>Contact Us</h3>
+                    <ul>
+                      <li>
+                        <a href="https://sac.kluniversity.in/" target="_blank" rel="noopener noreferrer"><FaFacebook /> Facebook</a>
+                      </li>
+                      <li>
+                        <a href="https://www.instagram.com/klusac_svr?igsh=eDVmZWNpeHR5N2h5" target="_blank" rel="noopener noreferrer"><FaInstagram /> Instagram</a>
+                      </li>
+                      <li>
+                        <a href="https://sac.kluniversity.in/" target="_blank" rel="noopener noreferrer"><FaLinkedin /> LinkedIn</a>
+                      </li>
+                      {/* <li>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><FaTwitter /> Twitter</a>
+                      </li> */}
+                      <li>
+                        <a href="https://t.me/y23_svr_sac" target="_blank" rel="noopener noreferrer"><FaTelegram /> Telegram</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="Footer-two-in-two-in-boxes">
+                  <div className="Footer-two-in-two-in-boxes-in">
+                    <h3>Quick Links</h3>
+                    <ul>
+                      <li>
+                        <ScrollLink to="home-two" offset={-70} smooth={true} duration={600}>About</ScrollLink>
+                      </li>
+                      <li>
+                        <ScrollLink to="home-seven" offset={-70} smooth={true} duration={600}>Our Work</ScrollLink>
+                      </li>
+                      <li>
+                        <ScrollLink to="home-five" offset={-70} smooth={true} duration={600}>Parameters</ScrollLink>
+                      </li>
+                      <li>
+                        <ScrollLink to="home-eight" offset={-70} smooth={true} duration={600}>Annual Reports</ScrollLink>
+                      </li>
+                      <li>
+                        <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.kluniversity.in/AQAR1819/SV.pdf&ved=2ahUKEwiazc3rrIGIAxUXklYBHfDTB-cQFnoECBUQAQ&usg=AOvVaw2FAQC3fzLhntiGTqlCW4vx" target="_blank" rel="noopener noreferrer">Past Year Reports</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="Footer-last">
+          <div className="Footer-last-in">
+            <p>This site is designed, developed, and maintained by <a href="https://klzeroone.vercel.app">ZeroOne Code Club</a>, Department of Student Activity Center, K L Deemed to be University | Content owned by Smart Village Revolution Club.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-export default Footer
+export default Footer;

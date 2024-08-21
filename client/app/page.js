@@ -32,6 +32,8 @@ import SVR_UpdateImage_16 from './Assets/Updated Images/Health(Area of work).png
 import SVR_UpdateImage_17 from './Assets/Updated Images/Culture.png'
 import SVR_UpdateImage_18 from './Assets/Updated Images/Transportation.png'
 import SVR_UpdateImage_19 from './Assets/Updated Images/LatestCultureAndCommunity.png'
+import HeroImage from './Assets/SIP_2.jpeg'
+import HeroImage2 from './Assets/Hero3.jpeg'
 // import SVR_UpdateImage_19 from './Assets/Updated Images/CultureAndCommunity2.png'
 // import SVR_UpdateImage_20 from './Assets/Updated Images/UpdatedCultureAndCommunity2.png'
 
@@ -129,9 +131,9 @@ export default function Home() {
 
   useEffect(() => {
 
-    const timer = setTimeout(() => setShowAnimation(false), 6800);
+    const timer = setTimeout(() => setShowAnimation(false), 1);
     return () => clearTimeout(timer);
-  }, [1]);
+  }, []);
 
     
 // ---------- Boot Animation END ------------
@@ -200,6 +202,46 @@ export default function Home() {
                           ></Image>
                         </div>
                     </SwiperSlide>
+                    {/* <SwiperSlide>
+                      <div className="hero-in-slider">
+                        <Image
+                          className="full-width-height"
+                          src={HeroImage}
+                          alt="Picture of the author"
+                        />
+
+                        <div className="swiper-description">
+                          <p>Library Development Program</p>
+                        </div>
+                        <div className="swiper-logo">
+                          <Image
+                          className='swiper-logo-img'
+                            src={kllogo}
+                            alt="Picture of the author"
+                          ></Image>
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <div className="hero-in-slider">
+                        <Image
+                          className="full-width-height"
+                          src={HeroImage2}
+                          alt="Picture of the author"
+                        />
+
+                        <div className="swiper-description">
+                          <p>Vacination Drive in Konduru</p>
+                        </div>
+                        <div className="swiper-logo">
+                          <Image
+                          className='swiper-logo-img'
+                            src={kllogo}
+                            alt="Picture of the author"
+                          ></Image>
+                        </div>
+                      </div>
+                    </SwiperSlide> */}
                 </Swiper>
               </div>
             </div>
@@ -216,12 +258,14 @@ export default function Home() {
                     <p>In the smart village revolution, traditional wisdom and cutting-edge concepts coexist harmoniously. Solar-powered schools, quick access to medical assistance, and cellphone-enabled soil monitoring empower communities. Progress flows effortlessly and sustainably, nourishing villages like water touched by the sun. Tradition endures as innovation fortifies it, fostering common aspirations and promising tomorrows.</p>
                     {/* navigate it to areas work */}
                     {/* <button onClick={handleOpenModal}> */}
-                    <a className='home-three-one-in-link' href="https://www.kluniversity.in/pdfs/Smart%20Village%20Revolution_5.pdf"
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    >Learn More About What We Do</a>
-                    <Link className='home-three-one-in-link' href='/gallery'>View Gallery</Link>
-                    
+                    <div className="home-three-on-in-link">
+                      <a className='home-three-one-in-link' href="https://www.kluniversity.in/pdfs/Smart%20Village%20Revolution_5.pdf"
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      >Learn More About What We Do</a>
+                      <Link className='home-three-one-in-link' href='/gallery'>View Gallery</Link>
+                      <Link className="home-three-one-in-link" href="/news">View News Articles</Link>
+                    </div>
                   </div>
                 </div>
                 <div className="home-three-two">
@@ -496,69 +540,48 @@ export default function Home() {
           </div>
 
 
-            <div className="home-eight">
-              <div className="home-eight-in">
-                <div className="home-eight-one">
-                  <div className="home-eight-one-in">
-                    <div className="home-eight-one-in-book">
-                      <HTMLFlipBook className='home-eight-one-in-book-comp' getCurrentPageIndex={true} getPageCount size='stretch' width={500} height={700}>
-                          <div className="flipbook-page">
-                            <Image
-                              src={FlipBook1}
-                              alt="Picture of the author"
-                            ></Image>
-                          </div>
-                          <div className="flipbook-page">
-                            <Image
-                              src={FlipBook2}
-                              alt="Picture of the author"
-                            ></Image>
-                          </div>
-                          {/* <div className="flipbook-page">
-                            <Image
-                              src={FlipBook3}
-                              alt="Picture of the author"
-                            ></Image>
-                          </div>
-                          <div className="flipbook-page">
-                            <Image
-                              src={FlipBook4}
-                              alt="Picture of the author"
-                            ></Image>
-                          </div> */}
-                      </HTMLFlipBook>
-                    </div>
-                  </div>
-                </div>
-                <div className="home-eight-two">
-                  <div className="home-eight-two-in">
-                    <h1>Annual Report 2023-24 Social Internship: Class of Y23 Students</h1>
-                    <p>Empowering Futures: A Journey of Impact and Growth – Annual Report 2023-24 for Social Internship by the Y23 Students</p>
-                    {/* <Link className='home-eight-two-in-link' href='/reports'>View Reports</Link> */}
-                      <div className="home-eight-two-in-buttons">
-                        <div className="home-eight-two-in-button-in">
-                        {/* <a href="/ReportPDFS/Final_Report.pdf" download="Annual_Report_2023-24.pdf"> */}
-                        {/* <a to="https://kluniversityin-my.sharepoint.com/:b:/g/personal/2300030350_kluniversity_in/EdHbklDhm0tKucyC2CZmrdABdPYDkCyTyh0BglwwLyPrqw?e=NiRGw1" /> */}
-                        {/* <a href="https://kluniversityin-my.sharepoint.com/:b:/g/personal/2300030350_kluniversity_in/EdHbklDhm0tKucyC2CZmrdABdPYDkCyTyh0BglwwLyPrqw?e=NiRGw1"
-                         target="_blank" 
-                          rel="noopener noreferrer"
-                        > */}
-                         <button onClick={handleOpenModal}>
-                              View Report
-                        </button>
-                        {/* </a> */}
-                      </div>
-                      <Link className='home-eight-two-in-activitie-link'href='/activities' >View Activities</Link>
-                      <Model 
-                          isOpen={isModalOpen} 
-                          onClose={handleCloseModal} 
-                          pdfUrl="/ReportPDFS/Final_Report.pdf" 
-                        />
-                      </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div className="home-eight">
+  <div className="home-eight-in">
+    <div className="home-eight-one">
+      <div className="home-eight-one-in">
+        <div className="home-eight-one-in-book">
+          {/* Embedding the iframe */}
+          <iframe 
+            src="https://online.publuu.com/628569/1402495/page/8?embed&transparent" 
+            width="100%" 
+            height="550" 
+            scrolling="no" 
+            frameBorder="0" 
+            allowFullScreen 
+            allow="clipboard-write" 
+            className="publuuflip"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <div className="home-eight-two">
+      <div className="home-eight-two-in">
+        <h1>Annual Report 2023-24 Social Internship: Class of Y23 Students</h1>
+        <p>Empowering Futures: A Journey of Impact and Growth – Annual Report 2023-24 for Social Internship by the Y23 Students</p>
+        <div className="home-eight-two-in-buttons">
+          <div className="home-eight-two-in-button-in">
+            <button onClick={handleOpenModal}>
+              View Report
+            </button>
+          </div>
+          <Link className="home-eight-two-in-activitie-link" href="/activities">
+            View Activities
+          </Link>
+          <Model 
+            isOpen={isModalOpen} 
+            onClose={handleCloseModal} 
+            pdfUrl="/ReportPDFS/Final_Report.pdf" 
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
             <div className="home-four message">
               <div className="home-four-in">

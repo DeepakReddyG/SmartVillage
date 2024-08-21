@@ -1,21 +1,31 @@
-import React from "react";
+"use client"
+
+import React, { useEffect, useState } from "react";
 import HeroImage from "./hero";
 import MultiImageDisplay from "./displayAsset";
-
-import Footer from '../components/footer/Footer';
-
-import './page.css';
+import Footer from "../components/footer/Footer";
+import { storage } from "../../firebase";
+import { ref, listAll, getDownloadURL } from "firebase/storage";
+import "./page.css";
 
 const App = () => {
-    const heroImagePath = "gallery/plantation2.jpg"; 
+  const [imagePaths, setImagePaths] = useState([]);
+  const heroImagePath = "gallery/16.jpg";
 
-  const imagePaths = [
-    "gs://svrwebsite-1e892.appspot.com/gallery/plantation.jpeg",
-    "gs://svrwebsite-1e892.appspot.com/gallery/Screenshot 2024-08-17 at 8.52.04 AM.png",
-    "gs://svrwebsite-1e892.appspot.com/gallery/svr_modifications.jpeg",
-    "gs://svrwebsite-1e892.appspot.com/gallery/plantation2.jpg",
-    "gs://svrwebsite-1e892.appspot.com/gallery/coding_contest_updated.png"
-  ];
+  useEffect(() => {
+    const fetchImages = async () => {
+      const imagesRef = ref(storage, "gallery");
+      const result = await listAll(imagesRef);
+
+      const urls = await Promise.all(
+        result.items.map((item) => getDownloadURL(item))
+      );
+
+      setImagePaths(urls);
+    };
+
+    fetchImages();
+  }, []);
 
   return (
     <div className="gallery">

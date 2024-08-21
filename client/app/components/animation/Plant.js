@@ -1,7 +1,6 @@
 "use client"
 import { useEffect, useState } from 'react';
 
-
 const SvgAnimation = () => {
 
     const drawMainStem = () => {
