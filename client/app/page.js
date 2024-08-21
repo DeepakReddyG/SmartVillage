@@ -18,7 +18,7 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 import './globals.css';
 import SVR_Image_1 from './Assets/IMG_8078.JPG';
-import SVR_Image_2 from './Assets/Adarsh_Gram.JPG';
+import SVR_Image_2 from './Assets/GalleyHero.jpg';
 import SVR_UpdateImage_1 from './Assets/Updated Images/Agriculture.png'
 import SVR_UpdateImage_2 from './Assets/Updated Images/Education.png'
 import SVR_UpdateImage_3 from './Assets/Updated Images/Health .png'
