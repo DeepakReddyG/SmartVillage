@@ -10,7 +10,7 @@ import "./page.css";
 
 const App = () => {
   const [imagePaths, setImagePaths] = useState([]);
-  const heroImagePath = "gallery/15.jpg";
+  const heroImagePath = "gallery/16.jpg";
 
   useEffect(() => {
     const fetchImages = async () => {
