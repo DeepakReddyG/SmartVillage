@@ -110,6 +110,14 @@ img{
 .home-three-one-in {
   width: 90%;
 }
+.home-three-on-in-link{
+  /* border: 2px solid green; */
+  /* padding: 1rem; */
+  width: 80%;
+  display: flex;
+  /* gap:10px; */
+  justify-content: space-around;
+}
 .home-three-one h1 {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;

@@ -131,9 +131,9 @@ export default function Home() {
 
   useEffect(() => {
 
-    const timer = setTimeout(() => setShowAnimation(false), 6800);
+    const timer = setTimeout(() => setShowAnimation(false), 1);
     return () => clearTimeout(timer);
-  }, [1]);
+  }, []);
 
     
 // ---------- Boot Animation END ------------
@@ -258,14 +258,14 @@ export default function Home() {
                     <p>In the smart village revolution, traditional wisdom and cutting-edge concepts coexist harmoniously. Solar-powered schools, quick access to medical assistance, and cellphone-enabled soil monitoring empower communities. Progress flows effortlessly and sustainably, nourishing villages like water touched by the sun. Tradition endures as innovation fortifies it, fostering common aspirations and promising tomorrows.</p>
                     {/* navigate it to areas work */}
                     {/* <button onClick={handleOpenModal}> */}
-                    <a className='home-three-one-in-link' href="https://www.kluniversity.in/pdfs/Smart%20Village%20Revolution_5.pdf"
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    >Learn More About What We Do</a>
-                    <Link className='home-three-one-in-link' href='/gallery'>View Gallery</Link>
-                    <Link className="home-three-one-in-link" href="/news">
-  View News Articles
-</Link>
+                    <div className="home-three-on-in-link">
+                      <a className='home-three-one-in-link' href="https://www.kluniversity.in/pdfs/Smart%20Village%20Revolution_5.pdf"
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      >Learn More About What We Do</a>
+                      <Link className='home-three-one-in-link' href='/gallery'>View Gallery</Link>
+                      <Link className="home-three-one-in-link" href="/news">View News Articles</Link>
+                    </div>
                   </div>
                 </div>
                 <div className="home-three-two">
