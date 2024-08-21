@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper/modules"; // Corrected import for swiper modules
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
 import { fetchImages } from "./handleAsset";
 import "swiper/css";
