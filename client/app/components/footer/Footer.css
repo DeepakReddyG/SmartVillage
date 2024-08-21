@@ -16,7 +16,7 @@
   }
   .Footer-one-in h1 {
     color: black;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     color: white;
@@ -75,7 +75,7 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     color: orange;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
   .Footer-two-in-two-in-boxes-in ul li {
     list-style: none;
@@ -83,7 +83,7 @@
     font-weight: 400;
     color: white;
     width: 90%;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     cursor: pointer;
   }
 
