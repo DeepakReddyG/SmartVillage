@@ -35,9 +35,7 @@ const App = () => {
         </div>
 
 
-        <div className="Footer">
-              <Footer/>
-        </div>
+       
     </div>
   );
 };

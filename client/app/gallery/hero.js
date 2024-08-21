@@ -7,7 +7,7 @@ import LoaderGif from '../../public/loader.gif';
 import Image from 'next/image';
 import './page.css';
 import { useNavigate } from "react-router-dom";
-import image from "https://firebasestorage.googleapis.com/v0/b/svrwebsite-1e892.appspot.com/o/gallery%2FAdarsh_Gram.JPG?alt=media&token=8fe9e0ef-a6cf-4630-bfb9-ac6e7f87492e"
+import hero1 from "../Assets/GalleyHero.jpg"
 
 const HeroImage = ({ imagePath }) => {
   const [imageUrl, setImageUrl] = useState("");
@@ -39,7 +39,7 @@ const HeroImage = ({ imagePath }) => {
         Back to Home
       </button>
     </div><div>
-        <img src={image}></img>
+        <Image src={hero1} alt="Hero Image" layout="responsive" />
       </div></>
      
 
