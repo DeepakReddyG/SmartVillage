@@ -14,13 +14,13 @@ img{
 .plant {
   background-color: green;
   color: white;
-  /* height: 100vh; */
-  /* display: flex;
-  justify-content: center;
-  margin-left: -5rem; */
 }
 
 
+.extra-small-text {
+  font-size: 9pt;
+  padding: 0.2rem 0rem;
+}
 * {
   margin: 0;
   padding: 0;
