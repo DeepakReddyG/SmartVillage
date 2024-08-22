@@ -8,6 +8,10 @@ import { storage } from "../../firebase";
 import { ref, listAll, getDownloadURL } from "firebase/storage";
 import "./page.css";
 
+const backToHome= ()=>{
+  window.location.href="/";
+}
+
 const App = () => {
   const [imagePaths, setImagePaths] = useState([]);
   const heroImagePath = "gallery/16.jpg";
@@ -44,6 +48,11 @@ const App = () => {
         <div className="gallery-three">
           <MultiImageDisplay imagePaths={imagePaths} />
         </div>
+        <div className="back-to-home">
+          <button onClick={backToHome} className="back-to-home-button">Back To Home</button>
+          
+        </div>
+        
       </div>
 
       <div className="Footer">
