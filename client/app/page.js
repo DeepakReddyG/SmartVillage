@@ -146,10 +146,14 @@ export default function Home() {
                     <p>In the smart village revolution, traditional wisdom and cutting-edge concepts coexist harmoniously. Solar-powered schools, quick access to medical assistance, and cellphone-enabled soil monitoring empower communities. Progress flows effortlessly and sustainably, nourishing villages like water touched by the sun. Tradition endures as innovation fortifies it, fostering common aspirations and promising tomorrows.</p>
 
                     <div className="home-three-on-in-link">
-                      <a className='home-three-one-in-link' href="https://www.kluniversity.in/pdfs/Smart%20Village%20Revolution_5.pdf"
+                      {/* <a className='home-three-one-in-link' href="https://www.kluniversity.in/pdfs/Smart%20Village%20Revolution_5.pdf"
                       target="_blank" 
                       rel="noopener noreferrer"
-                      >Learn More About What We Do</a>
+                      >Learn More About What We Do</a> */}
+                       <button onClick={handleOpenModal}>
+                       Learn More About What We Do
+                        </button>
+
                       <Link className='home-three-one-in-link' href='/gallery'>View Gallery</Link>
                       <Link className="home-three-one-in-link" href="/news">View News Articles</Link>
                     </div>
@@ -202,11 +206,11 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                {/* <Model 
+                <Model 
                           isOpen={isModalOpen} 
                           onClose={handleCloseModal} 
-                          pdfUrl="/ReportPDFS/Final_Report.pdf" 
-                        /> */}
+                          pdfUrl="https://firebasestorage.googleapis.com/v0/b/svrwebsite-1e892.appspot.com/o/PDFS%2FSVR.pdf?alt=media&token=39c8fe16-79c6-495d-b424-611285e88264" 
+                        />
               </div>
             </div>
 
@@ -459,11 +463,11 @@ export default function Home() {
           <Link className="home-eight-two-in-activitie-link" href="/activities">
             View Activities
           </Link>
-          <Model 
+          {/* <Model 
             isOpen={isModalOpen} 
             onClose={handleCloseModal} 
             pdfUrl="/ReportPDFS/Final_Report.pdf" 
-          />
+          /> */}
         </div>
       </div>
     </div>
