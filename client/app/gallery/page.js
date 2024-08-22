@@ -6,13 +6,13 @@ import MultiImageDisplay from "./displayAsset";
 import Footer from "../components/SmallFooter/footer";
 import { storage } from "../../firebase";
 import { ref, listAll, getDownloadURL } from "firebase/storage";
+import { FaArrowLeft, FaArrowRight, FaArrowAltCircleLeft, FaArrowAltCircleRight } from 'react-icons/fa';
 import "./page.css";
-import {FaArrowLeft } from 'react-icons/fa';
 
+const backToHome = () => {
+  window.location.href = "/";
+};
 
-const backToHome= ()=>{
-  window.location.href="/";
-}
 const scrollToTop = () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 };
@@ -20,6 +20,8 @@ const scrollToTop = () => {
 const App = () => {
   const [imagePaths, setImagePaths] = useState([]);
   const [showScrollToTop, setShowScrollToTop] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
+  const imagesPerPage = 12; 
   const heroImagePath = "gallery/16.jpg";
 
   useEffect(() => {
@@ -39,7 +41,7 @@ const App = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 850) { // Adjust the value as needed
+      if (window.scrollY > 850) {
         setShowScrollToTop(true);
       } else {
         setShowScrollToTop(false);
@@ -52,21 +54,21 @@ const App = () => {
     };
   }, []);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 850) { // Adjust the value as needed
-        setShowScrollToTop(true);
-      } else {
-        setShowScrollToTop(false);
-      }
-    };
-    window.addEventListener('scroll', handleScroll);
+  // Calculate the index of the first and last image on the current page
+  const indexOfLastImage = currentPage * imagesPerPage;
+  const indexOfFirstImage = indexOfLastImage - imagesPerPage;
+  const currentImages = imagePaths.slice(indexOfFirstImage, indexOfLastImage);
 
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  // Calculate total pages
+  const totalPages = Math.ceil(imagePaths.length / imagesPerPage);
 
+  const handleNextPage = () => {
+    setCurrentPage((prevPage) => Math.min(prevPage + 1, totalPages));
+  };
+
+  const handlePrevPage = () => {
+    setCurrentPage((prevPage) => Math.max(prevPage - 1, 1));
+  };
 
   return (
     <div className="gallery">
@@ -78,22 +80,33 @@ const App = () => {
           <div className="g-one-in">
             <h1>Capturing the Spirit: Moments of SVR Through the Years</h1>
             <p>
-              Our gallery is a tribute to the countless memories we've created together. Each image reflects the joy, achievements, and shared experiences that make our community special.{" "} <u>We hope these captured moments resonate with you</u>, reminding you of the vibrant spirit of SVR. Enjoy relivin these memories as much as we do.
+              Our gallery is a tribute to the countless memories we've created together. Each image reflects the joy, achievements, and shared experiences that make our community special.{" "}
+              <u>We hope these captured moments resonate with you</u>, reminding you of the vibrant spirit of SVR. Enjoy reliving these memories as much as we do.
             </p>
           </div>
         </div>
         <div className="gallery-three">
-          <MultiImageDisplay imagePaths={imagePaths} />
+          <MultiImageDisplay imagePaths={currentImages} />
+        </div>
+        <div className="pagination-controls">
+          <button onClick={handlePrevPage} disabled={currentPage === 1} className="pagination-button">
+            <FaArrowAltCircleLeft /> 
+          </button>
+          <span className="page-info">
+            Page {currentPage} of {totalPages}
+          </span>
+          <button onClick={handleNextPage} disabled={currentPage === totalPages} className="pagination-button">
+            <FaArrowAltCircleRight />
+          </button>
         </div>
         <div className="back-to-home">
-          <a href="" onClick={backToHome} target="_blank"><FaArrowLeft /></a>
-          {showScrollToTop && (
+          <a href="/" onClick={backToHome}><FaArrowLeft /></a>
+          {/* {showScrollToTop && (
             <button onClick={scrollToTop} className="back-to-top-button">
               Scroll to Top
             </button>
-          )}
+          )} */}
         </div>
-        
       </div>
 
       <div className="Footer">

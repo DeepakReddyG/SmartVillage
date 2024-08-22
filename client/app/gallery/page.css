@@ -89,6 +89,7 @@
     margin-top: 20px;
     color: white;
     transition: all 0.3s ease-in-out;
+    margin-bottom: 2.5rem;
 }
 .loader {
     height: 100vh;
@@ -102,8 +103,27 @@
     padding: 0.3rem 0.5rem !important;
     color: green;
 }
-
-
+.pagination-controls{
+    /* background-color: red; */
+    /* border: 2px solid red; */
+    margin-bottom: 2rem;
+    padding: 0.4rem;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    align-items: center;
+}
+.pagination-button{
+    background-color: green;
+    color: white;
+    padding: 0.5rem;
+}
+.page-info{
+    background-color: green;
+    color: white;
+    padding: 0.3rem;
+}
 @media screen and (max-width: 600px) {
  
     .gallery-main {
