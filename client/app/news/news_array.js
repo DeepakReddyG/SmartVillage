@@ -31,14 +31,70 @@ const newsArticles = [
     imageUrl: "https://firebasestorage.googleapis.com/v0/b/svrwebsite-1e892.appspot.com/o/news%2FKl%20Students%20awareness.png?alt=media&token=7c76e7bb-384e-4991-87e1-e48a07bec467",
     excerpt: "A program introducing smart farming practices is revitalizing agriculture in remote villages, increasing crop yields and improving food security.",
   },
-  // {
-  //   id: 5,
-  //   title: "Digital Education Initiatives Transforming Rural Schools",
-  //   publication: "EdTech Magazine",
-  //   date: "10-08-2024", // Use dd-mm-yyyy
-  //   imageUrl: "/images/digital-education.jpg",
-  //   excerpt: "Digital education initiatives are transforming schools in rural villages, bridging the educational gap and providing new opportunities for children.",
-  // },
+  {
+    id: 5,
+    title: "KLU president Koneru Satyanarayana congratulated the winners",
+    publication: "EdTech Magazine",
+    date: "10-08-2024", // Use dd-mm-yyyy
+    imageUrl: "https://firebasestorage.googleapis.com/v0/b/svrwebsite-1e892.appspot.com/o/news%2FDance.png?alt=media&token=dd134df1-e218-4079-b500-006137fdf914",
+    excerpt: "Digital education initiatives are transforming schools in rural villages, bridging the educational gap and providing new opportunities for children.",
+  },
+  {
+    id: 6,
+    title: "Blood donation by KU students",
+    publication: "EdTech Magazine",
+    date: "10-08-2024", // Use dd-mm-yyyy
+    imageUrl: "https://firebasestorage.googleapis.com/v0/b/svrwebsite-1e892.appspot.com/o/news%2FBlood%20Donation.png?alt=media&token=828bcd21-75e9-46ad-8813-f4a307e1dbc3",
+    excerpt: "Digital education initiatives are transforming schools in rural villages, bridging the educational gap and providing new opportunities for children.",
+  },
+  {
+    id: 7,
+    title: "NCC students planted trees in Chirravuri",
+    publication: "EdTech Magazine",
+    date: "10-08-2024", // Use dd-mm-yyyy
+    imageUrl: "https://firebasestorage.googleapis.com/v0/b/svrwebsite-1e892.appspot.com/o/news%2FNSS.png?alt=media&token=d073db06-e84f-422b-bdfd-e15346a08718",
+    excerpt: "Digital education initiatives are transforming schools in rural villages, bridging the educational gap and providing new opportunities for children.",
+  },
+  {
+    id: 8,
+    title: "Students demonstrating against plastic ban",
+    publication: "EdTech Magazine",
+    date: "10-08-2024", // Use dd-mm-yyyy
+    imageUrl: "https://firebasestorage.googleapis.com/v0/b/svrwebsite-1e892.appspot.com/o/news%2FPlastic.png?alt=media&token=44f3231c-f4a3-4626-913b-14eb44619dab",
+    excerpt: "Digital education initiatives are transforming schools in rural villages, bridging the educational gap and providing new opportunities for children.",
+  },
+  {
+    id: 9,
+    title: "Awareness demonstration on right to vote",
+    publication: "EdTech Magazine",
+    date: "10-08-2024", // Use dd-mm-yyyy
+    imageUrl: "https://firebasestorage.googleapis.com/v0/b/svrwebsite-1e892.appspot.com/o/news%2FVote.png?alt=media&token=ff4e0270-ca41-40f3-8384-948c08ec1718",
+    excerpt: "Digital education initiatives are transforming schools in rural villages, bridging the educational gap and providing new opportunities for children.",
+  },
+  {
+    id: 10,
+    title: "KLU students on a 10-day tour of Nallamalla tribal temple",
+    publication: "EdTech Magazine",
+    date: "10-08-2024", // Use dd-mm-yyyy
+    imageUrl: "https://firebasestorage.googleapis.com/v0/b/svrwebsite-1e892.appspot.com/o/news%2Fnallamalla.png?alt=media&token=6efea935-445c-4c34-a84b-eef4e2007c91",
+    excerpt: "Digital education initiatives are transforming schools in rural villages, bridging the educational gap and providing new opportunities for children.",
+  },
+  {
+    id: 11,
+    title: "KU students are conducting a survey to be aware of seasonal diseases",
+    publication: "EdTech Magazine",
+    date: "10-08-2024", // Use dd-mm-yyyy
+    imageUrl: "https://firebasestorage.googleapis.com/v0/b/svrwebsite-1e892.appspot.com/o/news%2Fsesonal%20Diseases.png?alt=media&token=60a0df34-f8a7-4e96-8925-55c0e7b99645",
+    excerpt: "Digital education initiatives are transforming schools in rural villages, bridging the educational gap and providing new opportunities for children.",
+  },
+  {
+    id: 12,
+    title: "KL University students participated in the Kavulur health survey",
+    publication: "EdTech Magazine",
+    date: "10-08-2024", // Use dd-mm-yyyy
+    imageUrl: "https://firebasestorage.googleapis.com/v0/b/svrwebsite-1e892.appspot.com/o/news%2FHealth%20Camp.png?alt=media&token=bb343e1e-adeb-48fb-a76b-e5081fc84236",
+    excerpt: "Digital education initiatives are transforming schools in rural villages, bridging the educational gap and providing new opportunities for children.",
+  },
 ];
 
 export default newsArticles;
