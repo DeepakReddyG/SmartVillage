@@ -4,7 +4,7 @@ const newsArticles = [
     title: "Students painting on the walls of MPP school",
     publication: "Green Energy Times",
     date: "15-08-2023", // Use dd-mm-yyyy
-    imageUrl: "https://firebasestorage.googleapis.com/v0/b/svrwebsite-1e892.appspot.com/o/news%2FStudents%20paint.png?alt=media&token=3b31db45-f11f-4dfc-bd5f-b68c72523443",
+    imageUrl: "https://firebasestorage.googleapis.com/v0/b/svrwebsite-1e892.appspot.com/o/news%2Fstudents%20painting.jpg?alt=media&token=0f3d3b48-e310-4d3d-aaba-bbc21ffca393",
     excerpt: "A rural village in India has successfully transitioned to 100% renewable energy, setting a precedent for sustainable development in remote areas.",
   },
   {
@@ -33,27 +33,27 @@ const newsArticles = [
   },
   {
     id: 5,
-    title: "KLU president Koneru Satyanarayana congratulated the winners",
-    publication: "EdTech Magazine",
-    date: "10-08-2024", // Use dd-mm-yyyy
-    imageUrl: "https://firebasestorage.googleapis.com/v0/b/svrwebsite-1e892.appspot.com/o/news%2FDance.png?alt=media&token=dd134df1-e218-4079-b500-006137fdf914",
-    excerpt: "Digital education initiatives are transforming schools in rural villages, bridging the educational gap and providing new opportunities for children.",
+    title: "Students conducting a ralley against plastic along with higher officials",
+    publication: "Green Energy Times",
+    date: "28-09-2019", // Use dd-mm-yyyy
+    imageUrl: "https://firebasestorage.googleapis.com/v0/b/svrwebsite-1e892.appspot.com/o/news%2Frevolution.png?alt=media&token=3b5e8f62-fa87-4819-abe5-182cbb5922c2",
+    excerpt: "A ralley was conducted against use of plastic along with MLA Vasantha in the village Milavaram for a better society.",
   },
   {
     id: 6,
-    title: "Blood donation by KU students",
+    title: "Village walls turns canvass for youth",
     publication: "EdTech Magazine",
     date: "10-08-2024", // Use dd-mm-yyyy
-    imageUrl: "https://firebasestorage.googleapis.com/v0/b/svrwebsite-1e892.appspot.com/o/news%2FBlood%20Donation.png?alt=media&token=828bcd21-75e9-46ad-8813-f4a307e1dbc3",
-    excerpt: "Digital education initiatives are transforming schools in rural villages, bridging the educational gap and providing new opportunities for children.",
+    imageUrl: "https://firebasestorage.googleapis.com/v0/b/svrwebsite-1e892.appspot.com/o/news%2Fvillage%20walls.png?alt=media&token=d01cda0a-7c20-40b3-9f90-e364ac27f01a",
+    excerpt: "Students paint a wall in Vellatur village in Krishna district as part of the Smart Village Revolution programme",
   },
   {
     id: 7,
-    title: "NCC students planted trees in Chirravuri",
+    title: "An initiative on a village developement committee in Vellaturu",
     publication: "EdTech Magazine",
     date: "10-08-2024", // Use dd-mm-yyyy
-    imageUrl: "https://firebasestorage.googleapis.com/v0/b/svrwebsite-1e892.appspot.com/o/news%2FNSS.png?alt=media&token=d073db06-e84f-422b-bdfd-e15346a08718",
-    excerpt: "Digital education initiatives are transforming schools in rural villages, bridging the educational gap and providing new opportunities for children.",
+    imageUrl: "https://firebasestorage.googleapis.com/v0/b/svrwebsite-1e892.appspot.com/o/news%2Fvillage%20committee.png?alt=media&token=747767c2-cd80-4f26-ac46-ce03d4292e8e",
+    excerpt: "Students of KL University took an initiative in a Village Developement Committee as a part of Smart Village Revolution",
   },
   {
     id: 8,
