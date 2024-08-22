@@ -19,6 +19,7 @@ const scrollToTop = () => {
 
 const App = () => {
   const [imagePaths, setImagePaths] = useState([]);
+  const [showScrollToTop, setShowScrollToTop] = useState(false);
   const heroImagePath = "gallery/16.jpg";
 
   useEffect(() => {
@@ -35,6 +36,22 @@ const App = () => {
 
     fetchImages();
   }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 1200) { // Adjust the value as needed
+        setShowScrollToTop(true);
+      } else {
+        setShowScrollToTop(false);
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
 
   return (
     <div className="gallery">
@@ -54,10 +71,12 @@ const App = () => {
           <MultiImageDisplay imagePaths={imagePaths} />
         </div>
         <div className="back-to-home">
-        <a href="" onClick={backToHome} target="_blank" ><FaArrowLeft /></a>
-          <button onClick={scrollToTop} className="back-to-top-button">
-            Scroll to Top
-          </button>
+          <a href="" onClick={backToHome} target="_blank"><FaArrowLeft /></a>
+          {showScrollToTop && (
+            <button onClick={scrollToTop} className="back-to-top-button">
+              Scroll to Top
+            </button>
+          )}
         </div>
         
       </div>
