@@ -150,7 +150,7 @@ export default function Home() {
                       target="_blank" 
                       rel="noopener noreferrer"
                       >Learn More About What We Do</a> */}
-                       <button onClick={handleOpenModal}>
+                       <button className='home-three-one-in-link' onClick={handleOpenModal}>
                        Learn More About What We Do
                         </button>
 
