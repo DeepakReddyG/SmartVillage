@@ -1,12 +1,17 @@
 'use client'; 
-import React, { useState} from 'react';
+import React, { useEffect, useState} from 'react';
 import newsArticles from './news_array';
 import './news.css';
+import {FaArrowLeft } from 'react-icons/fa';
+
+
+
 
 export default function NewsPage() {
   const [searchQuery, setSearchQuery] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
   const articlesPerPage = 10;
+  const [showScrollToTop, setShowScrollToTop] = useState(false);
   const [sortBy, setSortBy] = useState('DATE');
   const [sortOrder, setSortOrder] = useState('desc');
 
@@ -19,6 +24,42 @@ export default function NewsPage() {
       setSortOrder('desc');
     }
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 10) { // Adjust the value as needed
+        setShowScrollToTop(true);
+      } else {
+        setShowScrollToTop(false);
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 850) { // Adjust the value as needed
+        setShowScrollToTop(true);
+      } else {
+        setShowScrollToTop(false);
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+  
 
   // Utility functions
   const convertToISO = (date) => {
@@ -58,18 +99,23 @@ export default function NewsPage() {
   const paginate = pageNumber => setCurrentPage(pageNumber);
 
   return (
-    <div className='newsContainer'>
-      <div className="newsContainer-in">
-        <div className="newsContainer-in-header">
-          <div className="newsContainer-in-header-in">
-            <header className="header">
+    <><div className="back-to-home">
+      {showScrollToTop && (
+        <button onClick={scrollToTop} className="back-to-top-button">
+          Scroll to Top
+        </button>
+      )}
+    </div><div className='newsContainer'>
+        <div className="newsContainer-in">
+          <div className="newsContainer-in-header">
+            <div className="newsContainer-in-header-in">
+              <header className="header">
                 <div className="header-in-one">
                   <input
                     type="text"
                     placeholder="Search..."
                     value={searchQuery}
-                    onChange={e => setSearchQuery(e.target.value)}
-                  />
+                    onChange={e => setSearchQuery(e.target.value)} />
                 </div>
                 <div className="header-in-two">
                   <h1>Our Achievements in News Articles</h1>
@@ -77,10 +123,10 @@ export default function NewsPage() {
                 <div className="header-in-three">
                   <a href="/">Back to Home</a>
                 </div>
-            </header>
+              </header>
+            </div>
           </div>
-        </div>
-        <div className="newsContainer-in-main">
+          <div className="newsContainer-in-main">
             <section className="articlesGrid">
               {currentArticles.map(article => (
                 <div key={article.id} className="articleCard">
@@ -94,13 +140,13 @@ export default function NewsPage() {
                 </div>
               ))}
             </section>
+          </div>
+          <div className="pagination">
+            <button onClick={() => paginate(currentPage - 1)} disabled={currentPage === 1}>Prev</button>
+            <span>Page {currentPage} of {Math.ceil(filteredArticles.length / articlesPerPage)}</span>
+            <button onClick={() => paginate(currentPage + 1)} disabled={currentPage === Math.ceil(filteredArticles.length / articlesPerPage)}>Next</button>
+          </div>
         </div>
-        <div className="pagination">
-          <button onClick={() => paginate(currentPage - 1)} disabled={currentPage === 1}>Prev</button>
-          <span>Page {currentPage} of {Math.ceil(filteredArticles.length / articlesPerPage)}</span>
-          <button onClick={() => paginate(currentPage + 1)} disabled={currentPage === Math.ceil(filteredArticles.length / articlesPerPage)}>Next</button>
-        </div>
-      </div>
-    </div>
+      </div></>
   );
 }

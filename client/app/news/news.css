@@ -142,3 +142,22 @@
     font-size: 1rem;
     color: #333;
 }
+
+.back-to-home {
+    position: fixed;
+    bottom: 20px; 
+    left: 20px; 
+    display: flex;
+    z-index: 1000;
+    gap: 10px;
+}
+.back-to-home button{
+    background-color: green;
+    padding: 8px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
