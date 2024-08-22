@@ -7,10 +7,15 @@ import Footer from "../components/SmallFooter/footer";
 import { storage } from "../../firebase";
 import { ref, listAll, getDownloadURL } from "firebase/storage";
 import "./page.css";
+import {FaArrowLeft } from 'react-icons/fa';
+
 
 const backToHome= ()=>{
   window.location.href="/";
 }
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
 
 const App = () => {
   const [imagePaths, setImagePaths] = useState([]);
@@ -49,8 +54,10 @@ const App = () => {
           <MultiImageDisplay imagePaths={imagePaths} />
         </div>
         <div className="back-to-home">
-          <button onClick={backToHome} className="back-to-home-button">Back To Home</button>
-          
+        <a href="" onClick={backToHome} target="_blank" ><FaArrowLeft /></a>
+          <button onClick={scrollToTop} className="back-to-top-button">
+            Scroll to Top
+          </button>
         </div>
         
       </div>
