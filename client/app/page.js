@@ -9,7 +9,6 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 import HeroSection from './components/homeHero/page';
-import Section from './components/insights/page';
 
 import './globals.css';
 import SVR_Image_1 from './Assets/IMG_8078.JPG';
@@ -900,10 +899,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div className='insights-section'>
-              <h1>Few insights into Smart Village Revolution</h1>
-            <Section/>  
-            </div>
+            
            
             <div className="Footer">
               <Footer/>
