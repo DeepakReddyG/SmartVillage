@@ -78,7 +78,7 @@ const ResNavbar = () => {
                         </Scroll>
                     </div>
                     <div className="Res-navigation-five">
-                        <Link href='https://sac.kluniversity.in' passHref={true} target='_blank'>KL SAC</Link>
+                        <Link href='https://sac-kluniversity.vercel.app' passHref={true} target='_blank'>KL SAC</Link>
                     </div>
                 </div>
             </div>

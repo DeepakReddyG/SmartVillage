@@ -79,7 +79,7 @@ const HomeNavbar = () => {
                         </Link>
                         <Link 
                         className="HomeNavBar-in-two-in-scroll"
-                        href='https://sac-kluniversity.vercel.app/' passHref={true} target='_blank'>KL SAC</Link>
+                        href='https://sac-kluniversity.vercel.app' passHref={true} target='_blank'>KL SAC</Link>
                     </div>
                 </div>
             </div>
