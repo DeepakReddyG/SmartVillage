@@ -66,16 +66,7 @@ const HomeNavbar = () => {
                         >
                         Parameters
                         </Scroll>
-                        {/* <Scroll
-                            className="HomeNavBar-in-two-in-scroll"
-                            to="home-nine"
-                            spy={true}
-                            smooth={true}
-                            offset={-70} 
-                            duration={500}
-                        >
-                        Team
-                        </Scroll> */}
+
                         <Link
                         className="HomeNavBar-in-two-in-scroll"
                         href="/gallery"
@@ -88,7 +79,7 @@ const HomeNavbar = () => {
                         </Link>
                         <Link 
                         className="HomeNavBar-in-two-in-scroll"
-                        href='https://sac.kluniversity.in' passHref={true} target='_blank'>KL SAC</Link>
+                        href='https://sac-kluniversity.vercel.app/' passHref={true} target='_blank'>KL SAC</Link>
                     </div>
                 </div>
             </div>

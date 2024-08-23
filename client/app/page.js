@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import CountUp from 'react-countup';
 import Model from './components/modal/modal';
+import { MdOpenInNew } from "react-icons/md";
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -145,34 +146,20 @@ export default function Home() {
                     <p>In the smart village revolution, traditional wisdom and cutting-edge concepts coexist harmoniously. Solar-powered schools, quick access to medical assistance, and cellphone-enabled soil monitoring empower communities. Progress flows effortlessly and sustainably, nourishing villages like water touched by the sun. Tradition endures as innovation fortifies it, fostering common aspirations and promising tomorrows.</p>
 
                     <div className="home-three-on-in-link">
-                      {/* <a className='home-three-one-in-link' href="https://www.kluniversity.in/pdfs/Smart%20Village%20Revolution_5.pdf"
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      >Learn More About What We Do</a> */}
-                       <button className='home-three-one-in-link' onClick={handleOpenModal}>
-                       Learn More About What We Do
-                        </button>
-
-                      <Link className='home-three-one-in-link' href='/gallery'>View Gallery</Link>
-                      <Link className="home-three-one-in-link" href="/news">View News Articles</Link>
+                       <button className='home-three-one-in-link' onClick={handleOpenModal}><span>Learn More About What We Do</span> <MdOpenInNew /></button>
                     </div>
                   </div>
                 </div>
                 <div className="home-three-two">
                   <div className="home-three-two-in">
-                    {/* <div className="home-three-two-in-one">
-                      <p>Some Numbers that Matter</p>
-                    </div> */}
                     <div className="home-three-two-in-two">
                       <div className="home-three-two-in-two-boxes">
                         <div className="home-three-two-in-two-box">
                           <div className="home-three-two-in-two-box-in">
                             <div className="home-three-two-in-two-box-in-one">
-                              {/* <h1><CountUp end={100} />+</h1> */}
                               <h1><CountUp end={175} />+</h1>
                             </div>
                             <div className="home-three-two-in-two-box-in-two">
-                              {/* <p><span>Countries and territories </span>are home to our medical humanitarian projects</p> */}
                               <p><span>Villages Adopted</span> by K L University Under Smart Village Revolution Project</p>
                             </div>
                           </div>
@@ -180,11 +167,9 @@ export default function Home() {
                         <div className="home-three-two-in-two-box">
                           <div className="home-three-two-in-two-box-in">
                             <div className="home-three-two-in-two-box-in-one">
-                              {/* <h1><CountUp end={1351} />+</h1> */}
                               <h1><CountUp end ={16000} />+</h1>
                             </div>
                             <div className="home-three-two-in-two-box-in-two">
-                              {/* <p><span>Countries and territories</span> are home to our medical humanitarian projects</p> */}
                               <p><span>The Students Actively </span>involved in community endeavors</p>
                             </div>
                           </div>
@@ -192,11 +177,9 @@ export default function Home() {
                         <div className="home-three-two-in-two-box">
                           <div className="home-three-two-in-two-box-in">
                             <div className="home-three-two-in-two-box-in-one">
-                              {/* <h1><CountUp end={500} />+</h1> */}
                               <h1><CountUp end = {150500} />+</h1>
                             </div>
                             <div className="home-three-two-in-two-box-in-two">
-                              {/* <p><span>Countries and territories</span> are home to our medical humanitarian projects</p> */}
                               <p><span>The villagers demonstrated proactive </span> and engaged involvement.</p>
                             </div>
                           </div>
