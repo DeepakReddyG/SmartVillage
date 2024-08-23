@@ -454,11 +454,11 @@ export default function Home() {
         <h1>Annual Report 2023-24 Social Internship: Class of Y23 Students</h1>
         <p>Empowering Futures: A Journey of Impact and Growth – Annual Report 2023-24 for Social Internship by the Y23 Students</p>
         <div className="home-eight-two-in-buttons">
-          <div className="home-eight-two-in-button-in">
+          {/* <div className="home-eight-two-in-button-in"> */}
             {/* <button onClick={handleOpenModal}>
               View Report */}
             {/* </button> */}
-          </div>
+          {/* </div> */}
           <Link className="home-eight-two-in-activitie-link" href="/activities">
             View Activities
           </Link>
