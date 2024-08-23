@@ -93,6 +93,12 @@ const Footer = () => {
                       <li>
                         <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.kluniversity.in/AQAR1819/SV.pdf&ved=2ahUKEwiazc3rrIGIAxUXklYBHfDTB-cQFnoECBUQAQ&usg=AOvVaw2FAQC3fzLhntiGTqlCW4vx" target="_blank" rel="noopener noreferrer">Past Year Reports</a>
                       </li>
+                      <li>
+                        <Link href='/gallery'> Gallery</Link>
+                      </li>
+                      <li>
+                        <Link href='/news'> News</Link>
+                      </li>
                     </ul>
                   </div>
                 </div>
