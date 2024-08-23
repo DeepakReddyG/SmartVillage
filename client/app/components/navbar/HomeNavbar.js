@@ -76,9 +76,6 @@ const HomeNavbar = () => {
                         >
                         Team
                         </Scroll> */}
-                        <Link 
-                        className="HomeNavBar-in-two-in-scroll"
-                        href='https://sac.kluniversity.in' passHref={true} target='_blank'>KL SAC</Link>
                         <Link
                         className="HomeNavBar-in-two-in-scroll"
                         href="/gallery"
@@ -89,6 +86,9 @@ const HomeNavbar = () => {
                         href="/news"
                         >News
                         </Link>
+                        <Link 
+                        className="HomeNavBar-in-two-in-scroll"
+                        href='https://sac.kluniversity.in' passHref={true} target='_blank'>KL SAC</Link>
                     </div>
                 </div>
             </div>

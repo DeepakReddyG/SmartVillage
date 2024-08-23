@@ -44,7 +44,7 @@ const MultiImageDisplay = ({ imagePaths }) => {
   return (
     <div className="gallery-three-prime">
       {!isAnyImageLoaded && (
-        <div className="global-loader">
+        <div className="global-loader loadingu">
           <Image
             src={loaderGif}
             alt="Loading"
@@ -58,7 +58,7 @@ const MultiImageDisplay = ({ imagePaths }) => {
         <div key={index} className="gallery-item">
           {image.loading ? (
             <Image
-              className="gallery-image"
+              className="gallery-image loadingu"
               src={loaderGif}
               alt="Loading"
               width={10}
