@@ -15,13 +15,13 @@
 }
 
 .hero-image img {
-    width: 100%;
+    width: 95%;
     height: 600px;
     object-fit: cover;
 }
 
 .g-one {
-    width: 100%;
+    width: 90%;
     padding: 1rem;
 }
 
