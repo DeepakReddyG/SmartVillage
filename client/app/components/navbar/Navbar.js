@@ -66,9 +66,9 @@ const Navbar = () => {
                         Team
                         </Scroll> */}
                         
-                        <Link className='navbar-options' href='https://sac.kluniversity.in' passHref={true} target='_blank'>KL SAC</Link>
                         <Link className="navbar-options" href="/gallery">Gallery</Link>
                         <Link className="navbar-options" href="/news">News</Link>
+                        <Link className='navbar-options' href='https://sac.kluniversity.in' passHref={true} target='_blank'>KL SAC</Link>
                     </div>
                 </div>
             </div>
