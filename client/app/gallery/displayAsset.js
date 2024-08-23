@@ -61,8 +61,8 @@ const MultiImageDisplay = ({ imagePaths }) => {
               className="gallery-image"
               src={loaderGif}
               alt="Loading"
-              width={50}
-              height={50}
+              width={10}
+              height={10}
             />
           ) : null}
           <img

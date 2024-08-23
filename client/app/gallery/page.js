@@ -22,7 +22,7 @@ const App = () => {
   const [showScrollToTop, setShowScrollToTop] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const imagesPerPage = 12; 
-  const heroImagePath = "gallery/16.jpg";
+  const heroImagePath = "gallery/groupimg.jpg";
 
   useEffect(() => {
     const fetchImages = async () => {
