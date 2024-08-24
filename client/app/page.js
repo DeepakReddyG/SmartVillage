@@ -59,8 +59,7 @@ export default function Home() {
     const [num, setNum] = useState(1);
     let scroll = 0;
 
-    // const isOffline = useOfflineStatus();
-    const isOffline = true;
+    const isOffline = useOfflineStatus();
     console.log('isOffline: ' + isOffline);
 
     if(isOffline) {
