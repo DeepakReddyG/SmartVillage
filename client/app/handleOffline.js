@@ -1,4 +1,10 @@
+import useOfflineStatus from './components/useOfflineStatus';
+
 const HandleOffline = () => {
+  const isOffline = useOfflineStatus();
+
+  if (!isOffline) return null;
+
   return (
     <div className="offlineView">
       <h1>You are offline</h1>
