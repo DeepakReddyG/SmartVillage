@@ -6,8 +6,8 @@ import MultiImageDisplay from "./displayAsset";
 import Footer from "../components/SmallFooter/footer";
 import { storage } from "../../firebase";
 import { ref, listAll, getDownloadURL } from "firebase/storage";
-import { FaArrowLeft, FaArrowRight, FaArrowAltCircleLeft, FaArrowAltCircleRight } from 'react-icons/fa';
 import "./page.css";
+import { FaArrowLeft } from "react-icons/fa";
 
 const backToHome = () => {
   window.location.href = "/";
@@ -20,8 +20,7 @@ const scrollToTop = () => {
 const App = () => {
   const [imagePaths, setImagePaths] = useState([]);
   const [showScrollToTop, setShowScrollToTop] = useState(false);
-  const [currentPage, setCurrentPage] = useState(1);
-  const imagesPerPage = 12; 
+  const [visiblecount, setVisibleCount] = useState(12); 
   const heroImagePath = "gallery/16.jpg";
 
   useEffect(() => {
@@ -54,21 +53,14 @@ const App = () => {
     };
   }, []);
 
-  // Calculate the index of the first and last image on the current page
-  const indexOfLastImage = currentPage * imagesPerPage;
-  const indexOfFirstImage = indexOfLastImage - imagesPerPage;
-  const currentImages = imagePaths.slice(indexOfFirstImage, indexOfLastImage);
 
-  // Calculate total pages
-  const totalPages = Math.ceil(imagePaths.length / imagesPerPage);
+  const currentImages = imagePaths.slice(0, visiblecount);
 
-  const handleNextPage = () => {
-    setCurrentPage((prevPage) => Math.min(prevPage + 1, totalPages));
-  };
+  const loadMore = () => {
+    setVisibleCount(visiblecount + 12);
+  }
 
-  const handlePrevPage = () => {
-    setCurrentPage((prevPage) => Math.max(prevPage - 1, 1));
-  };
+
 
   return (
     <div className="gallery">
@@ -88,24 +80,16 @@ const App = () => {
         <div className="gallery-three">
           <MultiImageDisplay imagePaths={currentImages} />
         </div>
-        <div className="pagination-controls">
-          <button onClick={handlePrevPage} disabled={currentPage === 1} className="pagination-button">
-            <FaArrowAltCircleLeft /> 
-          </button>
-          <span className="page-info">
-            Page {currentPage} of {totalPages}
-          </span>
-          <button onClick={handleNextPage} disabled={currentPage === totalPages} className="pagination-button">
-            <FaArrowAltCircleRight />
-          </button>
-        </div>
         <div className="back-to-home">
           <a href="/" onClick={backToHome}><FaArrowLeft /></a>
-          {/* {showScrollToTop && (
+          {showScrollToTop && (
             <button onClick={scrollToTop} className="back-to-top-button">
               Scroll to Top
             </button>
-          )} */}
+          )}
+        </div>
+        <div className="load-more">
+          <button onClick={loadMore} className="load-more-button">Load More</button>
         </div>
       </div>
 

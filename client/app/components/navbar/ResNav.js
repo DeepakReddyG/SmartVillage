@@ -21,7 +21,7 @@ const ResNavbar = () => {
         <div className="ResNavbar-Component">
             <div className="ResNav-in">
                 <div className="ResNav-one">
-                    <h1>Smart Village <span>Resolution</span> </h1>
+                    <h1>Smart Village <span>Revolution</span> </h1>
                 </div>
                 <div className="ResNav-two">
                     {click ? <IoClose onClick={handleClick} /> : <FaBars onClick={handleClick} />}
@@ -78,7 +78,7 @@ const ResNavbar = () => {
                         </Scroll>
                     </div>
                     <div className="Res-navigation-five">
-                        <Link href='https://sac.kluniversity.in' passHref={true} target='_blank'>KL SAC</Link>
+                        <Link href='https://sac-kluniversity.vercel.app' passHref={true} target='_blank'>KL SAC</Link>
                     </div>
                 </div>
             </div>

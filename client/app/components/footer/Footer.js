@@ -40,14 +40,14 @@ const Footer = () => {
                       </li>
                       <li>
                         <Link href="http://graam.org.in" legacyBehavior>
-                          <a target="_blank" rel="noopener noreferrer">GRAAM</a>
+                        <a target="_blank" rel="noopener noreferrer">GRAAM</a>
                         </Link>
                       </li>
                       <li>
-                        <a href="https://sac.kluniversity.in/" target="_blank" rel="noopener noreferrer">KL SAC</a>
+                        <Link href="https://sac-kluniversity.vercel.app/" target="_blank" rel="noopener noreferrer">KL SAC</Link>
                       </li>
                       <li>
-                        <a href="https://panchatantra.vercel.app/" target="_blank" rel="noopener noreferrer">Panchatantra</a>
+                        <Link href="https://panchatantra.vercel.app/" target="_blank" rel="noopener noreferrer">Panchatantra</Link>
                       </li>
                     </ul>
                   </div>
@@ -57,19 +57,19 @@ const Footer = () => {
                     <h3>Contact Us</h3>
                     <ul>
                       <li>
-                        <a href="https://sac.kluniversity.in/" target="_blank" rel="noopener noreferrer"><FaFacebook /> Facebook</a>
+                        <Link href="https://sac-kluniversity.vercel.app/" target="_blank" rel="noopener noreferrer"><FaFacebook /> Facebook</Link>
                       </li>
                       <li>
-                        <a href="https://www.instagram.com/klusac_svr?igsh=eDVmZWNpeHR5N2h5" target="_blank" rel="noopener noreferrer"><FaInstagram /> Instagram</a>
+                        <Link href="https://www.instagram.com/klusac_svr?igsh=eDVmZWNpeHR5N2h5" target="_blank" rel="noopener noreferrer"><FaInstagram /> Instagram</Link>
                       </li>
                       <li>
-                        <a href="https://sac.kluniversity.in/" target="_blank" rel="noopener noreferrer"><FaLinkedin /> LinkedIn</a>
+                        <Link href="https://sac-kluniversity.vercel.app/" target="_blank" rel="noopener noreferrer"><FaLinkedin /> LinkedIn</Link>
                       </li>
                       {/* <li>
                         <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><FaTwitter /> Twitter</a>
                       </li> */}
                       <li>
-                        <a href="https://t.me/y23_svr_sac" target="_blank" rel="noopener noreferrer"><FaTelegram /> Telegram</a>
+                        <Link href="https://t.me/y23_svr_sac" target="_blank" rel="noopener noreferrer"><FaTelegram /> Telegram</Link>
                       </li>
                     </ul>
                   </div>
