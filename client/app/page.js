@@ -5,6 +5,10 @@ import CountUp from 'react-countup';
 import Model from './components/modal/modal';
 import { MdOpenInNew } from "react-icons/md";
 
+import useOfflineStatus from './components/useOfflineStatus';
+import HandleOffline from './handleOffline';
+
+
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
@@ -29,50 +33,39 @@ import SVR_UpdateImage_19 from './Assets/Updated Images/LatestCultureAndCommunit
 
 import VijaySirUpdated from './Assets/Updated Images/SAC_Director_Updated.png'
 
-
-import Education from './Assets/Education.JPG';
-import SkillDevelop from './Assets/SkillDevelop.JPG';
-import HealthandHygeine from './Assets/HealthandHygeine.JPG';
 import President from './Assets/President.jpeg';
 import Modi from './Assets/Modi.jpeg';
-
-import sec_one_one_image from './Assets/section_one_1.jpg';
 import communityInfrastructure from './Assets/communityInfrastructure.png';
 import culturalExchange from './Assets/culturalExchange.png';
 
-import kllogo from '../../client/app/Assets/kllogo.png';
 
-
-import SVR_Image from '../public/SVR_Image.jpeg';
 import Navbar from './components/navbar/Navbar';
 import Link from 'next/link';
-import HTMLFlipBook from 'react-pageflip';
 
 
-// areas of work images
 import AreasOfWork_Image_1 from './Assets/AreasOfWork_Image_1.png';
-import AreasOfWork_Image_2 from './Assets/AreasOfWork_Image_2.png';
-import AreasOfWork_Image_3 from './Assets/AreasOfWork_Image_3.png';
 import AreasOfWork_Image_4 from './Assets/AreasOfWork_Image_4.png';
-import AreasOfWork_Image_5 from './Assets/AreasOfWork_Image_5.png';
 import AreasOfWork_Image_6 from './Assets/AreasOfWork_Image_6.png';
-import AreasOfWork_Image_7 from './Assets/AreasOfWork_Image_7.png';
 import AreasOfWork_Image_8 from './Assets/AreasOfWork_Image_8.png';
 import AreasOfWork_Image_9 from './Assets/AreasOfWork_Image_9.png';
-import AreasOfWork_Image_10 from './Assets/AreasOfWork_Image_10.png';
 
-import { FaLinkedin } from "react-icons/fa6";
-import { SiMicrosoftoutlook } from "react-icons/si";
 import HomeNavbar from './components/navbar/HomeNavbar';
 import ResNavbar from './components/navbar/ResNav';
 import Footer from './components/footer/Footer';
-import Plant from './components/animation/Plant';
 
 export default function Home() {
 
     const [showNavbar, setShowNavbar] = useState(false);
     const [num, setNum] = useState(1);
     let scroll = 0;
+
+    // const isOffline = useOfflineStatus();
+    const isOffline = true;
+    console.log('isOffline: ' + isOffline);
+
+    if(isOffline) {
+      return <HandleOffline />;
+    }
 
     const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -121,8 +114,9 @@ export default function Home() {
 
   return (
     showAnimation ? (
-     
-        <Plant />
+      <div class="init">
+        <h1>Smart Village Revolution</h1>
+      </div>
       
     ) :
       <div className="home-component">
@@ -133,9 +127,12 @@ export default function Home() {
             <div className="Navbar-Res">
               <ResNavbar/>
             </div>
-            
+
 
             <HeroSection />
+            
+
+
 
 
             <div className="home-three">
@@ -195,6 +192,8 @@ export default function Home() {
                         />
               </div>
             </div>
+
+
 
 
             <div className="home-two">
