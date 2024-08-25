@@ -161,3 +161,24 @@
     color: white;
     transition: all 0.3s ease-in-out;
 }
+
+
+@media screen and (max-width: 600px) {
+    .header-in-two h1{
+        font-size: 1.2rem;
+    }
+    .header-in-three{
+        width: 20%;
+        padding: .2rem;
+    }
+
+    .header-in-three a{
+        font-size: 1rem;
+    }
+/* 
+    .back-to-top-button{
+    transform: translateY(-8rem);
+    } */
+
+
+}

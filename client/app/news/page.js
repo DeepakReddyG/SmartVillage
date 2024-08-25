@@ -3,8 +3,7 @@ import React, { useEffect, useState} from 'react';
 import newsArticles from './news_array';
 import './news.css';
 import {FaArrowLeft } from 'react-icons/fa';
-
-
+import Footer from "../components/SmallFooter/footer";
 
 
 export default function NewsPage() {
@@ -145,6 +144,9 @@ export default function NewsPage() {
             <button onClick={() => paginate(currentPage - 1)} disabled={currentPage === 1}>Prev</button>
             <span>Page {currentPage} of {Math.ceil(filteredArticles.length / articlesPerPage)}</span>
             <button onClick={() => paginate(currentPage + 1)} disabled={currentPage === Math.ceil(filteredArticles.length / articlesPerPage)}>Next</button>
+          </div>
+          <div className="Footer">
+            <Footer />
           </div>
         </div>
       </div></>

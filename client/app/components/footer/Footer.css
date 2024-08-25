@@ -60,7 +60,7 @@
     align-items: start;
     /* row-gap: 10px;
     column-gap: 10px; */
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     height: 100%;
     width: 90%;
     /* text-align: center; */
@@ -167,6 +167,13 @@
 
     .Footer-two-in-two-in-boxes {
       width: 45%;
+    }
+
+  .Footer-two-in-two-in-boxes-in h3 {
+    font-size:1rem;
+    }
+    .Footer-two-in-two-in-boxes-in ul li {
+      font-size: .7rem;
     }
 
     .Footer-last-in p {
