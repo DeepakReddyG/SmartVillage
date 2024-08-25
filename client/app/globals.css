@@ -6,6 +6,9 @@
 @tailwind utilities;
 
 
+*{
+  user-select: none;
+}
 
 ::selection {
     background-color: rgb(184, 233, 184);

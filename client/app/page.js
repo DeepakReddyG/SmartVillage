@@ -72,6 +72,34 @@ export default function Home() {
     });
   }, []);
 
+
+  useEffect(() => {
+    // Disable right-click
+    const handleContextMenu = (event) => {
+      event.preventDefault();
+    };
+    document.addEventListener('contextmenu', handleContextMenu);
+
+    // Disable F12, Ctrl+Shift+I, and other key shortcuts
+    const handleKeyDown = (e) => {
+      if (
+        e.key === 'F12' || 
+        (e.ctrlKey && e.shiftKey && e.key === 'I') || 
+        (e.ctrlKey && e.shiftKey && e.key === 'C') || 
+        (e.ctrlKey && e.key === 'u')
+      ) {
+        e.preventDefault();
+      }
+    };
+    document.addEventListener('keydown', handleKeyDown);
+
+    // Cleanup event listeners on component unmount
+    return () => {
+      document.removeEventListener('contextmenu', handleContextMenu);
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, []);
+
   const handleClick = (Num) => {
     setNum(Num);
   };
