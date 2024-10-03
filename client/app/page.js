@@ -250,32 +250,33 @@ export default function Home() {
                       <div className="home-two-in-one-in-boxes-in">
                         <div className="home-two-in-one-in-boxes-in-box">
                           <div className="home-two-in-one-in-boxes-in-box-in">
-                            <p>Health</p>
-                          </div>
-                        </div>
-
-                        <div className="home-two-in-one-in-boxes-in-box">
-                          <div className="home-two-in-one-in-boxes-in-box-in">
-                            {/* <p>Sustainable Village</p> */}
-                            <p>Education</p>
-                          </div>
-                        </div>
-
-                        <div className="home-two-in-one-in-boxes-in-box">
-                          <div className="home-two-in-one-in-boxes-in-box-in">
+                            {/* <p>Health</p> */}
                             <p>Agriculture</p>
                           </div>
                         </div>
 
                         <div className="home-two-in-one-in-boxes-in-box">
                           <div className="home-two-in-one-in-boxes-in-box-in">
-                            <p>Community Infrastructure</p>
+                            {/* <p>Sustainable Village</p> */}
+                            <p>Quality Education</p>
                           </div>
                         </div>
 
                         <div className="home-two-in-one-in-boxes-in-box">
                           <div className="home-two-in-one-in-boxes-in-box-in">
-                            <p>Environmental Development</p>
+                            <p>Rural Infrastructure</p>
+                          </div>
+                        </div>
+
+                        <div className="home-two-in-one-in-boxes-in-box">
+                          <div className="home-two-in-one-in-boxes-in-box-in">
+                            <p>Culture and Community</p>
+                          </div>
+                        </div>
+
+                        <div className="home-two-in-one-in-boxes-in-box">
+                          <div className="home-two-in-one-in-boxes-in-box-in">
+                            <p>Health and Hygiene</p>
                           </div>
                         </div>
 
@@ -287,27 +288,26 @@ export default function Home() {
 
                         <div className="home-two-in-one-in-boxes-in-box">
                           <div className="home-two-in-one-in-boxes-in-box-in">
-                            <p>Livelihood Enhancement</p>
+                            <p>Livelihood </p>
                           </div>
                         </div>
 
                         <div className="home-two-in-one-in-boxes-in-box">
                           <div className="home-two-in-one-in-boxes-in-box-in">
-                            <p>Digital Literacy</p>
+                            <p>Sustainable Development</p>
                           </div>
                         </div>
 
                         <div className="home-two-in-one-in-boxes-in-box">
                           <div className="home-two-in-one-in-boxes-in-box-in">
-                            <p>Entrepreneurship Development</p>
+                            <p>Transportation</p>
                           </div>
                         </div>
-
-                        <div className="home-two-in-one-in-boxes-in-box">
+                        {/* <div className="home-two-in-one-in-boxes-in-box">
                           <div className="home-two-in-one-in-boxes-in-box-in">
                             <p>Cultural Exchange</p>
                           </div>
-                        </div>
+                        </div> */}
                       </div>
                     </div>
                   </div>
