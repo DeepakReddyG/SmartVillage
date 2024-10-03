@@ -46,9 +46,9 @@ const Footer = () => {
                       <li>
                         <Link href="https://sac-kluniversity.vercel.app/" target="_blank" rel="noopener noreferrer">KL SAC</Link>
                       </li>
-                      <li>
+                      {/* <li>
                         <Link href="https://panchatantra.vercel.app/" target="_blank" rel="noopener noreferrer">Panchatantra</Link>
-                      </li>
+                      </li> */}
                     </ul>
                   </div>
                 </div>
@@ -56,15 +56,15 @@ const Footer = () => {
                   <div className="Footer-two-in-two-in-boxes-in">
                     <h3>Contact Us</h3>
                     <ul>
-                      <li>
+                      {/* <li>
                         <Link href="https://sac-kluniversity.vercel.app/" target="_blank" rel="noopener noreferrer"><FaFacebook /> Facebook</Link>
-                      </li>
+                      </li> */}
                       <li>
                         <Link href="https://www.instagram.com/klusac_svr?igsh=eDVmZWNpeHR5N2h5" target="_blank" rel="noopener noreferrer"><FaInstagram /> Instagram</Link>
                       </li>
-                      <li>
+                      {/* <li>
                         <Link href="https://sac-kluniversity.vercel.app/" target="_blank" rel="noopener noreferrer"><FaLinkedin /> LinkedIn</Link>
-                      </li>
+                      </li> */}
                       {/* <li>
                         <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><FaTwitter /> Twitter</a>
                       </li> */}
