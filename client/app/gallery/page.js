@@ -81,7 +81,7 @@ const App = () => {
           <MultiImageDisplay imagePaths={currentImages} />
         </div>
         <div className="back-to-home">
-          <a href="/" onClick={backToHome}><FaArrowLeft /></a>
+          <a href="/" className="BackToHome" onClick={backToHome}><FaArrowLeft /></a>
           {showScrollToTop && (
             <button onClick={scrollToTop} className="back-to-top-button">
               Scroll to Top
