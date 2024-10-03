@@ -2,7 +2,7 @@ import React from 'react'
 import './HomeNavbar.css'
 import Link from 'next/link'
 import { Link as Scroll } from "react-scroll";
-
+import SVRLogo from '../../Assets/svr.png'
 import KLLogo from '../../Assets/kllogo.png';
 import Image from 'next/image';
 
@@ -14,6 +14,7 @@ const HomeNavbar = () => {
                     <div className="HomeNavBar-in-one-in">
 
                         <div className="HomeNavBar-in-one-in-one">
+                            <Image src={SVRLogo} className='SVRLogo' alt="" />
                             <h1>Smart Village <span>Revolution</span> </h1>
                         </div>
                         <div className="HomeNavBar-in-one-in-two">

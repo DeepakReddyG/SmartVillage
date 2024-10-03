@@ -474,22 +474,22 @@ export default function Home() {
                   Report 2023-24 for Social Internship by the Y23 Students
                 </p>
                 <div className="home-eight-two-in-buttons">
-                  {/* <div className="home-eight-two-in-button-in"> */}
-                  {/* <button onClick={handleOpenModal}>
-              View Report */}
-                  {/* </button> */}
-                  {/* </div> */}
+                  <div className="home-eight-two-in-button-in">
+                  <button onClick={handleOpenModal}>
+              View Report
+                  </button>
+                  </div>
                   <Link
                     className="home-eight-two-in-activitie-link"
                     href="/activities"
                   >
                     View Activities
                   </Link>
-                  {/* <Model 
+                  <Model 
             isOpen={isModalOpen} 
             onClose={handleCloseModal} 
             pdfUrl="/ReportPDFS/Final_Report.pdf" 
-          /> */}
+          />
                 </div>
               </div>
             </div>
