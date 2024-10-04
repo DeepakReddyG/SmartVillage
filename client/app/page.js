@@ -74,7 +74,16 @@ export default function Home() {
     });
   }, []);
 
-
+  const scrollToHomeFive = () => {
+    const targetElement = document.getElementById("home-five");
+    if (targetElement) {
+      const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+      window.scrollTo({
+        top: targetPosition,
+        behavior: "smooth",
+      });
+    }
+  };
   useEffect(() => {
     // Disable right-click
     const handleContextMenu = (event) => {
@@ -251,65 +260,26 @@ export default function Home() {
                     <div className="home-two-in-one-in-boxes">
                       <div className="home-two-in-one-in-boxes-in">
                         <div className="home-two-in-one-in-boxes-in-box">
-                          <div className="home-two-in-one-in-boxes-in-box-in">
-                            {/* <p>Health</p> */}
-                            <p>Agriculture</p>
+                        <div className="home-two-in-one-in-boxes-in">
+                            {[
+                              "Agriculture",
+                              "Quality Education",
+                              "Rural Infrastructure",
+                              "Culture and Community",
+                              "Health and Hygiene",
+                              "Women Empowerment",
+                              "Livelihood",
+                              "Sustainable Development",
+                              "Transportation",
+                            ].map((item, index) => (
+                              <div className="home-two-in-one-in-boxes-in-box" key={index}>
+                                <div className="home-two-in-one-in-boxes-in-box-in" onClick={scrollToHomeFive}>
+                                  <p>{item}</p>
+                                </div>
+                              </div>
+                            ))}
                           </div>
                         </div>
-
-                        <div className="home-two-in-one-in-boxes-in-box">
-                          <div className="home-two-in-one-in-boxes-in-box-in">
-                            {/* <p>Sustainable Village</p> */}
-                            <p>Quality Education</p>
-                          </div>
-                        </div>
-
-                        <div className="home-two-in-one-in-boxes-in-box">
-                          <div className="home-two-in-one-in-boxes-in-box-in">
-                            <p>Rural Infrastructure</p>
-                          </div>
-                        </div>
-
-                        <div className="home-two-in-one-in-boxes-in-box">
-                          <div className="home-two-in-one-in-boxes-in-box-in">
-                            <p>Culture and Community</p>
-                          </div>
-                        </div>
-
-                        <div className="home-two-in-one-in-boxes-in-box">
-                          <div className="home-two-in-one-in-boxes-in-box-in">
-                            <p>Health and Hygiene</p>
-                          </div>
-                        </div>
-
-                        <div className="home-two-in-one-in-boxes-in-box">
-                          <div className="home-two-in-one-in-boxes-in-box-in">
-                            <p>Women Empowerment</p>
-                          </div>
-                        </div>
-
-                        <div className="home-two-in-one-in-boxes-in-box">
-                          <div className="home-two-in-one-in-boxes-in-box-in">
-                            <p>Livelihood </p>
-                          </div>
-                        </div>
-
-                        <div className="home-two-in-one-in-boxes-in-box">
-                          <div className="home-two-in-one-in-boxes-in-box-in">
-                            <p>Sustainable Development</p>
-                          </div>
-                        </div>
-
-                        <div className="home-two-in-one-in-boxes-in-box">
-                          <div className="home-two-in-one-in-boxes-in-box-in">
-                            <p>Transportation</p>
-                          </div>
-                        </div>
-                        {/* <div className="home-two-in-one-in-boxes-in-box">
-                          <div className="home-two-in-one-in-boxes-in-box-in">
-                            <p>Cultural Exchange</p>
-                          </div>
-                        </div> */}
                       </div>
                     </div>
                   </div>
@@ -646,7 +616,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="home-five">
+        <div className="home-five" id="home-five">
           <div className="home-five-in">
             <div className="home-five-one">
               <h1>Focus - 9 Way Principle</h1>

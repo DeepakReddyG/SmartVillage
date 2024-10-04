@@ -4,8 +4,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
 *{
   user-select: none;
 }
@@ -306,14 +304,18 @@ img{
 }
 
 .home-two-in-one-in-boxes-in-box {
-  border: 2px solid green;
-  background-color: white;
+  /* border: 2px solid green; */
   border-radius: 1rem;
   cursor: pointer;
 }
 
 .home-two-in-one-in-boxes-in-box-in {
+  border: 2px solid green;
+  background-color: white;
+  border-radius: 1rem;
+  cursor: pointer;
   padding: 0.5rem;
+  color: green;
 }
 
 .home-two-in-one-in-boxes-in-box-in p {
