@@ -1,14 +1,11 @@
 "use client";
-
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { ref, getDownloadURL, getMetadata } from "firebase/storage";
 import { storage } from "../../firebase";
-import loaderGif from "../../public/loader.gif";
 
 const MultiImageDisplay = ({ imagePaths }) => {
   const [images, setImages] = useState([]);
-  const [isAnyImageLoaded, setIsAnyImageLoaded] = useState(false);
 
   useEffect(() => {
     const fetchImagesWithMetadata = async () => {
@@ -20,7 +17,7 @@ const MultiImageDisplay = ({ imagePaths }) => {
             const metadata = await getMetadata(imageRef);
             const date = new Date(metadata.timeCreated).toLocaleDateString();
 
-            return { url, date, loading: true };
+            return { url, date };
           })
         );
         setImages(imageInfo);
@@ -32,49 +29,15 @@ const MultiImageDisplay = ({ imagePaths }) => {
     fetchImagesWithMetadata();
   }, [imagePaths]);
 
-  const handleImageLoad = (index) => {
-    setImages((prevImages) =>
-      prevImages.map((img, i) =>
-        i === index ? { ...img, loading: false } : img
-      )
-    );
-    setIsAnyImageLoaded(true); 
-  };
-
   return (
     <div className="gallery-three-prime">
-      {!isAnyImageLoaded && (
-        <div className="global-loader loadingu">
-          <Image
-            src={loaderGif}
-            alt="Loading"
-            width={100}
-            height={100}
-            style={{ objectFit: "cover", margin: "auto" }}
-          />
-        </div>
-      )}
       {images.map((image, index) => (
         <div key={index} className="gallery-item">
-          {image.loading ? (
-            <Image
-              className="gallery-image loadingu"
-              src={loaderGif}
-              alt="Loading"
-              width={10}
-              height={10}
-            />
-          ) : null}
           <img
             src={image.url}
             alt={`Firebase Image ${index}`}
             className="gallery-image"
-            onLoad={() => handleImageLoad(index)}
-            style={image.loading ? { display: "none" } : {}}
           />
-          <p className="upload-date extra-small-text">
-            Uploaded on: {image.date}
-          </p>
         </div>
       ))}
     </div>

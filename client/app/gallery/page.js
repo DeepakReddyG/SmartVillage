@@ -1,5 +1,4 @@
 "use client"
-
 import React, { useEffect, useState } from "react";
 import HeroImage from "./hero";
 import MultiImageDisplay from "./displayAsset";
@@ -59,9 +58,6 @@ const App = () => {
   const loadMore = () => {
     setVisibleCount(visiblecount + 12);
   }
-
-
-
   return (
     <div className="gallery">
       <div className="gallery-main">

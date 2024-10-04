@@ -1,5 +1,3 @@
-/* page.css */
-
 .gallery {
     width: 100%;
     margin: auto;
@@ -9,29 +7,24 @@
     width: 98%;
     margin: auto;
 }
-
 .hero-image {
     padding: 1rem 0;
     width: 95%;
     margin: auto;
 }
-
 .hero-image img {
     width: 90%;
     height: 600px;
     object-fit: cover;
 }
-
 .g-one {
     width: 100%;
     padding: 1rem;
 }
-
 .g-one-in {
     width: 90%;
     margin: auto;
 }
-
 .g-one-in h1 {
     font-size: 3rem;
     color: green;
@@ -39,27 +32,23 @@
     width: 80%;
     margin-bottom: 1rem;
 }
-
 .g-one-in p {
     font-size: 1.5rem;
     color: black;
     width: 90%;
     padding: 1rem 0;
 }
-
 .gallery-three {
     padding: 1rem 0;
     width: 90%;
     margin:auto
 }
-
 .gallery-three-prime {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     justify-content: space-around;
     gap: 1rem;
 }
-
 .gallery-image {
     border: 0.1rem solid green;
     width: 100%;
@@ -104,13 +93,11 @@
     font-size: .9rem;
     padding: .5rem;
 }
-
 .load-more{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .load-more-button {
     background-color: green;
     color: white;
