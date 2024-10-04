@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import CountUp from "react-countup";
 import Model from "./components/modal/modal";
 import { MdOpenInNew } from "react-icons/md";
+import Book from './components/bookflip/book';
+
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -450,17 +452,7 @@ export default function Home() {
             <div className="home-eight-one">
               <div className="home-eight-one-in">
                 <div className="home-eight-one-in-book">
-                  {/* Embedding the iframe */}
-                  <iframe
-                    src="https://online.publuu.com/628569/1402495/page/8?embed&transparent"
-                    width="100%"
-                    height="550"
-                    scrolling="no"
-                    frameBorder="0"
-                    allowFullScreen
-                    allow="clipboard-write"
-                    className="publuuflip"
-                  ></iframe>
+                  <Book/>
                 </div>
               </div>
             </div>
@@ -474,22 +466,22 @@ export default function Home() {
                   Report 2023-24 for Social Internship by the Y23 Students
                 </p>
                 <div className="home-eight-two-in-buttons">
-                  <div className="home-eight-two-in-button-in">
+                  {/* <div className="home-eight-two-in-button-in">
                   <button onClick={handleOpenModal}>
               View Report
                   </button>
-                  </div>
+                  </div> */}
                   <Link
                     className="home-eight-two-in-activitie-link"
                     href="/activities"
                   >
                     View Activities
                   </Link>
-                  <Model 
+                  {/* <Model 
             isOpen={isModalOpen} 
             onClose={handleCloseModal} 
             pdfUrl="/ReportPDFS/Final_Report.pdf" 
-          />
+          /> */}
                 </div>
               </div>
             </div>

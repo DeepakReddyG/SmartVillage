@@ -742,11 +742,32 @@ img{
 .home-eight-one {
   width: 60%;
 }
-
-.flipbook-page {
-  width: 100%;
-  height: auto;
+.home-eight-one-in{
+  width: 98%;
+  /* border: 2px solid red; */
 }
+.home-eight-one-in-book{
+  width: 100%;
+  height: 70vh;
+  /* border: 2px solid red; */
+}
+.flipbook-main{
+  width: 100%;
+  height: 70vh;
+  /* border: 2px solid black; */
+}
+.flipbook-page{
+  /* border: 2px solid green; */
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.flipbook-page img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .home-eight-two {
   width: 40%;
 }
