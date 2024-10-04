@@ -12,7 +12,6 @@ const HomeNavbar = () => {
             <div className="HomeNavBar-in">
                 <div className="HomeNavBar-in-one">
                     <div className="HomeNavBar-in-one-in">
-
                         <div className="HomeNavBar-in-one-in-one">
                             <Image src={SVRLogo} className='SVRLogo' alt="" />
                             <h1>Smart Village <span>Revolution</span> </h1>

@@ -4,12 +4,13 @@
     z-index: 99;
   }
   .HomeNavBar-in {
-    width: 90%;
+    width: 80%;
     margin: auto;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    padding: .5rem 1rem;
+    justify-content: space-around;
+    padding: .5rem ;
+    margin-left: 2rem;
   }
   .HomeNavBar-in-one-in {
     display: flex;
@@ -29,10 +30,11 @@
     border-radius: 2rem;
     animation: scrolling .2s linear;
     backdrop-filter: blur(6px);
-    width: 53%;
+    width: 60%;
   }
   .SVRLogo{
     width: 18%;
+    mix-blend-mode: multiply;
   }
   .HomeNavBar-in-one-in-two {
     display: flex;

@@ -1,28 +1,28 @@
-import { ref, getDownloadURL, getMetadata } from "firebase/storage";
-import { storage } from "../../../firebase";
+import { ref, getDownloadURL, getMetadata, listAll } from "firebase/storage";
+import { storage } from "../../../firebase"; // Update this to your Firebase config path
 
 export const fetchImages = async () => {
-  const paths = [
-    "gs://svrwebsite-1e892.appspot.com/home/swachhataseva.jpg",
-    "gs://svrwebsite-1e892.appspot.com/home/healthawareness.jpg",
-    "gs://svrwebsite-1e892.appspot.com/home/heropage_heroimg.jpg",
-    "gs://svrwebsite-1e892.appspot.com/home/healthawareness2.jpg",
-  ]; 
-  
-  try {
-    const imageList = await Promise.all(
-      paths.map(async (path) => {
-        const imageRef = ref(storage, path);
-        const url = await getDownloadURL(imageRef);
-        const metadata = await getMetadata(imageRef);
-        const description = null;
-        const logoUrl = "/path/to/logo.png";
+  const folderRef = ref(storage, "home/");
 
-        return { url, description, logoUrl };
+  try {
+    const result = await listAll(folderRef);
+
+    const imageList = await Promise.all(
+      result.items.map(async (itemRef) => {
+        try {
+          const url = await getDownloadURL(itemRef);
+          const metadata = await getMetadata(itemRef);
+          const description = metadata.customMetadata?.description || null;
+          return { url, description,};
+        } catch (error) {
+          console.warn(`Error fetching image ${itemRef.name}:`, error);
+          return null; // Return null if there’s an error for this image
+        }
       })
     );
 
-    return imageList;
+    // Filter out null entries (in case some images were missing or caused errors)
+    return imageList.filter(image => image !== null);
   } catch (error) {
     console.error("Error fetching images from Firebase:", error);
     throw error;
