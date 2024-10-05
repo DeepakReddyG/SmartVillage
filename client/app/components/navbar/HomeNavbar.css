@@ -31,11 +31,15 @@
     animation: scrolling .2s linear;
     backdrop-filter: blur(6px);
     width: 60%;
+    padding: .8rem;
   }
+
   .SVRLogo{
     width: 18%;
     mix-blend-mode: multiply;
   }
+
+
   .HomeNavBar-in-one-in-two {
     display: flex;
     align-items: center;
@@ -58,15 +62,12 @@
     color: green;
     font-size: 1.5rem;
     font-weight: 600;
+  }
 
-    /* background-color: rgb(245, 245, 245, 1);
-    border: 2px solid green; */
-    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-radius: 2rem;
-    animation: scrolling .2s linear;
-    backdrop-filter: blur(6px);
-    width: fit-content;
-    padding: 1rem; */
+  .HomeNavBar-in-one-in-one img {
+    width: 12%;
+    height: 12%;
+    object-fit: cover;
   }
 
  

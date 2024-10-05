@@ -13,7 +13,13 @@ const HomeNavbar = () => {
                 <div className="HomeNavBar-in-one">
                     <div className="HomeNavBar-in-one-in">
                         <div className="HomeNavBar-in-one-in-one">
-                            <Image src={SVRLogo} className='SVRLogo' alt="" />
+                            <Image
+                                 src={SVRLogo} 
+                                 className='SVRLogo' 
+                                 width={200}
+                                 height={200}
+                                 alt=""
+                            />
                             <h1>Smart Village <span>Revolution</span> </h1>
                         </div>
                         <div className="HomeNavBar-in-one-in-two">
