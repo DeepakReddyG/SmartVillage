@@ -21,7 +21,7 @@ import SVR_UpdateImage_3 from "./Assets/Updated Images/Health .png";
 import SVR_UpdateImage_5 from "./Assets/Updated Images/Infrastruture.png";
 import SVR_UpdateImage_11 from "./Assets/Updated Images/RenewableEnergy.png";
 import SVR_UpdateImage_12 from "./Assets/Updated Images/WomenEmpowerMent.png";
-import SVR_UpdateImage_13 from "./Assets/Updated Images/WomenEmpowerMent2.png";
+import SVR_UpdateImage_13 from "./Assets/Women2.png";
 import SVR_UpdateImage_14 from "./Assets/Digital.png";
 import SVR_UpdateImage_16 from "./Assets/Updated Images/Health(Area of work).png";
 import SVR_UpdateImage_17 from "./Assets/Updated Images/Culture.png";
