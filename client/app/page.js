@@ -22,7 +22,7 @@ import SVR_UpdateImage_5 from "./Assets/Updated Images/Infrastruture.png";
 import SVR_UpdateImage_11 from "./Assets/Updated Images/RenewableEnergy.png";
 import SVR_UpdateImage_12 from "./Assets/Updated Images/WomenEmpowerMent.png";
 import SVR_UpdateImage_13 from "./Assets/Updated Images/WomenEmpowerMent2.png";
-import SVR_UpdateImage_14 from "./Assets/Updated Images/Education Liracry Updated.png";
+import SVR_UpdateImage_14 from "./Assets/Digital.png";
 import SVR_UpdateImage_16 from "./Assets/Updated Images/Health(Area of work).png";
 import SVR_UpdateImage_17 from "./Assets/Updated Images/Culture.png";
 import SVR_UpdateImage_18 from "./Assets/Updated Images/Transportation.png";
@@ -40,7 +40,7 @@ import Link from "next/link";
 
 import AreasOfWork_Image_1 from "./Assets/AreasOfWork_Image_1.png";
 import AreasOfWork_Image_4 from "./Assets/AreasOfWork_Image_4.png";
-import AreasOfWork_Image_6 from "./Assets/AreasOfWork_Image_6.png";
+import AreasOfWork_Image_6 from "./Assets/greenInnovation.png";
 import AreasOfWork_Image_8 from "./Assets/AreasOfWork_Image_8.png";
 import AreasOfWork_Image_9 from "./Assets/AreasOfWork_Image_9.png";
 
@@ -73,17 +73,6 @@ export default function Home() {
       }
     });
   }, []);
-
-  const scrollToHomeFive = () => {
-    const targetElement = document.getElementById("home-five");
-    if (targetElement) {
-      const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
-      window.scrollTo({
-        top: targetPosition,
-        behavior: "smooth",
-      });
-    }
-  };
   useEffect(() => {
     // Disable right-click
     const handleContextMenu = (event) => {
@@ -179,7 +168,7 @@ export default function Home() {
                       <div className="home-three-two-in-two-box-in">
                         <div className="home-three-two-in-two-box-in-one">
                           <h1>
-                            <CountUp end={15} />+
+                            <CountUp end={105} />+
                           </h1>
                         </div>
                         <div className="home-three-two-in-two-box-in-two">
@@ -264,16 +253,16 @@ export default function Home() {
                             {[
                               "Agriculture",
                               "Quality Education",
-                              "Rural Infrastructure",
-                              "Culture and Community",
-                              "Health and Hygiene",
+                              "Village Infrastructure",
+                              "Water conservation",
+                              "Energy Availablity and Efficieny",
+                              "Material and Resources",
+                              "Social Community Actions",
+                              "Green Innovation",
                               "Women Empowerment",
-                              "Livelihood",
-                              "Sustainable Development",
-                              "Transportation",
                             ].map((item, index) => (
                               <div className="home-two-in-one-in-boxes-in-box" key={index}>
-                                <div className="home-two-in-one-in-boxes-in-box-in" onClick={scrollToHomeFive}>
+                                <div className="home-two-in-one-in-boxes-in-box-in">
                                   <p>{item}</p>
                                 </div>
                               </div>
@@ -327,7 +316,7 @@ export default function Home() {
                           src={AreasOfWork_Image_1}
                           alt="Picture of the author"
                         ></Image>
-                        <p>Education</p>
+                        <p>Quality Education</p>
                       </div>
                     </div>
 
@@ -347,7 +336,7 @@ export default function Home() {
                           src={communityInfrastructure}
                           alt="Picture of the author"
                         ></Image>
-                        <p>community Infrastructure</p>
+                        <p>Village Infrastructure</p>
                       </div>
                     </div>
 
@@ -357,7 +346,7 @@ export default function Home() {
                           src={AreasOfWork_Image_4}
                           alt="Picture of the author"
                         ></Image>
-                        <p>Environmental Development</p>
+                        <p>Social Community Actions</p>
                       </div>
                     </div>
 
@@ -397,7 +386,7 @@ export default function Home() {
                           src={AreasOfWork_Image_6}
                           alt="Picture of the author"
                         ></Image>
-                        <p>Entrepreneurship</p>
+                        <p>Green Innovation</p>
                       </div>
                     </div>
 
@@ -436,22 +425,22 @@ export default function Home() {
                   Report 2023-24 for Social Internship by the Y23 Students
                 </p>
                 <div className="home-eight-two-in-buttons">
-                  {/* <div className="home-eight-two-in-button-in">
+                  <div className="home-eight-two-in-button-in">
                   <button onClick={handleOpenModal}>
               View Report
                   </button>
-                  </div> */}
+                  </div>
                   <Link
                     className="home-eight-two-in-activitie-link"
                     href="/activities"
                   >
                     View Activities
                   </Link>
-                  {/* <Model 
+                  <Model 
             isOpen={isModalOpen} 
             onClose={handleCloseModal} 
             pdfUrl="/ReportPDFS/Final_Report.pdf" 
-          /> */}
+          />
                 </div>
               </div>
             </div>
@@ -684,9 +673,9 @@ export default function Home() {
                       onClick={() => handleClick(7)}
                       id={num === 7 ? "se-active" : ""}
                     >
-                      <div className="home-se-seven-in se-cm-in">
+                      {/* <div className="home-se-seven-in se-cm-in">
                         <p>Transportation</p>
-                      </div>
+                      </div> */}
                     </div>
                     <div
                       className="home-se-eight se-cm"

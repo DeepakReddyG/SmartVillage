@@ -31,7 +31,7 @@ const Footer = () => {
               <div className="Footer-two-in-two-in">
                 <div className="Footer-two-in-two-in-boxes">
                   <div className="Footer-two-in-two-in-boxes-in">
-                    <h3>Our Connections with Programs</h3>
+                    <h3>Our collaborations with Programs</h3>
                     <ul>
                       <li>
                         <Link href="https://saanjhi.gov.in" legacyBehavior>
@@ -90,9 +90,9 @@ const Footer = () => {
                       <li>
                         <ScrollLink to="home-eight" offset={-70} smooth={true} duration={600}>Annual Reports</ScrollLink>
                       </li>
-                      <li>
+                      {/* <li>
                         <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.kluniversity.in/AQAR1819/SV.pdf&ved=2ahUKEwiazc3rrIGIAxUXklYBHfDTB-cQFnoECBUQAQ&usg=AOvVaw2FAQC3fzLhntiGTqlCW4vx" target="_blank" rel="noopener noreferrer">Past Year Reports</a>
-                      </li>
+                      </li> */}
                       <li>
                         <Link href='/gallery'> Gallery</Link>
                       </li>

@@ -751,11 +751,14 @@ img{
 .home-eight-one-in-book{
   width: 100%;
   height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   /* border: 2px solid red; */
 }
 .flipbook-main{
   width: 100%;
-  height: 70vh;
+  height: 100%;
   /* border: 2px solid black; */
 }
 .flipbook-page{
@@ -767,7 +770,7 @@ img{
 .flipbook-page img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .home-eight-two {
