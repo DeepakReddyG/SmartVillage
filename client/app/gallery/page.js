@@ -20,7 +20,7 @@ const App = () => {
   const [imagePaths, setImagePaths] = useState([]);
   const [showScrollToTop, setShowScrollToTop] = useState(false);
   const [visiblecount, setVisibleCount] = useState(12); 
-  const heroImagePath = "gallery/16.jpg";
+  const heroImagePath = "gallery/GalleryImage.jpeg";
 
   useEffect(() => {
     const fetchImages = async () => {
@@ -63,6 +63,9 @@ const App = () => {
       <div className="gallery-main">
         <div className="hero-image">
           <HeroImage imagePath={heroImagePath} />
+            <div className="hero-info">
+              {/* <p>Conducting Drawing competition in Government School</p> */}
+            </div>
         </div>
         <div className="g-one">
           <div className="g-one-in">

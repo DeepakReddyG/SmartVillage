@@ -2,12 +2,12 @@
     width: 100%;
     margin: auto;
 }
-
 .gallery-main {
     width: 98%;
     margin: auto;
 }
 .hero-image {
+    position: relative;
     padding: 1rem 0;
     width: 95%;
     margin: auto;
@@ -16,6 +16,18 @@
     width: 90%;
     height: 600px;
     object-fit: cover;
+}
+.hero-info{
+    width: 35%;
+    padding: 0.1rem;
+    position: relative;
+    /* background-color: red;÷ */
+    backdrop-filter: blur(5px);
+    /* color: white; */
+    bottom: 4rem;
+    /* padding: 0.2rem; */
+    /* right: 1rem; */
+    left: 1rem;
 }
 .g-one {
     width: 100%;
@@ -59,16 +71,13 @@
 }
 .back-to-home {
     position: fixed;
-    /* bottom: 6rem;  */
-    /* margin-bottom: 1.2rem; */
-    /* left: 1rem;  */
-    /* top: 2rem; */
     display: flex;
     z-index: 1000;
     gap: 10px;
 }
 .BackToHome{
     top: 2rem;
+    left: 0.5rem;
     z-index: 1000;
     position: fixed;
 }

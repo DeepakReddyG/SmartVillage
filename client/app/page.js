@@ -179,7 +179,7 @@ export default function Home() {
                       <div className="home-three-two-in-two-box-in">
                         <div className="home-three-two-in-two-box-in-one">
                           <h1>
-                            <CountUp end={175} />+
+                            <CountUp end={15} />+
                           </h1>
                         </div>
                         <div className="home-three-two-in-two-box-in-two">
