@@ -65,9 +65,6 @@ const HeroSection = () => {
                   <div className="swiper-description">
                     <p>{image.description}</p>
                   </div>
-                  <div className="swiper-logo">
-                    
-                  </div>
                 </div>
               </SwiperSlide>
             ))}

@@ -111,9 +111,11 @@ export default function NewsPage() {
             <section className="articlesGrid">
               {currentArticles.map(article => (
                 <div key={article.id} className="articleCard">
-                  <img src={article.imageUrl} alt={article.title} className="articleImage" />
-                  <h2 className="articleTitle">{article.title}</h2>
-                  <p className="articleExcerpt">{article.excerpt}</p>
+                  <a href={article.link} className="articleLink" target="_blank" rel="noopener noreferrer">
+                    <img src={article.imageUrl} alt={article.title} className="articleImage" />
+                    <h2 className="articleTitle">{article.title}</h2>
+                    <p className="articleExcerpt">{article.excerpt}</p>
+                  </a>
                 </div>
               ))}
             </section>
