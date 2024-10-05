@@ -1118,8 +1118,90 @@ const newData = [
             "Date of the activity \nDD-MM-YYYY": "10.08.2024",
             "Number of students participated in such activities": "35",
             "Web Links": "https://kluniversityin-my.sharepoint.com/:b:/g/personal/2300040028_kluniversity_in/EXD3bON2H6BNm5c4XBBj-pIBPQ7frO7cGRQQGCdKOABQJQ?e=kDoxlB"
-        }
-        
-    
+        },
+        {
+            "Year": "2023-2024",
+            "Name of the activity": "Triksharopam Mahotsav (Tree Plantation) (Phase-3)",
+            "Date of the activity \nDD-MM-YYYY": "02.09.24",
+            "Number of students participated in such activities": "20",
+            "Web Links": "https://kluniversityin-my.sharepoint.com/personal/venkatasatyanarayana_kluniversity_in/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fvenkatasatyanarayana%5Fkluniversity%5Fin%2FDocuments%2FSeptember%2024%20month%20Reports%2FVriksharopan%20Mahotsav%20%28tree%20plantation%29%28phase%2D3%29%2Epdf%204%2Epdf&parent=%2Fpersonal%2Fvenkatasatyanarayana%5Fkluniversity%5Fin%2FDocuments%2FSeptember%2024%20month%20Reports&ga=1"
+        },
+        {
+            "Year": "2023-2024",
+            "Name of the activity": "Tree adoption Campaign (Phase-I)",
+            "Date of the activity \nDD-MM-YYYY": "03.09.24",
+            "Number of students participated in such activities": "20",
+            "Web Links": "https://kluniversityin-my.sharepoint.com/personal/venkatasatyanarayana_kluniversity_in/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fvenkatasatyanarayana%5Fkluniversity%5Fin%2FDocuments%2FSeptember%2024%20month%20Reports%2FTree%20adoption%20campaign%20%28phase%20%2D%201%29%20%2Epdf%201%204%2Epdf&parent=%2Fpersonal%2Fvenkatasatyanarayana%5Fkluniversity%5Fin%2FDocuments%2FSeptember%2024%20month%20Reports&ga=1"
+        },
+        {
+            "Year": "2023-2024",
+            "Name of the activity": "Waste Management workshop",
+            "Date of the activity \nDD-MM-YYYY": "04.09.24",
+            "Number of students participated in such activities": "43",
+            "Web Links": "https://kluniversityin-my.sharepoint.com/personal/venkatasatyanarayana_kluniversity_in/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fvenkatasatyanarayana%5Fkluniversity%5Fin%2FDocuments%2FSeptember%2024%20month%20Reports%2FWASTE%20MANAGEMENT%20WORKSHOP%2Epdf%203%204%2Epdf&parent=%2Fpersonal%2Fvenkatasatyanarayana%5Fkluniversity%5Fin%2FDocuments%2FSeptember%2024%20month%20Reports&ga=1"
+        },
+        {
+            "Year": "2023-2024",
+            "Name of the activity": "Toilet Design Innovative Challenge",
+            "Date of the activity \nDD-MM-YYYY": "09.09.24",
+            "Number of students participated in such activities": "27",
+            "Web Links": "https://kluniversityin-my.sharepoint.com/personal/venkatasatyanarayana_kluniversity_in/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fvenkatasatyanarayana%5Fkluniversity%5Fin%2FDocuments%2FSeptember%2024%20month%20Reports%2FInnovative%20toilet%20design%2Epdf%20%281%29%204%2Epdf&parent=%2Fpersonal%2Fvenkatasatyanarayana%5Fkluniversity%5Fin%2FDocuments%2FSeptember%2024%20month%20Reports&ga=1"
+        },
+        {
+            "Year": "2023-2024",
+            "Name of the activity": "Computer literacy and digital skills training (Phase-I)",
+            "Date of the activity \nDD-MM-YYYY": "10.09.24",
+            "Number of students participated in such activities": "26",
+            "Web Links": "https://kluniversityin-my.sharepoint.com/personal/venkatasatyanarayana_kluniversity_in/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fvenkatasatyanarayana%5Fkluniversity%5Fin%2FDocuments%2FSeptember%2024%20month%20Reports%2FComputer%20literacy%20and%20digital%20skills%20training%20%2Epdf%201%204%2Epdf&parent=%2Fpersonal%2Fvenkatasatyanarayana%5Fkluniversity%5Fin%2FDocuments%2FSeptember%2024%20month%20Reports&ga=1"
+        },
+        {
+            "Year": "2023-2024",
+            "Name of the activity": "Health check-ups on diabetics and malnutrition",
+            "Date of the activity \nDD-MM-YYYY": "11.09.24",
+            "Number of students participated in such activities": "22",
+            "Web Links": "https://kluniversityin-my.sharepoint.com/personal/venkatasatyanarayana_kluniversity_in/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fvenkatasatyanarayana%5Fkluniversity%5Fin%2FDocuments%2FSeptember%2024%20month%20Reports%2FHEALTH%20CHECK%2DUPS%20ON%20DIABETICS%20AND%20MALNUTRITION%2Epdf%20%281%29%201%2Epdf&parent=%2Fpersonal%2Fvenkatasatyanarayana%5Fkluniversity%5Fin%2FDocuments%2FSeptember%2024%20month%20Reports&ga=1"
+        },
+        {
+            "Year": "2023-2024",
+            "Name of the activity": "Vaccination drive (Phase-2)",
+            "Date of the activity \nDD-MM-YYYY": "16.09.24",
+            "Number of students participated in such activities": "16",
+            "Web Links": "https://kluniversityin-my.sharepoint.com/personal/venkatasatyanarayana_kluniversity_in/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fvenkatasatyanarayana%5Fkluniversity%5Fin%2FDocuments%2FSeptember%2024%20month%20Reports%2FVaccination%20drive%20%28phase%202%29%20%204%2Epdf&parent=%2Fpersonal%2Fvenkatasatyanarayana%5Fkluniversity%5Fin%2FDocuments%2FSeptember%2024%20month%20Reports&ga=1"
+        },
+        {
+            "Year": "2023-2024",
+            "Name of the activity": "First-Aid training workshop (CPR)(Phase-3)",
+            "Date of the activity \nDD-MM-YYYY": "17.09.24",
+            "Number of students participated in such activities": "27",
+            "Web Links": "https://kluniversityin-my.sharepoint.com/personal/venkatasatyanarayana_kluniversity_in/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fvenkatasatyanarayana%5Fkluniversity%5Fin%2FDocuments%2FSeptember%2024%20month%20Reports%2FFirst%2DAid%20training%20workshop%20%28CPR%29%28Phase%2D3%29%204%2Epdf&parent=%2Fpersonal%2Fvenkatasatyanarayana%5Fkluniversity%5Fin%2FDocuments%2FSeptember%2024%20month%20Reports&ga=1"
+        },
+        {
+            "Year": "2023-2024",
+            "Name of the activity": "Water saving practices campaign (Phase-1)",
+            "Date of the activity \nDD-MM-YYYY": "18.09.24",
+            "Number of students participated in such activities": "26",
+            "Web Links": "https://kluniversityin-my.sharepoint.com/personal/venkatasatyanarayana_kluniversity_in/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fvenkatasatyanarayana%5Fkluniversity%5Fin%2FDocuments%2FSeptember%2024%20month%20Reports%2FWater%20Saving%20practices%20Campaign%20%28phase%201%29%2Epdf%201%204%2Epdf&parent=%2Fpersonal%2Fvenkatasatyanarayana%5Fkluniversity%5Fin%2FDocuments%2FSeptember%2024%20month%20Reports&ga=1"
+        },
+        {
+            "Year": "2023-2024",
+            "Name of the activity": "Workshop on phishing & Malware",
+            "Date of the activity \nDD-MM-YYYY": "23.09.24",
+            "Number of students participated in such activities": "52",
+            "Web Links": "https://kluniversityin-my.sharepoint.com/personal/venkatasatyanarayana_kluniversity_in/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fvenkatasatyanarayana%5Fkluniversity%5Fin%2FDocuments%2FSeptember%2024%20month%20Reports%2FWORKSHOP%20ON%20PHISHING%20AND%20MALWARE%2Epdf%20%281%29%201%201%2Epdf&parent=%2Fpersonal%2Fvenkatasatyanarayana%5Fkluniversity%5Fin%2FDocuments%2FSeptember%2024%20month%20Reports&ga=1"
+        },
+        {
+            "Year": "2023-2024",
+            "Name of the activity": "Field learning Farms",
+            "Date of the activity \nDD-MM-YYYY": "24.09.24",
+            "Number of students participated in such activities": "16",
+            "Web Links": "https://kluniversityin-my.sharepoint.com/personal/venkatasatyanarayana_kluniversity_in/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fvenkatasatyanarayana%5Fkluniversity%5Fin%2FDocuments%2FSeptember%2024%20month%20Reports%2FFIELD%20LEARNING%20FARMS%2Epdf%201%201%2Epdf&parent=%2Fpersonal%2Fvenkatasatyanarayana%5Fkluniversity%5Fin%2FDocuments%2FSeptember%2024%20month%20Reports&ga=1"
+        },
+        {
+            "Year": "2023-2024",
+            "Name of the activity": "Climate Smart Agriculture Awareness Program",
+            "Date of the activity \nDD-MM-YYYY": "25.09.24",
+            "Number of students participated in such activities": "16",
+            "Web Links": "https://kluniversityin-my.sharepoint.com/personal/venkatasatyanarayana_kluniversity_in/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fvenkatasatyanarayana%5Fkluniversity%5Fin%2FDocuments%2FSeptember%2024%20month%20Reports%2FCLIMATE%20SMART%20AGRICULTURE%20AWARENESS%2Epdf%2Epdf&parent=%2Fpersonal%2Fvenkatasatyanarayana%5Fkluniversity%5Fin%2FDocuments%2FSeptember%2024%20month%20Reports&ga=1"
+        },
 ];
 export default newData;

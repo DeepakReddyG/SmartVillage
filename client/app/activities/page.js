@@ -97,7 +97,7 @@ function Page() {
             <table>
               <thead>
                 <tr>
-                  <th>Date
+                  <th>Date &nbsp;
                     <select className='DateOption'
                       id="year"
                       value={selectedYear}
