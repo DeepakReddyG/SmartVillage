@@ -635,7 +635,7 @@ export default function Home() {
                       id={num === 3 ? "se-active" : ""}
                     >
                       <div className="home-se-three-in se-cm-in">
-                        <p>Rural Infrastructure</p>
+                        <p>Village Infrastructure</p>
                       </div>
                     </div>
                     <div
@@ -665,15 +665,15 @@ export default function Home() {
                         <p>Energy Availablity and Efficieny</p>
                       </div>
                     </div>
-                    <div
+                    {/* <div
                       className="home-se-seven se-cm"
                       onClick={() => handleClick(7)}
                       id={num === 7 ? "se-active" : ""}
                     >
-                      {/* <div className="home-se-seven-in se-cm-in">
+                      <div className="home-se-seven-in se-cm-in">
                         <p>Transportation</p>
-                      </div> */}
-                    </div>
+                      </div>
+                    </div> */}
                     <div
                       className="home-se-eight se-cm"
                       onClick={() => handleClick(8)}
@@ -922,7 +922,7 @@ export default function Home() {
                       <div className="home-bt-one-in">
                         <div className="home-bt-one-in-header">
                           <div className="home-bt-one-in-header-in">
-                            <h1>Sustainable Development</h1>
+                            <h1>Energy Availablity and Efficieny</h1>
                           </div>
                         </div>
                         <div className="home-bt-one-in-one">
@@ -965,7 +965,7 @@ export default function Home() {
                       className="home-bt-seven cm-bx-hide"
                       id={num === 7 ? "se-visible" : ""}
                     >
-                      <div className="home-bt-one-in">
+                      {/* <div className="home-bt-one-in">
                         <div className="home-bt-one-in-header">
                           <div className="home-bt-one-in-header-in">
                             <h1>Transportation</h1>
@@ -1004,8 +1004,8 @@ export default function Home() {
                             </div>
                           </div>
                         </div>
-                      </div>
-                    </div>
+                      </div> */}
+                    </div> 
                     <div
                       className="home-bt-eight cm-bx-hide"
                       id={num === 8 ? "se-visible" : ""}
@@ -1013,7 +1013,7 @@ export default function Home() {
                       <div className="home-bt-one-in">
                         <div className="home-bt-one-in-header">
                           <div className="home-bt-one-in-header-in">
-                            <h1>Livelyhood</h1>
+                            <h1>Green Innovation</h1>
                           </div>
                         </div>
                         <div className="home-bt-one-in-one">

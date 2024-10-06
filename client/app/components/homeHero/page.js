@@ -24,14 +24,10 @@ const HeroSection = () => {
         const imageList = await fetchImages();
         setImages(imageList);
         const infoList = [
-          "First image description",
-          "Second image description",
-          "Third image description",
-          "Fourth image description",
-          "FIve image description",
-          "Six image desctiption",
-          "Seven Image descrtiption",
-          "Seven Image descrtiption",
+            "Social Awareness",
+            "Women Empowerment",
+            "Society Awareness",
+            "Culture and Community",
         ];
         
         setImageInfo(infoList); 

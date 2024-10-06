@@ -6,7 +6,7 @@ const newsArticles = [
     date: "15-08-2023", // Use dd-mm-yyyy
     imageUrl: "https://firebasestorage.googleapis.com/v0/b/svrwebsite-1e892.appspot.com/o/news%2Fstudents%20painting.jpg?alt=media&token=0f3d3b48-e310-4d3d-aaba-bbc21ffca393",
     excerpt: "A rural village in India has successfully transitioned to 100% renewable energy, setting a precedent for sustainable development in remote areas.",
-    // link:"https://kluniversityin-my.sharepoint.com/:i:/g/personal/venkatasatyanarayana_kluniversity_in/EatYBIk6jERBhuH-sqYbA8MBvW97wICpXoZ-ZeMyiUxEVg?e=26MsBn",
+    link:'https://kluniversityin-my.sharepoint.com/:i:/g/personal/2300030350_kluniversity_in/Ec64JtI9j0lAt2ZEaIp1iMwBNfWdpSnBNFlYjPDqyGripw?e=YfAZRl',
   },
   {
     id: 2,
@@ -77,6 +77,7 @@ const newsArticles = [
     date: "10-08-2024", // Use dd-mm-yyyy
     imageUrl: "https://firebasestorage.googleapis.com/v0/b/svrwebsite-1e892.appspot.com/o/news%2FVote.png?alt=media&token=ff4e0270-ca41-40f3-8384-948c08ec1718",
     excerpt: "Digital education initiatives are transforming schools in rural villages, bridging the educational gap and providing new opportunities for children.",
+    link:'https://kluniversityin-my.sharepoint.com/:i:/g/personal/2300030350_kluniversity_in/EY-Tgm9xm9RLputyXtFJdUgBZjznVYXlmZ0Y6P_ABXZIRQ?e=GYuW1f',
   },
   {
     id: 10,
@@ -85,6 +86,7 @@ const newsArticles = [
     date: "10-08-2024", // Use dd-mm-yyyy
     imageUrl: "https://firebasestorage.googleapis.com/v0/b/svrwebsite-1e892.appspot.com/o/news%2Fnallamalla.png?alt=media&token=6efea935-445c-4c34-a84b-eef4e2007c91",
     excerpt: "Digital education initiatives are transforming schools in rural villages, bridging the educational gap and providing new opportunities for children.",
+    link:'https://kluniversityin-my.sharepoint.com/:i:/g/personal/2300030350_kluniversity_in/ETn6xFZWAeVGuQZ9XSLi2rIBq2xq5DCdgckBoPV8h7P2WA?e=3e7EP1',
   },
   {
     id: 11,
@@ -93,6 +95,7 @@ const newsArticles = [
     date: "10-08-2024", // Use dd-mm-yyyy
     imageUrl: "https://firebasestorage.googleapis.com/v0/b/svrwebsite-1e892.appspot.com/o/news%2Fsesonal%20Diseases.png?alt=media&token=60a0df34-f8a7-4e96-8925-55c0e7b99645",
     excerpt: "Digital education initiatives are transforming schools in rural villages, bridging the educational gap and providing new opportunities for children.",
+    link:'https://kluniversityin-my.sharepoint.com/:i:/g/personal/2300030350_kluniversity_in/EQ2tE4q5on1Nium2lfbR__8BqdvCN2GZdMeAI0G7K_4laQ?e=y1R4Io',
   },
   {
     id: 12,
@@ -101,6 +104,7 @@ const newsArticles = [
     date: "10-08-2024", // Use dd-mm-yyyy
     imageUrl: "https://firebasestorage.googleapis.com/v0/b/svrwebsite-1e892.appspot.com/o/news%2FHealth%20Camp.png?alt=media&token=bb343e1e-adeb-48fb-a76b-e5081fc84236",
     excerpt: "Digital education initiatives are transforming schools in rural villages, bridging the educational gap and providing new opportunities for children.",
+    link:'https://kluniversityin-my.sharepoint.com/:i:/g/personal/2300030350_kluniversity_in/Ea0gaZJqIGlGttRYZY3cxkUBo05n76pybfJgOZa0RGpHhw?e=4Z1XFK',
   },
 ];
 
