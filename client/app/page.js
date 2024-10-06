@@ -424,9 +424,6 @@ export default function Home() {
                   Reports of Smart Village Revolution from past years
                 </p>
                 <div className="home-eight-two-in-buttons">
-                      <Link className="home-eight-two-in-activitie-link" href="/activities">
-                        View Activities
-                      </Link>
                       <Link className="home-eight-two-in-activitie-link" href="https://online.fliphtml5.com/ufgkg/qqpf/#p=1">
                           2018-2020
                       </Link>
@@ -438,6 +435,9 @@ export default function Home() {
                       </Link>
                       <Link className="home-eight-two-in-activitie-link" href="https://online.fliphtml5.com/ufgkg/esri/#p=1">
                           2022-2024
+                      </Link>
+                      <Link className="home-eight-two-in-activitie-link" href="/activities">
+                        View Activities
                       </Link>
                   </div>
                 </div>
