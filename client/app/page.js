@@ -6,7 +6,6 @@ import Model from "./components/modal/modal";
 import { MdOpenInNew } from "react-icons/md";
 import Book from './components/bookflip/book';
 
-
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -51,34 +50,17 @@ import Footer from "./components/footer/Footer";
 export default function Home() {
   const [showNavbar, setShowNavbar] = useState(false);
   const [num, setNum] = useState(1);
-  const [selectedYear, setSelectedYear] = useState("2022-2023");
   let scroll = 0;
-
+  //-----------------------For Modal------------------------//
   const [isModalOpen, setIsModalOpen] = useState(false);
-
   const handleOpenModal = () => {
     setIsModalOpen(true);
   };
-
   const handleCloseModal = () => {
     setIsModalOpen(false);
   };
-  const handleYearChange = (e) => {
-    setSelectedYear(e.target.value);
-  };
-  const getReportUrl = () => {
-    switch (selectedYear) {
-      case "2021-2022":
-        return "https://online.fliphtml5.com/ufgkg/kpva/#p=1";
-      case "2020-2021":
-        return "https://online.fliphtml5.com/ufgkg/ngko/#p=1";
-      case "2018-2020":
-        return "https://online.fliphtml5.com/ufgkg/qqpf/#p=1";
-      default:
-        return "https://online.fliphtml5.com/ufgkg/esri/#p=1";
-    }
-  };
 
+  //---------------------for Nav scroll----------------//
   useEffect(() => {
     window.addEventListener("scroll", () => {
       scroll = window.scrollY;
@@ -89,6 +71,7 @@ export default function Home() {
       }
     });
   }, []);
+  // -------------------------- For disabling Inspect ---------------//
   useEffect(() => {
     // Disable right-click
     const handleContextMenu = (event) => {
@@ -229,13 +212,13 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <Model
-              isOpen={isModalOpen}
-              onClose={handleCloseModal}
-              pdfUrl="https://firebasestorage.googleapis.com/v0/b/svrwebsite-1e892.appspot.com/o/PDFS%2FSVR.pdf?alt=media&token=39c8fe16-79c6-495d-b424-611285e88264"
-            />
-          </div>
-        </div>
+                <Model
+                  isOpen={isModalOpen}
+                  onClose={handleCloseModal}
+                  pdfUrl="https://firebasestorage.googleapis.com/v0/b/svrwebsite-1e892.appspot.com/o/PDFS%2FSVR.pdf?alt=media&token=39c8fe16-79c6-495d-b424-611285e88264"
+                />
+              </div>
+            </div>
 
         <div className="home-two">
           <div className="home-two-in">
@@ -434,47 +417,31 @@ export default function Home() {
             <div className="home-eight-two">
               <div className="home-eight-two-in">
                 <h1>
-                  Annual Reports : Smart Village Revolution
+                 Overall Annual Report : Smart Village Revolution
                 </h1>
                 <p>
                   Empowering Futures: A Journey of Impact and Growth – Annual
                   Reports of Smart Village Revolution from past years
                 </p>
                 <div className="home-eight-two-in-buttons">
-                    {/* <div className="home-eight-two-in-button-in">
-                        <button className="Social" onClick={handleOpenModal}>View Latest Social Internship Report</button>
-                      </div> */}
-                      {/* <div className="home-eight-two-in-button-in">
-                        <button className="Report" onClick={handleCloseModal}>View Reports</button>
-                      </div> */}
                       <Link className="home-eight-two-in-activitie-link" href="/activities">
                         View Activities
                       </Link>
-                    </div>
-                    {/* {isModalOpen && (
-                      <Modal isOpen={isModalOpen} onClose={handleCloseModal}> 
-                        <h2>Select Year to View Report</h2>
-                        <select value={selectedYear} onChange={handleYearChange}>
-                          <option value="2024">2024</option>
-                          <option value="2023">2023</option>
-                          <option value="2022">2022</option>
-                          <option value="2021">2021</option>
-                        </select>
-                        <div>
-                          <a
-                            href={getReportUrl()}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="report-link"
-                          >
-                            View {selectedYear} Report
-                          </a>
-                        </div>
-                        <button onClick={handleCloseModal}>Close</button>
-                      </Modal>
-                    )} */}
+                      <Link className="home-eight-two-in-activitie-link" href="https://online.fliphtml5.com/ufgkg/qqpf/#p=1">
+                          2018-2020
+                      </Link>
+                      <Link className="home-eight-two-in-activitie-link" href="https://online.fliphtml5.com/ufgkg/ngko/#p=1">
+                          2020-2021
+                      </Link>
+                      <Link className="home-eight-two-in-activitie-link" href="https://online.fliphtml5.com/ufgkg/kpva/#p=1">
+                          2021-2022
+                      </Link>
+                      <Link className="home-eight-two-in-activitie-link" href="https://online.fliphtml5.com/ufgkg/esri/#p=1">
+                          2022-2024
+                      </Link>
                   </div>
-              </div>
+                </div>
+            </div>
             </div>
           </div>
         <div className="home-four message">
@@ -695,7 +662,7 @@ export default function Home() {
                       id={num === 6 ? "se-active" : ""}
                     >
                       <div className="home-se-six-in se-cm-in">
-                        <p>Sustainable Development</p>
+                        <p>Energy Availablity and Efficieny</p>
                       </div>
                     </div>
                     <div
@@ -713,7 +680,7 @@ export default function Home() {
                       id={num === 8 ? "se-active" : ""}
                     >
                       <div className="home-se-eight-in se-cm-in">
-                        <p>Livelyhood</p>
+                        <p>Green Innovation</p>
                       </div>
                     </div>
                     <div
@@ -819,7 +786,7 @@ export default function Home() {
                       <div className="home-bt-one-in">
                         <div className="home-bt-one-in-header">
                           <div className="home-bt-one-in-header-in">
-                            <h1>Rural Infrastructure</h1>
+                            <h1>Village Infrastructure</h1>
                           </div>
                         </div>
                         <div className="home-bt-one-in-one">
