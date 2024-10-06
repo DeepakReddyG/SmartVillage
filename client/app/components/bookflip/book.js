@@ -51,8 +51,8 @@ const FlipBookComponent = () => {
     <div className="home-eight-one-in-book">
       <HTMLFlipBook
         className='flipbook-main'
-        width={600} // Adjust as needed
-        height={800} // Adjust as needed
+        width={window.innerWidth < 768 ? 300 : 600} // Responsive width for mobile
+        height={window.innerWidth < 768 ? 400 : 800} // Responsive height for mobile
         size="stretch"
         minWidth={300}
         maxWidth={1000}
@@ -60,7 +60,7 @@ const FlipBookComponent = () => {
         maxHeight={1536}
         showCover={true}
         mobileScrollSupport={true}
-        // Add more props as needed
+        useMouseEvents={true} // Enable mouse scroll for flipping
       >
         {images.map((imageUrl, index) => (
           <div className="flipbook-page" key={index}>

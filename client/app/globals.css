@@ -740,13 +740,16 @@ img{
   width: 90%;
   margin: auto;
   display: flex;
+  flex-wrap: wrap;
 }
 .home-eight-one {
   width: 60%;
 }
 .home-eight-one-in{
   width: 98%;
-  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .home-eight-one-in-book{
   width: 100%;
@@ -754,15 +757,14 @@ img{
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border: 2px solid red; */
 }
 .flipbook-main{
   width: 100%;
   height: 100%;
-  /* border: 2px solid black; */
+  overflow: hidden;
+  display: block;
 }
 .flipbook-page{
-  /* border: 2px solid green; */
   width: 100%;
   height: 100%;
   display: block;
@@ -772,7 +774,6 @@ img{
   height: 100%;
   object-fit: contain;
 }
-
 .home-eight-two {
   width: 40%;
 }
@@ -811,27 +812,14 @@ img{
   margin-left: 0.3rem;
 }
 .home-eight-two-in-buttons{
-  /* padding: 0.5rem; */
-  width:70%;
-
-  display: flex;
-  justify-content:flex-start;
-  align-items: flex-start;
+  width:100%;
   /* border: 2px solid red; */
-}
-.home-eight-two-in-button{
-  border: 2px solid green;
-  border-radius: 1rem;
-  padding: 0.8rem;
-  /* background-color: red; */
-  /* margin-left: 0.3rem; */
 }
 .home-eight-two-in-button-in{
   border: 2px solid green;
   border-radius: 1rem;
-  /* background-color: red; */
   padding: 0.5rem;
-  /* width: 100%; */
+  background-color: blue;
 }
 /* ----------------------- home-nine --------------------------- */
 

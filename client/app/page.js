@@ -51,6 +51,7 @@ import Footer from "./components/footer/Footer";
 export default function Home() {
   const [showNavbar, setShowNavbar] = useState(false);
   const [num, setNum] = useState(1);
+  const [selectedYear, setSelectedYear] = useState("2022-2023");
   let scroll = 0;
 
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -61,6 +62,21 @@ export default function Home() {
 
   const handleCloseModal = () => {
     setIsModalOpen(false);
+  };
+  const handleYearChange = (e) => {
+    setSelectedYear(e.target.value);
+  };
+  const getReportUrl = () => {
+    switch (selectedYear) {
+      case "2021-2022":
+        return "https://online.fliphtml5.com/ufgkg/kpva/#p=1";
+      case "2020-2021":
+        return "https://online.fliphtml5.com/ufgkg/ngko/#p=1";
+      case "2018-2020":
+        return "https://online.fliphtml5.com/ufgkg/qqpf/#p=1";
+      default:
+        return "https://online.fliphtml5.com/ufgkg/esri/#p=1";
+    }
   };
 
   useEffect(() => {
@@ -418,35 +434,49 @@ export default function Home() {
             <div className="home-eight-two">
               <div className="home-eight-two-in">
                 <h1>
-                  Annual Report 2023-24 Social Internship: Class of Y23 Students
+                  Annual Reports : Smart Village Revolution
                 </h1>
                 <p>
                   Empowering Futures: A Journey of Impact and Growth – Annual
-                  Report 2023-24 for Social Internship by the Y23 Students
+                  Reports of Smart Village Revolution from past years
                 </p>
                 <div className="home-eight-two-in-buttons">
-                  <div className="home-eight-two-in-button-in">
-                  <button onClick={handleOpenModal}>
-              View Report
-                  </button>
+                    {/* <div className="home-eight-two-in-button-in">
+                        <button className="Social" onClick={handleOpenModal}>View Latest Social Internship Report</button>
+                      </div> */}
+                      {/* <div className="home-eight-two-in-button-in">
+                        <button className="Report" onClick={handleCloseModal}>View Reports</button>
+                      </div> */}
+                      <Link className="home-eight-two-in-activitie-link" href="/activities">
+                        View Activities
+                      </Link>
+                    </div>
+                    {/* {isModalOpen && (
+                      <Modal isOpen={isModalOpen} onClose={handleCloseModal}> 
+                        <h2>Select Year to View Report</h2>
+                        <select value={selectedYear} onChange={handleYearChange}>
+                          <option value="2024">2024</option>
+                          <option value="2023">2023</option>
+                          <option value="2022">2022</option>
+                          <option value="2021">2021</option>
+                        </select>
+                        <div>
+                          <a
+                            href={getReportUrl()}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="report-link"
+                          >
+                            View {selectedYear} Report
+                          </a>
+                        </div>
+                        <button onClick={handleCloseModal}>Close</button>
+                      </Modal>
+                    )} */}
                   </div>
-                  <Link
-                    className="home-eight-two-in-activitie-link"
-                    href="/activities"
-                  >
-                    View Activities
-                  </Link>
-                  <Model 
-            isOpen={isModalOpen} 
-            onClose={handleCloseModal} 
-            pdfUrl="/ReportPDFS/Final_Report.pdf" 
-          />
-                </div>
               </div>
             </div>
           </div>
-        </div>
-
         <div className="home-four message">
           <div className="home-four-in">
             <div className="home-four-header">
