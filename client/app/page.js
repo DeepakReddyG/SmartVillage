@@ -410,7 +410,8 @@ export default function Home() {
             <div className="home-eight-one">
               <div className="home-eight-one-in">
                 <div className="home-eight-one-in-book">
-                  <Book/>
+                  {/* <Book/> */}
+                  <img src= "https://firebasestorage.googleapis.com/v0/b/svrwebsite-1e892.appspot.com/o/BookFlip%2F1.png?alt=media&token=95cf0077-bf1a-4e73-b426-acce93e5e9ac" alt="" />
                 </div>
               </div>
             </div>
@@ -424,6 +425,9 @@ export default function Home() {
                   Reports of Smart Village Revolution from past years
                 </p>
                 <div className="home-eight-two-in-buttons">
+                <button onClick={handleOpenModal}>
+              View Report
+                  </button>
                       <Link className="home-eight-two-in-activitie-link" href="https://online.fliphtml5.com/ufgkg/qqpf/#p=1">
                           2018-2020
                       </Link>
@@ -443,6 +447,11 @@ export default function Home() {
                 </div>
             </div>
             </div>
+            <Model 
+            isOpen={isModalOpen} 
+            onClose={handleCloseModal} 
+            pdfUrl="/ReportPDFS/Final_Report.pdf" 
+          />
           </div>
         <div className="home-four message">
           <div className="home-four-in">
