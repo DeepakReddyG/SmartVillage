@@ -23,10 +23,11 @@ const HomeNavbar = () => {
                             <h1>Smart Village <span>Revolution</span> </h1>
                         </div>
                         <div className="HomeNavBar-in-one-in-two">
-                            <Image 
-                                className='HomeNavBar-in-one-in-logo'
-                                src={KLLogo} 
-                                alt="KL Logo" />
+                            <Link href={"https://kluniversity.in"} className='HomeNavBar-in-one-in-logo'>
+                                <Image 
+                                    src={KLLogo} 
+                                    alt="KL Logo" />
+                            </Link>
                         </div>
                     </div>
                 </div>

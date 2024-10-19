@@ -948,16 +948,17 @@ img{
 }
 .home-ten-one-in {
   display: flex;
+  justify-content: space-evenly;
   width: 100%;
   padding: 2rem 0rem;
 }
 .home-ten-one-in-one {
-  width: 50%;
+  width: 70%;
   padding: 1rem 0rem;
 }
 .home-ten-one-in-one-in {
   width: 90%;
-}
+} 
 .home-ten-one-in-one-in h2 {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
@@ -984,16 +985,39 @@ img{
   background-color: white;
 }
 .home-ten-one-in-two {
-  width: 50%;
+  width: 30%;
 }
 .home-ten-one-in-two-in {
   padding: 1rem 0rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
 }
 .home-ten-one-in-two-in-image {
-  width: 100%;
+  width: 90%;
+  height: 25rem;
   border-radius: 1rem;
+  object-fit: center;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border: 2px solid black;
+}
+
+.home-ten-one-in-two-in p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: black;
+  font-size: 1.3rem;
+  color: black;
+  padding: 1rem 3.1rem;
+  border: 2px solid green;
+  border-radius: 1rem;
+  margin-top: 10px;
+  text-align: center;
+  background-color: rgb(0, 128, 0, 0.2);
+}
+.home-ten-one-in-two-in span {
+  font-size: 1rem;
 }
 
 
@@ -1270,7 +1294,7 @@ img{
       width: 100%;
     }
 
-    .home-team-about-two {
+    .home-ten-about-two {
       display: flex;
       flex-direction: column;
     }

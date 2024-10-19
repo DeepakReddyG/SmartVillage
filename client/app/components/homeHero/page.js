@@ -25,8 +25,8 @@ const HeroSection = () => {
         setImages(imageList);
         const infoList = [
             "Social Awareness",
-            "Women Empowerment",
             "Society Awareness",
+            "Women Empowerment",
             "Culture and Community",
         ];
         

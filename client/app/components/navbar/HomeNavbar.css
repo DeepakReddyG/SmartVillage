@@ -43,11 +43,8 @@
   .HomeNavBar-in-one-in-two {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    width: fit-content;
-    display: flex;
-    align-items: center;
     justify-content: center;
+    width: fit-content;
     width: 30%;
     background-color: rgb(245, 245, 245, 1);
     border: 2px solid green;
