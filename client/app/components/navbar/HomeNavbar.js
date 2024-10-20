@@ -23,10 +23,16 @@ const HomeNavbar = () => {
                             <h1>Smart Village <span>Revolution</span> </h1>
                         </div>
                         <div className="HomeNavBar-in-one-in-two">
-                            <Link href={"https://kluniversity.in"} className='HomeNavBar-in-one-in-logo'>
-                                <Image 
-                                    src={KLLogo} 
-                                    alt="KL Logo" />
+                            <Link href={"https://kluniversity.in"} legacyBehavior className='HomeNavBar-in-one-in-logo'>
+                                <a target="_blank" rel="noopener noreferrer">
+                                    <Image 
+                                        className='HomeNavBar-in-one-in-logo-image'
+                                        src={KLLogo} 
+                                        alt="KL Logo"
+                                        width={200}
+                                        height={200}
+                                         />
+                                </a>
                             </Link>
                         </div>
                     </div>

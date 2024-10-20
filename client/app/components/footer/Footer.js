@@ -4,7 +4,7 @@ import Tree from '../../Assets/Tree.png';
 import { Link as ScrollLink } from 'react-scroll';
 import './Footer.css';
 import Link from 'next/link';   
-import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter,FaTelegram } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaYoutube,FaTelegram } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -70,6 +70,9 @@ const Footer = () => {
                       </li> */}
                       <li>
                         <Link href="https://t.me/y23_svr_sac" target="_blank" rel="noopener noreferrer"><FaTelegram /> Telegram</Link>
+                      </li>
+                      <li>
+                        <Link href="#" target="_blank" rel="noopener noreferrer"><FaYoutube /> Youtube</Link>
                       </li>
                     </ul>
                   </div>

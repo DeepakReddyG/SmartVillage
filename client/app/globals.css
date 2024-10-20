@@ -369,7 +369,6 @@ img{
 .home-four-one-in-one p {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  color: black;
   font-size: 1.3rem;
   color: black;
   padding: 1rem 0rem;
@@ -401,7 +400,6 @@ img{
   font-weight: 400;
   color: black;
   font-size: 1.3rem;
-  color: black;
   width: 90%;
 }
 
@@ -647,7 +645,6 @@ img{
   font-weight: 400;
   color: black;
   font-size: 1.3rem;
-  color: black;
   width: 90%;
 }
 
@@ -805,13 +802,15 @@ img{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  /* gap: 0.5rem; */
+  gap: 0.5rem;
+  font-size: 1rem;
   /* border: 2px solid red; */
 }
-.home-eight-two-in-activitie-link{
+.home-eight-two-in-activitie-link,.home-eight-two-in-buttons button{
   border: 2px solid green;
   border-radius: 1rem;
   padding: 0.5rem;
+  text-align: center;
   font-size: 0.9rem;
 }
 /* ----------------------- home-nine --------------------------- */
@@ -995,12 +994,11 @@ img{
   align-items: end;
 }
 .home-ten-one-in-two-in-image {
-  width: 90%;
-  height: 25rem;
+  margin-top: -25%;
+  width: 100%;
   border-radius: 1rem;
-  object-fit: center;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  border: 2px solid black;
+  border: 2px solid green;
 }
 
 .home-ten-one-in-two-in p {
@@ -1008,14 +1006,14 @@ img{
   font-weight: 400;
   color: black;
   font-size: 1.3rem;
-  color: black;
-  padding: 1rem 3.1rem;
+  padding: 1rem 7rem;
   border: 2px solid green;
   border-radius: 1rem;
   margin-top: 10px;
   text-align: center;
   background-color: rgb(0, 128, 0, 0.2);
 }
+
 .home-ten-one-in-two-in span {
   font-size: 1rem;
 }

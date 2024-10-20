@@ -45,6 +45,7 @@
     align-items: center;
     justify-content: center;
     width: fit-content;
+    padding: .7rem 0;
     width: 30%;
     background-color: rgb(245, 245, 245, 1);
     border: 2px solid green;
@@ -70,11 +71,17 @@
  
   .HomeNavBar-in-one-in-logo {
     width: 70%;
-    /* display: flex; */
-    padding: 0.5rem;
-    /* align-items: center; */
-    /* justify-content: space-around; */
   }
+  
+  .HomeNavBar-in-one-in-logo a{
+    width: 70%;
+  }
+
+  .HomeNavBar-in-one-in-logo-image{
+    width: 60%;
+    margin: auto;
+  }
+
   .HomeNavBar-in-one-in span {
     color: orange;
     font-size: 1.5rem;

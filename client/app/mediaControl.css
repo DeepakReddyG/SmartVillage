@@ -80,6 +80,18 @@
       color: rgb(35, 35, 35);
       margin-bottom: 1rem;
     }
-  }
+
+    .home-ten-one-in-two-in p{
+      font-size: 1.5rem;
+      padding: 1rem 6rem;
+    }
+
+    /* .home-six-in-two-in{
+      padding: .5rem;
+    } */
+
+    .home-six-two-in p {
+        font-size: 1.7rem;
+      }
    
-  
+}

@@ -425,9 +425,9 @@ export default function Home() {
                   Reports of Smart Village Revolution from past years
                 </p>
                 <div className="home-eight-two-in-buttons">
-                <button onClick={handleOpenModal}>
-              View Report
-                  </button>
+                      <button onClick={handleOpenModal}>
+                        View Report
+                      </button>
                       <Link className="home-eight-two-in-activitie-link" href="https://online.fliphtml5.com/ufgkg/qqpf/#p=1">
                           2018-2020
                       </Link>
@@ -504,9 +504,9 @@ export default function Home() {
                       alt="Picture of the author"
                       // style={{ width: "100%" }}
                     />
-                     <p>
-                      Er.Koneru Satyanarayana <br />
-                      <span>Chancellor - KLEF</span>
+                    <p>
+                       Narendra modi <br />
+                       <span>Prime minister of India</span>
                     </p>
                   </div>
                 </div>
