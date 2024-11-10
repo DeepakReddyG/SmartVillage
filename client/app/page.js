@@ -47,7 +47,7 @@ export default function Home() {
     return () => clearTimeout(timer);
   }, []);
 
-return showAnimation ? (
+  return showAnimation ? (
     <div className="init">
       <h1>Smart Village Revolution</h1>
     </div>
