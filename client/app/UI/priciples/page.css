@@ -1,0 +1,159 @@
+.home-five {
+  width: 100%;
+  padding: 2rem 0rem;
+}
+
+.home-five-in {
+  width: 90%;
+  cursor: pointer;
+  margin: auto;
+}
+
+.home-five-one {
+  width: 100%;
+  padding: 1rem 0rem;
+  text-align: left;
+}
+
+.home-five-one h1 {
+  font-size: 3rem;
+  color: orange;
+  font-weight: 600;
+}
+
+.home-five-two {
+  width: 100%;
+}
+
+.home-five-two-in {
+  display: flex;
+  padding: 2rem 0rem;
+}
+
+.home-five-box-one {
+  width: 25%;
+}
+
+.home-ft-box-in {
+  width: 100%;
+  padding: 1rem 0rem;
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  gap: 0.3rem;
+}
+
+.se-cm {
+  width: 90%;
+  text-align: left;
+  padding: 0.5rem 0rem;
+}
+
+.se-cm-in {
+  width: 90%;
+  margin: auto;
+  padding: 1rem 0rem;
+  border-bottom: 2px solid white;
+  color: white;
+}
+
+.se-cm:hover {
+  background-color: white;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.se-cm-in:hover {
+  color: green;
+}
+
+.home-se-five:hover {
+  border-bottom-left-radius: 0rem;
+}
+
+.home-bt-one-in-header {
+  border: 2px solid green;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.home-bt-one-in-header h1 {
+  font-size: 1.5rem;
+  color: green;
+  font-weight: 600;
+}
+
+.home-five-box-two {
+  width: 75%;
+  background-color: white;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border-left: none;
+  background-color: rgb(0, 128, 0, 0.1);
+}
+
+.home-ft-box-two-in {
+  padding: 1rem 3rem;
+  height: 100%;
+}
+
+.home-bt-one-in-one {
+  width: 100%;
+  padding: 1rem 0rem;
+}
+
+.home-bt-one-in-one-in {
+  display: flex;
+}
+.home-bt-one-in-one-in-one {
+  width: 50%;
+}
+.home-bt-one-in-one-in-one-in {
+  width: 95%;
+  border: 2px solid green;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: rgb(0, 128, 0, 0.2);
+  height: 100%;
+}
+.home-bt-one-in-one-in-one-in p {
+  font-size: 1.1rem;
+  color: black;
+  color: rgb(35, 35, 35);
+  margin-bottom: 1rem;
+}
+.home-bt-one-in-one-in-two {
+  width: 50%;
+}
+.home-bt-one-in-one-in-two-in {
+  width: 100%;
+  margin: auto;
+}
+.home-bt-one-in-one-in-two-in-image {
+  width: 100%;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: rgb(0, 128, 0, 0.2);
+  border: 2px solid green;
+}
+
+#se-active {
+  background-color: white;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+#se-active p {
+  color: green;
+}
+
+.cm-bx-hide {
+  display: none;
+}
+
+#se-visible {
+  display: block;
+}

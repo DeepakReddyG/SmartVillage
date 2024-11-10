@@ -1,0 +1,93 @@
+.home-three {
+  width: 100%;
+  padding: 6rem 0rem 3rem 0rem;
+}
+
+.home-three-in {
+  width: 90%;
+  margin: auto;
+  display: flex;
+}
+.home-three-one {
+  width: 60%;
+}
+.home-three-one-in {
+  width: 90%;
+}
+.home-three-on-in-link {
+  width: 80%;
+  display: flex;
+  justify-content: flex-start;
+}
+.home-three-one h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: black;
+  font-size: 3rem;
+  color: green;
+  line-height: 3.8rem;
+  font-weight: 600;
+}
+.home-three-one p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: black;
+  font-size: 1.3rem;
+  color: black;
+  line-height: 2rem;
+  padding: 1rem 0rem;
+  color: rgb(35, 35, 35);
+  margin-bottom: 1rem;
+}
+.home-three-one-in-link {
+  border: 2px solid green;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  background-color: rgb(0, 128, 0);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home-three-one-in-link span {
+  margin-right: 0.5rem;
+}
+.home-three-two {
+  width: 40%;
+  border-radius: 1rem;
+}
+
+.home-three-two-in-two-boxes {
+  width: 100%;
+  background-color: rgb(0, 128, 0, 0.1);
+  border: 2px solid green;
+  border-radius: 1rem;
+}
+
+.home-three-two-in-two-box {
+  padding: 0.5rem 2rem;
+}
+.home-three-two-in-two-box-in {
+  width: 90%;
+}
+.home-three-two-in-two-box-in-one h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 5rem;
+  color: orange;
+}
+.home-three-two-in-two-box-in-two span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: green;
+}
+.home-three-two-in-two-box-in-two p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: black;
+  line-height: 2rem;
+  color: rgb(35, 35, 35);
+  margin-bottom: 1rem;
+}

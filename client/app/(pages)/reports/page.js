@@ -4,12 +4,12 @@ import './page.css';
 
 import eventData from './data';
 
-const itemsPerPage = 10; // Set the number of items per page
+const itemsPerPage = 10; 
 
 const Page = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [searchQuery, setSearchQuery] = useState('');
-  const [selectedDomain, setSelectedDomain] = useState(''); // State to track the selected domain for filtering
+  const [selectedDomain, setSelectedDomain] = useState('');  
 
   // Filter events based on search query and selected domain
   const filteredEventData = eventData.filter((event) =>

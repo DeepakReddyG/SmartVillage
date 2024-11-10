@@ -1,0 +1,109 @@
+.home-seven {
+  width: 100%;
+  padding: 2rem 0rem;
+}
+.home-seven-in {
+  width: 90%;
+  margin: auto;
+}
+.home-seven-in-header-in {
+  width: 100%;
+}
+.home-seven-in-header-in h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: black;
+  font-size: 3rem;
+  color: green;
+}
+
+.home-seven-in-one-in-boxes {
+  width: 100%;
+}
+
+/* ----------------------- home-eight --------------------------- */
+
+.home-eight {
+  width: 100%;
+  padding: 2rem 0rem 4rem 0rem;
+}
+.home-eight-in {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.home-eight-one {
+  width: 60%;
+}
+.home-eight-one-in {
+  width: 98%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-eight-one-in-book {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flipbook-main {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: block;
+}
+.flipbook-page {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.flipbook-page img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.home-eight-two {
+  width: 40%;
+}
+.home-eight-two-in {
+  width: 95%;
+  margin: auto;
+  padding-left: 1rem;
+}
+.home-eight-two-in h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: black;
+  font-size: 3rem;
+  color: orange;
+}
+.home-eight-two-in p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: black;
+  font-size: 1.3rem;
+  color: black;
+  line-height: 2rem;
+  padding: 1rem 0rem;
+  color: rgb(35, 35, 35);
+  margin-bottom: 1rem;
+}
+.home-eight-two-in-buttons {
+  width: 105%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+}
+.home-eight-two-in-activitie-link,
+.home-eight-two-in-buttons button {
+  border: 2px solid green;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+}

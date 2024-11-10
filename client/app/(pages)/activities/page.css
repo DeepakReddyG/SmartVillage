@@ -14,7 +14,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* padding: 0.5rem 0; */
 }
 .activities_table_in_header_in h1 {
     font-size: 2rem;
@@ -81,10 +80,6 @@
     border-collapse: collapse;
     border: 2px solid green;
     table-layout: fixed;
-    /* display: flex; */
-    /* background-color: red; */
-    /* flex-direction: column; */
-    /* display: table; */
     height: 84vh;
 }
 

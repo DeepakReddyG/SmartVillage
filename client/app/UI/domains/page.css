@@ -1,0 +1,98 @@
+.home-two {
+  width: 100%;
+  padding: 2rem 0rem;
+  background-color: white;
+}
+
+.home-two-in {
+  width: 90%;
+  margin: auto;
+}
+.home-two-in-header {
+  width: 100%;
+  padding: 2rem 0rem;
+}
+.home-two-in-header h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: black;
+  font-size: 3rem;
+  color: green;
+}
+
+.home-two-in-one {
+  width: 100%;
+  border: 2px solid green;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: rgb(0, 128, 0, 0.2);
+}
+
+.home-two-in-one-in {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.home-two-in-one-in-one {
+  width: 60%;
+  padding: 2rem 1rem;
+}
+
+.home-two-in-one-in-one-in p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: black;
+  font-size: 1.3rem;
+  color: black;
+}
+.home-two-in-one-in-two {
+  width: 40%;
+  padding: 2rem 1rem;
+}
+.home-two-in-one-in-two-in {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.home-two-in-one-in-two-in-image {
+  border-radius: 1rem;
+  border: 1px solid black;
+  width: 100%;
+}
+
+.home-two-in-one-in-boxes {
+  padding: 2rem 0rem 0rem 0rem;
+}
+
+.home-two-in-one-in-boxes-in {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 1rem 0rem;
+  row-gap: 5px;
+  column-gap: 5px;
+}
+
+.home-two-in-one-in-boxes-in-box {
+  /* border: 2px solid green; */
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.home-two-in-one-in-boxes-in-box-in {
+  border: 2px solid green;
+  background-color: white;
+  border-radius: 1rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  color: green;
+}
+
+.home-two-in-one-in-boxes-in-box-in p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: green;
+  font-size: 1rem;
+}

@@ -2,32 +2,9 @@
     width: 100%;
 }
 
-
-/* <thead>
-<tr>
-    <th>S NO</th>
-    <th>DATE</th>
-    <th>NAME OF THE EVENT</th>
-    <th>DOMAIN</th>
-    <th>NUMBER OF STUDENTS PARTICIPATED</th>
-</tr>
-</thead>
-<tbody>
-{eventData.map((event) => (
-    <tr key={event.sno}>
-    <td>{event.sno}</td>
-    <td>{event.date}</td>
-    <td>{event.eventName}</td>
-    <td>{event.domain}</td>
-    <td>{event.participants}</td>
-    </tr>
-))}
-</tbody> */
-
 .reports-table {
     width: 90%;
     margin: auto;
-    /* padding: 2rem 0rem; */
     height: 100vh;
     overflow: hidden;
 }
@@ -35,7 +12,6 @@
     border: 2px solid green;
     width: 100%;
     border-collapse: collapse;
-
 }
 
 .reports-table-top {
@@ -44,6 +20,7 @@
     align-items: center;
     margin: 1rem 0rem;
 }
+
 .back-to-home {
     background-color: green;
     color: white;
@@ -58,10 +35,6 @@
     border: 1px solid green;
     padding: 0.4rem;
 }
-/* .reports-table-top select {
-    border: 1px solid green;
-}
- */
 
 .reports-table-in-one table td, .reports-table-in-one table th {
     border: 1px solid green;
@@ -133,4 +106,3 @@
     border: 1px solid black;
     padding: 0.2rem 0.8rem;
 }
-
