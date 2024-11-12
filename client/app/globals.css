@@ -991,7 +991,8 @@ img{
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: end;
+  justify-content: center;
+  align-items: center;
 }
 .home-ten-one-in-two-in-image {
   margin-top: -25%;
