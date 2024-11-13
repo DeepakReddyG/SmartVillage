@@ -505,7 +505,7 @@ export default function Home() {
                       // style={{ width: "100%" }}
                     />
                     <p>
-                        Shri Narendra modi <br />
+                        Shri Narendra Modi <br />
                        <span>Prime minister of India</span>
                     </p>
                   </div>
@@ -536,7 +536,7 @@ export default function Home() {
 
                     <p>
                       Er.Koneru Satyanarayana <br />
-                      <span>Chancellor / President - KLEF</span>
+                      <span>Chancellor & President - KLEF</span>
                     </p>
                   </div>
                   <div className="home-four-one-in-two"></div>
