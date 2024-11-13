@@ -3,10 +3,9 @@ import React, { useEffect, useState } from "react";
 import HeroImage from "./hero";
 import MultiImageDisplay from "./displayAsset";
 import Footer from "../components/SmallFooter/footer";
-import { storage } from "../../firebase";
-import { ref, listAll, getDownloadURL } from "firebase/storage";
 import "./page.css";
 import { FaArrowLeft } from "react-icons/fa";
+import { galleryImages } from './image.js';
 
 const backToHome = () => {
   window.location.href = "/";
@@ -17,55 +16,54 @@ const scrollToTop = () => {
 };
 
 const App = () => {
-  const [imagePaths, setImagePaths] = useState([]);
+  const [images, setImages] = useState([]);
+  const [filteredImages, setFilteredImages] = useState([]);
   const [showScrollToTop, setShowScrollToTop] = useState(false);
-  const [visiblecount, setVisibleCount] = useState(12); 
+  const [visibleCount, setVisibleCount] = useState(12);
+  const [selectedDomain, setSelectedDomain] = useState('All');
   const heroImagePath = "gallery/GalleryImage.jpeg";
 
+  // Get unique domains from the gallery images
+  const domains = ['All', ...new Set(galleryImages.map(img => img.domain))];
+
   useEffect(() => {
-    const fetchImages = async () => {
-      const imagesRef = ref(storage, "gallery");
-      const result = await listAll(imagesRef);
-
-      const urls = await Promise.all(
-        result.items.map((item) => getDownloadURL(item))
-      );
-
-      setImagePaths(urls);
-    };
-
-    fetchImages();
+    // Initialize with all images from the image.js file
+    setImages(galleryImages);
+    setFilteredImages(galleryImages);
   }, []);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 850) {
-        setShowScrollToTop(true);
-      } else {
-        setShowScrollToTop(false);
-      }
+      setShowScrollToTop(window.scrollY > 850);
     };
     window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const handleDomainFilter = (domain) => {
+    setSelectedDomain(domain);
+    if (domain === 'All') {
+      setFilteredImages(images);
+    } else {
+      const filtered = images.filter(img => img.domain === domain);
+      setFilteredImages(filtered);
+    }
+    setVisibleCount(12); // Reset visible count when changing domains
+  };
 
-  const currentImages = imagePaths.slice(0, visiblecount);
+  const currentImages = filteredImages.slice(0, visibleCount);
 
   const loadMore = () => {
-    setVisibleCount(visiblecount + 12);
-  }
+    setVisibleCount(prev => prev + 12);
+  };
+
   return (
     <div className="gallery">
       <div className="gallery-main">
         <div className="hero-image">
           <HeroImage imagePath={heroImagePath} />
-            <div className="hero-info">
-              {/* <p>Conducting Drawing competition in Government School</p> */}
-            </div>
+          <div className="hero-info">
+          </div>
         </div>
         <div className="g-one">
           <div className="g-one-in">
@@ -78,17 +76,15 @@ const App = () => {
         </div>
         <div className="gallery-options">
           <div className="gallery-options-in">
-            <button className="gallery-option">All</button>
-            <button className="gallery-option">Health & Hygiene</button>
-            <button className="gallery-option">Digital Literacy</button>
-            <button className="gallery-option">Cultural Exchange</button>
-            <button className="gallery-option">Green Innovation</button>
-            <button className="gallery-option">Livelihood Enchancement</button>
-          <button className="gallery-option">Women Empowerment</button>
-          <button className="gallery-option">Social community Actions</button>
-          <button className="gallery-option">Village Infrastructure</button>
-          <button className="gallery-option">Agriculture</button>
-            <button className="gallery-option">Quality Education</button>
+            {domains.map((domain) => (
+              <button 
+                key={domain}
+                className={`gallery-option ${selectedDomain === domain ? 'active' : ''}`}
+                onClick={() => handleDomainFilter(domain)}
+              >
+                {domain}
+              </button>
+            ))}
           </div>
         </div>
         <div className="gallery-three">
@@ -102,9 +98,11 @@ const App = () => {
             </button>
           )}
         </div>
-        <div className="load-more">
-          <button onClick={loadMore} className="load-more-button">Load More</button>
-        </div>
+        {visibleCount < filteredImages.length && (
+          <div className="load-more">
+            <button onClick={loadMore} className="load-more-button">Load More</button>
+          </div>
+        )}
       </div>
 
       <div className="Footer">
