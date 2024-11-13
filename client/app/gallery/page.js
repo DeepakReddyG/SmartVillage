@@ -76,6 +76,21 @@ const App = () => {
             </p>
           </div>
         </div>
+        <div className="gallery-options">
+          <div className="gallery-options-in">
+            <button className="gallery-option">All</button>
+            <button className="gallery-option">Health & Hygiene</button>
+            <button className="gallery-option">Digital Literacy</button>
+            <button className="gallery-option">Cultural Exchange</button>
+            <button className="gallery-option">Green Innovation</button>
+            <button className="gallery-option">Livelihood Enchancement</button>
+          <button className="gallery-option">Women Empowerment</button>
+          <button className="gallery-option">Social community Actions</button>
+          <button className="gallery-option">Village Infrastructure</button>
+          <button className="gallery-option">Agriculture</button>
+            <button className="gallery-option">Quality Education</button>
+          </div>
+        </div>
         <div className="gallery-three">
           <MultiImageDisplay imagePaths={currentImages} />
         </div>

@@ -3,8 +3,9 @@
     margin: auto;
 }
 .gallery-main {
-    width: 98%;
+    width: 90%;
     margin: auto;
+    padding: 2rem 0;
 }
 .hero-image {
     position: relative;
@@ -31,28 +32,62 @@
 }
 .g-one {
     width: 100%;
-    padding: 1rem;
+    padding: 0;
 }
+
 .g-one-in {
-    width: 90%;
+    width: 100%;
     margin: auto;
+    text-align: center;
 }
 .g-one-in h1 {
-    font-size: 3rem;
-    color: green;
+    font-size: 2.5rem;
+    color: #F4A024;
     font-weight: bold;
-    width: 80%;
+    width: 100%;
     margin-bottom: 1rem;
 }
 .g-one-in p {
-    font-size: 1.5rem;
-    color: black;
-    width: 90%;
+    font-size: 1.2rem;
+    color: #2B7A0B;
+    width: 100%;
+    padding: 0.5rem 0;
+    text-align: center;
+}
+.gallery-options{
+    width: 100%;
     padding: 1rem 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.gallery-options-in{
+    width: auto;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: transparent;
+    padding: 0.5rem;
+}
+.gallery-options-in button{
+    background-color: #E8F5E9;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    color: #2B7A0B;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.gallery-options-in button:hover {
+    background-color: #2B7A0B;
+    color: white;
 }
 .gallery-three {
     padding: 1rem 0;
-    width: 90%;
+    width: 95%;
     margin:auto
 }
 .gallery-three-prime {
@@ -134,7 +169,7 @@
  
     .gallery-main {
         width: 95%;
-        margin: auto;
+        padding: 1rem 0;
     }
 
     .hero-image img {
@@ -145,17 +180,10 @@
 
     .g-one-in h1 {
         font-size: 2rem;
-        color: green;
-        font-weight: bold;
-        width: 90%;
-        margin-bottom: 1rem;
     }
 
     .g-one-in p {
         font-size: 1rem;
-        color: black;
-        width: 90%;
-        padding: 1rem 0;
     }
 
     .gallery-image {
@@ -184,5 +212,10 @@
         margin-bottom: 1rem;
         font-size: 1.2rem;
         margin-left: 1rem;
+    }
+
+    .gallery-options-in button {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
     }
 }
