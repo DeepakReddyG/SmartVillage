@@ -27,9 +27,21 @@ const App = () => {
   const domains = ['All', ...new Set(galleryImages.map(img => img.domain))];
 
   useEffect(() => {
+    // Get the domain from URL query parameter
+    const urlParams = new URLSearchParams(window.location.search);
+    const domainFromUrl = urlParams.get('domain');
+    
     // Initialize with all images from the image.js file
     setImages(galleryImages);
-    setFilteredImages(galleryImages);
+    
+    // If domain is specified in URL, filter images accordingly
+    if (domainFromUrl) {
+      setSelectedDomain(domainFromUrl);
+      const filtered = galleryImages.filter(img => img.domain === domainFromUrl);
+      setFilteredImages(filtered);
+    } else {
+      setFilteredImages(galleryImages);
+    }
   }, []);
 
   useEffect(() => {
