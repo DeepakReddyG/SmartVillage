@@ -91,8 +91,6 @@ export default function Home() {
       }
     };
     document.addEventListener('keydown', handleKeyDown);
-
-    // Cleanup event listeners on component unmount
     return () => {
       document.removeEventListener('contextmenu', handleContextMenu);
       document.removeEventListener('keydown', handleKeyDown);
@@ -115,7 +113,10 @@ export default function Home() {
   }, []);
 
   // ---------- Boot Animation END ------------
-
+  
+  const handleDomainClick = (domain) => {
+    window.location.href = `/gallery?domain=${encodeURIComponent(domain)}`;
+  };
   return showAnimation ? (
     <div class="init">
       <h1>Smart Village Revolution</h1>
@@ -287,124 +288,93 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-        <div className="home-seven">
-          <div className="home-seven-in">
-            <div className="home-seven-in-header">
-              <div className="home-seven-in-header-in">
-                <h1>Areas of Work</h1>
+  <div className="home-seven">
+    <div className="home-seven-in">
+      <div className="home-seven-in-header">
+        <div className="home-seven-in-header-in">
+          <h1>Areas of Work</h1>
+        </div>
+      </div>
+      <div className="home-seven-in-one">
+        <div className="home-seven-in-one-in">
+          <div className="home-seven-in-one-in-boxes">
+            <div className="home-seven-in-one-in-boxes-in">
+              <div className="home-seven-in-one-in-box" onClick={() => handleDomainClick("Health & Hygiene")}>
+                <div className="home-seven-in-one-in-box-in">
+                  <Image src={SVR_UpdateImage_16} alt="Health & Hygiene" />
+                  <p>Health & Hygiene</p>
+                </div>
               </div>
-            </div>
-            <div className="home-seven-in-one">
-              <div className="home-seven-in-one-in">
-                <div className="home-seven-in-one-in-boxes">
-                  <div className="home-seven-in-one-in-boxes-in">
-                    <div className="home-seven-in-one-in-box">
-                      <div className="home-seven-in-one-in-box-in">
-                        <Image
-                          src={SVR_UpdateImage_16}
-                          alt="Picture of the author"
-                        ></Image>
-                        <p>Health & Hygiene</p>
-                      </div>
-                    </div>
 
-                    <div className="home-seven-in-one-in-box">
-                      <div className="home-seven-in-one-in-box-in">
-                        <Image
-                          src={AreasOfWork_Image_1}
-                          alt="Picture of the author"
-                        ></Image>
-                        <p>Quality Education</p>
-                      </div>
-                    </div>
+              <div className="home-seven-in-one-in-box" onClick={() => handleDomainClick("Quality Education")}>
+                <div className="home-seven-in-one-in-box-in">
+                  <Image src={AreasOfWork_Image_1} alt="Quality Education" />
+                  <p>Quality Education</p>
+                </div>
+              </div>
 
-                    <div className="home-seven-in-one-in-box">
-                      <div className="home-seven-in-one-in-box-in">
-                        <Image
-                          src={AreasOfWork_Image_9}
-                          alt="Picture of the author"
-                        ></Image>
-                        <p>Agriculture</p>
-                      </div>
-                    </div>
+              <div className="home-seven-in-one-in-box" onClick={() => handleDomainClick("Agriculture")}>
+                <div className="home-seven-in-one-in-box-in">
+                  <Image src={AreasOfWork_Image_9} alt="Agriculture" />
+                  <p>Agriculture</p>
+                </div>
+              </div>
 
-                    <div className="home-seven-in-one-in-box">
-                      <div className="home-seven-in-one-in-box-in">
-                        <Image
-                          src={communityInfrastructure}
-                          alt="Picture of the author"
-                        ></Image>
-                        <p>Village Infrastructure</p>
-                      </div>
-                    </div>
+              <div className="home-seven-in-one-in-box" onClick={() => handleDomainClick("Village Infrastructure")}>
+                <div className="home-seven-in-one-in-box-in">
+                  <Image src={communityInfrastructure} alt="Village Infrastructure" />
+                  <p>Village Infrastructure</p>
+                </div>
+              </div>
 
-                    <div className="home-seven-in-one-in-box">
-                      <div className="home-seven-in-one-in-box-in">
-                        <Image
-                          src={AreasOfWork_Image_4}
-                          alt="Picture of the author"
-                        ></Image>
-                        <p>Social Community Actions</p>
-                      </div>
-                    </div>
+              <div className="home-seven-in-one-in-box" onClick={() => handleDomainClick("Social Community Actions")}>
+                <div className="home-seven-in-one-in-box-in">
+                  <Image src={AreasOfWork_Image_4} alt="Social Community Actions" />
+                  <p>Social Community Actions</p>
+                </div>
+              </div>
 
-                    <div className="home-seven-in-one-in-box">
-                      <div className="home-seven-in-one-in-box-in">
-                        <Image
-                          src={SVR_UpdateImage_13}
-                          alt="Picture of the author"
-                        ></Image>
-                        <p>Women Empowerment</p>
-                      </div>
-                    </div>
+              <div className="home-seven-in-one-in-box" onClick={() => handleDomainClick("Women Empowerment")}>
+                <div className="home-seven-in-one-in-box-in">
+                  <Image src={SVR_UpdateImage_13} alt="Women Empowerment" />
+                  <p>Women Empowerment</p>
+                </div>
+              </div>
 
-                    <div className="home-seven-in-one-in-box">
-                      <div className="home-seven-in-one-in-box-in">
-                        <Image
-                          src={AreasOfWork_Image_8}
-                          alt="Picture of the author"
-                        ></Image>
-                        <p>Livilihood Enhancement</p>
-                      </div>
-                    </div>
+              <div className="home-seven-in-one-in-box" onClick={() => handleDomainClick("Livelihood Enhancement")}>
+                <div className="home-seven-in-one-in-box-in">
+                  <Image src={AreasOfWork_Image_8} alt="Livelihood Enhancement" />
+                  <p>Livelihood Enhancement</p>
+                </div>
+              </div>
 
-                    <div className="home-seven-in-one-in-box">
-                      <div className="home-seven-in-one-in-box-in">
-                        <Image
-                          src={SVR_UpdateImage_14}
-                          alt="Picture of the author"
-                        ></Image>
-                        <p>Digital Literacy</p>
-                      </div>
-                    </div>
+              <div className="home-seven-in-one-in-box" onClick={() => handleDomainClick("Digital Literacy")}>
+                <div className="home-seven-in-one-in-box-in">
+                  <Image src={SVR_UpdateImage_14} alt="Digital Literacy" />
+                  <p>Digital Literacy</p>
+                </div>
+              </div>
 
-                    <div className="home-seven-in-one-in-box">
-                      <div className="home-seven-in-one-in-box-in">
-                        <Image
-                          src={AreasOfWork_Image_6}
-                          alt="Picture of the author"
-                        ></Image>
-                        <p>Green Innovation</p>
-                      </div>
-                    </div>
+              <div className="home-seven-in-one-in-box" onClick={() => handleDomainClick("Green Innovation")}>
+                <div className="home-seven-in-one-in-box-in">
+                  <Image src={AreasOfWork_Image_6} alt="Green Innovation" />
+                  <p>Green Innovation</p>
+                </div>
+              </div>
 
-                    <div className="home-seven-in-one-in-box">
-                      <div className="home-seven-in-one-in-box-in">
-                        <Image
-                          src={culturalExchange}
-                          alt="Picture of the author"
-                        ></Image>
-                        <p>Cultural Exchange</p>
-                      </div>
-                    </div>
-                  </div>
+              <div className="home-seven-in-one-in-box" onClick={() => handleDomainClick("Cultural Exchange")}>
+                <div className="home-seven-in-one-in-box-in">
+                  <Image src={culturalExchange} alt="Cultural Exchange" />
+                  <p>Cultural Exchange</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
+      </div>
+    </div>
+  </div>
+);
         <div className="home-eight">
           <div className="home-eight-in">
             <div className="home-eight-one">

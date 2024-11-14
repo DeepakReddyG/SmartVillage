@@ -227,11 +227,6 @@ export const galleryImages = [
     domain: 'Health & Hygiene',
   },
   {
-    id: 17,
-    url: 'https://i.ibb.co/Q9q0q0x/2b143e82-a759-462d-b29a-5e76dc4baa63.jpg',
-    domain: 'Health & Hygiene',
-  },
-  {
     id: 18,
     url: 'https://i.ibb.co/ZcnXwd4/f55e7b37-aa46-4a03-a5f0-b87b795d1f28.jpg',
     domain: 'Health & Hygiene',
@@ -713,42 +708,42 @@ export const galleryImages = [
   {
     id: 113,
     url: 'https://i.imghippo.com/files/Fxk9573sg.jpg',
-    domain: 'Livelihood Enchancement',
+    domain: 'Livelihood Enhancement',
   },
   {
     id: 114,
     url: 'https://i.imghippo.com/files/uxJ4569aL.jpg',
-    domain: 'Livelihood Enchancement',
+    domain: 'Livelihood Enhancement',
   },
   {
     id: 115,
     url: 'https://i.imghippo.com/files/SxhV4523dBU.jpg',
-    domain: 'Livelihood Enchancement',
+    domain: 'Livelihood Enhancement',
   },
   {
     id: 116,
     url: 'https://i.imghippo.com/files/uIB7179JM.jpg',
-    domain: 'Livelihood Enchancement',
+    domain: 'Livelihood Enhancement',
   },
   {
     id: 117,
     url: 'https://i.imghippo.com/files/ejBl9134mDw.jpg',
-    domain: 'Livelihood Enchancement',
+    domain: 'Livelihood Enhancement',
   },
   {
     id: 118,
     url: 'https://i.imghippo.com/files/URT3190b.jpg',
-    domain: 'Livelihood Enchancement',
+    domain: 'Livelihood Enhancement',
   },
   {
     id: 119,
     url: 'https://i.imghippo.com/files/Uni6569SAk.jpg',
-    domain: 'Livelihood Enchancement',
+    domain: 'Livelihood Enhancement',
   },
   {
     id: 120,
     url: 'https://i.imghippo.com/files/ZgH5485KA.jpg',
-    domain: 'Livelihood Enchancement',
+    domain: 'Livelihood Enhancement',
   },
   {
     id: 121,
