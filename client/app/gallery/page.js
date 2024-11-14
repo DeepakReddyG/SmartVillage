@@ -42,7 +42,7 @@ const App = () => {
     } else {
       setFilteredImages(galleryImages);
     }
-  }, []);
+  }, [selectedDomain, images]);
 
   useEffect(() => {
     const handleScroll = () => {

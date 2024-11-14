@@ -23,8 +23,15 @@ function Page() {
 
   // Function to convert date to a common format for sorting
   const formatDateForSorting = (date) => {
-    const [day, month, year] = date.split('.');
-    return `${year.padStart(4, '20')}-${month.padStart(2, '0')}-${day.padStart(2, '0')}`;
+    // Handle both "." and "-" separators
+    const parts = date.includes('.') ? date.split('.') : date.split('-');
+    const [day, month, year] = parts;
+    
+    // Ensure year is padded correctly
+    const fullYear = year.length === 2 ? `20${year}` : year;
+    
+    // Return ISO format date string
+    return `${fullYear}-${month.padStart(2, '0')}-${day.padStart(2, '0')}`;
   };
 
   // Sort the data based on the selected column and order
@@ -40,6 +47,9 @@ function Page() {
       }
     });
   }
+
+  // Add this after sorting the data
+  console.log('Sorted data:', sortedData.slice(0, 5)); // Show first 5 entries
 
   // Filtered data based on search query and selected year
   const filteredData = sortedData.filter(event =>

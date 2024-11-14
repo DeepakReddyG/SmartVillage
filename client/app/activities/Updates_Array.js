@@ -1,4 +1,95 @@
 const newData = [
+    {
+        "Year": "2024-25",
+        "Name of the activity": "Clean Water & Sanitation Exhibition",
+        "Date of the activity \nDD-MM-YYYY": "08-10-2024",
+        "Number of students participated in such activities": "68",
+        "Web Links": "https://kluniversityin-my.sharepoint.com/personal/brambabu_kluniversity_in/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fbrambabu%5Fkluniversity%5Fin%2FDocuments%2FSVR%20OCTOBER%20MONTH%20REPORTS%202024%2FClean%20Water%20%26%20Sanitation%20Exhibition%2Epdf%2Epdf%20%281%29%2Epdf%20%281%29%2Epdf%20%281%29%2Epdf&parent=%2Fpersonal%2Fbrambabu%5Fkluniversity%5Fin%2FDocuments%2FSVR%20OCTOBER%20MONTH%20REPORTS%202024&ga=1"
+    },
+    {
+        "Year": "2024-25",
+        "Name of the activity": "DRAWING COMPETITION",
+        "Date of the activity \nDD-MM-YYYY": "01-10-2024",
+        "Number of students participated in such activities": "15",
+        "Web Links": "https://kluniversityin-my.sharepoint.com/personal/brambabu_kluniversity_in/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fbrambabu%5Fkluniversity%5Fin%2FDocuments%2FSVR%20OCTOBER%20MONTH%20REPORTS%202024%2FDRAWING%20COMPETITION%2Epdf%20%281%29%2Epdf%20%281%29%2Epdf%20%281%29%2Epdf&parent=%2Fpersonal%2Fbrambabu%5Fkluniversity%5Fin%2FDocuments%2FSVR%20OCTOBER%20MONTH%20REPORTS%202024&ga=1"
+    },
+    {
+        "Year": "2024-25",
+        "Name of the activity": "First-Aid Training Workshop (CPR) (Phase-4)",
+        "Date of the activity \nDD-MM-YYYY": "16-10-2024",
+        "Number of students participated in such activities": "28",
+        "Web Links": "https://kluniversityin-my.sharepoint.com/personal/brambabu_kluniversity_in/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fbrambabu%5Fkluniversity%5Fin%2FDocuments%2FSVR%20OCTOBER%20MONTH%20REPORTS%202024%2FFirst%2DAid%20Training%20Workshop%28CPR%29%28Phase%2D4%29%2Epdf%20%281%29%2Epdf%2Epdf%20%281%29%2Epdf&parent=%2Fpersonal%2Fbrambabu%5Fkluniversity%5Fin%2FDocuments%2FSVR%20OCTOBER%20MONTH%20REPORTS%202024&ga=1"
+    },
+    {
+        "Year": "2024-25",
+        "Name of the activity": "Global Hand Washing Day",
+        "Date of the activity \nDD-MM-YYYY": "15-10-2024",
+        "Number of students participated in such activities": "69",
+        "Web Links": "https://kluniversityin-my.sharepoint.com/:b:/g/personal/brambabu_kluniversity_in/ET1naAl4KbdMs-xpd_fokS4B-to5vfSw5CeUPpxgQdBbhg?e=YAiErc"
+    },
+    {
+        "Year": "2024-25",
+        "Name of the activity": "Green School Program (Phase-1)",
+        "Date of the activity \nDD-MM-YYYY": "03-10-2024",
+        "Number of students participated in such activities": "59",
+        "Web Links": "https://kluniversityin-my.sharepoint.com/personal/brambabu_kluniversity_in/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fbrambabu%5Fkluniversity%5Fin%2FDocuments%2FSVR%20OCTOBER%20MONTH%20REPORTS%202024%2FGreen%20School%20Program%20%28Phase%2D1%29%2Epdf%2Epdf%20%281%29%2Epdf%20%281%29%2Epdf%20%281%29%2Epdf&parent=%2Fpersonal%2Fbrambabu%5Fkluniversity%5Fin%2FDocuments%2FSVR%20OCTOBER%20MONTH%20REPORTS%202024&ga=1"
+    },
+    {
+        "Year": "2024-25",
+        "Name of the activity": "Livestock Management Training",
+        "Date of the activity \nDD-MM-YYYY": "23-10-2024",
+        "Number of students participated in such activities": "45",
+        "Web Links": "https://kluniversityin-my.sharepoint.com/:b:/g/personal/brambabu_kluniversity_in/ESvqq7EYkuRCq6cvItGe-rEBa3lqxsY6L8El16PiXqx-UA?e=117SVG"
+    },
+    {
+        "Year": "2024-25",
+        "Name of the activity": "SWATCHATHA HI SEVA",
+        "Date of the activity \nDD-MM-YYYY": "02-10-2024",
+        "Number of students participated in such activities": "74",
+        "Web Links": "https://kluniversityin-my.sharepoint.com/personal/brambabu_kluniversity_in/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fbrambabu%5Fkluniversity%5Fin%2FDocuments%2FSVR%20OCTOBER%20MONTH%20REPORTS%202024%2FSWATCHATHA%20HI%20SEVA%2Epdf%20%282%29%20%281%29%2Epdf%2Epdf&parent=%2Fpersonal%2Fbrambabu%5Fkluniversity%5Fin%2FDocuments%2FSVR%20OCTOBER%20MONTH%20REPORTS%202024&ga=1"
+    },
+    {
+        "Year": "2024-25",
+        "Name of the activity": "Training On Internet Safety (Phase-1)",
+        "Date of the activity \nDD-MM-YYYY": "22-10-2024",
+        "Number of students participated in such activities": "30",
+        "Web Links": "https://kluniversityin-my.sharepoint.com/:b:/g/personal/brambabu_kluniversity_in/EfTMaja6lY5Ftwf7QniRIpIBo2XJxWqRuRkmLpRJgDdbMQ?e=F90NUv"
+    },
+    {
+        "Year": "2024-25",
+        "Name of the activity": "Tree Adoption Campaign (Phase-2)",
+        "Date of the activity \nDD-MM-YYYY": "02-10-2024",
+        "Number of students participated in such activities": "74",
+        "Web Links": "https://kluniversityin-my.sharepoint.com/:b:/g/personal/brambabu_kluniversity_in/EWcAUddZm5BGiWp2lkeCFScBq1ogc0xZJlFu5_IoigfSpQ?e=L6YV5k"
+    },
+    {
+        "Year": "2024-25",
+        "Name of the activity": "Vriksharopam Mahotsav (Tree Plantation) (Phase-4)",
+        "Date of the activity \nDD-MM-YYYY": "01-10-2024",
+        "Number of students participated in such activities": "74",
+        "Web Links": "https://kluniversityin-my.sharepoint.com/:b:/g/personal/brambabu_kluniversity_in/ETqvO7s5cOZFiUiviRAMSRwBXsqa5AjNtvKcarCrXFLDKA?e=yfGXKw"
+    },
+    {
+        "Year": "2024-25",
+        "Name of the activity": "Workshop on Balanced Nutrition and Healthy Eating Habits",
+        "Date of the activity \nDD-MM-YYYY": "16-10-2024",
+        "Number of students participated in such activities": "65",
+        "Web Links": "https://kluniversityin-my.sharepoint.com/:b:/g/personal/brambabu_kluniversity_in/EQY-DaQiXsZOhGd2qVyK3kUBlGXZ6OLKvivl_zS84juJfw?e=06o0JD"
+    },
+    {
+        "Year": "2024-25",
+        "Name of the activity": "Workshop On Agroforestry",
+        "Date of the activity \nDD-MM-YYYY": "25-10-2024",
+        "Number of students participated in such activities": "42",
+        "Web Links": "https://kluniversityin-my.sharepoint.com/:b:/g/personal/brambabu_kluniversity_in/Ef7nzuNC23JHmFZZAiFxftYBN1zJWN-JHahCVGJJpsz1_Q?e=KauAxp"
+    },
+    {
+        "Year": "2024-25",
+        "Name of the activity": "Workshop on Rain Water Harvesting Techniques (Phase-2)",
+        "Date of the activity \nDD-MM-YYYY": "18-10-2024",
+        "Number of students participated in such activities": "28",
+        "Web Links": "https://kluniversityin-my.sharepoint.com/:b:/g/personal/brambabu_kluniversity_in/EYvnvPZ4wjpKsI-A0Hs4pSMBVr6zcuH9Pl7tlxv7gqaB2w?e=Yqj7Fr"
+    },
         {
             "Year": "2022-23",
             "Name of the activity": "Awareness Propgrammes & Rallies on Usage of Plastic",
@@ -9,7 +100,7 @@ const newData = [
         {
             "Year": "2022-23",
             "Name of the activity": "World Population Day",
-            "Date of the activity \nDD-MM-YYYY": "11.07.2022",
+            "Date of the activity \nDD-MM-YYYY": "11-07-2022",
             "Number of students participated in such activities": "81",
             "Web Links": "https://www.kluniversity.in/iqac-files/SSR-2023/c3/3.6.2/Activities/93.pdf"
         },
@@ -1112,13 +1203,13 @@ const newData = [
             "Number of students participated in such activities": "35",
             "Web Links": "https://kluniversityin-my.sharepoint.com/:b:/g/personal/2300040028_kluniversity_in/EeNYkLT3Z99Mk2y5KZZTrfsBmQ2oY3fdXeGrzXJdwn-hVw?e=EBw5Vp"
         },
-        {
-            "Year": "2023-2024",
-            "Name of the activity": "Campus Greening Workshop",
-            "Date of the activity \nDD-MM-YYYY": "10.08.2024",
-            "Number of students participated in such activities": "35",
-            "Web Links": "https://kluniversityin-my.sharepoint.com/:b:/g/personal/2300040028_kluniversity_in/EXD3bON2H6BNm5c4XBBj-pIBPQ7frO7cGRQQGCdKOABQJQ?e=kDoxlB"
-        },
+        // {
+        //     "Year": "2023-2024",
+        //     "Name of the activity": "Campus Greening Workshop",
+        //     "Date of the activity \nDD-MM-YYYY": "10.08.2024",
+        //     "Number of students participated in such activities": "35",
+        //     "Web Links": "https://kluniversityin-my.sharepoint.com/:b:/g/personal/2300040028_kluniversity_in/EXD3bON2H6BNm5c4XBBj-pIBPQ7frO7cGRQQGCdKOABQJQ?e=kDoxlB"
+        // },
         {
             "Year": "2023-2024",
             "Name of the activity": "Triksharopam Mahotsav (Tree Plantation) (Phase-3)",
