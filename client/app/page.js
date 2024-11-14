@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import CountUp from "react-countup";
 import Model from "./components/modal/modal";
 import { MdOpenInNew } from "react-icons/md";
-import Book from './components/bookflip/book';
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -395,20 +394,20 @@ export default function Home() {
                   Reports of Smart Village Revolution from past years
                 </p>
                 <div className="home-eight-two-in-buttons">
-                      <button onClick={handleOpenModal}>
-                        View Report
-                      </button>
-                      <Link className="home-eight-two-in-activitie-link" href="https://online.fliphtml5.com/ufgkg/qqpf/#p=1">
+                      <Link className="home-eight-two-in-activitie-link" href="https://kluniversityin-my.sharepoint.com/personal/brambabu_kluniversity_in/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fbrambabu%5Fkluniversity%5Fin%2FDocuments%2FAttachments%2FSVR%20BOOK%20%2D%202018%20%2D%202020%203%2Epdf&parent=%2Fpersonal%2Fbrambabu%5Fkluniversity%5Fin%2FDocuments%2FAttachments&ct=1731580431619&or=OWA%2DNT%2DMail&cid=dc7a4a94%2D656f%2D9f5f%2Db1a5%2Db85851012bf7&ga=1">
                           2018-2020
                       </Link>
-                      <Link className="home-eight-two-in-activitie-link" href="https://online.fliphtml5.com/ufgkg/ngko/#p=1">
+                      <Link className="home-eight-two-in-activitie-link" href="https://kluniversityin-my.sharepoint.com/personal/brambabu_kluniversity_in/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fbrambabu%5Fkluniversity%5Fin%2FDocuments%2FAttachments%2FSVR%20BOOK%20%2D%202020%20%2D%202021%203%2Epdf&parent=%2Fpersonal%2Fbrambabu%5Fkluniversity%5Fin%2FDocuments%2FAttachments&ct=1731580451119&or=OWA%2DNT%2DMail&cid=11ac52af%2D05f2%2Dcc5d%2D9726%2D75131aff825e&ga=1">
                           2020-2021
                       </Link>
-                      <Link className="home-eight-two-in-activitie-link" href="https://online.fliphtml5.com/ufgkg/kpva/#p=1">
+                      <Link className="home-eight-two-in-activitie-link" href="https://kluniversityin-my.sharepoint.com/personal/brambabu_kluniversity_in/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fbrambabu%5Fkluniversity%5Fin%2FDocuments%2FAttachments%2FSVR%20%20BOOK%20%2D%202021%20%2D%202022%203%2Epdf&parent=%2Fpersonal%2Fbrambabu%5Fkluniversity%5Fin%2FDocuments%2FAttachments&ct=1731580471020&or=OWA%2DNT%2DMail&cid=4eced625%2Dee17%2Dc26f%2D2d6e%2Dcd85551fc2be&ga=1">
                           2021-2022
                       </Link>
-                      <Link className="home-eight-two-in-activitie-link" href="https://online.fliphtml5.com/ufgkg/esri/#p=1">
-                          2022-2024
+                      <Link className="home-eight-two-in-activitie-link" href="https://kluniversityin-my.sharepoint.com/personal/brambabu_kluniversity_in/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fbrambabu%5Fkluniversity%5Fin%2FDocuments%2FAttachments%2FSVR%20BOOK%202022%20%2D%202023%202%2Epdf&parent=%2Fpersonal%2Fbrambabu%5Fkluniversity%5Fin%2FDocuments%2FAttachments&ct=1731580491705&or=OWA%2DNT%2DMail&cid=4f243eda%2D8a94%2De66f%2Db88f%2Dfa7cfdae815b&ga=1">
+                          2022-2023
+                      </Link>
+                      <Link className="home-eight-two-in-activitie-link" href="https://kluniversityin-my.sharepoint.com/personal/brambabu_kluniversity_in/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fbrambabu%5Fkluniversity%5Fin%2FDocuments%2FAttachments%2FSVR%20BOOK%202023%20%2D%202024%2Epdf&parent=%2Fpersonal%2Fbrambabu%5Fkluniversity%5Fin%2FDocuments%2FAttachments&ct=1731580571288&or=OWA%2DNT%2DMail&cid=df766c62%2De0a6%2D2828%2D1f82%2D58982a95d17a&ga=1">
+                          2023-2024
                       </Link>
                       <Link className="home-eight-two-in-activitie-link" href="/activities">
                         View Activities
@@ -420,7 +419,7 @@ export default function Home() {
             <Model 
             isOpen={isModalOpen} 
             onClose={handleCloseModal} 
-            pdfUrl="/ReportPDFS/Final_Report.pdf" 
+            pdfUrl="/ReportPDFS/SVR_Book.pdf" 
           />
         </div>
 
