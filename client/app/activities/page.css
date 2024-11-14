@@ -1,5 +1,4 @@
 .activities_table {
-
     width: 100%;
 }
 .activities_table_in {
@@ -76,19 +75,13 @@
 .activities_table_in_one_in {
     width: 100%;
 }
-
 .activities_table_in_one_in table {
     width: 100%;
     border-collapse: collapse;
     border: 2px solid green;
     table-layout: fixed;
-    /* display: flex; */
-    /* background-color: red; */
-    /* flex-direction: column; */
-    /* display: table; */
     height: 84vh;
 }
-
 .activities_table_in_one_in table th {
     border: 2px solid black;
     text-align: center;
@@ -97,7 +90,6 @@
     background-color: green;
     color: white;
 }
-
 .activities_table_in_one_in table th:nth-child(1) {
     width: 10%; /* Adjusted for Date column header */
 }

@@ -58,6 +58,9 @@ export default function Home() {
   const handleCloseModal = () => {
     setIsModalOpen(false);
   };
+  const OpenLink = () => {
+    window.open("https://firebasestorage.googleapis.com/v0/b/svrwebsite-1e892.appspot.com/o/PDFS%2FSVR.pdf?alt=media&token=39c8fe16-79c6-495d-b424-611285e88264", "_blank");
+  }
 
   //---------------------for Nav scroll----------------//
   useEffect(() => {
@@ -152,9 +155,9 @@ export default function Home() {
                 <div className="home-three-on-in-link">
                   <button
                     className="home-three-one-in-link"
-                    onClick={handleOpenModal}
+                    onClick={OpenLink}
                   >
-                    <span>Learn More About What We Do</span> <MdOpenInNew />
+                    <span>Learn More About What We Do</span>
                   </button>
                 </div>
               </div>
@@ -212,11 +215,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-                <Model
-                  isOpen={isModalOpen}
-                  onClose={handleCloseModal}
-                  pdfUrl="https://firebasestorage.googleapis.com/v0/b/svrwebsite-1e892.appspot.com/o/PDFS%2FSVR.pdf?alt=media&token=39c8fe16-79c6-495d-b424-611285e88264"
-                />
               </div>
             </div>
 
@@ -387,31 +385,31 @@ export default function Home() {
             <div className="home-eight-two">
               <div className="home-eight-two-in">
                 <h1>
-                 Overall Annual Report : Smart Village Revolution
+                 Overall Annual Reports : Smart Village Revolution
                 </h1>
                 <p>
                   Empowering Futures: A Journey of Impact and Growth – Annual
                   Reports of Smart Village Revolution from past years
                 </p>
                 <div className="home-eight-two-in-buttons">
-                      <Link className="home-eight-two-in-activitie-link" href="https://kluniversityin-my.sharepoint.com/personal/brambabu_kluniversity_in/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fbrambabu%5Fkluniversity%5Fin%2FDocuments%2FAttachments%2FSVR%20BOOK%20%2D%202018%20%2D%202020%203%2Epdf&parent=%2Fpersonal%2Fbrambabu%5Fkluniversity%5Fin%2FDocuments%2FAttachments&ct=1731580431619&or=OWA%2DNT%2DMail&cid=dc7a4a94%2D656f%2D9f5f%2Db1a5%2Db85851012bf7&ga=1">
+                      <a className="home-eight-two-in-activitie-link" href="https://kluniversityin-my.sharepoint.com/personal/brambabu_kluniversity_in/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fbrambabu%5Fkluniversity%5Fin%2FDocuments%2FAttachments%2FSVR%20BOOK%20%2D%202018%20%2D%202020%203%2Epdf&parent=%2Fpersonal%2Fbrambabu%5Fkluniversity%5Fin%2FDocuments%2FAttachments&ct=1731580431619&or=OWA%2DNT%2DMail&cid=dc7a4a94%2D656f%2D9f5f%2Db1a5%2Db85851012bf7&ga=1" target="_blank" rel="noopener noreferrer">
                           2018-2020
-                      </Link>
-                      <Link className="home-eight-two-in-activitie-link" href="https://kluniversityin-my.sharepoint.com/personal/brambabu_kluniversity_in/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fbrambabu%5Fkluniversity%5Fin%2FDocuments%2FAttachments%2FSVR%20BOOK%20%2D%202020%20%2D%202021%203%2Epdf&parent=%2Fpersonal%2Fbrambabu%5Fkluniversity%5Fin%2FDocuments%2FAttachments&ct=1731580451119&or=OWA%2DNT%2DMail&cid=11ac52af%2D05f2%2Dcc5d%2D9726%2D75131aff825e&ga=1">
+                      </a>
+                      <a className="home-eight-two-in-activitie-link" href="https://kluniversityin-my.sharepoint.com/personal/brambabu_kluniversity_in/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fbrambabu%5Fkluniversity%5Fin%2FDocuments%2FAttachments%2FSVR%20BOOK%20%2D%202020%20%2D%202021%203%2Epdf&parent=%2Fpersonal%2Fbrambabu%5Fkluniversity%5Fin%2FDocuments%2FAttachments&ct=1731580451119&or=OWA%2DNT%2DMail&cid=11ac52af%2D05f2%2Dcc5d%2D9726%2D75131aff825e&ga=1" target="_blank" rel="noopener noreferrer">
                           2020-2021
-                      </Link>
-                      <Link className="home-eight-two-in-activitie-link" href="https://kluniversityin-my.sharepoint.com/personal/brambabu_kluniversity_in/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fbrambabu%5Fkluniversity%5Fin%2FDocuments%2FAttachments%2FSVR%20%20BOOK%20%2D%202021%20%2D%202022%203%2Epdf&parent=%2Fpersonal%2Fbrambabu%5Fkluniversity%5Fin%2FDocuments%2FAttachments&ct=1731580471020&or=OWA%2DNT%2DMail&cid=4eced625%2Dee17%2Dc26f%2D2d6e%2Dcd85551fc2be&ga=1">
+                      </a>
+                      <a className="home-eight-two-in-activitie-link" href="https://kluniversityin-my.sharepoint.com/personal/brambabu_kluniversity_in/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fbrambabu%5Fkluniversity%5Fin%2FDocuments%2FAttachments%2FSVR%20%20BOOK%20%2D%202021%20%2D%202022%203%2Epdf&parent=%2Fpersonal%2Fbrambabu%5Fkluniversity%5Fin%2FDocuments%2FAttachments&ct=1731580471020&or=OWA%2DNT%2DMail&cid=4eced625%2Dee17%2Dc26f%2D2d6e%2Dcd85551fc2be&ga=1" target="_blank" rel="noopener noreferrer">
                           2021-2022
-                      </Link>
-                      <Link className="home-eight-two-in-activitie-link" href="https://kluniversityin-my.sharepoint.com/personal/brambabu_kluniversity_in/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fbrambabu%5Fkluniversity%5Fin%2FDocuments%2FAttachments%2FSVR%20BOOK%202022%20%2D%202023%202%2Epdf&parent=%2Fpersonal%2Fbrambabu%5Fkluniversity%5Fin%2FDocuments%2FAttachments&ct=1731580491705&or=OWA%2DNT%2DMail&cid=4f243eda%2D8a94%2De66f%2Db88f%2Dfa7cfdae815b&ga=1">
+                      </a>
+                      <a className="home-eight-two-in-activitie-link" href="https://kluniversityin-my.sharepoint.com/personal/brambabu_kluniversity_in/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fbrambabu%5Fkluniversity%5Fin%2FDocuments%2FAttachments%2FSVR%20BOOK%202022%20%2D%202023%202%2Epdf&parent=%2Fpersonal%2Fbrambabu%5Fkluniversity%5Fin%2FDocuments%2FAttachments&ct=1731580491705&or=OWA%2DNT%2DMail&cid=4f243eda%2D8a94%2De66f%2Db88f%2Dfa7cfdae815b&ga=1" target="_blank" rel="noopener noreferrer">
                           2022-2023
-                      </Link>
-                      <Link className="home-eight-two-in-activitie-link" href="https://kluniversityin-my.sharepoint.com/personal/brambabu_kluniversity_in/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fbrambabu%5Fkluniversity%5Fin%2FDocuments%2FAttachments%2FSVR%20BOOK%202023%20%2D%202024%2Epdf&parent=%2Fpersonal%2Fbrambabu%5Fkluniversity%5Fin%2FDocuments%2FAttachments&ct=1731580571288&or=OWA%2DNT%2DMail&cid=df766c62%2De0a6%2D2828%2D1f82%2D58982a95d17a&ga=1">
+                      </a>
+                      <a className="home-eight-two-in-activitie-link" href="https://kluniversityin-my.sharepoint.com/personal/brambabu_kluniversity_in/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fbrambabu%5Fkluniversity%5Fin%2FDocuments%2FAttachments%2FSVR%20BOOK%202023%20%2D%202024%2Epdf&parent=%2Fpersonal%2Fbrambabu%5Fkluniversity%5Fin%2FDocuments%2FAttachments&ct=1731580571288&or=OWA%2DNT%2DMail&cid=df766c62%2De0a6%2D2828%2D1f82%2D58982a95d17a&ga=1" target="_blank" rel="noopener noreferrer">
                           2023-2024
-                      </Link>
-                      <Link className="home-eight-two-in-activitie-link" href="/activities">
-                        View Activities
-                      </Link>
+                      </a>
+                      <a className="home-eight-two-in-activitie-link" href="/activities" target="_blank" rel="noopener noreferrer">
+                          View Activities
+                      </a>
                   </div>
                 </div>
             </div>
