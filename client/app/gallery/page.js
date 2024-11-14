@@ -42,7 +42,7 @@ const App = () => {
     } else {
       setFilteredImages(galleryImages);
     }
-  }, [selectedDomain, images]);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -55,9 +55,9 @@ const App = () => {
   const handleDomainFilter = (domain) => {
     setSelectedDomain(domain);
     if (domain === "All") {
-      setFilteredImages(images);
+      setFilteredImages(galleryImages);
     } else {
-      const filtered = images.filter((img) => img.domain === domain);
+      const filtered = galleryImages.filter((img) => img.domain === domain);
       setFilteredImages(filtered);
     }
     setVisibleCount(12); // Reset visible count when changing domains

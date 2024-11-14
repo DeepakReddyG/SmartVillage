@@ -75,11 +75,6 @@ function Page() {
   return (
     <div className='activities_table'>
       <div className="activities_table_in">
-        <div className="activities_table_in_header">
-          <div className="activities_table_in_header_in">
-            {/* <h1>Activities List</h1> */}
-          </div>
-        </div>
         <div className="activities_table_in_HeaderTwo">
           <div className="activities_table_in_HeaderTwo_in">
             <div className="activities_table_in_search">
@@ -99,7 +94,21 @@ function Page() {
             </div>
             <div className="activities_table_in_BackHome">
               <div className="activities_table_in_BackHome_in">
-                <a href="/">Back to Home</a>
+                <div className='DateOption'>
+                  <select className='DateOption'
+                    id="year"
+                    value={selectedYear}
+                    onChange={e => setSelectedYear(e.target.value)}
+                    >
+                      <option value="">All</option>
+                      {years.map(year => (
+                        <option key={year} value={year}>{year}</option>
+                      ))}
+                    </select>
+                </div>
+                <div className='BackHome'>
+                  <a href="/">Back to Home</a>
+                </div>
               </div>
             </div>
           </div>
@@ -110,16 +119,6 @@ function Page() {
               <thead>
                 <tr>
                   <th>Date &nbsp;
-                    <select className='DateOption'
-                      id="year"
-                      value={selectedYear}
-                      onChange={e => setSelectedYear(e.target.value)}
-                    >
-                      <option value="">All</option>
-                      {years.map(year => (
-                        <option key={year} value={year}>{year}</option>
-                      ))}
-                    </select>
                   </th>
                   {/* <th>Village Name</th> */}
                   <th>Name of the Activity</th>
