@@ -59,6 +59,8 @@ function Page() {
 
   // Extract unique years from the data for the dropdown options
   const years = Array.from(new Set(data.map(event => event['Year'])));
+  const totalStudents = filteredData.reduce((sum, event) => sum + parseInt(event["Number of students participated in such activities"] || 0, 10), 0);
+
 
   return (
     <div className='activities_table'>
@@ -142,6 +144,9 @@ function Page() {
               <div className="activities_table_in_count">
                 <button className="event-count-button">
                   Events Count: {filteredData.length}
+                </button>
+                <button className="student-count-button">
+                  Total Students: {totalStudents}
                 </button>
               </div>
             </div>

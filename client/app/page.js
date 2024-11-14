@@ -116,10 +116,6 @@ export default function Home() {
 
   // ---------- Boot Animation END ------------
 
-  const handleDomainClick = (domain) => {
-    window.location.href = `/gallery?domain=${encodeURIComponent(domain)}`;
-  };
-
   return showAnimation ? (
     <div class="init">
       <h1>Smart Village Revolution</h1>
@@ -303,26 +299,35 @@ export default function Home() {
               <div className="home-seven-in-one-in">
                 <div className="home-seven-in-one-in-boxes">
                   <div className="home-seven-in-one-in-boxes-in">
-                    <Link href="/gallery?domain=Health" className="home-seven-in-one-in-box">
+                    <div className="home-seven-in-one-in-box">
                       <div className="home-seven-in-one-in-box-in">
-                        <Image src={SVR_UpdateImage_16} alt="Picture of the author"></Image>
+                        <Image
+                          src={SVR_UpdateImage_16}
+                          alt="Picture of the author"
+                        ></Image>
                         <p>Health & Hygiene</p>
                       </div>
-                    </Link>
+                    </div>
 
-                    <Link href="/gallery?domain=Education" className="home-seven-in-one-in-box">
+                    <div className="home-seven-in-one-in-box">
                       <div className="home-seven-in-one-in-box-in">
-                        <Image src={AreasOfWork_Image_1} alt="Picture of the author"></Image>
+                        <Image
+                          src={AreasOfWork_Image_1}
+                          alt="Picture of the author"
+                        ></Image>
                         <p>Quality Education</p>
                       </div>
-                    </Link>
+                    </div>
 
-                    <Link href="/gallery?domain=Agriculture" className="home-seven-in-one-in-box">
+                    <div className="home-seven-in-one-in-box">
                       <div className="home-seven-in-one-in-box-in">
-                        <Image src={AreasOfWork_Image_9} alt="Picture of the author"></Image>
+                        <Image
+                          src={AreasOfWork_Image_9}
+                          alt="Picture of the author"
+                        ></Image>
                         <p>Agriculture</p>
                       </div>
-                    </Link>
+                    </div>
 
                     <div className="home-seven-in-one-in-box">
                       <div className="home-seven-in-one-in-box-in">
