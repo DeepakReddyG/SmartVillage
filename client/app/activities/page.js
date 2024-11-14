@@ -92,8 +92,8 @@ function Page() {
                 <h1>Activities List</h1>
               </div>
             </div>
-            <div className="activities_table_in_BackHome">
-              <div className="activities_table_in_BackHome_in">
+            <div className="activities_table_in_Options">
+              <div className="activities_table_in_Options_in">
                 <div className='DateOption'>
                   <select className='DateOption'
                     id="year"

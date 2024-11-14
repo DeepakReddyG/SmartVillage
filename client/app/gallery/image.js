@@ -846,11 +846,6 @@ export const galleryImages = [
     domain: 'Village Infrastructure',
   },
   {
-    id: 141,
-    url: 'https://i.imghippo.com/files/MJn4484jtA.jpg',
-    domain: 'Village Infrastructure',
-  },
-  {
     id: 142,
     url: 'https://i.imghippo.com/files/ejMI9763Jg.jpg',
     domain: 'Village Infrastructure',
