@@ -10,16 +10,16 @@ export const galleryImages = [
     url: 'https://i.imghippo.com/files/qZSg5165yyA.jpeg',
     domain: 'Agriculture',
   },
-  {
-    id: 3,
-    url: 'https://i.imghippo.com/files/HMZI1986IPo.jpeg',
-    domain: 'Agriculture',
-  },
-  {
-    id: 4,
-    url: 'https://i.imghippo.com/files/mGy7031pU.jpg',
-    domain: 'Agriculture',
-  },
+  // {
+  //   id: 3,
+  //   url: 'https://i.imghippo.com/files/HMZI1986IPo.jpeg',
+  //   domain: 'Agriculture',
+  // },
+  // {
+  //   id: 4,
+  //   url: 'https://i.imghippo.com/files/mGy7031pU.jpg',
+  //   domain: 'Agriculture',
+  // },
   {
     id: 5,
     url: 'https://i.imghippo.com/files/HPSD6115IuQ.jpg',
@@ -161,11 +161,11 @@ export const galleryImages = [
     domain: 'Agriculture',
   },
   //   --health & hygiene
-  {
-    id: 4,
-    url: 'https://i.ibb.co/bv0SVGD/1e238b8f-d733-43fc-b33a-daafb13ae240.jpg',
-    domain: 'Health & Hygiene',
-  },
+  // {
+  //   id: 4,
+  //   url: 'https://i.ibb.co/bv0SVGD/1e238b8f-d733-43fc-b33a-daafb13ae240.jpg',
+  //   domain: 'Health & Hygiene',
+  // },
   {
     id: 5,
     url: 'https://i.ibb.co/yyF1qxH/2b143e82-a759-462d-b29a-5e76dc4baa63.jpg',
@@ -605,11 +605,11 @@ export const galleryImages = [
     domain: 'Social Community Actions',
   },
   // Quality Education images
-  {
-    id: 93,
-    url: 'https://i.imghippo.com/files/iBuC5204axs.jpg',
-    domain: 'Quality Education',
-  },
+  // {
+  //   id: 93,
+  //   url: 'https://i.imghippo.com/files/iBuC5204axs.jpg',
+  //   domain: 'Quality Education',
+  // },
   {
     id: 94,
     url: 'https://i.imghippo.com/files/cF6719Co.jpg',
@@ -715,16 +715,16 @@ export const galleryImages = [
     url: 'https://i.imghippo.com/files/uxJ4569aL.jpg',
     domain: 'Livelihood Enhancement',
   },
-  {
-    id: 115,
-    url: 'https://i.imghippo.com/files/SxhV4523dBU.jpg',
-    domain: 'Livelihood Enhancement',
-  },
-  {
-    id: 116,
-    url: 'https://i.imghippo.com/files/uIB7179JM.jpg',
-    domain: 'Livelihood Enhancement',
-  },
+  // {
+  //   id: 115,
+  //   url: 'https://i.imghippo.com/files/SxhV4523dBU.jpg',
+  //   domain: 'Livelihood Enhancement',
+  // },
+  // {
+  //   id: 116,
+  //   url: 'https://i.imghippo.com/files/uIB7179JM.jpg',
+  //   domain: 'Livelihood Enhancement',
+  // },
   {
     id: 117,
     url: 'https://i.imghippo.com/files/ejBl9134mDw.jpg',
@@ -820,11 +820,11 @@ export const galleryImages = [
     url: 'https://i.imghippo.com/files/T8384ZU.jpg',
     domain: 'Digital Literacy',
   },
-  {
-    id: 136,
-    url: 'https://i.imghippo.com/files/jdN6029KA.jpg',
-    domain: 'Village Infrastructure',
-  },
+  // {
+  //   id: 136,
+  //   url: 'https://i.imghippo.com/files/jdN6029KA.jpg',
+  //   domain: 'Village Infrastructure',
+  // },
   {
     id: 137,
     url: 'https://i.imghippo.com/files/pAO3513hHI.jpg',

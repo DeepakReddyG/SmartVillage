@@ -24,7 +24,7 @@ const App = () => {
   const heroImagePath = "gallery/GalleryImage.jpeg";
 
   // Get unique domains from the gallery images
-  const domains = ["All", ...new Set(galleryImages.map((img) => img.domain))];
+  const domains = ["All", ...Array.from(new Set(galleryImages.map((img) => img.domain)))];
 
   useEffect(() => {
     // Get the domain from URL query parameter
