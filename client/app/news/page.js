@@ -2,39 +2,22 @@
 import React, { useEffect, useState } from 'react';
 import newsArticles from './news_array';
 import './news.css';
-import { FaArrowLeft } from 'react-icons/fa';
+import { FaArrowUp, FaSearch } from 'react-icons/fa';
 import Footer from "../components/SmallFooter/footer";
 
 export default function NewsPage() {
   const [searchQuery, setSearchQuery] = useState('');
-  const [articlesToShow, setArticlesToShow] = useState(12); // Initially show 10 articles
+  const [articlesToShow, setArticlesToShow] = useState(999);
   const [showScrollToTop, setShowScrollToTop] = useState(false);
   const [sortBy, setSortBy] = useState('DATE');
   const [sortOrder, setSortOrder] = useState('desc');
 
-  // Function to handle sorting
-  const handleSort = (column) => {
-    if (sortBy === column) {
-      setSortOrder(sortOrder === 'desc' ? 'asc' : 'desc');
-    } else {
-      setSortBy(column);
-      setSortOrder('desc');
-    }
-  };
-
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 10) {
-        setShowScrollToTop(true);
-      } else {
-        setShowScrollToTop(false);
-      }
+      setShowScrollToTop(window.scrollY > 300);
     };
     window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const scrollToTop = () => {
@@ -46,24 +29,12 @@ export default function NewsPage() {
     return new Date(year, month - 1, day).toISOString().split('T')[0];
   };
 
-  const formatDateForDisplay = (date) => {
-    const [year, month, day] = date.split('-');
-    return `${day}-${month}-${year}`;
-  };
-
   // Sort and filter the news articles
-  let sortedArticles = [...newsArticles];
-  if (sortBy) {
-    sortedArticles = sortedArticles.sort((a, b) => {
-      if (sortBy === 'DATE') {
-        const dateA = convertToISO(a.date);
-        const dateB = convertToISO(b.date);
-        return sortOrder === 'asc' ? dateA.localeCompare(dateB) : dateB.localeCompare(dateA);
-      } else {
-        return sortOrder === 'asc' ? a[sortBy].localeCompare(b[sortBy]) : b[sortBy].localeCompare(a[sortBy]);
-      }
-    });
-  }
+  const sortedArticles = [...newsArticles].sort((a, b) => {
+    const dateA = convertToISO(a.date);
+    const dateB = convertToISO(b.date);
+    return sortOrder === 'asc' ? dateA.localeCompare(dateB) : dateB.localeCompare(dateA);
+  });
 
   const filteredArticles = sortedArticles.filter(article =>
     Object.values(article).some(value =>
@@ -71,10 +42,10 @@ export default function NewsPage() {
     )
   );
 
-  const currentArticles = filteredArticles.slice(0, articlesToShow); // Display only the number of articles based on `articlesToShow`
+  const currentArticles = filteredArticles.slice(0, articlesToShow);
 
   const loadMoreArticles = () => {
-    setArticlesToShow(prev => prev + 10); // Increase articles by 10 each time the button is clicked
+    setArticlesToShow(prev => prev + 6);
   };
 
   return (
@@ -82,7 +53,7 @@ export default function NewsPage() {
       <div className="back-to-home">
         {showScrollToTop && (
           <button onClick={scrollToTop} className="back-to-top-button">
-            Scroll to Top
+            <FaArrowUp />
           </button>
         )}
       </div>
@@ -92,11 +63,15 @@ export default function NewsPage() {
             <div className="newsContainer-in-header-in">
               <header className="header">
                 <div className="header-in-one">
-                  <input
-                    type="text"
-                    placeholder="Search..."
-                    value={searchQuery}
-                    onChange={e => setSearchQuery(e.target.value)} />
+                  <div className="search-wrapper">
+                    <FaSearch className="search-icon" />
+                    <input
+                      type="text"
+                      placeholder="Search articles..."
+                      value={searchQuery}
+                      onChange={e => setSearchQuery(e.target.value)}
+                    />
+                  </div>
                 </div>
                 <div className="header-in-two">
                   <h1>Our Achievements in News Articles</h1>
@@ -107,30 +82,29 @@ export default function NewsPage() {
               </header>
             </div>
           </div>
-          <div className="newsContainer-in-main">
-            <section className="articlesGrid">
+
+          <div className="articles-container">
+            <div className="articles-grid">
               {currentArticles.map(article => (
-                <div key={article.id} className="articleCard">
-                  <a href={article.link} className="articleLink" target="_blank" rel="noopener noreferrer">
-                    <img src={article.imageUrl} alt={article.title} className="articleImage" />
-                    <h2 className="articleTitle">{article.title}</h2>
-                    <p className="articleExcerpt">{article.excerpt}</p>
-                  </a>
+                <div key={article.id} className="article-card">
+                  <div className="article-image-wrapper">
+                    <img src={article.imageUrl} alt={article.title} />
+                  </div>
+                  <div className="article-content">
+                    <span className="article-date">{article.date}</span>
+                    <h2>{article.title}</h2>
+                    <p>{article.excerpt}</p>
+                    <a href={article.link} target="_blank" rel="noopener noreferrer" 
+                       className="read-more-btn">Read Full Article</a>
+                  </div>
                 </div>
               ))}
-            </section>
-          </div>
-          {/* <div className="load-more-container">
-            {articlesToShow < filteredArticles.length && (
-              <button onClick={loadMoreArticles} className="load-more-button">
-                Load More
-              </button>
-            )}
-          </div> */}
-          <div className="Footer">
-            <Footer />
+            </div>
           </div>
         </div>
+        <div className='footer-news'>
+            <Footer />
+          </div>
       </div>
     </>
   );

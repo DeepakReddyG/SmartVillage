@@ -8,6 +8,12 @@ const nextConfig = {
           port: '',
           pathname: '/v0/b/**', // This pattern allows images from Firebase Storage
         },
+        {
+          protocol: 'https',
+          hostname: 'i.imghippo.com',
+          port: '',
+          pathname: '/files/**', // This pattern allows images from Firebase Storage
+        }
       ],
     },
   };

@@ -64,11 +64,6 @@ const App = () => {
   };
 
   const currentImages = filteredImages.slice(0, visibleCount);
-
-  const loadMore = () => {
-    setVisibleCount((prev) => prev + 12);
-  };
-
   return (
     <div className="gallery">
       <div className="gallery-main">
@@ -109,11 +104,6 @@ const App = () => {
             </button>
           )}
         </div>
-        {visibleCount < filteredImages.length && (
-          <div className="load-more">
-            <button onClick={loadMore}>Load More</button>
-          </div>
-        )}
       </div>
       <Footer />
     </div>

@@ -44,7 +44,7 @@ const Footer = () => {
                         </Link>
                       </li>
                       <li>
-                        <Link href="https://sac-kluniversity.vercel.app/" target="_blank" rel="noopener noreferrer">KL SAC</Link>
+                        <Link href="https://sac.kluniversity.in/" target="_blank" rel="noopener noreferrer">KL SAC</Link>
                       </li>
                       {/* <li>
                         <Link href="https://panchatantra.vercel.app/" target="_blank" rel="noopener noreferrer">Panchatantra</Link>
@@ -111,7 +111,7 @@ const Footer = () => {
         </div>
         <div className="Footer-last">
           <div className="Footer-last-in">
-            <p>This site is designed, developed, and maintained by <a href="https://www.linkedin.com/company/zeroonecodeclub/mycompany/">ZeroOne Code Club</a>, Department of Student Activity Center, K L Deemed to be University | Content owned by Smart Village Revolution Club.</p>
+            <p>This site is designed, developed, and maintained by <a href="https://www.linkedin.com/company/zeroonecodeclub/mycompany/">ZeroOne Code Club</a>, Department of Student Activity Center, KLEF(Deemed to be University) | Content owned by Smart Village Revolution.</p>
           </div>
         </div>
       </div>

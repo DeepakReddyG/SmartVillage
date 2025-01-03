@@ -25,6 +25,7 @@ import SVR_UpdateImage_16 from "./Assets/Updated Images/Health_new.png";
 import SVR_UpdateImage_17 from "./Assets/Updated Images/Culture.png";
 import SVR_UpdateImage_18 from "./Assets/Updated Images/Transportation.png";
 import SVR_UpdateImage_19 from "./Assets/Updated Images/LatestCultureAndCommunity.png";
+import SVR_UpdateImage_20 from "./Assets/NewDigi.png";
 
 import VijaySirUpdated from "./Assets/Updated Images/SAC_Director_Updated.png";
 
@@ -347,7 +348,7 @@ export default function Home() {
 
               <div className="home-seven-in-one-in-box" onClick={() => handleDomainClick("Digital Literacy")}>
                 <div className="home-seven-in-one-in-box-in">
-                  <Image src={SVR_UpdateImage_14} alt="Digital Literacy" />
+                  <Image src={SVR_UpdateImage_20} alt="Digital Literacy" />
                   <p>Digital Literacy</p>
                 </div>
               </div>
@@ -371,7 +372,6 @@ export default function Home() {
       </div>
     </div>
   </div>
-);
         <div className="home-eight">
           <div className="home-eight-in">
             <div className="home-eight-one">
