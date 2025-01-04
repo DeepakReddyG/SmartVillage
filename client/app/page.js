@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import CountUp from "react-countup";
 import Model from "./components/modal/modal";
 import { MdOpenInNew } from "react-icons/md";
+import dynamic from 'next/dynamic';
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -12,6 +13,8 @@ import "swiper/css/navigation";
 import HeroSection from "./components/homeHero/page";
 
 import "./globals.css";
+
+// Replace dynamic imports with regular imports
 import SVR_Image_1 from "./Assets/IMG_8078.JPG";
 import SVR_UpdateImage_1 from "./Assets/Updated Images/Agriculture.png";
 import SVR_UpdateImage_2 from "./Assets/Updated Images/Education.png";
@@ -46,6 +49,20 @@ import AreasOfWork_Image_9 from "./Assets/AreasOfWork_Image_9.png";
 import HomeNavbar from "./components/navbar/HomeNavbar";
 import ResNavbar from "./components/navbar/ResNav";
 import Footer from "./components/footer/Footer";
+
+// Add Image loading optimization
+const ImageWithLoading = ({ src, alt, ...props }) => {
+  return (
+    <Image
+      src={src}
+      alt={alt}
+      loading="lazy"
+      placeholder="blur"
+      blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRg..."
+      {...props}
+    />
+  );
+};
 
 export default function Home() {
   const [showNavbar, setShowNavbar] = useState(false);
@@ -111,8 +128,10 @@ export default function Home() {
   // make this animation only once
 
   useEffect(() => {
-    const timer = setTimeout(() => setShowAnimation(false), 1);
-    return () => clearTimeout(timer);
+    if (typeof window !== 'undefined') {
+      const timer = setTimeout(() => setShowAnimation(false), 1000);
+      return () => clearTimeout(timer);
+    }
   }, []);
 
   // ---------- Boot Animation END ------------
@@ -120,8 +139,29 @@ export default function Home() {
   const handleDomainClick = (domain) => {
     window.location.href = `/gallery?domain=${encodeURIComponent(domain)}`;
   };
-  return showAnimation ? (
-    <div class="init">
+
+  // Add loading state
+  const [isLoading, setIsLoading] = useState(true);
+  const [loadError, setLoadError] = useState(null);
+
+  useEffect(() => {
+    try {
+      setIsLoading(false);
+    } catch (error) {
+      setLoadError(error);
+      setIsLoading(false);
+    }
+  }, []);
+
+  return loadError ? (
+    <div className="error">Something went wrong. Please try again.</div>
+  ) : isLoading ? (
+    <div className="loading">
+      <div className="loading-spinner"></div>
+      <p>Loading...</p>
+    </div>
+  ) : showAnimation ? (
+    <div className="init">
       <h1>Smart Village Revolution</h1>
     </div>
   ) : (
@@ -273,10 +313,11 @@ export default function Home() {
                 </div>
                 <div className="home-two-in-one-in-two">
                   <div className="home-two-in-one-in-two-in">
-                    <Image
+                    <ImageWithLoading
                       className="home-two-in-one-in-two-in-image"
                       src={SVR_Image_1}
                       alt="Picture of the author"
+                      priority={true}
                       width={500}
                       height={400}
                     />

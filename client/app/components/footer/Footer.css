@@ -57,7 +57,7 @@
     padding: 3rem 0rem;
     display: flex;
     justify-content: space-around;
-    align-items: start;
+    align-items: flex-start;
     /* row-gap: 10px;
     column-gap: 10px; */
     /* flex-wrap: wrap; */
