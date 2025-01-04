@@ -51,14 +51,12 @@ import ResNavbar from "./components/navbar/ResNav";
 import Footer from "./components/footer/Footer";
 
 // Add Image loading optimization
-const ImageWithLoading = ({ src, alt, ...props }) => {
+const ImageWithLoading = ({ src, alt, priority = false, ...props }) => {
   return (
     <Image
       src={src}
       alt={alt}
-      loading="lazy"
-      placeholder="blur"
-      blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRg..."
+      {...priority ? { priority: true } : { loading: 'lazy' }}
       {...props}
     />
   );
@@ -753,7 +751,9 @@ export default function Home() {
                                   className="home-bt-one-in-one-in-two-in-image"
                                   src={SVR_UpdateImage_1}
                                   alt="Picture of the author"
-                                ></Image>
+                                  width={500}
+                                  height={400}
+                                />
                               </div>
                             </div>
                           </div>
@@ -795,7 +795,9 @@ export default function Home() {
                                   className="home-bt-one-in-one-in-two-in-image"
                                   src={SVR_UpdateImage_2}
                                   alt="Picture of the author"
-                                ></Image>
+                                  width={500}
+                                  height={400}
+                                />
                               </div>
                             </div>
                           </div>
@@ -841,7 +843,9 @@ export default function Home() {
                                   className="home-bt-one-in-one-in-two-in-image"
                                   src={SVR_UpdateImage_5}
                                   alt="Picture of the author"
-                                ></Image>
+                                  width={500}
+                                  height={400}
+                                />
                               </div>
                             </div>
                           </div>
@@ -886,7 +890,9 @@ export default function Home() {
                                   className="home-bt-one-in-one-in-two-in-image"
                                   src={SVR_UpdateImage_19}
                                   alt="Picture of the author"
-                                ></Image>
+                                  width={500}
+                                  height={400}
+                                />
                               </div>
                             </div>
                           </div>
@@ -931,7 +937,9 @@ export default function Home() {
                                   className="home-bt-one-in-one-in-two-in-image"
                                   src={SVR_UpdateImage_3}
                                   alt="Picture of the author"
-                                ></Image>
+                                  width={500}
+                                  height={400}
+                                />
                               </div>
                             </div>
                           </div>
@@ -977,7 +985,9 @@ export default function Home() {
                                   className="home-bt-one-in-one-in-two-in-image"
                                   src={SVR_UpdateImage_11}
                                   alt="Picture of the author"
-                                ></Image>
+                                  width={500}
+                                  height={400}
+                                />
                               </div>
                             </div>
                           </div>
@@ -1068,7 +1078,9 @@ export default function Home() {
                                   className="home-bt-one-in-one-in-two-in-image"
                                   src={SVR_UpdateImage_17}
                                   alt="Picture of the author"
-                                ></Image>
+                                  width={500}
+                                  height={400}
+                                />
                               </div>
                             </div>
                           </div>
@@ -1114,7 +1126,9 @@ export default function Home() {
                                   className="home-bt-one-in-one-in-two-in-image"
                                   src={SVR_UpdateImage_12}
                                   alt="Picture of the author"
-                                ></Image>
+                                  width={500}
+                                  height={400}
+                                />
                               </div>
                             </div>
                           </div>
