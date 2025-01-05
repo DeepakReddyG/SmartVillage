@@ -49,7 +49,7 @@ function Page() {
   }
 
   // Add this after sorting the data
-  console.log('Sorted data:', sortedData.slice(0, 5)); // Show first 5 entries
+  // console.log('Sorted data:', sortedData.slice(0, 5)); // Show first 5 entries
 
   // Filtered data based on search query and selected year
   const filteredData = sortedData.filter(event =>
