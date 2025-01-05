@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import newsArticles from './news_array';
 import './news.css';
 import { FaArrowUp, FaSearch } from 'react-icons/fa';
-import Footer from "../components/SmallFooter/footer";
+import Footer from "../../components/SmallFooter/footer";
 
 export default function NewsPage() {
   const [searchQuery, setSearchQuery] = useState('');

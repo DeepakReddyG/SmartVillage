@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import HeroImage from "./hero";
 import MultiImageDisplay from "./displayAsset";
-import Footer from "../components/SmallFooter/footer";
+import Footer from "../../components/SmallFooter/footer";
 import "./page.css";
 import { FaArrowLeft } from "react-icons/fa";
 import { galleryImages } from "./image.js";
