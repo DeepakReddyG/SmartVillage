@@ -34,6 +34,9 @@ const Footer = () => {
                     <h3>Our collaborations with Programs</h3>
                     <ul>
                       <li>
+                        <Link href="https://drive.google.com/file/d/1a-X9rWklMfXHZz10RdaTmsCVI3cwRdI8/view?usp=share_link" target='_blank' rel="noopener">Goverment of Andhra Pradesh</Link>
+                      </li>
+                      <li>
                         <Link href="https://saanjhi.gov.in" legacyBehavior>
                           <a target="_blank" rel="noopener noreferrer">Sansad Adarsh Gram Yojana</a>
                         </Link>
@@ -46,9 +49,6 @@ const Footer = () => {
                       <li>
                         <Link href="https://sac.kluniversity.in/" target="_blank" rel="noopener noreferrer">KL SAC</Link>
                       </li>
-                      {/* <li>
-                        <Link href="https://panchatantra.vercel.app/" target="_blank" rel="noopener noreferrer">Panchatantra</Link>
-                      </li> */}
                     </ul>
                   </div>
                 </div>
@@ -56,23 +56,14 @@ const Footer = () => {
                   <div className="Footer-two-in-two-in-boxes-in">
                     <h3>Contact Us</h3>
                     <ul>
-                      {/* <li>
-                        <Link href="https://sac-kluniversity.vercel.app/" target="_blank" rel="noopener noreferrer"><FaFacebook /> Facebook</Link>
-                      </li> */}
                       <li>
                         <Link href="https://www.instagram.com/klusac_svr?igsh=eDVmZWNpeHR5N2h5" target="_blank" rel="noopener noreferrer"><FaInstagram /> Instagram</Link>
                       </li>
-                      {/* <li>
-                        <Link href="https://sac-kluniversity.vercel.app/" target="_blank" rel="noopener noreferrer"><FaLinkedin /> LinkedIn</Link>
-                      </li> */}
-                      {/* <li>
-                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><FaTwitter /> Twitter</a>
-                      </li> */}
                       <li>
                         <Link href="https://t.me/y23_svr_sac" target="_blank" rel="noopener noreferrer"><FaTelegram /> Telegram</Link>
                       </li>
                       <li>
-                        <Link href="#" target="_blank" rel="noopener noreferrer"><FaYoutube /> Youtube</Link>
+                        <Link href="https://www.youtube.com/watch?v=q9R8qWt3fmY" target="_blank" rel="noopener noreferrer"><FaYoutube /> Youtube</Link>
                       </li>
                     </ul>
                   </div>
@@ -96,6 +87,9 @@ const Footer = () => {
                       {/* <li>
                         <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.kluniversity.in/AQAR1819/SV.pdf&ved=2ahUKEwiazc3rrIGIAxUXklYBHfDTB-cQFnoECBUQAQ&usg=AOvVaw2FAQC3fzLhntiGTqlCW4vx" target="_blank" rel="noopener noreferrer">Past Year Reports</a>
                       </li> */}
+                      <li>
+                        <Link href='https://drive.google.com/file/d/1RdP4R6HnP5pt2cmLxvEKg6uilsyTVWZQ/view?usp=share_link'> Awards</Link>
+                      </li>
                       <li>
                         <Link href='/gallery'> Gallery</Link>
                       </li>
