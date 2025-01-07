@@ -16,16 +16,22 @@ const Navbar = () => {
                 </div>
                 <div className="NavBar-in-two">
                     <div className="NavBar-in-two-in">
+                        <div className="dropdown">
                         <Scroll
-                            className='navbar-options'
+                            className="HomeNavBar-in-two-in-scroll"
                             to="home-two"
                             spy={true}
                             smooth={true}
                             offset={-70} 
                             duration={500}
                         >
-                        About
+                            About
                         </Scroll>
+                        <div className="dropdown-content">
+                              <Link href="/mission">Mission & Vision</Link>
+                              <Link href="/introduction">Introduction</Link>
+                        </div>
+                        </div>
                         <Scroll
                         className='navbar-options'
                             to="home-seven"

@@ -9,6 +9,7 @@ import dynamic from 'next/dynamic';
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import { TbExternalLink } from "react-icons/tb";
 
 import HeroSection from "./components/homeHero/page";
 
@@ -212,9 +213,11 @@ export default function Home() {
                             <CountUp end={105} />+
                           </h1>
                         </div>
-                        <div className="home-three-two-in-two-box-in-two">
+                        <div className="home-three-two-in-two-box-in-two-main">
                           <p>
-                            <span>Villages Adopted</span> by K L University
+                            <Link href="https://drive.google.com/file/d/1hqXfW0VcCbDN8Dz_QDi3UuzMU1h7z96I/view?usp=share_link">
+                            <span>Villages Adopted <TbExternalLink /> </span>
+                            </Link> by K L University
                             Under Smart Village Revolution Project
                           </p>
                         </div>

@@ -222,6 +222,26 @@ img{
   margin-bottom: 1rem;
 }
 
+.home-three-two-in-two-box-in-two-main span{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: green;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+}
+
+.home-three-two-in-two-box-in-two-main p{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: black;
+  line-height: 2rem;
+  color: rgb(35, 35, 35);
+  margin-bottom: 1rem;
+  width: 100%;
+}
 
 /* --------------------------- home-two ---------------------- */
 

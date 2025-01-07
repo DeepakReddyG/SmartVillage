@@ -1,0 +1,194 @@
+/* Mission Component */
+.mission-component {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background: green;
+    padding: 2rem 0;
+}
+
+.mission-component-in {
+    width: 90%;
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+.mission-component-in-heading {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.mission-component-in-heading h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+}
+
+.mission-component-in-heading h1::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: #4CAF50;
+    border-radius: 2px;
+}
+
+.mission-component-in-main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.mission-component-in-main-box {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    padding: 2.5rem;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    height: 100%;
+    backdrop-filter: blur(10px);
+}
+
+.mission-component-in-main-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    border-color: #4CAF50;
+    background: rgba(255, 255, 255, 1);
+}
+
+.mission-component-in-main-box-heading {
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.mission-component-in-main-box-heading h1 {
+    font-size: 1.8rem;
+    color: #2b5d34;
+    font-weight: 600;
+    margin: 0;
+}
+
+.mission-component-in-main-box-content p {
+    color: #4a5568;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    min-height: 200px;
+}
+
+.svg-container {
+    width: 50px;
+    height: 50px;
+    background: rgba(76, 175, 80, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.svg-container path {
+    stroke: #4CAF50;
+}
+
+.mission-component-footer {
+    width: 100%;
+    margin-top: auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 968px) {
+    .mission-component-in-main {
+        grid-template-columns: 1fr;
+    }
+    
+    .mission-component-in-heading h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .mission-component-in {
+        width: 95%;
+        margin: 2rem auto;
+    }
+    
+    .mission-component-in-main-box {
+        padding: 1.5rem;
+    }
+    
+    .mission-component-in-main-box-heading h1 {
+        font-size: 1.5rem;
+    }
+    
+    .mission-component-in-main-box-content p {
+        font-size: 1rem;
+    }
+}
+
+/* Animation classes */
+.animate-float {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Add these styles to the existing CSS */
+.back-to-home {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    z-index: 10;
+}
+
+.back-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 50px;
+    color: #2b5d34;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.back-button:hover {
+    background: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.back-icon {
+    width: 20px;
+    height: 20px;
+}
+
+@media (max-width: 768px) {
+    .back-to-home {
+        top: 1rem;
+        left: 1rem;
+    }
+    
+    .back-button {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+}
