@@ -88,7 +88,13 @@ const Footer = () => {
                         <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.kluniversity.in/AQAR1819/SV.pdf&ved=2ahUKEwiazc3rrIGIAxUXklYBHfDTB-cQFnoECBUQAQ&usg=AOvVaw2FAQC3fzLhntiGTqlCW4vx" target="_blank" rel="noopener noreferrer">Past Year Reports</a>
                       </li> */}
                       <li>
-                        <Link href='https://drive.google.com/file/d/1RdP4R6HnP5pt2cmLxvEKg6uilsyTVWZQ/view?usp=share_link'> Awards</Link>
+                        <Link href='https://drive.google.com/file/d/1RdP4R6HnP5pt2cmLxvEKg6uilsyTVWZQ/view?usp=share_link'> Awards List</Link>
+                      </li>
+                      <li>
+                        <Link href='https://drive.google.com/file/d/1hqXfW0VcCbDN8Dz_QDi3UuzMU1h7z96I/view?usp=share_link'>Village Adopted</Link>
+                      </li>
+                      <li>
+                        <Link href='https://drive.google.com/file/d/1pi69cRuq_VUAc60UQ4v0USRNugUPoQhm/view?usp=share_link'>List of staff</Link>
                       </li>
                       <li>
                         <Link href='/gallery'> Gallery</Link>
